@@ -1,0 +1,14 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Custom for Eagle
+*.brd linguist-language=Eagle
+*.sch linguist-language=Eagle
+*.lbr linguist-language=Eagle
+
+*.brd linguist-detectable
+*.sch linguist-detectable
+*.lbr linguist-detectable
+
+# Language detection
+*.nc linguist-vendored
