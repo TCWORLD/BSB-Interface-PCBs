@@ -67,6 +67,8 @@
 <layer number="58" name="bCAD" color="7" fill="1" visible="no" active="no"/>
 <layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="88" name="SimResults" color="9" fill="1" visible="yes" active="yes"/>
+<layer number="89" name="SimProbes" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="90" name="Modules" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
@@ -2496,6 +2498,117 @@ Source: http://www.fairchildsemi.com/pf/4N/4N35-M.html</description>
 <text x="-2.413" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 <text x="-4.064" y="-2.921" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
 </package>
+<package name="OSHW-LOGO-S">
+<polygon width="0.15" layer="21">
+<vertex x="0.3947" y="-0.9528" curve="9.498218"/>
+<vertex x="0.5465" y="-0.8746"/>
+<vertex x="0.9235" y="-1.182"/>
+<vertex x="1.182" y="-0.9235"/>
+<vertex x="0.8746" y="-0.5465" curve="19.000773"/>
+<vertex x="1.0049" y="-0.232"/>
+<vertex x="1.4888" y="-0.1828"/>
+<vertex x="1.4888" y="0.1828"/>
+<vertex x="1.0049" y="0.232" curve="19.000773"/>
+<vertex x="0.8746" y="0.5465"/>
+<vertex x="1.182" y="0.9235"/>
+<vertex x="0.9235" y="1.182"/>
+<vertex x="0.5465" y="0.8746" curve="19.000773"/>
+<vertex x="0.232" y="1.0049"/>
+<vertex x="0.1828" y="1.4888"/>
+<vertex x="-0.1828" y="1.4888"/>
+<vertex x="-0.232" y="1.0049" curve="19.000773"/>
+<vertex x="-0.5465" y="0.8746"/>
+<vertex x="-0.9235" y="1.182"/>
+<vertex x="-1.182" y="0.9235"/>
+<vertex x="-0.8746" y="0.5465" curve="19.000773"/>
+<vertex x="-1.0049" y="0.232"/>
+<vertex x="-1.4888" y="0.1828"/>
+<vertex x="-1.4888" y="-0.1828"/>
+<vertex x="-1.0049" y="-0.232" curve="19.000773"/>
+<vertex x="-0.8746" y="-0.5465"/>
+<vertex x="-1.182" y="-0.9235"/>
+<vertex x="-0.9235" y="-1.182"/>
+<vertex x="-0.5465" y="-0.8746" curve="9.498218"/>
+<vertex x="-0.3947" y="-0.9528"/>
+<vertex x="-0.1794" y="-0.4331" curve="-67.514699"/>
+<vertex x="-0.4688" y="0" curve="-247.473915"/>
+<vertex x="0.1794" y="-0.4331"/>
+</polygon>
+</package>
+<package name="OSHW-LOGO-M">
+<polygon width="0.15" layer="21">
+<vertex x="0.6578" y="-1.588" curve="9.499253"/>
+<vertex x="0.9108" y="-1.4576"/>
+<vertex x="1.5392" y="-1.97"/>
+<vertex x="1.97" y="-1.5392"/>
+<vertex x="1.4576" y="-0.9108" curve="19.001165"/>
+<vertex x="1.6747" y="-0.3866"/>
+<vertex x="2.4814" y="-0.3047"/>
+<vertex x="2.4814" y="0.3047"/>
+<vertex x="1.6747" y="0.3866" curve="19.001165"/>
+<vertex x="1.4576" y="0.9108"/>
+<vertex x="1.97" y="1.5392"/>
+<vertex x="1.5392" y="1.97"/>
+<vertex x="0.9108" y="1.4576" curve="19.001165"/>
+<vertex x="0.3866" y="1.6747"/>
+<vertex x="0.3047" y="2.4814"/>
+<vertex x="-0.3047" y="2.4814"/>
+<vertex x="-0.3866" y="1.6747" curve="19.001165"/>
+<vertex x="-0.9108" y="1.4576"/>
+<vertex x="-1.5392" y="1.97"/>
+<vertex x="-1.97" y="1.5392"/>
+<vertex x="-1.4576" y="0.9108" curve="19.001165"/>
+<vertex x="-1.6747" y="0.3866"/>
+<vertex x="-2.4814" y="0.3047"/>
+<vertex x="-2.4814" y="-0.3047"/>
+<vertex x="-1.6747" y="-0.3866" curve="19.001165"/>
+<vertex x="-1.4576" y="-0.9108"/>
+<vertex x="-1.97" y="-1.5392"/>
+<vertex x="-1.5392" y="-1.97"/>
+<vertex x="-0.9108" y="-1.4576" curve="9.499253"/>
+<vertex x="-0.6578" y="-1.588"/>
+<vertex x="-0.299" y="-0.7218" curve="-67.507353"/>
+<vertex x="-0.7813" y="0" curve="-247.497552"/>
+<vertex x="0.299" y="-0.7218"/>
+</polygon>
+</package>
+<package name="OSHW-LOGO-L">
+<polygon width="0.15" layer="21">
+<vertex x="0.9209" y="-2.2231" curve="9.497479"/>
+<vertex x="1.2751" y="-2.0407"/>
+<vertex x="2.1548" y="-2.758"/>
+<vertex x="2.758" y="-2.1548"/>
+<vertex x="2.0407" y="-1.2751" curve="18.998791"/>
+<vertex x="2.3446" y="-0.5413"/>
+<vertex x="3.4739" y="-0.4265"/>
+<vertex x="3.4739" y="0.4265"/>
+<vertex x="2.3446" y="0.5413" curve="18.998791"/>
+<vertex x="2.0407" y="1.2751"/>
+<vertex x="2.758" y="2.1548"/>
+<vertex x="2.1548" y="2.758"/>
+<vertex x="1.2751" y="2.0407" curve="18.998791"/>
+<vertex x="0.5413" y="2.3446"/>
+<vertex x="0.4265" y="3.4739"/>
+<vertex x="-0.4265" y="3.4739"/>
+<vertex x="-0.5413" y="2.3446" curve="18.998791"/>
+<vertex x="-1.2751" y="2.0407"/>
+<vertex x="-2.1548" y="2.758"/>
+<vertex x="-2.758" y="2.1548"/>
+<vertex x="-2.0407" y="1.2751" curve="18.998791"/>
+<vertex x="-2.3446" y="0.5413"/>
+<vertex x="-3.4739" y="0.4265"/>
+<vertex x="-3.4739" y="-0.4265"/>
+<vertex x="-2.3446" y="-0.5413" curve="18.998791"/>
+<vertex x="-2.0407" y="-1.2751"/>
+<vertex x="-2.758" y="-2.1548"/>
+<vertex x="-2.1548" y="-2.758"/>
+<vertex x="-1.2751" y="-2.0407" curve="9.497479"/>
+<vertex x="-0.9209" y="-2.2231"/>
+<vertex x="-0.4186" y="-1.0105" curve="-67.504205"/>
+<vertex x="-1.0938" y="0" curve="-247.497204"/>
+<vertex x="0.4186" y="-1.0105"/>
+</polygon>
+</package>
 </packages>
 <symbols>
 <symbol name="10P">
@@ -2732,6 +2845,203 @@ Source: http://www.fairchildsemi.com/pf/4N/4N35-M.html</description>
 <pin name="EMI" x="7.62" y="-5.08" visible="pad" length="short" direction="pas" rot="R180"/>
 <text x="-6.985" y="5.715" size="1.778" layer="95">&gt;NAME</text>
 <text x="-6.985" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="OSHW-LOGO">
+<polygon width="0.381" layer="94">
+<vertex x="1.5036" y="-3.63" curve="9.499632"/>
+<vertex x="2.0821" y="-3.3321"/>
+<vertex x="3.5185" y="-4.5035"/>
+<vertex x="4.5035" y="-3.5185"/>
+<vertex x="3.3321" y="-2.0821" curve="18.999117"/>
+<vertex x="3.8284" y="-0.8839"/>
+<vertex x="5.6724" y="-0.6965"/>
+<vertex x="5.6724" y="0.6965"/>
+<vertex x="3.8284" y="0.8839" curve="18.999117"/>
+<vertex x="3.3321" y="2.0821"/>
+<vertex x="4.5035" y="3.5185"/>
+<vertex x="3.5185" y="4.5035"/>
+<vertex x="2.0821" y="3.3321" curve="18.999117"/>
+<vertex x="0.8839" y="3.8284"/>
+<vertex x="0.6965" y="5.6724"/>
+<vertex x="-0.6965" y="5.6724"/>
+<vertex x="-0.8839" y="3.8284" curve="18.999117"/>
+<vertex x="-2.0821" y="3.3321"/>
+<vertex x="-3.5185" y="4.5035"/>
+<vertex x="-4.5035" y="3.5185"/>
+<vertex x="-3.3321" y="2.0821" curve="18.999117"/>
+<vertex x="-3.8284" y="0.8839"/>
+<vertex x="-5.6724" y="0.6965"/>
+<vertex x="-5.6724" y="-0.6965"/>
+<vertex x="-3.8284" y="-0.8839" curve="18.999117"/>
+<vertex x="-3.3321" y="-2.0821"/>
+<vertex x="-4.5035" y="-3.5185"/>
+<vertex x="-3.5185" y="-4.5035"/>
+<vertex x="-2.0821" y="-3.3321" curve="9.499632"/>
+<vertex x="-1.5036" y="-3.63"/>
+<vertex x="-0.6834" y="-1.65" curve="-67.502133"/>
+<vertex x="-1.7859" y="0" curve="-247.502133"/>
+<vertex x="0.6834" y="-1.65"/>
+</polygon>
+<polygon width="0.127" layer="94" spacing="0.2">
+<vertex x="-11.2014" y="-7.5946"/>
+<vertex x="-11.2014" y="-7.239"/>
+<vertex x="-10.9474" y="-7.239"/>
+<vertex x="-10.9474" y="-7.5946" curve="180"/>
+<vertex x="-10.1854" y="-7.5946"/>
+<vertex x="-10.1854" y="-6.9088" curve="180"/>
+<vertex x="-10.9474" y="-6.9088"/>
+<vertex x="-10.9474" y="-7.25"/>
+<vertex x="-11.2014" y="-7.25"/>
+<vertex x="-11.2014" y="-6.9088" curve="-180"/>
+<vertex x="-9.9314" y="-6.9088"/>
+<vertex x="-9.9314" y="-7.5946" curve="-180"/>
+</polygon>
+<polygon width="0.127" layer="94" spacing="0.2">
+<vertex x="-9.0424" y="-8.1026"/>
+<vertex x="-9.0424" y="-7.5946" curve="180"/>
+<vertex x="-8.2804" y="-7.5946"/>
+<vertex x="-8.2804" y="-6.9088" curve="180"/>
+<vertex x="-9.0424" y="-6.9088"/>
+<vertex x="-9.0424" y="-8.901"/>
+<vertex x="-9.2964" y="-9.028"/>
+<vertex x="-9.2964" y="-6.9088" curve="-180"/>
+<vertex x="-8.0264" y="-6.9088"/>
+<vertex x="-8.0264" y="-7.5946" curve="-126.87"/>
+</polygon>
+<polygon width="0.127" layer="94" spacing="0.2">
+<vertex x="-4.4704" y="-8.2296"/>
+<vertex x="-4.4704" y="-6.9088" curve="180"/>
+<vertex x="-5.2324" y="-6.9088"/>
+<vertex x="-5.2324" y="-8.139"/>
+<vertex x="-5.4864" y="-8.266"/>
+<vertex x="-5.4864" y="-6.9088" curve="-180"/>
+<vertex x="-4.2164" y="-6.9088"/>
+<vertex x="-4.2164" y="-8.1026"/>
+</polygon>
+<polygon width="0.127" layer="94" spacing="0.2">
+<vertex x="-6.1214" y="-7.5946"/>
+<vertex x="-6.1214" y="-7.493"/>
+<vertex x="-6.3754" y="-7.5946" curve="-180"/>
+<vertex x="-7.1374" y="-7.5946"/>
+<vertex x="-7.1374" y="-6.9088" curve="-180"/>
+<vertex x="-6.3754" y="-6.9088"/>
+<vertex x="-7.0866" y="-7.2136"/>
+<vertex x="-7.0866" y="-7.5294"/>
+<vertex x="-6.1214" y="-7.123"/>
+<vertex x="-6.1214" y="-6.9088" curve="180"/>
+<vertex x="-7.3914" y="-6.9088"/>
+<vertex x="-7.3914" y="-7.5946" curve="180"/>
+</polygon>
+<polygon width="0.0508" layer="94" spacing="0.2">
+<vertex x="11.1252" y="-7.7216"/>
+<vertex x="11.1252" y="-7.62"/>
+<vertex x="10.8712" y="-7.7216" curve="-180"/>
+<vertex x="10.1092" y="-7.7216"/>
+<vertex x="10.1092" y="-7.0358" curve="-180"/>
+<vertex x="10.8712" y="-7.0358"/>
+<vertex x="10.1092" y="-7.366"/>
+<vertex x="10.1092" y="-7.6818"/>
+<vertex x="11.1252" y="-7.25"/>
+<vertex x="11.1252" y="-7.0358" curve="180"/>
+<vertex x="9.8552" y="-7.0358"/>
+<vertex x="9.8552" y="-7.7216" curve="180"/>
+</polygon>
+<polygon width="0.0508" layer="94" spacing="0.2">
+<vertex x="-1.4224" y="-8.3312"/>
+<vertex x="-1.4224" y="-6.985" curve="180"/>
+<vertex x="-2.1844" y="-6.985"/>
+<vertex x="-2.1844" y="-8.2152"/>
+<vertex x="-2.4384" y="-8.3422"/>
+<vertex x="-2.4384" y="-5.7404"/>
+<vertex x="-2.1844" y="-5.6134"/>
+<vertex x="-2.1844" y="-6.5024" curve="-129.185"/>
+<vertex x="-1.1684" y="-6.985"/>
+<vertex x="-1.1684" y="-8.2042"/>
+</polygon>
+<polygon width="0.0508" layer="94" spacing="0.2">
+<vertex x="8.4836" y="-8.1534"/>
+<vertex x="8.4836" y="-7.0104" curve="-180"/>
+<vertex x="9.2456" y="-7.0104"/>
+<vertex x="9.2456" y="-7.0976"/>
+<vertex x="9.4996" y="-7.0104" curve="180"/>
+<vertex x="8.2296" y="-7.0104"/>
+<vertex x="8.2296" y="-8.2804"/>
+</polygon>
+<polygon width="0.0508" layer="94" spacing="0.2">
+<vertex x="1.3462" y="-8.1788"/>
+<vertex x="1.3462" y="-7.0358" curve="-180"/>
+<vertex x="2.1082" y="-7.0358"/>
+<vertex x="2.1082" y="-7.123"/>
+<vertex x="2.3622" y="-7.0358" curve="180"/>
+<vertex x="1.0922" y="-7.0358"/>
+<vertex x="1.0922" y="-8.3058"/>
+</polygon>
+<polygon width="0.0508" layer="94" spacing="0.2">
+<vertex x="3.8862" y="-6.5278"/>
+<vertex x="3.8862" y="-7.0358" curve="180"/>
+<vertex x="3.1242" y="-7.0358"/>
+<vertex x="3.1242" y="-7.7216" curve="180"/>
+<vertex x="3.8862" y="-7.7216"/>
+<vertex x="3.8862" y="-5.7294"/>
+<vertex x="4.1402" y="-5.6024"/>
+<vertex x="4.1402" y="-7.7216" curve="-180"/>
+<vertex x="2.8702" y="-7.7216"/>
+<vertex x="2.8702" y="-7.0358" curve="-126.87"/>
+</polygon>
+<polygon width="0.0508" layer="94" spacing="0.2">
+<vertex x="4.7498" y="-7.8486" curve="180"/>
+<vertex x="5.207" y="-7.8486"/>
+<vertex x="5.207" y="-6.4406"/>
+<vertex x="5.461" y="-6.3136"/>
+<vertex x="5.461" y="-7.8486" curve="-180"/>
+<vertex x="4.4958" y="-7.8486"/>
+<vertex x="4.4958" y="-6.4516"/>
+<vertex x="4.7498" y="-6.3246"/>
+</polygon>
+<polygon width="0.0508" layer="94" spacing="0.2">
+<vertex x="5.461" y="-7.8486" curve="180"/>
+<vertex x="5.9182" y="-7.8486"/>
+<vertex x="5.9182" y="-6.4406"/>
+<vertex x="6.1722" y="-6.3136"/>
+<vertex x="6.1722" y="-7.8486" curve="-180"/>
+<vertex x="5.207" y="-7.8486"/>
+<vertex x="5.207" y="-6.4516"/>
+<vertex x="5.461" y="-6.3246"/>
+</polygon>
+<polygon width="0.0508" layer="94" spacing="0.2">
+<vertex x="0.3302" y="-8.3058"/>
+<vertex x="0.3302" y="-7.3152"/>
+<vertex x="-0.3302" y="-7.5946" curve="139.86006"/>
+<vertex x="-0.3048" y="-8.1026" curve="57.033981"/>
+<vertex x="0.0762" y="-8.0264"/>
+<vertex x="0.1524" y="-8.255" curve="-33.513779"/>
+<vertex x="-0.3302" y="-8.3058" curve="-145.822924"/>
+<vertex x="-0.4318" y="-7.3914"/>
+<vertex x="0.3302" y="-7.0612"/>
+<vertex x="0.3302" y="-7.0358" curve="180"/>
+<vertex x="-0.4318" y="-7.0358"/>
+<vertex x="-0.6858" y="-7.1484"/>
+<vertex x="-0.6858" y="-7.0358" curve="-180"/>
+<vertex x="0.5842" y="-7.0358"/>
+<vertex x="0.5842" y="-8.1788"/>
+</polygon>
+<polygon width="0.0508" layer="94" spacing="0.2">
+<vertex x="7.5438" y="-8.2804"/>
+<vertex x="7.5438" y="-7.2898"/>
+<vertex x="6.8834" y="-7.5692" curve="139.86006"/>
+<vertex x="6.9088" y="-8.0772" curve="57.033981"/>
+<vertex x="7.2898" y="-8.001"/>
+<vertex x="7.366" y="-8.2296" curve="-33.513779"/>
+<vertex x="6.8834" y="-8.2804" curve="-145.822924"/>
+<vertex x="6.7818" y="-7.366"/>
+<vertex x="7.5438" y="-7.0358"/>
+<vertex x="7.5438" y="-7.0104" curve="180"/>
+<vertex x="6.7818" y="-7.0104"/>
+<vertex x="6.5278" y="-7.123"/>
+<vertex x="6.5278" y="-7.0104" curve="-180"/>
+<vertex x="7.7978" y="-7.0104"/>
+<vertex x="7.7978" y="-8.1534"/>
+</polygon>
 </symbol>
 </symbols>
 <devicesets>
@@ -3381,13 +3691,27 @@ SMCJxx(C)A Voltage Suppressor - SMC Package (DO-214AB)
 <connect gate="G$1" pin="E" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
-<technology name="A"/>
-<technology name="ALT1"/>
-<technology name="B"/>
-<technology name="BLT1"/>
-<technology name="C"/>
-<technology name="CLT1"/>
+<technology name="">
+<attribute name="LCSC_PART" value="C130417"/>
+</technology>
+<technology name="A">
+<attribute name="LCSC_PART" value=""/>
+</technology>
+<technology name="ALT1">
+<attribute name="LCSC_PART" value=""/>
+</technology>
+<technology name="B">
+<attribute name="LCSC_PART" value=""/>
+</technology>
+<technology name="BLT1">
+<attribute name="LCSC_PART" value=""/>
+</technology>
+<technology name="C">
+<attribute name="LCSC_PART" value=""/>
+</technology>
+<technology name="CLT1">
+<attribute name="LCSC_PART" value=""/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -3405,12 +3729,24 @@ SMCJxx(C)A Voltage Suppressor - SMC Package (DO-214AB)
 <connect gate="G$1" pin="E" pad="E"/>
 </connects>
 <technologies>
-<technology name=""/>
-<technology name="A"/>
-<technology name="ALT1"/>
-<technology name="B"/>
-<technology name="BALT1"/>
-<technology name="C"/>
+<technology name="">
+<attribute name="LCSC_PART" value="C426782"/>
+</technology>
+<technology name="A">
+<attribute name="LCSC_PART" value=""/>
+</technology>
+<technology name="ALT1">
+<attribute name="LCSC_PART" value=""/>
+</technology>
+<technology name="B">
+<attribute name="LCSC_PART" value=""/>
+</technology>
+<technology name="BALT1">
+<attribute name="LCSC_PART" value=""/>
+</technology>
+<technology name="C">
+<attribute name="LCSC_PART" value=""/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -3801,7 +4137,9 @@ Source: www.kingbright.com</description>
 <connect gate="-2" pin="1" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="LCSC_PART" value="C480514"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -3841,52 +4179,28 @@ Source: http://www.fairchildsemi.com/ds/4N/4N35-M.pdf</description>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="OC_FARNELL" value="" constant="no"/>
-<attribute name="OC_NEWARK" value="" constant="no"/>
+<attribute name="LCSC_PART" value=""/>
 </technology>
 <technology name="25">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="4N25-M" constant="no"/>
-<attribute name="OC_FARNELL" value="1021349" constant="no"/>
-<attribute name="OC_NEWARK" value="98K9084" constant="no"/>
+<attribute name="LCSC_PART" value=""/>
 </technology>
 <technology name="26">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="4N26-M" constant="no"/>
-<attribute name="OC_FARNELL" value="1021350" constant="no"/>
-<attribute name="OC_NEWARK" value="98K9089" constant="no"/>
+<attribute name="LCSC_PART" value=""/>
 </technology>
 <technology name="27">
-<attribute name="MF" value="FAIRCHILD SEMICONDUCTOR" constant="no"/>
-<attribute name="MPN" value="4N27M" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="72K9939" constant="no"/>
+<attribute name="LCSC_PART" value=""/>
 </technology>
 <technology name="28">
-<attribute name="MF" value="FAIRCHILD SEMICONDUCTOR" constant="no"/>
-<attribute name="MPN" value="4N28-M" constant="no"/>
-<attribute name="OC_FARNELL" value="1504445" constant="no"/>
-<attribute name="OC_NEWARK" value="05C3313" constant="no"/>
+<attribute name="LCSC_PART" value=""/>
 </technology>
 <technology name="35">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="4N35-M" constant="no"/>
-<attribute name="OC_FARNELL" value="1021351" constant="no"/>
-<attribute name="OC_NEWARK" value="98K9114" constant="no"/>
+<attribute name="LCSC_PART" value=""/>
 </technology>
 <technology name="36">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="4N36-M" constant="no"/>
-<attribute name="OC_FARNELL" value="1021352" constant="no"/>
-<attribute name="OC_NEWARK" value="98K9120" constant="no"/>
+<attribute name="LCSC_PART" value=""/>
 </technology>
 <technology name="37">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="4N37-M" constant="no"/>
-<attribute name="OC_FARNELL" value="1021353" constant="no"/>
-<attribute name="OC_NEWARK" value="98K9125" constant="no"/>
+<attribute name="LCSC_PART" value=""/>
 </technology>
 </technologies>
 </device>
@@ -3899,14 +4213,30 @@ Source: http://www.fairchildsemi.com/ds/4N/4N35-M.pdf</description>
 <connect gate="G$1" pin="EMI" pad="4"/>
 </connects>
 <technologies>
-<technology name=""/>
-<technology name="25"/>
-<technology name="26"/>
-<technology name="27"/>
-<technology name="28"/>
-<technology name="35"/>
-<technology name="36"/>
-<technology name="37"/>
+<technology name="">
+<attribute name="LCSC_PART" value=""/>
+</technology>
+<technology name="25">
+<attribute name="LCSC_PART" value="C258246"/>
+</technology>
+<technology name="26">
+<attribute name="LCSC_PART" value=""/>
+</technology>
+<technology name="27">
+<attribute name="LCSC_PART" value=""/>
+</technology>
+<technology name="28">
+<attribute name="LCSC_PART" value=""/>
+</technology>
+<technology name="35">
+<attribute name="LCSC_PART" value=""/>
+</technology>
+<technology name="36">
+<attribute name="LCSC_PART" value=""/>
+</technology>
+<technology name="37">
+<attribute name="LCSC_PART" value=""/>
+</technology>
 </technologies>
 </device>
 <device name="T" package="DIL6-04">
@@ -3919,53 +4249,52 @@ Source: http://www.fairchildsemi.com/ds/4N/4N35-M.pdf</description>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="OC_FARNELL" value="" constant="no"/>
-<attribute name="OC_NEWARK" value="" constant="no"/>
+<attribute name="LCSC_PART" value=""/>
 </technology>
 <technology name="25">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="unknown" constant="no"/>
+<attribute name="LCSC_PART" value=""/>
 </technology>
 <technology name="26">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="unknown" constant="no"/>
+<attribute name="LCSC_PART" value=""/>
 </technology>
 <technology name="27">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="unknown" constant="no"/>
+<attribute name="LCSC_PART" value=""/>
 </technology>
 <technology name="28">
-<attribute name="MF" value="FAIRCHILD SEMICONDUCTOR" constant="no"/>
-<attribute name="MPN" value="4N28TM" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="08H0848" constant="no"/>
+<attribute name="LCSC_PART" value=""/>
 </technology>
 <technology name="35">
-<attribute name="MF" value="FAIRCHILD SEMICONDUCTOR" constant="no"/>
-<attribute name="MPN" value="4N35T-M" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="91B5684" constant="no"/>
+<attribute name="LCSC_PART" value=""/>
 </technology>
 <technology name="36">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="unknown" constant="no"/>
+<attribute name="LCSC_PART" value=""/>
 </technology>
 <technology name="37">
-<attribute name="MF" value="FAIRCHILD SEMICONDUCTOR" constant="no"/>
-<attribute name="MPN" value="4N37TV-M" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="05C3389" constant="no"/>
+<attribute name="LCSC_PART" value=""/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="OSHW-LOGO">
+<description>&lt;b&gt;Open Source Hardware Logo&lt;/b&gt; This logo indicates the piece of hardware it is found on incorporates a OSHW license and/or adheres to the definition of open source hardware found here: http://freedomdefined.org/OSHW</description>
+<gates>
+<gate name="G$1" symbol="OSHW-LOGO" x="-5.08" y="-5.08"/>
+</gates>
+<devices>
+<device name="S" package="OSHW-LOGO-S">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="M" package="OSHW-LOGO-M">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="L" package="OSHW-LOGO-L">
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -4045,6 +4374,7 @@ Source: http://www.fairchildsemi.com/ds/4N/4N35-M.pdf</description>
 <part name="R10" library="BSB-LAN" deviceset="R-EU_" device="R1206L" value="0R">
 <attribute name="LCSC_PART" value="C17888"/>
 </part>
+<part name="U$3" library="BSB-LAN" deviceset="OSHW-LOGO" device="M"/>
 </parts>
 <sheets>
 <sheet>
@@ -4097,7 +4427,7 @@ https://github.com/fredlcore/BSB-LAN</text>
 <instance part="Q2" gate="G$1" x="170.18" y="144.78" rot="MR0">
 <attribute name="LCSC_PART" x="170.18" y="144.78" size="1.4224" layer="96" font="vector" ratio="10" rot="MR0" align="center" display="off"/>
 </instance>
-<instance part="UEXT" gate="G$1" x="223.52" y="48.26" rot="R180"/>
+<instance part="UEXT" gate="G$1" x="223.52" y="58.42" rot="R180"/>
 <instance part="D1" gate="G$1" x="124.46" y="99.06" rot="R270">
 <attribute name="LCSC_PART" x="124.46" y="99.06" size="1.4224" layer="96" font="vector" ratio="10" rot="R270" align="center" display="off"/>
 </instance>
@@ -4107,8 +4437,8 @@ https://github.com/fredlcore/BSB-LAN</text>
 <instance part="R7" gate="G$1" x="104.14" y="127" rot="MR270">
 <attribute name="LCSC_PART" x="104.14" y="127" size="2.54" layer="96" font="vector" ratio="10" rot="MR270" align="center" display="off"/>
 </instance>
-<instance part="C1" gate="G$1" x="175.26" y="50.8">
-<attribute name="LCSC_PART" x="175.26" y="50.8" size="2.54" layer="96" font="vector" ratio="10" align="center" display="off"/>
+<instance part="C1" gate="G$1" x="175.26" y="60.96">
+<attribute name="LCSC_PART" x="175.26" y="60.96" size="2.54" layer="96" font="vector" ratio="10" align="center" display="off"/>
 </instance>
 <instance part="D3" gate="G$2" x="58.42" y="106.68" rot="R90">
 <attribute name="LCSC_PART" x="58.42" y="106.68" size="1.4224" layer="96" font="vector" ratio="10" rot="R90" align="center" display="off"/>
@@ -4122,6 +4452,7 @@ https://github.com/fredlcore/BSB-LAN</text>
 <instance part="R10" gate="G$1" x="71.12" y="116.84">
 <attribute name="LCSC_PART" x="71.12" y="116.84" size="2.54" layer="96" font="vector" ratio="10" align="center" display="off"/>
 </instance>
+<instance part="U$3" gate="G$1" x="241.3" y="35.56"/>
 </instances>
 <busses>
 </busses>
@@ -4216,14 +4547,14 @@ https://github.com/fredlcore/BSB-LAN</text>
 <label x="187.96" y="83.82" size="1.4224" layer="95" font="vector" ratio="10" xref="yes"/>
 </segment>
 <segment>
-<wire x1="175.26" y1="43.18" x2="182.88" y2="43.18" width="0.1524" layer="91"/>
-<label x="182.88" y="43.18" size="1.4224" layer="95" font="vector" ratio="10" rot="MR180" xref="yes"/>
+<wire x1="175.26" y1="53.34" x2="182.88" y2="53.34" width="0.1524" layer="91"/>
+<label x="182.88" y="53.34" size="1.4224" layer="95" font="vector" ratio="10" rot="MR180" xref="yes"/>
 <pinref part="C1" gate="G$1" pin="2"/>
-<wire x1="175.26" y1="45.72" x2="175.26" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="55.88" x2="175.26" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="231.14" y1="53.34" x2="238.76" y2="53.34" width="0.1524" layer="91"/>
-<label x="238.76" y="53.34" size="1.4224" layer="95" font="vector" ratio="10" rot="MR180" xref="yes"/>
+<wire x1="231.14" y1="63.5" x2="238.76" y2="63.5" width="0.1524" layer="91"/>
+<label x="238.76" y="63.5" size="1.4224" layer="95" font="vector" ratio="10" rot="MR180" xref="yes"/>
 <pinref part="UEXT" gate="G$1" pin="2"/>
 </segment>
 </net>
@@ -4242,14 +4573,14 @@ https://github.com/fredlcore/BSB-LAN</text>
 <label x="187.96" y="111.76" size="1.4224" layer="95" font="vector" ratio="10" xref="yes"/>
 </segment>
 <segment>
-<wire x1="175.26" y1="55.88" x2="182.88" y2="55.88" width="0.1524" layer="91"/>
-<label x="182.88" y="55.88" size="1.4224" layer="95" font="vector" ratio="10" rot="MR180" xref="yes"/>
+<wire x1="175.26" y1="66.04" x2="182.88" y2="66.04" width="0.1524" layer="91"/>
+<label x="182.88" y="66.04" size="1.4224" layer="95" font="vector" ratio="10" rot="MR180" xref="yes"/>
 <pinref part="C1" gate="G$1" pin="1"/>
-<wire x1="175.26" y1="55.88" x2="175.26" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="66.04" x2="175.26" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="215.9" y1="53.34" x2="208.28" y2="53.34" width="0.1524" layer="91"/>
-<label x="208.28" y="53.34" size="1.4224" layer="95" font="vector" ratio="10" rot="MR0" xref="yes"/>
+<wire x1="215.9" y1="63.5" x2="208.28" y2="63.5" width="0.1524" layer="91"/>
+<label x="208.28" y="63.5" size="1.4224" layer="95" font="vector" ratio="10" rot="MR0" xref="yes"/>
 <pinref part="UEXT" gate="G$1" pin="1"/>
 </segment>
 </net>
@@ -4260,8 +4591,8 @@ https://github.com/fredlcore/BSB-LAN</text>
 <wire x1="185.42" y1="144.78" x2="187.96" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<label x="208.28" y="50.8" size="1.4224" layer="95" font="vector" ratio="10" rot="R180" xref="yes"/>
-<wire x1="215.9" y1="50.8" x2="208.28" y2="50.8" width="0.1524" layer="91"/>
+<label x="208.28" y="60.96" size="1.4224" layer="95" font="vector" ratio="10" rot="R180" xref="yes"/>
+<wire x1="215.9" y1="60.96" x2="208.28" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="UEXT" gate="G$1" pin="3"/>
 </segment>
 </net>
@@ -4293,8 +4624,8 @@ https://github.com/fredlcore/BSB-LAN</text>
 <junction x="172.72" y="99.06"/>
 </segment>
 <segment>
-<wire x1="231.14" y1="50.8" x2="238.76" y2="50.8" width="0.1524" layer="91"/>
-<label x="238.76" y="50.8" size="1.4224" layer="95" font="vector" ratio="10" xref="yes"/>
+<wire x1="231.14" y1="60.96" x2="238.76" y2="60.96" width="0.1524" layer="91"/>
+<label x="238.76" y="60.96" size="1.4224" layer="95" font="vector" ratio="10" xref="yes"/>
 <pinref part="UEXT" gate="G$1" pin="4"/>
 </segment>
 </net>
@@ -4339,43 +4670,43 @@ https://github.com/fredlcore/BSB-LAN</text>
 </net>
 <net name="SCL" class="0">
 <segment>
-<wire x1="215.9" y1="48.26" x2="208.28" y2="48.26" width="0.1524" layer="91"/>
-<label x="208.28" y="48.26" size="1.4224" layer="95" font="vector" ratio="10" rot="MR0" xref="yes"/>
+<wire x1="215.9" y1="58.42" x2="208.28" y2="58.42" width="0.1524" layer="91"/>
+<label x="208.28" y="58.42" size="1.4224" layer="95" font="vector" ratio="10" rot="MR0" xref="yes"/>
 <pinref part="UEXT" gate="G$1" pin="5"/>
 </segment>
 </net>
 <net name="SDA" class="0">
 <segment>
-<wire x1="231.14" y1="48.26" x2="238.76" y2="48.26" width="0.1524" layer="91"/>
-<label x="238.76" y="48.26" size="1.4224" layer="95" font="vector" ratio="10" rot="MR180" xref="yes"/>
+<wire x1="231.14" y1="58.42" x2="238.76" y2="58.42" width="0.1524" layer="91"/>
+<label x="238.76" y="58.42" size="1.4224" layer="95" font="vector" ratio="10" rot="MR180" xref="yes"/>
 <pinref part="UEXT" gate="G$1" pin="6"/>
 </segment>
 </net>
 <net name="MISO" class="0">
 <segment>
-<wire x1="215.9" y1="45.72" x2="208.28" y2="45.72" width="0.1524" layer="91"/>
-<label x="208.28" y="45.72" size="1.4224" layer="95" font="vector" ratio="10" rot="MR0" xref="yes"/>
+<wire x1="215.9" y1="55.88" x2="208.28" y2="55.88" width="0.1524" layer="91"/>
+<label x="208.28" y="55.88" size="1.4224" layer="95" font="vector" ratio="10" rot="MR0" xref="yes"/>
 <pinref part="UEXT" gate="G$1" pin="7"/>
 </segment>
 </net>
 <net name="MOSI" class="0">
 <segment>
-<wire x1="231.14" y1="45.72" x2="238.76" y2="45.72" width="0.1524" layer="91"/>
-<label x="238.76" y="45.72" size="1.4224" layer="95" font="vector" ratio="10" rot="MR180" xref="yes"/>
+<wire x1="231.14" y1="55.88" x2="238.76" y2="55.88" width="0.1524" layer="91"/>
+<label x="238.76" y="55.88" size="1.4224" layer="95" font="vector" ratio="10" rot="MR180" xref="yes"/>
 <pinref part="UEXT" gate="G$1" pin="8"/>
 </segment>
 </net>
 <net name="SCK" class="0">
 <segment>
-<wire x1="215.9" y1="43.18" x2="208.28" y2="43.18" width="0.1524" layer="91"/>
-<label x="208.28" y="43.18" size="1.4224" layer="95" font="vector" ratio="10" rot="MR0" xref="yes"/>
+<wire x1="215.9" y1="53.34" x2="208.28" y2="53.34" width="0.1524" layer="91"/>
+<label x="208.28" y="53.34" size="1.4224" layer="95" font="vector" ratio="10" rot="MR0" xref="yes"/>
 <pinref part="UEXT" gate="G$1" pin="9"/>
 </segment>
 </net>
 <net name="SSEL" class="0">
 <segment>
-<wire x1="231.14" y1="43.18" x2="238.76" y2="43.18" width="0.1524" layer="91"/>
-<label x="238.76" y="43.18" size="1.4224" layer="95" font="vector" ratio="10" rot="MR180" xref="yes"/>
+<wire x1="231.14" y1="53.34" x2="238.76" y2="53.34" width="0.1524" layer="91"/>
+<label x="238.76" y="53.34" size="1.4224" layer="95" font="vector" ratio="10" rot="MR180" xref="yes"/>
 <pinref part="UEXT" gate="G$1" pin="10"/>
 </segment>
 </net>

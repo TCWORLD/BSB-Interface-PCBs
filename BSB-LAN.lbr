@@ -6,23 +6,23 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mic" unit="mic" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.001" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
-<layer number="3" name="Route3" color="4" fill="3" visible="no" active="yes"/>
-<layer number="4" name="Route4" color="1" fill="4" visible="no" active="yes"/>
-<layer number="5" name="Route5" color="4" fill="4" visible="no" active="yes"/>
-<layer number="6" name="Route6" color="1" fill="8" visible="no" active="yes"/>
-<layer number="7" name="Route7" color="4" fill="8" visible="no" active="yes"/>
-<layer number="8" name="Route8" color="1" fill="2" visible="no" active="yes"/>
-<layer number="9" name="Route9" color="4" fill="2" visible="no" active="yes"/>
-<layer number="10" name="Route10" color="1" fill="7" visible="no" active="yes"/>
-<layer number="11" name="Route11" color="4" fill="7" visible="no" active="yes"/>
-<layer number="12" name="Route12" color="1" fill="5" visible="no" active="yes"/>
-<layer number="13" name="Route13" color="4" fill="5" visible="no" active="yes"/>
-<layer number="14" name="Route14" color="1" fill="6" visible="no" active="yes"/>
-<layer number="15" name="Route15" color="4" fill="6" visible="no" active="yes"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="no" active="no"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
@@ -38,7 +38,7 @@
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
-<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
@@ -58,7 +58,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="54" name="bGND_GNDA" color="7" fill="1" visible="yes" active="yes"/>
@@ -67,6 +67,8 @@
 <layer number="58" name="bCAD" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="59" name="tCarbon" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="60" name="bCarbon" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="88" name="SimResults" color="9" fill="1" visible="yes" active="yes"/>
+<layer number="89" name="SimProbes" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="90" name="Modules" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
@@ -158,8 +160,7 @@
 <layer number="255" name="PART" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <library>
-<description>Generated from &lt;b&gt;BSB-LAN.sch&lt;/b&gt;&lt;p&gt;
-by exp-lbrs.ulp</description>
+<description>BSB-LAN Board Component Library</description>
 <packages>
 <package name="3M_10">
 <description>&lt;b&gt;3M&lt;/b&gt;</description>
@@ -2495,6 +2496,117 @@ reflow soldering</description>
 <smd name="E" x="0.95" y="-1" dx="0.8" dy="0.9" layer="1"/>
 <text x="-2.413" y="0.4445" size="1.016" layer="25" font="vector" ratio="15" rot="R90" align="center">&gt;NAME</text>
 </package>
+<package name="OSHW-LOGO-S">
+<polygon width="0.15" layer="21">
+<vertex x="0.3947" y="-0.9528" curve="9.498218"/>
+<vertex x="0.5465" y="-0.8746"/>
+<vertex x="0.9235" y="-1.182"/>
+<vertex x="1.182" y="-0.9235"/>
+<vertex x="0.8746" y="-0.5465" curve="19.000773"/>
+<vertex x="1.0049" y="-0.232"/>
+<vertex x="1.4888" y="-0.1828"/>
+<vertex x="1.4888" y="0.1828"/>
+<vertex x="1.0049" y="0.232" curve="19.000773"/>
+<vertex x="0.8746" y="0.5465"/>
+<vertex x="1.182" y="0.9235"/>
+<vertex x="0.9235" y="1.182"/>
+<vertex x="0.5465" y="0.8746" curve="19.000773"/>
+<vertex x="0.232" y="1.0049"/>
+<vertex x="0.1828" y="1.4888"/>
+<vertex x="-0.1828" y="1.4888"/>
+<vertex x="-0.232" y="1.0049" curve="19.000773"/>
+<vertex x="-0.5465" y="0.8746"/>
+<vertex x="-0.9235" y="1.182"/>
+<vertex x="-1.182" y="0.9235"/>
+<vertex x="-0.8746" y="0.5465" curve="19.000773"/>
+<vertex x="-1.0049" y="0.232"/>
+<vertex x="-1.4888" y="0.1828"/>
+<vertex x="-1.4888" y="-0.1828"/>
+<vertex x="-1.0049" y="-0.232" curve="19.000773"/>
+<vertex x="-0.8746" y="-0.5465"/>
+<vertex x="-1.182" y="-0.9235"/>
+<vertex x="-0.9235" y="-1.182"/>
+<vertex x="-0.5465" y="-0.8746" curve="9.498218"/>
+<vertex x="-0.3947" y="-0.9528"/>
+<vertex x="-0.1794" y="-0.4331" curve="-67.514699"/>
+<vertex x="-0.4688" y="0" curve="-247.473915"/>
+<vertex x="0.1794" y="-0.4331"/>
+</polygon>
+</package>
+<package name="OSHW-LOGO-M">
+<polygon width="0.15" layer="21">
+<vertex x="0.6578" y="-1.588" curve="9.499253"/>
+<vertex x="0.9108" y="-1.4576"/>
+<vertex x="1.5392" y="-1.97"/>
+<vertex x="1.97" y="-1.5392"/>
+<vertex x="1.4576" y="-0.9108" curve="19.001165"/>
+<vertex x="1.6747" y="-0.3866"/>
+<vertex x="2.4814" y="-0.3047"/>
+<vertex x="2.4814" y="0.3047"/>
+<vertex x="1.6747" y="0.3866" curve="19.001165"/>
+<vertex x="1.4576" y="0.9108"/>
+<vertex x="1.97" y="1.5392"/>
+<vertex x="1.5392" y="1.97"/>
+<vertex x="0.9108" y="1.4576" curve="19.001165"/>
+<vertex x="0.3866" y="1.6747"/>
+<vertex x="0.3047" y="2.4814"/>
+<vertex x="-0.3047" y="2.4814"/>
+<vertex x="-0.3866" y="1.6747" curve="19.001165"/>
+<vertex x="-0.9108" y="1.4576"/>
+<vertex x="-1.5392" y="1.97"/>
+<vertex x="-1.97" y="1.5392"/>
+<vertex x="-1.4576" y="0.9108" curve="19.001165"/>
+<vertex x="-1.6747" y="0.3866"/>
+<vertex x="-2.4814" y="0.3047"/>
+<vertex x="-2.4814" y="-0.3047"/>
+<vertex x="-1.6747" y="-0.3866" curve="19.001165"/>
+<vertex x="-1.4576" y="-0.9108"/>
+<vertex x="-1.97" y="-1.5392"/>
+<vertex x="-1.5392" y="-1.97"/>
+<vertex x="-0.9108" y="-1.4576" curve="9.499253"/>
+<vertex x="-0.6578" y="-1.588"/>
+<vertex x="-0.299" y="-0.7218" curve="-67.507353"/>
+<vertex x="-0.7813" y="0" curve="-247.497552"/>
+<vertex x="0.299" y="-0.7218"/>
+</polygon>
+</package>
+<package name="OSHW-LOGO-L">
+<polygon width="0.15" layer="21">
+<vertex x="0.9209" y="-2.2231" curve="9.497479"/>
+<vertex x="1.2751" y="-2.0407"/>
+<vertex x="2.1548" y="-2.758"/>
+<vertex x="2.758" y="-2.1548"/>
+<vertex x="2.0407" y="-1.2751" curve="18.998791"/>
+<vertex x="2.3446" y="-0.5413"/>
+<vertex x="3.4739" y="-0.4265"/>
+<vertex x="3.4739" y="0.4265"/>
+<vertex x="2.3446" y="0.5413" curve="18.998791"/>
+<vertex x="2.0407" y="1.2751"/>
+<vertex x="2.758" y="2.1548"/>
+<vertex x="2.1548" y="2.758"/>
+<vertex x="1.2751" y="2.0407" curve="18.998791"/>
+<vertex x="0.5413" y="2.3446"/>
+<vertex x="0.4265" y="3.4739"/>
+<vertex x="-0.4265" y="3.4739"/>
+<vertex x="-0.5413" y="2.3446" curve="18.998791"/>
+<vertex x="-1.2751" y="2.0407"/>
+<vertex x="-2.1548" y="2.758"/>
+<vertex x="-2.758" y="2.1548"/>
+<vertex x="-2.0407" y="1.2751" curve="18.998791"/>
+<vertex x="-2.3446" y="0.5413"/>
+<vertex x="-3.4739" y="0.4265"/>
+<vertex x="-3.4739" y="-0.4265"/>
+<vertex x="-2.3446" y="-0.5413" curve="18.998791"/>
+<vertex x="-2.0407" y="-1.2751"/>
+<vertex x="-2.758" y="-2.1548"/>
+<vertex x="-2.1548" y="-2.758"/>
+<vertex x="-1.2751" y="-2.0407" curve="9.497479"/>
+<vertex x="-0.9209" y="-2.2231"/>
+<vertex x="-0.4186" y="-1.0105" curve="-67.504205"/>
+<vertex x="-1.0938" y="0" curve="-247.497204"/>
+<vertex x="0.4186" y="-1.0105"/>
+</polygon>
+</package>
 </packages>
 <symbols>
 <symbol name="10P">
@@ -2732,6 +2844,203 @@ reflow soldering</description>
 <text x="-1.524" y="1.905" size="1.778" layer="95">&gt;NAME</text>
 <text x="-1.524" y="-3.429" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
+<symbol name="OSHW-LOGO">
+<polygon width="0.381" layer="94">
+<vertex x="1.5036" y="-3.63" curve="9.499632"/>
+<vertex x="2.0821" y="-3.3321"/>
+<vertex x="3.5185" y="-4.5035"/>
+<vertex x="4.5035" y="-3.5185"/>
+<vertex x="3.3321" y="-2.0821" curve="18.999117"/>
+<vertex x="3.8284" y="-0.8839"/>
+<vertex x="5.6724" y="-0.6965"/>
+<vertex x="5.6724" y="0.6965"/>
+<vertex x="3.8284" y="0.8839" curve="18.999117"/>
+<vertex x="3.3321" y="2.0821"/>
+<vertex x="4.5035" y="3.5185"/>
+<vertex x="3.5185" y="4.5035"/>
+<vertex x="2.0821" y="3.3321" curve="18.999117"/>
+<vertex x="0.8839" y="3.8284"/>
+<vertex x="0.6965" y="5.6724"/>
+<vertex x="-0.6965" y="5.6724"/>
+<vertex x="-0.8839" y="3.8284" curve="18.999117"/>
+<vertex x="-2.0821" y="3.3321"/>
+<vertex x="-3.5185" y="4.5035"/>
+<vertex x="-4.5035" y="3.5185"/>
+<vertex x="-3.3321" y="2.0821" curve="18.999117"/>
+<vertex x="-3.8284" y="0.8839"/>
+<vertex x="-5.6724" y="0.6965"/>
+<vertex x="-5.6724" y="-0.6965"/>
+<vertex x="-3.8284" y="-0.8839" curve="18.999117"/>
+<vertex x="-3.3321" y="-2.0821"/>
+<vertex x="-4.5035" y="-3.5185"/>
+<vertex x="-3.5185" y="-4.5035"/>
+<vertex x="-2.0821" y="-3.3321" curve="9.499632"/>
+<vertex x="-1.5036" y="-3.63"/>
+<vertex x="-0.6834" y="-1.65" curve="-67.502133"/>
+<vertex x="-1.7859" y="0" curve="-247.502133"/>
+<vertex x="0.6834" y="-1.65"/>
+</polygon>
+<polygon width="0.127" layer="94" spacing="0.2">
+<vertex x="-11.2014" y="-7.5946"/>
+<vertex x="-11.2014" y="-7.239"/>
+<vertex x="-10.9474" y="-7.239"/>
+<vertex x="-10.9474" y="-7.5946" curve="180"/>
+<vertex x="-10.1854" y="-7.5946"/>
+<vertex x="-10.1854" y="-6.9088" curve="180"/>
+<vertex x="-10.9474" y="-6.9088"/>
+<vertex x="-10.9474" y="-7.25"/>
+<vertex x="-11.2014" y="-7.25"/>
+<vertex x="-11.2014" y="-6.9088" curve="-180"/>
+<vertex x="-9.9314" y="-6.9088"/>
+<vertex x="-9.9314" y="-7.5946" curve="-180"/>
+</polygon>
+<polygon width="0.127" layer="94" spacing="0.2">
+<vertex x="-9.0424" y="-8.1026"/>
+<vertex x="-9.0424" y="-7.5946" curve="180"/>
+<vertex x="-8.2804" y="-7.5946"/>
+<vertex x="-8.2804" y="-6.9088" curve="180"/>
+<vertex x="-9.0424" y="-6.9088"/>
+<vertex x="-9.0424" y="-8.901"/>
+<vertex x="-9.2964" y="-9.028"/>
+<vertex x="-9.2964" y="-6.9088" curve="-180"/>
+<vertex x="-8.0264" y="-6.9088"/>
+<vertex x="-8.0264" y="-7.5946" curve="-126.87"/>
+</polygon>
+<polygon width="0.127" layer="94" spacing="0.2">
+<vertex x="-4.4704" y="-8.2296"/>
+<vertex x="-4.4704" y="-6.9088" curve="180"/>
+<vertex x="-5.2324" y="-6.9088"/>
+<vertex x="-5.2324" y="-8.139"/>
+<vertex x="-5.4864" y="-8.266"/>
+<vertex x="-5.4864" y="-6.9088" curve="-180"/>
+<vertex x="-4.2164" y="-6.9088"/>
+<vertex x="-4.2164" y="-8.1026"/>
+</polygon>
+<polygon width="0.127" layer="94" spacing="0.2">
+<vertex x="-6.1214" y="-7.5946"/>
+<vertex x="-6.1214" y="-7.493"/>
+<vertex x="-6.3754" y="-7.5946" curve="-180"/>
+<vertex x="-7.1374" y="-7.5946"/>
+<vertex x="-7.1374" y="-6.9088" curve="-180"/>
+<vertex x="-6.3754" y="-6.9088"/>
+<vertex x="-7.0866" y="-7.2136"/>
+<vertex x="-7.0866" y="-7.5294"/>
+<vertex x="-6.1214" y="-7.123"/>
+<vertex x="-6.1214" y="-6.9088" curve="180"/>
+<vertex x="-7.3914" y="-6.9088"/>
+<vertex x="-7.3914" y="-7.5946" curve="180"/>
+</polygon>
+<polygon width="0.0508" layer="94" spacing="0.2">
+<vertex x="11.1252" y="-7.7216"/>
+<vertex x="11.1252" y="-7.62"/>
+<vertex x="10.8712" y="-7.7216" curve="-180"/>
+<vertex x="10.1092" y="-7.7216"/>
+<vertex x="10.1092" y="-7.0358" curve="-180"/>
+<vertex x="10.8712" y="-7.0358"/>
+<vertex x="10.1092" y="-7.366"/>
+<vertex x="10.1092" y="-7.6818"/>
+<vertex x="11.1252" y="-7.25"/>
+<vertex x="11.1252" y="-7.0358" curve="180"/>
+<vertex x="9.8552" y="-7.0358"/>
+<vertex x="9.8552" y="-7.7216" curve="180"/>
+</polygon>
+<polygon width="0.0508" layer="94" spacing="0.2">
+<vertex x="-1.4224" y="-8.3312"/>
+<vertex x="-1.4224" y="-6.985" curve="180"/>
+<vertex x="-2.1844" y="-6.985"/>
+<vertex x="-2.1844" y="-8.2152"/>
+<vertex x="-2.4384" y="-8.3422"/>
+<vertex x="-2.4384" y="-5.7404"/>
+<vertex x="-2.1844" y="-5.6134"/>
+<vertex x="-2.1844" y="-6.5024" curve="-129.185"/>
+<vertex x="-1.1684" y="-6.985"/>
+<vertex x="-1.1684" y="-8.2042"/>
+</polygon>
+<polygon width="0.0508" layer="94" spacing="0.2">
+<vertex x="8.4836" y="-8.1534"/>
+<vertex x="8.4836" y="-7.0104" curve="-180"/>
+<vertex x="9.2456" y="-7.0104"/>
+<vertex x="9.2456" y="-7.0976"/>
+<vertex x="9.4996" y="-7.0104" curve="180"/>
+<vertex x="8.2296" y="-7.0104"/>
+<vertex x="8.2296" y="-8.2804"/>
+</polygon>
+<polygon width="0.0508" layer="94" spacing="0.2">
+<vertex x="1.3462" y="-8.1788"/>
+<vertex x="1.3462" y="-7.0358" curve="-180"/>
+<vertex x="2.1082" y="-7.0358"/>
+<vertex x="2.1082" y="-7.123"/>
+<vertex x="2.3622" y="-7.0358" curve="180"/>
+<vertex x="1.0922" y="-7.0358"/>
+<vertex x="1.0922" y="-8.3058"/>
+</polygon>
+<polygon width="0.0508" layer="94" spacing="0.2">
+<vertex x="3.8862" y="-6.5278"/>
+<vertex x="3.8862" y="-7.0358" curve="180"/>
+<vertex x="3.1242" y="-7.0358"/>
+<vertex x="3.1242" y="-7.7216" curve="180"/>
+<vertex x="3.8862" y="-7.7216"/>
+<vertex x="3.8862" y="-5.7294"/>
+<vertex x="4.1402" y="-5.6024"/>
+<vertex x="4.1402" y="-7.7216" curve="-180"/>
+<vertex x="2.8702" y="-7.7216"/>
+<vertex x="2.8702" y="-7.0358" curve="-126.87"/>
+</polygon>
+<polygon width="0.0508" layer="94" spacing="0.2">
+<vertex x="4.7498" y="-7.8486" curve="180"/>
+<vertex x="5.207" y="-7.8486"/>
+<vertex x="5.207" y="-6.4406"/>
+<vertex x="5.461" y="-6.3136"/>
+<vertex x="5.461" y="-7.8486" curve="-180"/>
+<vertex x="4.4958" y="-7.8486"/>
+<vertex x="4.4958" y="-6.4516"/>
+<vertex x="4.7498" y="-6.3246"/>
+</polygon>
+<polygon width="0.0508" layer="94" spacing="0.2">
+<vertex x="5.461" y="-7.8486" curve="180"/>
+<vertex x="5.9182" y="-7.8486"/>
+<vertex x="5.9182" y="-6.4406"/>
+<vertex x="6.1722" y="-6.3136"/>
+<vertex x="6.1722" y="-7.8486" curve="-180"/>
+<vertex x="5.207" y="-7.8486"/>
+<vertex x="5.207" y="-6.4516"/>
+<vertex x="5.461" y="-6.3246"/>
+</polygon>
+<polygon width="0.0508" layer="94" spacing="0.2">
+<vertex x="0.3302" y="-8.3058"/>
+<vertex x="0.3302" y="-7.3152"/>
+<vertex x="-0.3302" y="-7.5946" curve="139.86006"/>
+<vertex x="-0.3048" y="-8.1026" curve="57.033981"/>
+<vertex x="0.0762" y="-8.0264"/>
+<vertex x="0.1524" y="-8.255" curve="-33.513779"/>
+<vertex x="-0.3302" y="-8.3058" curve="-145.822924"/>
+<vertex x="-0.4318" y="-7.3914"/>
+<vertex x="0.3302" y="-7.0612"/>
+<vertex x="0.3302" y="-7.0358" curve="180"/>
+<vertex x="-0.4318" y="-7.0358"/>
+<vertex x="-0.6858" y="-7.1484"/>
+<vertex x="-0.6858" y="-7.0358" curve="-180"/>
+<vertex x="0.5842" y="-7.0358"/>
+<vertex x="0.5842" y="-8.1788"/>
+</polygon>
+<polygon width="0.0508" layer="94" spacing="0.2">
+<vertex x="7.5438" y="-8.2804"/>
+<vertex x="7.5438" y="-7.2898"/>
+<vertex x="6.8834" y="-7.5692" curve="139.86006"/>
+<vertex x="6.9088" y="-8.0772" curve="57.033981"/>
+<vertex x="7.2898" y="-8.001"/>
+<vertex x="7.366" y="-8.2296" curve="-33.513779"/>
+<vertex x="6.8834" y="-8.2804" curve="-145.822924"/>
+<vertex x="6.7818" y="-7.366"/>
+<vertex x="7.5438" y="-7.0358"/>
+<vertex x="7.5438" y="-7.0104" curve="180"/>
+<vertex x="6.7818" y="-7.0104"/>
+<vertex x="6.5278" y="-7.123"/>
+<vertex x="6.5278" y="-7.0104" curve="-180"/>
+<vertex x="7.7978" y="-7.0104"/>
+<vertex x="7.7978" y="-8.1534"/>
+</polygon>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="4N*?M" prefix="OK">
@@ -2751,52 +3060,28 @@ Source: http://www.fairchildsemi.com/ds/4N/4N35-M.pdf</description>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="OC_FARNELL" value="" constant="no"/>
-<attribute name="OC_NEWARK" value="" constant="no"/>
+<attribute name="LCSC_PART" value=""/>
 </technology>
 <technology name="25">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="4N25-M" constant="no"/>
-<attribute name="OC_FARNELL" value="1021349" constant="no"/>
-<attribute name="OC_NEWARK" value="98K9084" constant="no"/>
+<attribute name="LCSC_PART" value=""/>
 </technology>
 <technology name="26">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="4N26-M" constant="no"/>
-<attribute name="OC_FARNELL" value="1021350" constant="no"/>
-<attribute name="OC_NEWARK" value="98K9089" constant="no"/>
+<attribute name="LCSC_PART" value=""/>
 </technology>
 <technology name="27">
-<attribute name="MF" value="FAIRCHILD SEMICONDUCTOR" constant="no"/>
-<attribute name="MPN" value="4N27M" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="72K9939" constant="no"/>
+<attribute name="LCSC_PART" value=""/>
 </technology>
 <technology name="28">
-<attribute name="MF" value="FAIRCHILD SEMICONDUCTOR" constant="no"/>
-<attribute name="MPN" value="4N28-M" constant="no"/>
-<attribute name="OC_FARNELL" value="1504445" constant="no"/>
-<attribute name="OC_NEWARK" value="05C3313" constant="no"/>
+<attribute name="LCSC_PART" value=""/>
 </technology>
 <technology name="35">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="4N35-M" constant="no"/>
-<attribute name="OC_FARNELL" value="1021351" constant="no"/>
-<attribute name="OC_NEWARK" value="98K9114" constant="no"/>
+<attribute name="LCSC_PART" value=""/>
 </technology>
 <technology name="36">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="4N36-M" constant="no"/>
-<attribute name="OC_FARNELL" value="1021352" constant="no"/>
-<attribute name="OC_NEWARK" value="98K9120" constant="no"/>
+<attribute name="LCSC_PART" value=""/>
 </technology>
 <technology name="37">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="4N37-M" constant="no"/>
-<attribute name="OC_FARNELL" value="1021353" constant="no"/>
-<attribute name="OC_NEWARK" value="98K9125" constant="no"/>
+<attribute name="LCSC_PART" value=""/>
 </technology>
 </technologies>
 </device>
@@ -2809,14 +3094,30 @@ Source: http://www.fairchildsemi.com/ds/4N/4N35-M.pdf</description>
 <connect gate="G$1" pin="EMI" pad="4"/>
 </connects>
 <technologies>
-<technology name=""/>
-<technology name="25"/>
-<technology name="26"/>
-<technology name="27"/>
-<technology name="28"/>
-<technology name="35"/>
-<technology name="36"/>
-<technology name="37"/>
+<technology name="">
+<attribute name="LCSC_PART" value=""/>
+</technology>
+<technology name="25">
+<attribute name="LCSC_PART" value="C258246"/>
+</technology>
+<technology name="26">
+<attribute name="LCSC_PART" value=""/>
+</technology>
+<technology name="27">
+<attribute name="LCSC_PART" value=""/>
+</technology>
+<technology name="28">
+<attribute name="LCSC_PART" value=""/>
+</technology>
+<technology name="35">
+<attribute name="LCSC_PART" value=""/>
+</technology>
+<technology name="36">
+<attribute name="LCSC_PART" value=""/>
+</technology>
+<technology name="37">
+<attribute name="LCSC_PART" value=""/>
+</technology>
 </technologies>
 </device>
 <device name="T" package="DIL6-04">
@@ -2829,52 +3130,28 @@ Source: http://www.fairchildsemi.com/ds/4N/4N35-M.pdf</description>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="OC_FARNELL" value="" constant="no"/>
-<attribute name="OC_NEWARK" value="" constant="no"/>
+<attribute name="LCSC_PART" value=""/>
 </technology>
 <technology name="25">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="unknown" constant="no"/>
+<attribute name="LCSC_PART" value=""/>
 </technology>
 <technology name="26">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="unknown" constant="no"/>
+<attribute name="LCSC_PART" value=""/>
 </technology>
 <technology name="27">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="unknown" constant="no"/>
+<attribute name="LCSC_PART" value=""/>
 </technology>
 <technology name="28">
-<attribute name="MF" value="FAIRCHILD SEMICONDUCTOR" constant="no"/>
-<attribute name="MPN" value="4N28TM" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="08H0848" constant="no"/>
+<attribute name="LCSC_PART" value=""/>
 </technology>
 <technology name="35">
-<attribute name="MF" value="FAIRCHILD SEMICONDUCTOR" constant="no"/>
-<attribute name="MPN" value="4N35T-M" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="91B5684" constant="no"/>
+<attribute name="LCSC_PART" value=""/>
 </technology>
 <technology name="36">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="unknown" constant="no"/>
+<attribute name="LCSC_PART" value=""/>
 </technology>
 <technology name="37">
-<attribute name="MF" value="FAIRCHILD SEMICONDUCTOR" constant="no"/>
-<attribute name="MPN" value="4N37TV-M" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="05C3389" constant="no"/>
+<attribute name="LCSC_PART" value=""/>
 </technology>
 </technologies>
 </device>
@@ -2892,7 +3169,9 @@ Source: http://www.fairchildsemi.com/ds/4N/4N35-M.pdf</description>
 <connect gate="-2" pin="1" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="LCSC_PART" value="C480514"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -2928,13 +3207,27 @@ DIN A4, landscape with location and doc. field</description>
 <connect gate="G$1" pin="E" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
-<technology name="A"/>
-<technology name="ALT1"/>
-<technology name="B"/>
-<technology name="BLT1"/>
-<technology name="C"/>
-<technology name="CLT1"/>
+<technology name="">
+<attribute name="LCSC_PART" value="C130417"/>
+</technology>
+<technology name="A">
+<attribute name="LCSC_PART" value=""/>
+</technology>
+<technology name="ALT1">
+<attribute name="LCSC_PART" value=""/>
+</technology>
+<technology name="B">
+<attribute name="LCSC_PART" value=""/>
+</technology>
+<technology name="BLT1">
+<attribute name="LCSC_PART" value=""/>
+</technology>
+<technology name="C">
+<attribute name="LCSC_PART" value=""/>
+</technology>
+<technology name="CLT1">
+<attribute name="LCSC_PART" value=""/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -2952,12 +3245,24 @@ DIN A4, landscape with location and doc. field</description>
 <connect gate="G$1" pin="E" pad="E"/>
 </connects>
 <technologies>
-<technology name=""/>
-<technology name="A"/>
-<technology name="ALT1"/>
-<technology name="B"/>
-<technology name="BALT1"/>
-<technology name="C"/>
+<technology name="">
+<attribute name="LCSC_PART" value="C426782"/>
+</technology>
+<technology name="A">
+<attribute name="LCSC_PART" value=""/>
+</technology>
+<technology name="ALT1">
+<attribute name="LCSC_PART" value=""/>
+</technology>
+<technology name="B">
+<attribute name="LCSC_PART" value=""/>
+</technology>
+<technology name="BALT1">
+<attribute name="LCSC_PART" value=""/>
+</technology>
+<technology name="C">
+<attribute name="LCSC_PART" value=""/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -3963,6 +4268,29 @@ SMCJxx(C)A Voltage Suppressor - SMC Package (DO-214AB)
 <connect gate="G$2" pin="1" pad="A"/>
 <connect gate="G$2" pin="2" pad="C"/>
 </connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="OSHW-LOGO">
+<description>&lt;b&gt;Open Source Hardware Logo&lt;/b&gt; This logo indicates the piece of hardware it is found on incorporates a OSHW license and/or adheres to the definition of open source hardware found here: http://freedomdefined.org/OSHW</description>
+<gates>
+<gate name="G$1" symbol="OSHW-LOGO" x="-5.08" y="-5.08"/>
+</gates>
+<devices>
+<device name="S" package="OSHW-LOGO-S">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="M" package="OSHW-LOGO-M">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="L" package="OSHW-LOGO-L">
 <technologies>
 <technology name=""/>
 </technologies>
