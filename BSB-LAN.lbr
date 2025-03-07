@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.25" unitdist="mm" unit="mm" style="lines" multiple="2" display="yes" altdistance="0.05" altunitdist="mm" altunit="mm"/>
+<grid distance="0.5" unitdist="mm" unit="mm" style="dots" multiple="2" display="yes" altdistance="0.05" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -3138,13 +3138,12 @@ Source: www.pulseeng.com .. PulseJack-J402.pdf</description>
 <wire x1="0.3" y1="-15.5" x2="0.3" y2="-2.3" width="0.2032" layer="21"/>
 <wire x1="14.25" y1="-3.4" x2="14.25" y2="-15.5" width="0.2032" layer="21"/>
 <wire x1="2.6" y1="-0.2" x2="1.8" y2="-0.2" width="0.2032" layer="21"/>
-<wire x1="3.3" y1="0.5" x2="14.3" y2="0.5" width="0.2032" layer="51"/>
+<wire x1="3.3" y1="0.8" x2="14.3" y2="0.8" width="0.2032" layer="51"/>
 <wire x1="4.3" y1="-1.9" x2="12.7" y2="-1.9" width="0.2032" layer="21"/>
 <wire x1="0.3" y1="-15.5" x2="5.5" y2="-15.5" width="0.2032" layer="21"/>
 <wire x1="9.95" y1="-15.5" x2="7.6" y2="-15.5" width="0.2032" layer="21"/>
 <wire x1="14.25" y1="-15.5" x2="13.3" y2="-15.5" width="0.2032" layer="21"/>
-<wire x1="14.3" y1="2.1" x2="3.3" y2="2.1" width="0.2032" layer="51"/>
-<wire x1="0" y1="20.7" x2="-11" y2="20.7" width="0.2032" layer="51"/>
+<wire x1="14.3" y1="1.85" x2="3.3" y2="1.85" width="0.2032" layer="51"/>
 <wire x1="2.6" y1="-0.2" x2="3.3" y2="-0.9" width="0.2032" layer="21" curve="-98.797411"/>
 <wire x1="3.3" y1="-0.9" x2="4.3" y2="-1.9" width="0.2032" layer="21" curve="87.205638"/>
 <smd name="S3" x="6.55" y="-15.1" dx="1.3" dy="1.4" layer="1"/>
@@ -3162,10 +3161,12 @@ Source: www.pulseeng.com .. PulseJack-J402.pdf</description>
 <text x="7" y="-17" size="0.8" layer="25" font="vector" ratio="15" align="center">&gt;Name</text>
 <text x="7" y="-10" size="0.8" layer="27" font="vector" ratio="15" align="center">&gt;Value</text>
 <smd name="9" x="10.86" y="-15.375" dx="1" dy="0.85" layer="1"/>
-<wire x1="-0.3" y1="2" x2="-0.3" y2="-16.1" width="0.1" layer="39"/>
+<wire x1="-0.3" y1="1" x2="-0.3" y2="-16.1" width="0.1" layer="39"/>
 <wire x1="-0.3" y1="-16.1" x2="14.85" y2="-16.1" width="0.1" layer="39"/>
-<wire x1="14.85" y1="-16.1" x2="14.85" y2="2" width="0.1" layer="39"/>
-<wire x1="14.85" y1="2" x2="-0.3" y2="2" width="0.1" layer="39"/>
+<wire x1="14.85" y1="-16.1" x2="14.85" y2="1" width="0.1" layer="39"/>
+<wire x1="14.85" y1="1" x2="-0.3" y2="1" width="0.1" layer="39"/>
+<wire x1="14.3" y1="5.5" x2="3.3" y2="5.5" width="0.2032" layer="51"/>
+<rectangle x1="2.85" y1="0" x2="14.85" y2="15" layer="39"/>
 </package>
 <package name="DBV0005A-SOT23">
 <description>&lt;b&gt;Small Outline Transistor&lt;/b&gt; DBV (R-PDSO-G5)&lt;p&gt;
@@ -9542,6 +9543,7 @@ Push-push type uSD socket with card detect switch.</description>
 <technologies>
 <technology name="">
 <attribute name="LCSC_PART" value="C381079"/>
+<attribute name="VALUE" value="XKTF-001A"/>
 </technology>
 </technologies>
 </device>
