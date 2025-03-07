@@ -1131,10 +1131,10 @@ Source: http://www.fairchildsemi.com/pf/4N/4N35-M.html</description>
 <wire x1="4.36" y1="-3.18" x2="-4.385" y2="-3.18" width="0.1524" layer="21"/>
 <wire x1="-4.385" y1="-3.18" x2="-4.385" y2="3.18" width="0.1524" layer="21"/>
 <wire x1="4.36" y1="-2.664" x2="-4.285" y2="-2.664" width="0.1524" layer="21"/>
-<wire x1="-4.8" y1="5.8" x2="4.8" y2="5.8" width="0.2" layer="39"/>
-<wire x1="4.8" y1="5.8" x2="4.8" y2="-5.8" width="0.2" layer="39"/>
-<wire x1="4.8" y1="-5.8" x2="-4.8" y2="-5.8" width="0.2" layer="39"/>
-<wire x1="-4.8" y1="-5.8" x2="-4.8" y2="5.8" width="0.2" layer="39"/>
+<wire x1="-4.7" y1="5.8" x2="4.6" y2="5.8" width="0.2" layer="39"/>
+<wire x1="4.6" y1="5.8" x2="4.6" y2="-5.8" width="0.2" layer="39"/>
+<wire x1="4.6" y1="-5.8" x2="-4.7" y2="-5.8" width="0.2" layer="39"/>
+<wire x1="-4.7" y1="-5.8" x2="-4.7" y2="5.8" width="0.2" layer="39"/>
 <rectangle x1="-3.145" y1="-4.95" x2="-1.92" y2="-3.2" layer="51"/>
 <rectangle x1="-0.605" y1="-4.95" x2="0.62" y2="-3.2" layer="51"/>
 <rectangle x1="1.935" y1="-4.95" x2="3.16" y2="-3.2" layer="51"/>
@@ -6254,6 +6254,10 @@ MSOP&lt;br&gt;</description>
 <circle x="81.55" y="29.2" radius="1.8" width="0.05" layer="48"/>
 <circle x="18.25" y="27" radius="3" width="0.1" layer="40"/>
 <circle x="68.25" y="6" radius="3" width="0.1" layer="40"/>
+<wire x1="1.25" y1="0.75" x2="85.25" y2="0.75" width="0.15" layer="40"/>
+<wire x1="85.25" y1="0.75" x2="85.25" y2="32.25" width="0.15" layer="40"/>
+<wire x1="85.25" y1="32.25" x2="1.25" y2="32.25" width="0.15" layer="40"/>
+<wire x1="1.25" y1="32.25" x2="1.25" y2="0.75" width="0.15" layer="40"/>
 </package>
 </packages>
 <symbols>
