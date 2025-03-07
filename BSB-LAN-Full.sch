@@ -483,10 +483,10 @@ Source: http://www.fairchildsemi.com/pf/4N/4N35-M.html</description>
 <wire x1="4.36" y1="-3.18" x2="-4.385" y2="-3.18" width="0.1524" layer="21"/>
 <wire x1="-4.385" y1="-3.18" x2="-4.385" y2="3.18" width="0.1524" layer="21"/>
 <wire x1="4.36" y1="-2.664" x2="-4.285" y2="-2.664" width="0.1524" layer="21"/>
-<wire x1="-4.8" y1="5.8" x2="4.8" y2="5.8" width="0.2" layer="39"/>
-<wire x1="4.8" y1="5.8" x2="4.8" y2="-5.8" width="0.2" layer="39"/>
-<wire x1="4.8" y1="-5.8" x2="-4.8" y2="-5.8" width="0.2" layer="39"/>
-<wire x1="-4.8" y1="-5.8" x2="-4.8" y2="5.8" width="0.2" layer="39"/>
+<wire x1="-4.7" y1="5.8" x2="4.6" y2="5.8" width="0.2" layer="39"/>
+<wire x1="4.6" y1="5.8" x2="4.6" y2="-5.8" width="0.2" layer="39"/>
+<wire x1="4.6" y1="-5.8" x2="-4.7" y2="-5.8" width="0.2" layer="39"/>
+<wire x1="-4.7" y1="-5.8" x2="-4.7" y2="5.8" width="0.2" layer="39"/>
 <rectangle x1="-3.145" y1="-4.95" x2="-1.92" y2="-3.2" layer="51"/>
 <rectangle x1="-0.605" y1="-4.95" x2="0.62" y2="-3.2" layer="51"/>
 <rectangle x1="1.935" y1="-4.95" x2="3.16" y2="-3.2" layer="51"/>
@@ -4328,6 +4328,10 @@ MSOP&lt;br&gt;</description>
 <circle x="81.55" y="29.2" radius="1.8" width="0.05" layer="48"/>
 <circle x="18.25" y="27" radius="3" width="0.1" layer="40"/>
 <circle x="68.25" y="6" radius="3" width="0.1" layer="40"/>
+<wire x1="1.25" y1="0.75" x2="85.25" y2="0.75" width="0.15" layer="40"/>
+<wire x1="85.25" y1="0.75" x2="85.25" y2="32.25" width="0.15" layer="40"/>
+<wire x1="85.25" y1="32.25" x2="1.25" y2="32.25" width="0.15" layer="40"/>
+<wire x1="1.25" y1="32.25" x2="1.25" y2="0.75" width="0.15" layer="40"/>
 </package>
 </packages>
 <symbols>
@@ -7583,7 +7587,7 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <part name="D3" library="BSB-LAN" deviceset="TVS-BIDIR" device="SMB" value="24V">
 <attribute name="LCSC_PART" value="C83268"/>
 </part>
-<part name="R8" library="BSB-LAN" deviceset="R-EU_" device="R0603" value="10R">
+<part name="R10" library="BSB-LAN" deviceset="R-EU_" device="R0603" value="10R">
 <attribute name="LCSC_PART" value=""/>
 </part>
 <part name="R9" library="BSB-LAN" deviceset="R-EU_" device="R0603" value="10R">
@@ -7607,21 +7611,21 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <part name="RN2" library="BSB-LAN" deviceset="R-NET-04" device="-R1206" value="2.2k"/>
 <part name="R13" library="BSB-LAN" deviceset="R-EU_" device="R0402" value="10k"/>
 <part name="R14" library="BSB-LAN" deviceset="R-EU_" device="R0402" value="10k"/>
-<part name="R15" library="BSB-LAN" deviceset="R-EU_" device="R0402" value="10k"/>
+<part name="R11" library="BSB-LAN" deviceset="R-EU_" device="R0402" value="10k"/>
 <part name="C4" library="BSB-LAN" deviceset="C-EU" device="C0603" value="22uF"/>
 <part name="C5" library="BSB-LAN" deviceset="C-EU" device="C0603" value="22uF"/>
 <part name="C6" library="BSB-LAN" deviceset="C-EU" device="C0603" value="22uF"/>
 <part name="R12" library="BSB-LAN" deviceset="R-EU_" device="R0402" value="1k"/>
-<part name="C7" library="BSB-LAN" deviceset="C-EU" device="C0402" value="0.1uF"/>
+<part name="C10" library="BSB-LAN" deviceset="C-EU" device="C0402" value="0.1uF"/>
 <part name="C8" library="BSB-LAN" deviceset="C-EU" device="C0402" value="0.1uF"/>
 <part name="C9" library="BSB-LAN" deviceset="C-EU" device="C0402" value="0.1uF"/>
-<part name="C10" library="BSB-LAN" deviceset="C-EU" device="C0603" value="2.2uF"/>
+<part name="C7" library="BSB-LAN" deviceset="C-EU" device="C0603" value="2.2uF"/>
 <part name="C11" library="BSB-LAN" deviceset="C-EU" device="C0402" value="0.1uF"/>
-<part name="R17" library="BSB-LAN" deviceset="R-EU_" device="R0402L" value="49.9R"/>
-<part name="R19" library="BSB-LAN" deviceset="R-EU_" device="R0402L" value="49.9R"/>
 <part name="R16" library="BSB-LAN" deviceset="R-EU_" device="R0402L" value="49.9R"/>
 <part name="R18" library="BSB-LAN" deviceset="R-EU_" device="R0402L" value="49.9R"/>
-<part name="R21" library="BSB-LAN" deviceset="R-EU_" device="R0402" value="10k"/>
+<part name="R15" library="BSB-LAN" deviceset="R-EU_" device="R0402L" value="49.9R"/>
+<part name="R17" library="BSB-LAN" deviceset="R-EU_" device="R0402L" value="49.9R"/>
+<part name="R19" library="BSB-LAN" deviceset="R-EU_" device="R0402" value="10k"/>
 <part name="R20" library="BSB-LAN" deviceset="R-EU_" device="R0402" value="12.1k 1%"/>
 <part name="C12" library="BSB-LAN" deviceset="C-EU" device="C0402" value="0.1uF"/>
 <part name="R23" library="BSB-LAN" deviceset="R-EU_" device="R0402" value="12.1k 1%"/>
@@ -7650,11 +7654,11 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <attribute name="SHEET_NAME" value="ESP32 Module"/>
 </part>
 <part name="IC4" library="BSB-LAN" deviceset="SY8089*?C" device="AA" technology="A"/>
-<part name="IC5" library="BSB-LAN" deviceset="ESP32-WROOM" device="-32E"/>
+<part name="ESP1" library="BSB-LAN" deviceset="ESP32-WROOM" device="-32E"/>
 <part name="USD" library="BSB-LAN" deviceset="MICROSD" device="" value="XKTF-001A"/>
 <part name="C1" library="BSB-LAN" deviceset="C-EU" device="C0603" value="2.2uF"/>
 <part name="R28" library="BSB-LAN" deviceset="R-EU_" device="R0402" value="10k"/>
-<part name="R11" library="BSB-LAN" deviceset="R-EU_" device="R0402" value="4.7k">
+<part name="R8" library="BSB-LAN" deviceset="R-EU_" device="R0402" value="4.7k">
 <attribute name="LCSC_PART" value=""/>
 </part>
 <part name="L2" library="BSB-LAN" deviceset="L-US" device="L0805" value="FB 600R"/>
@@ -7667,7 +7671,7 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <part name="R34" library="BSB-LAN" deviceset="R-EU_" device="R0402" value="10k"/>
 <part name="R35" library="BSB-LAN" deviceset="R-EU_" device="R0402" value="220R"/>
 <part name="C17" library="BSB-LAN" deviceset="C-EU" device="C0402" value="0.1uF"/>
-<part name="R10" library="BSB-LAN" deviceset="R-EU_" device="R1206" value="0.03R 1%">
+<part name="R21" library="BSB-LAN" deviceset="R-EU_" device="R1206" value="0.03R 1%">
 <attribute name="LCSC_PART" value=""/>
 </part>
 <part name="C18" library="BSB-LAN" deviceset="CPOL-EU" device="SMCD" value="470uF 10V"/>
@@ -7735,7 +7739,7 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 </plain>
 <instances>
 <instance part="FRAME4" gate="G$1" x="0" y="0"/>
-<instance part="IC5" gate="G$1" x="60.96" y="121.92"/>
+<instance part="ESP1" gate="G$1" x="60.96" y="121.92"/>
 <instance part="USD" gate="G$1" x="233.68" y="124.46"/>
 <instance part="UEXT" gate="G$1" x="55.88" y="17.78" rot="R180"/>
 <instance part="C1" gate="G$1" x="35.56" y="142.24" rot="MR0"/>
@@ -7782,12 +7786,12 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <segment>
 <wire x1="45.72" y1="134.62" x2="38.1" y2="134.62" width="0.1524" layer="91"/>
 <label x="27.94" y="134.62" size="1.4224" layer="95" font="vector" ratio="10" rot="R180" xref="yes"/>
-<pinref part="IC5" gate="G$1" pin="EP"/>
+<pinref part="ESP1" gate="G$1" pin="EP"/>
 <pinref part="C1" gate="G$1" pin="2"/>
 <wire x1="38.1" y1="134.62" x2="35.56" y2="134.62" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="134.62" x2="27.94" y2="134.62" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="137.16" x2="35.56" y2="134.62" width="0.1524" layer="91"/>
-<pinref part="IC5" gate="G$1" pin="GND"/>
+<pinref part="ESP1" gate="G$1" pin="GND"/>
 <wire x1="45.72" y1="137.16" x2="38.1" y2="137.16" width="0.1524" layer="91"/>
 <wire x1="38.1" y1="137.16" x2="38.1" y2="134.62" width="0.1524" layer="91"/>
 <junction x="38.1" y="134.62"/>
@@ -7861,49 +7865,49 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <segment>
 <wire x1="76.2" y1="121.92" x2="83.82" y2="121.92" width="0.1524" layer="91"/>
 <label x="83.82" y="121.92" size="1.4224" layer="95" font="vector" ratio="10" xref="yes"/>
-<pinref part="IC5" gate="G$1" pin="GPIO19"/>
+<pinref part="ESP1" gate="G$1" pin="GPIO19"/>
 </segment>
 </net>
 <net name="EMAC-TXD1" class="4">
 <segment>
 <wire x1="76.2" y1="114.3" x2="83.82" y2="114.3" width="0.1524" layer="91"/>
 <label x="83.82" y="114.3" size="1.4224" layer="95" font="vector" ratio="10" xref="yes"/>
-<pinref part="IC5" gate="G$1" pin="GPIO22"/>
+<pinref part="ESP1" gate="G$1" pin="GPIO22"/>
 </segment>
 </net>
 <net name="EMAC-TXEN" class="4">
 <segment>
 <wire x1="76.2" y1="116.84" x2="83.82" y2="116.84" width="0.1524" layer="91"/>
 <label x="83.82" y="116.84" size="1.4224" layer="95" font="vector" ratio="10" xref="yes"/>
-<pinref part="IC5" gate="G$1" pin="GPIO21"/>
+<pinref part="ESP1" gate="G$1" pin="GPIO21"/>
 </segment>
 </net>
 <net name="EMAC-RXD0" class="4">
 <segment>
 <wire x1="76.2" y1="106.68" x2="83.82" y2="106.68" width="0.1524" layer="91"/>
 <label x="83.82" y="106.68" size="1.4224" layer="95" font="vector" ratio="10" xref="yes"/>
-<pinref part="IC5" gate="G$1" pin="GPIO25"/>
+<pinref part="ESP1" gate="G$1" pin="GPIO25"/>
 </segment>
 </net>
 <net name="EMAC-RXD1" class="4">
 <segment>
 <wire x1="76.2" y1="104.14" x2="83.82" y2="104.14" width="0.1524" layer="91"/>
 <label x="83.82" y="104.14" size="1.4224" layer="95" font="vector" ratio="10" xref="yes"/>
-<pinref part="IC5" gate="G$1" pin="GPIO26"/>
+<pinref part="ESP1" gate="G$1" pin="GPIO26"/>
 </segment>
 </net>
 <net name="EMAC-MDIO" class="4">
 <segment>
 <wire x1="76.2" y1="124.46" x2="83.82" y2="124.46" width="0.1524" layer="91"/>
 <label x="83.82" y="124.46" size="1.4224" layer="95" font="vector" ratio="10" xref="yes"/>
-<pinref part="IC5" gate="G$1" pin="GPIO18"/>
+<pinref part="ESP1" gate="G$1" pin="GPIO18"/>
 </segment>
 </net>
 <net name="EMAC-MDC" class="4">
 <segment>
 <wire x1="76.2" y1="111.76" x2="83.82" y2="111.76" width="0.1524" layer="91"/>
 <label x="83.82" y="111.76" size="1.4224" layer="95" font="vector" ratio="10" xref="yes"/>
-<pinref part="IC5" gate="G$1" pin="GPIO23"/>
+<pinref part="ESP1" gate="G$1" pin="GPIO23"/>
 </segment>
 </net>
 <net name="+3.3V" class="4">
@@ -7913,7 +7917,7 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <wire x1="35.56" y1="162.56" x2="43.18" y2="162.56" width="0.1524" layer="91"/>
 <wire x1="43.18" y1="162.56" x2="43.18" y2="157.48" width="0.1524" layer="91"/>
 <wire x1="43.18" y1="157.48" x2="45.72" y2="157.48" width="0.1524" layer="91"/>
-<pinref part="IC5" gate="G$1" pin="3.3V"/>
+<pinref part="ESP1" gate="G$1" pin="3.3V"/>
 <pinref part="R28" gate="G$1" pin="2"/>
 <wire x1="35.56" y1="162.56" x2="35.56" y2="160.02" width="0.1524" layer="91"/>
 <junction x="35.56" y="162.56"/>
@@ -7980,35 +7984,35 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <segment>
 <wire x1="76.2" y1="139.7" x2="83.82" y2="139.7" width="0.1524" layer="91"/>
 <label x="83.82" y="139.7" size="1.4224" layer="95" font="vector" ratio="10" xref="yes"/>
-<pinref part="IC5" gate="G$1" pin="GPIO12"/>
+<pinref part="ESP1" gate="G$1" pin="GPIO12"/>
 </segment>
 </net>
 <net name="EMAC-CLKOUT" class="4">
 <segment>
 <wire x1="76.2" y1="127" x2="83.82" y2="127" width="0.1524" layer="91"/>
 <label x="83.82" y="127" size="1.4224" layer="95" font="vector" ratio="10" xref="yes"/>
-<pinref part="IC5" gate="G$1" pin="GPIO17"/>
+<pinref part="ESP1" gate="G$1" pin="GPIO17"/>
 </segment>
 </net>
 <net name="EMAC-RX-CRSDV" class="4">
 <segment>
 <wire x1="76.2" y1="101.6" x2="83.82" y2="101.6" width="0.1524" layer="91"/>
 <label x="83.82" y="101.6" size="1.4224" layer="95" font="vector" ratio="10" xref="yes"/>
-<pinref part="IC5" gate="G$1" pin="GPIO27"/>
+<pinref part="ESP1" gate="G$1" pin="GPIO27"/>
 </segment>
 </net>
 <net name="BSB-TXD" class="4">
 <segment>
 <label x="83.82" y="147.32" size="1.4224" layer="95" font="vector" ratio="10" xref="yes"/>
 <wire x1="76.2" y1="147.32" x2="83.82" y2="147.32" width="0.1524" layer="91"/>
-<pinref part="IC5" gate="G$1" pin="GPIO4"/>
+<pinref part="ESP1" gate="G$1" pin="GPIO4"/>
 </segment>
 </net>
 <net name="BSB-RXD" class="4">
 <segment>
 <wire x1="76.2" y1="83.82" x2="83.82" y2="83.82" width="0.1524" layer="91"/>
 <label x="83.82" y="83.82" size="1.4224" layer="95" font="vector" ratio="10" xref="yes"/>
-<pinref part="IC5" gate="G$1" pin="SENSOR_VP"/>
+<pinref part="ESP1" gate="G$1" pin="SENSOR_VP"/>
 </segment>
 </net>
 <net name="ESP-SCL" class="4">
@@ -8020,7 +8024,7 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <segment>
 <wire x1="76.2" y1="129.54" x2="83.82" y2="129.54" width="0.1524" layer="91"/>
 <label x="83.82" y="129.54" size="1.4224" layer="95" font="vector" ratio="10" rot="MR180" xref="yes"/>
-<pinref part="IC5" gate="G$1" pin="GPIO16"/>
+<pinref part="ESP1" gate="G$1" pin="GPIO16"/>
 </segment>
 </net>
 <net name="ESP-SDA" class="4">
@@ -8032,7 +8036,7 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <segment>
 <wire x1="76.2" y1="137.16" x2="83.82" y2="137.16" width="0.1524" layer="91"/>
 <label x="83.82" y="137.16" size="1.4224" layer="95" font="vector" ratio="10" rot="MR180" xref="yes"/>
-<pinref part="IC5" gate="G$1" pin="GPIO13"/>
+<pinref part="ESP1" gate="G$1" pin="GPIO13"/>
 </segment>
 </net>
 <net name="ESP-SD-DATA" class="4">
@@ -8044,7 +8048,7 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <segment>
 <wire x1="76.2" y1="152.4" x2="83.82" y2="152.4" width="0.1524" layer="91"/>
 <label x="83.82" y="152.4" size="1.4224" layer="95" font="vector" ratio="10" rot="MR180" xref="yes"/>
-<pinref part="IC5" gate="G$1" pin="GPIO2"/>
+<pinref part="ESP1" gate="G$1" pin="GPIO2"/>
 </segment>
 <segment>
 <pinref part="RN3" gate="G$1" pin="4"/>
@@ -8065,7 +8069,7 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <segment>
 <wire x1="76.2" y1="134.62" x2="83.82" y2="134.62" width="0.1524" layer="91"/>
 <label x="83.82" y="134.62" size="1.4224" layer="95" font="vector" ratio="10" rot="MR180" xref="yes"/>
-<pinref part="IC5" gate="G$1" pin="GPIO14"/>
+<pinref part="ESP1" gate="G$1" pin="GPIO14"/>
 </segment>
 <segment>
 <pinref part="R33" gate="G$1" pin="1"/>
@@ -8082,12 +8086,12 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <segment>
 <wire x1="76.2" y1="144.78" x2="83.82" y2="144.78" width="0.1524" layer="91"/>
 <label x="83.82" y="144.78" size="1.4224" layer="95" font="vector" ratio="10" rot="MR180" xref="yes"/>
-<pinref part="IC5" gate="G$1" pin="GPIO5"/>
+<pinref part="ESP1" gate="G$1" pin="GPIO5"/>
 </segment>
 </net>
 <net name="ESP-EN" class="4">
 <segment>
-<pinref part="IC5" gate="G$1" pin="EN"/>
+<pinref part="ESP1" gate="G$1" pin="EN"/>
 <pinref part="C1" gate="G$1" pin="1"/>
 <wire x1="45.72" y1="147.32" x2="35.56" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="147.32" x2="35.56" y2="144.78" width="0.1524" layer="91"/>
@@ -8148,7 +8152,7 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <segment>
 <wire x1="76.2" y1="132.08" x2="83.82" y2="132.08" width="0.1524" layer="91"/>
 <label x="83.82" y="132.08" size="1.4224" layer="95" font="vector" ratio="10" rot="MR180" xref="yes"/>
-<pinref part="IC5" gate="G$1" pin="GPIO15"/>
+<pinref part="ESP1" gate="G$1" pin="GPIO15"/>
 </segment>
 <segment>
 <pinref part="USD" gate="G$1" pin="CMD"/>
@@ -8206,7 +8210,7 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <segment>
 <label x="83.82" y="91.44" size="1.4224" layer="95" font="vector" ratio="10" xref="yes"/>
 <wire x1="76.2" y1="91.44" x2="83.82" y2="91.44" width="0.1524" layer="91"/>
-<pinref part="IC5" gate="G$1" pin="GPIO34"/>
+<pinref part="ESP1" gate="G$1" pin="GPIO34"/>
 </segment>
 </net>
 <net name="ESP-BUTTON-R" class="4">
@@ -8234,7 +8238,7 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <segment>
 <wire x1="76.2" y1="81.28" x2="83.82" y2="81.28" width="0.1524" layer="91"/>
 <label x="83.82" y="81.28" size="1.4224" layer="95" font="vector" ratio="10" xref="yes"/>
-<pinref part="IC5" gate="G$1" pin="SENSOR_VN"/>
+<pinref part="ESP1" gate="G$1" pin="SENSOR_VN"/>
 </segment>
 </net>
 <net name="+5.0V" class="4">
@@ -8267,14 +8271,14 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <wire x1="116.84" y1="50.8" x2="116.84" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="IC5" gate="G$1" pin="GPIO0"/>
+<pinref part="ESP1" gate="G$1" pin="GPIO0"/>
 <wire x1="76.2" y1="157.48" x2="83.82" y2="157.48" width="0.1524" layer="91"/>
 <label x="83.82" y="157.48" size="1.4224" layer="95" font="vector" ratio="10" xref="yes"/>
 </segment>
 </net>
 <net name="ESP-TXD" class="4">
 <segment>
-<pinref part="IC5" gate="G$1" pin="U0TXD"/>
+<pinref part="ESP1" gate="G$1" pin="U0TXD"/>
 <wire x1="76.2" y1="154.94" x2="83.82" y2="154.94" width="0.1524" layer="91"/>
 <label x="83.82" y="154.94" size="1.4224" layer="95" font="vector" ratio="10" xref="yes"/>
 </segment>
@@ -8286,7 +8290,7 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 </net>
 <net name="ESP-RXD" class="4">
 <segment>
-<pinref part="IC5" gate="G$1" pin="U0RXD"/>
+<pinref part="ESP1" gate="G$1" pin="U0RXD"/>
 <wire x1="76.2" y1="149.86" x2="83.82" y2="149.86" width="0.1524" layer="91"/>
 <label x="83.82" y="149.86" size="1.4224" layer="95" font="vector" ratio="10" xref="yes"/>
 </segment>
@@ -8406,7 +8410,7 @@ Supply Iface</text>
 <instance part="DC1" gate="G$1" x="193.04" y="139.7"/>
 <instance part="IC4" gate="A" x="129.54" y="73.66"/>
 <instance part="C17" gate="G$1" x="91.44" y="170.18" rot="MR270"/>
-<instance part="R10" gate="G$1" x="35.56" y="160.02">
+<instance part="R21" gate="G$1" x="35.56" y="160.02">
 <attribute name="LCSC_PART" x="35.56" y="160.02" size="2.54" layer="96" font="vector" ratio="10" align="center" display="off"/>
 </instance>
 <instance part="C18" gate="G$1" x="137.16" y="147.32"/>
@@ -8459,7 +8463,7 @@ Supply Iface</text>
 <wire x1="43.18" y1="162.56" x2="43.18" y2="165.1" width="0.1524" layer="91"/>
 <wire x1="43.18" y1="165.1" x2="27.94" y2="165.1" width="0.1524" layer="91"/>
 <pinref part="IC3" gate="G$1" pin="VIN"/>
-<pinref part="R10" gate="G$1" pin="1"/>
+<pinref part="R21" gate="G$1" pin="1"/>
 <wire x1="27.94" y1="165.1" x2="22.86" y2="165.1" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="160.02" x2="27.94" y2="160.02" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="160.02" x2="27.94" y2="165.1" width="0.1524" layer="91"/>
@@ -8594,7 +8598,7 @@ Supply Iface</text>
 <net name="POE-DC-ILIM" class="2">
 <segment>
 <pinref part="IC3" gate="G$1" pin="ILIM"/>
-<pinref part="R10" gate="G$1" pin="2"/>
+<pinref part="R21" gate="G$1" pin="2"/>
 <wire x1="40.64" y1="160.02" x2="45.72" y2="160.02" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -8820,21 +8824,21 @@ Supply Iface</text>
 <instance part="RN2" gate="G$1" x="208.28" y="152.4" rot="R90"/>
 <instance part="R13" gate="G$1" x="35.56" y="152.4" rot="R90"/>
 <instance part="R14" gate="G$1" x="30.48" y="121.92" rot="MR180"/>
-<instance part="R15" gate="G$1" x="38.1" y="114.3" rot="MR270"/>
+<instance part="R11" gate="G$1" x="38.1" y="114.3" rot="MR270"/>
 <instance part="C4" gate="G$1" x="27.94" y="152.4" rot="MR0"/>
 <instance part="C5" gate="G$1" x="60.96" y="147.32"/>
 <instance part="C6" gate="G$1" x="81.28" y="147.32"/>
 <instance part="R12" gate="G$1" x="48.26" y="137.16" rot="R90"/>
-<instance part="C7" gate="G$1" x="139.7" y="144.78" rot="MR0"/>
+<instance part="C10" gate="G$1" x="139.7" y="144.78" rot="MR0"/>
 <instance part="C8" gate="G$1" x="119.38" y="147.32" rot="MR0"/>
 <instance part="C9" gate="G$1" x="109.22" y="149.86" rot="MR0"/>
-<instance part="C10" gate="G$1" x="129.54" y="144.78" rot="MR0"/>
+<instance part="C7" gate="G$1" x="129.54" y="144.78" rot="MR0"/>
 <instance part="C11" gate="G$1" x="99.06" y="152.4" rot="MR0"/>
-<instance part="R17" gate="G$1" x="96.52" y="83.82" rot="R180"/>
-<instance part="R19" gate="G$1" x="111.76" y="76.2"/>
-<instance part="R16" gate="G$1" x="111.76" y="83.82" rot="R180"/>
-<instance part="R18" gate="G$1" x="96.52" y="76.2"/>
-<instance part="R21" gate="G$1" x="208.28" y="99.06" rot="MR180"/>
+<instance part="R16" gate="G$1" x="96.52" y="83.82" rot="R180"/>
+<instance part="R18" gate="G$1" x="111.76" y="76.2"/>
+<instance part="R15" gate="G$1" x="111.76" y="83.82" rot="R180"/>
+<instance part="R17" gate="G$1" x="96.52" y="76.2"/>
+<instance part="R19" gate="G$1" x="208.28" y="99.06" rot="MR180"/>
 <instance part="R20" gate="G$1" x="187.96" y="86.36" rot="MR0"/>
 <instance part="C12" gate="G$1" x="195.58" y="93.98"/>
 <instance part="R23" gate="G$1" x="175.26" y="40.64" rot="MR270"/>
@@ -8871,7 +8875,7 @@ Supply Iface</text>
 <wire x1="127" y1="93.98" x2="127" y2="101.6" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="G$1" pin="TXP"/>
 <wire x1="127" y1="101.6" x2="142.24" y2="101.6" width="0.1524" layer="91"/>
-<pinref part="R17" gate="G$1" pin="2"/>
+<pinref part="R16" gate="G$1" pin="2"/>
 <wire x1="91.44" y1="83.82" x2="88.9" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -8890,7 +8894,7 @@ Supply Iface</text>
 <wire x1="129.54" y1="88.9" x2="129.54" y2="99.06" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="G$1" pin="TXN"/>
 <wire x1="129.54" y1="99.06" x2="142.24" y2="99.06" width="0.1524" layer="91"/>
-<pinref part="R16" gate="G$1" pin="1"/>
+<pinref part="R15" gate="G$1" pin="1"/>
 <wire x1="116.84" y1="83.82" x2="119.38" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -8931,17 +8935,17 @@ Supply Iface</text>
 <wire x1="81.28" y1="68.58" x2="104.14" y2="68.58" width="0.1524" layer="91"/>
 <pinref part="POE-ETH" gate="G$1" pin="CT"/>
 <wire x1="81.28" y1="91.44" x2="93.98" y2="91.44" width="0.1524" layer="91"/>
-<pinref part="R17" gate="G$1" pin="1"/>
+<pinref part="R16" gate="G$1" pin="1"/>
 <wire x1="93.98" y1="91.44" x2="104.14" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="101.6" y1="83.82" x2="104.14" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="104.14" y1="83.82" x2="104.14" y2="91.44" width="0.1524" layer="91"/>
-<pinref part="R19" gate="G$1" pin="1"/>
+<pinref part="R18" gate="G$1" pin="1"/>
 <wire x1="104.14" y1="68.58" x2="104.14" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="104.14" y1="76.2" x2="104.14" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="106.68" y1="76.2" x2="104.14" y2="76.2" width="0.1524" layer="91"/>
-<pinref part="R18" gate="G$1" pin="2"/>
+<pinref part="R17" gate="G$1" pin="2"/>
 <wire x1="104.14" y1="76.2" x2="101.6" y2="76.2" width="0.1524" layer="91"/>
-<pinref part="R16" gate="G$1" pin="2"/>
+<pinref part="R15" gate="G$1" pin="2"/>
 <wire x1="106.68" y1="83.82" x2="104.14" y2="83.82" width="0.1524" layer="91"/>
 <junction x="104.14" y="83.82"/>
 <junction x="104.14" y="76.2"/>
@@ -8971,7 +8975,7 @@ Supply Iface</text>
 <wire x1="132.08" y1="71.12" x2="132.08" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="G$1" pin="RXP"/>
 <wire x1="132.08" y1="96.52" x2="142.24" y2="96.52" width="0.1524" layer="91"/>
-<pinref part="R19" gate="G$1" pin="2"/>
+<pinref part="R18" gate="G$1" pin="2"/>
 <wire x1="116.84" y1="76.2" x2="121.92" y2="76.2" width="0.1524" layer="91"/>
 <junction x="121.92" y="76.2"/>
 </segment>
@@ -8991,7 +8995,7 @@ Supply Iface</text>
 <wire x1="134.62" y1="66.04" x2="134.62" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="G$1" pin="RXN"/>
 <wire x1="134.62" y1="93.98" x2="142.24" y2="93.98" width="0.1524" layer="91"/>
-<pinref part="R18" gate="G$1" pin="1"/>
+<pinref part="R17" gate="G$1" pin="1"/>
 <wire x1="91.44" y1="76.2" x2="86.36" y2="76.2" width="0.1524" layer="91"/>
 <junction x="86.36" y="76.2"/>
 </segment>
@@ -9021,9 +9025,9 @@ Supply Iface</text>
 <wire x1="109.22" y1="144.78" x2="109.22" y2="137.16" width="0.1524" layer="91"/>
 <pinref part="C8" gate="G$1" pin="2"/>
 <wire x1="119.38" y1="142.24" x2="119.38" y2="137.16" width="0.1524" layer="91"/>
-<pinref part="C10" gate="G$1" pin="2"/>
-<wire x1="129.54" y1="139.7" x2="129.54" y2="137.16" width="0.1524" layer="91"/>
 <pinref part="C7" gate="G$1" pin="2"/>
+<wire x1="129.54" y1="139.7" x2="129.54" y2="137.16" width="0.1524" layer="91"/>
+<pinref part="C10" gate="G$1" pin="2"/>
 <wire x1="139.7" y1="139.7" x2="139.7" y2="137.16" width="0.1524" layer="91"/>
 <pinref part="C11" gate="G$1" pin="2"/>
 <wire x1="99.06" y1="147.32" x2="99.06" y2="137.16" width="0.1524" layer="91"/>
@@ -9041,7 +9045,7 @@ Supply Iface</text>
 <label x="63.5" y="134.62" size="1.4224" layer="95" font="vector" ratio="10" xref="yes"/>
 </segment>
 <segment>
-<pinref part="R15" gate="G$1" pin="2"/>
+<pinref part="R11" gate="G$1" pin="2"/>
 <wire x1="38.1" y1="109.22" x2="38.1" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="38.1" y1="106.68" x2="48.26" y2="106.68" width="0.1524" layer="91"/>
 <pinref part="Q3" gate="G$1" pin="E"/>
@@ -9236,7 +9240,7 @@ Supply Iface</text>
 <net name="ETH-PWR-B" class="4">
 <segment>
 <pinref part="R14" gate="G$1" pin="2"/>
-<pinref part="R15" gate="G$1" pin="1"/>
+<pinref part="R11" gate="G$1" pin="1"/>
 <wire x1="35.56" y1="121.92" x2="38.1" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="38.1" y1="121.92" x2="38.1" y2="119.38" width="0.1524" layer="91"/>
 <pinref part="Q3" gate="G$1" pin="B"/>
@@ -9290,7 +9294,7 @@ Supply Iface</text>
 <junction x="208.28" y="165.1"/>
 </segment>
 <segment>
-<pinref part="R21" gate="G$1" pin="2"/>
+<pinref part="R19" gate="G$1" pin="2"/>
 <wire x1="213.36" y1="99.06" x2="215.9" y2="99.06" width="0.1524" layer="91"/>
 <label x="215.9" y="99.06" size="1.4224" layer="95" font="vector" ratio="10" xref="yes"/>
 </segment>
@@ -9311,11 +9315,11 @@ Supply Iface</text>
 </net>
 <net name="ETH-VDDCR" class="4">
 <segment>
-<pinref part="C10" gate="G$1" pin="1"/>
+<pinref part="C7" gate="G$1" pin="1"/>
 <wire x1="129.54" y1="147.32" x2="129.54" y2="149.86" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="G$1" pin="VDDCR"/>
 <wire x1="129.54" y1="149.86" x2="139.7" y2="149.86" width="0.1524" layer="91"/>
-<pinref part="C7" gate="G$1" pin="1"/>
+<pinref part="C10" gate="G$1" pin="1"/>
 <wire x1="139.7" y1="149.86" x2="142.24" y2="149.86" width="0.1524" layer="91"/>
 <wire x1="139.7" y1="147.32" x2="139.7" y2="149.86" width="0.1524" layer="91"/>
 <junction x="139.7" y="149.86"/>
@@ -9456,7 +9460,7 @@ Supply Iface</text>
 <pinref part="C12" gate="G$1" pin="1"/>
 <wire x1="177.8" y1="99.06" x2="195.58" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="195.58" y1="99.06" x2="195.58" y2="96.52" width="0.1524" layer="91"/>
-<pinref part="R21" gate="G$1" pin="1"/>
+<pinref part="R19" gate="G$1" pin="1"/>
 <wire x1="195.58" y1="99.06" x2="203.2" y2="99.06" width="0.1524" layer="91"/>
 <junction x="195.58" y="99.06"/>
 </segment>
@@ -9595,14 +9599,14 @@ https://github.com/fredlcore/BSB-LAN</text>
 <instance part="D3" gate="G$2" x="58.42" y="106.68" rot="R90">
 <attribute name="LCSC_PART" x="58.42" y="106.68" size="1.4224" layer="96" font="vector" ratio="10" rot="R90" align="center" display="off"/>
 </instance>
-<instance part="R8" gate="G$1" x="48.26" y="116.84">
+<instance part="R10" gate="G$1" x="48.26" y="116.84">
 <attribute name="LCSC_PART" x="48.26" y="116.84" size="2.54" layer="96" font="vector" ratio="10" align="center" display="off"/>
 </instance>
 <instance part="R9" gate="G$1" x="48.26" y="99.06">
 <attribute name="LCSC_PART" x="48.26" y="99.06" size="2.54" layer="96" font="vector" ratio="10" align="center" display="off"/>
 </instance>
 <instance part="U$3" gate="G$1" x="241.3" y="35.56"/>
-<instance part="R11" gate="G$1" x="187.96" y="137.16" rot="R90">
+<instance part="R8" gate="G$1" x="187.96" y="137.16" rot="R90">
 <attribute name="LCSC_PART" x="187.96" y="137.16" size="2.54" layer="96" font="vector" ratio="10" rot="R90" align="center" display="off"/>
 </instance>
 </instances>
@@ -9624,7 +9628,7 @@ https://github.com/fredlcore/BSB-LAN</text>
 <wire x1="119.38" y1="134.62" x2="116.84" y2="134.62" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="134.62" x2="119.38" y2="142.24" width="0.1524" layer="91"/>
 <junction x="119.38" y="134.62"/>
-<pinref part="R8" gate="G$1" pin="2"/>
+<pinref part="R10" gate="G$1" pin="2"/>
 <wire x1="53.34" y1="116.84" x2="58.42" y2="116.84" width="0.1524" layer="91"/>
 <junction x="58.42" y="116.84"/>
 <pinref part="D3" gate="G$2" pin="2"/>
@@ -9695,7 +9699,7 @@ https://github.com/fredlcore/BSB-LAN</text>
 <pinref part="OK2" gate="G$1" pin="C"/>
 <wire x1="152.4" y1="129.54" x2="187.96" y2="129.54" width="0.1524" layer="91"/>
 <label x="190.5" y="129.54" size="1.4224" layer="95" font="vector" ratio="10" xref="yes"/>
-<pinref part="R11" gate="G$1" pin="1"/>
+<pinref part="R8" gate="G$1" pin="1"/>
 <wire x1="187.96" y1="129.54" x2="190.5" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="187.96" y1="132.08" x2="187.96" y2="129.54" width="0.1524" layer="91"/>
 <junction x="187.96" y="129.54"/>
@@ -9727,7 +9731,7 @@ https://github.com/fredlcore/BSB-LAN</text>
 <label x="190.5" y="144.78" size="1.4224" layer="95" font="vector" ratio="10" xref="yes"/>
 <pinref part="R6" gate="G$1" pin="2"/>
 <wire x1="185.42" y1="144.78" x2="187.96" y2="144.78" width="0.1524" layer="91"/>
-<pinref part="R11" gate="G$1" pin="2"/>
+<pinref part="R8" gate="G$1" pin="2"/>
 <wire x1="187.96" y1="144.78" x2="190.5" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="187.96" y1="142.24" x2="187.96" y2="144.78" width="0.1524" layer="91"/>
 <junction x="187.96" y="144.78"/>
@@ -9795,7 +9799,7 @@ https://github.com/fredlcore/BSB-LAN</text>
 </net>
 <net name="CON-BSB+" class="3">
 <segment>
-<pinref part="R8" gate="G$1" pin="1"/>
+<pinref part="R10" gate="G$1" pin="1"/>
 <pinref part="BSB" gate="-1" pin="1"/>
 <wire x1="38.1" y1="116.84" x2="43.18" y2="116.84" width="0.1524" layer="91"/>
 </segment>
