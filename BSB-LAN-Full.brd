@@ -556,7 +556,7 @@ Source: http://www.fairchildsemi.com/pf/4N/4N35-M.html</description>
 <text x="-5.5" y="0" size="1" layer="25" font="vector" ratio="15" rot="R90" align="center">&gt;NAME</text>
 <text x="0" y="0" size="1" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
 </package>
-<package name="MKDSN1,5/2-5,08">
+<package name="MKDSN1_5-2-5_08">
 <description>&lt;b&gt;MKDSN 1,5/ 2-5,08&lt;/b&gt; Printklemme&lt;p&gt;
 Nennstrom: 13,5 A&lt;br&gt;
 Nennspannung: 250 V&lt;br&gt;
@@ -2088,7 +2088,7 @@ For a 50R Single Ended on the outer layers, use a trace width of 0.15mm (50 Ohm)
 <attribute name="LCSC_PART" value="C258246" x="33.6" y="-1.86" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="NAME" x="27.2" y="32.4" size="0.8" layer="26" font="vector" ratio="15" rot="MR0" align="center"/>
 </element>
-<element name="BSB" library="BSB-LAN" package="MKDSN1,5/2-5,08" value="MKDSN1,5/2-5,08" x="4.96" y="26.66" smashed="yes" rot="R270">
+<element name="BSB" library="BSB-LAN" package="MKDSN1_5-2-5_08" value="MKDSN1,5/2-5,08" x="4.96" y="26.66" smashed="yes" rot="R270">
 <attribute name="NAME" x="11.15" y="31.47" size="1.2" layer="25" font="vector" ratio="15" align="center"/>
 <attribute name="OC_NEWARK" value="30M2397" x="4.96" y="26.66" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="MKDSN 1,5/2-5.08" x="4.96" y="26.66" size="1.778" layer="27" rot="R270" display="off"/>

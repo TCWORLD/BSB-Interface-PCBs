@@ -4574,7 +4574,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <wire x1="-6.985" y1="-3.175" x2="6.985" y2="-3.175" width="0.15" layer="39"/>
 <wire x1="-7.366" y1="-2.54" x2="7.366" y2="-2.54" width="0.1524" layer="49"/>
 </package>
-<package name="MKDSN1,5/2-5,08">
+<package name="MKDSN1_5-2-5_08">
 <description>&lt;b&gt;MKDSN 1,5/ 2-5,08&lt;/b&gt; Printklemme&lt;p&gt;
 Nennstrom: 13,5 A&lt;br&gt;
 Nennspannung: 250 V&lt;br&gt;
@@ -10052,7 +10052,7 @@ Source: http://eshop.phoenixcontact.com .. 1729128.pdf</description>
 <gate name="-2" symbol="KL" x="0" y="-5.08"/>
 </gates>
 <devices>
-<device name="" package="MKDSN1,5/2-5,08">
+<device name="" package="MKDSN1_5-2-5_08">
 <connects>
 <connect gate="-1" pin="1" pad="1"/>
 <connect gate="-2" pin="1" pad="2"/>
