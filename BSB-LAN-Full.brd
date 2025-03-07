@@ -140,7 +140,6 @@
 <layer number="219" name="219bmp" color="20" fill="1" visible="no" active="no"/>
 <layer number="220" name="220bmp" color="21" fill="1" visible="no" active="no"/>
 <layer number="221" name="221bmp" color="22" fill="1" visible="no" active="no"/>
-<layer number="222" name="222bmp" color="23" fill="1" visible="no" active="no"/>
 <layer number="223" name="223bmp" color="24" fill="1" visible="no" active="no"/>
 <layer number="224" name="224bmp" color="25" fill="1" visible="no" active="no"/>
 <layer number="225" name="225bmp" color="7" fill="1" visible="no" active="yes"/>
@@ -2451,7 +2450,7 @@ For a 50R Single Ended on the outer layers, use a trace width of 0.15mm (50 Ohm)
 <attribute name="VALUE" x="35.15" y="7.8" size="0.8" layer="27" font="vector" ratio="15" rot="R180" align="center"/>
 </element>
 <element name="C20" library="BSB-LAN" package="C1808" value="1nF 3kV" x="47.95" y="2.3" smashed="yes" rot="MR180">
-<attribute name="NAME" x="47.95" y="4.2" size="0.8" layer="26" font="vector" ratio="15" rot="MR180" align="center"/>
+<attribute name="NAME" x="47.95" y="0.6" size="0.8" layer="26" font="vector" ratio="15" rot="MR180" align="center"/>
 <attribute name="VALUE" x="47.95" y="4.8" size="1.016" layer="28" font="vector" ratio="15" rot="MR180" align="center"/>
 <attribute name="LCSC_PART" value="C577300" x="47.95" y="2.3" size="1.2" layer="28" font="vector" ratio="15" rot="MR180" align="center" display="off"/>
 </element>
@@ -2477,7 +2476,7 @@ For a 50R Single Ended on the outer layers, use a trace width of 0.15mm (50 Ohm)
 <attribute name="VALUE" x="62.85" y="10.5" size="0.8" layer="28" font="vector" ratio="15" rot="MR180" align="center"/>
 </element>
 <element name="L4" library="BSB-LAN" package="L4040P" value="2.2uH 1.5A" x="62.45" y="13.7" smashed="yes" rot="R180">
-<attribute name="NAME" x="59.625" y="13.7" size="0.8" layer="25" font="vector" ratio="15" rot="R270" align="center"/>
+<attribute name="NAME" x="65.225" y="13.7" size="0.8" layer="25" font="vector" ratio="15" rot="R270" align="center"/>
 <attribute name="VALUE" x="62.45" y="16.875" size="1.27" layer="27" font="vector" ratio="15" rot="R180" align="center"/>
 <attribute name="LCSC_PART" value="C135262" x="62.45" y="13.7" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
