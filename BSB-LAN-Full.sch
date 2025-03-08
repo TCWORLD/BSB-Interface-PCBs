@@ -7673,7 +7673,7 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <part name="R20" library="BSB-LAN" deviceset="R-EU_" device="R0402" value="12.1k 1%">
 <attribute name="LCSC_PART" value="C25852"/>
 </part>
-<part name="C12" library="BSB-LAN" deviceset="C-EU" device="C0603" value="0.1uF">
+<part name="C12" library="BSB-LAN" deviceset="C-EU" device="C0603L" value="0.1uF">
 <attribute name="LCSC_PART" value="C113803"/>
 </part>
 <part name="R23" library="BSB-LAN" deviceset="R-EU_" device="R0402" value="12.1k 1%">
