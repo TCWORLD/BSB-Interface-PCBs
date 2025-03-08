@@ -6170,8 +6170,8 @@ MSOP&lt;br&gt;</description>
 <smd name="MT6" x="1.2" y="0" dx="1.8" dy="1.9" layer="1"/>
 </package>
 <package name="CNMB/2-">
-<wire x1="0" y1="33" x2="86.5" y2="33" width="0" layer="20"/>
-<wire x1="0" y1="0" x2="0" y2="33" width="0" layer="20"/>
+<wire x1="0" y1="33" x2="86.5" y2="33" width="0" layer="48"/>
+<wire x1="0" y1="0" x2="0" y2="33" width="0" layer="48"/>
 <hole x="18.25" y="27" drill="3.2"/>
 <circle x="4.95" y="24.12" radius="1.8" width="0.05" layer="48"/>
 <wire x1="-0.45" y1="31.6" x2="-1.75" y2="31.6" width="0" layer="48"/>
@@ -6198,8 +6198,8 @@ MSOP&lt;br&gt;</description>
 <wire x1="73.25" y1="31.1" x2="74.6" y2="31.1" width="0" layer="48"/>
 <wire x1="74.6" y1="31.1" x2="74.6" y2="32" width="0" layer="48"/>
 <wire x1="74.6" y1="32" x2="74.6" y2="33.1" width="0" layer="48"/>
-<wire x1="86.5" y1="0" x2="0" y2="0" width="0" layer="20"/>
-<wire x1="86.5" y1="33" x2="86.5" y2="0" width="0" layer="20"/>
+<wire x1="86.5" y1="0" x2="0" y2="0" width="0" layer="48"/>
+<wire x1="86.5" y1="33" x2="86.5" y2="0" width="0" layer="48"/>
 <hole x="68.25" y="6" drill="3.2"/>
 <wire x1="86.95" y1="1.4" x2="88.25" y2="1.4" width="0" layer="48"/>
 <wire x1="88.25" y1="1.4" x2="88.25" y2="-1.5" width="0" layer="48"/>

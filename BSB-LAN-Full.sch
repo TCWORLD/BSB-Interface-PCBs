@@ -4244,8 +4244,8 @@ MSOP&lt;br&gt;</description>
 <smd name="MT6" x="1.2" y="0" dx="1.8" dy="1.9" layer="1"/>
 </package>
 <package name="CNMB/2-">
-<wire x1="0" y1="33" x2="86.5" y2="33" width="0" layer="20"/>
-<wire x1="0" y1="0" x2="0" y2="33" width="0" layer="20"/>
+<wire x1="0" y1="33" x2="86.5" y2="33" width="0" layer="48"/>
+<wire x1="0" y1="0" x2="0" y2="33" width="0" layer="48"/>
 <hole x="18.25" y="27" drill="3.2"/>
 <circle x="4.95" y="24.12" radius="1.8" width="0.05" layer="48"/>
 <wire x1="-0.45" y1="31.6" x2="-1.75" y2="31.6" width="0" layer="48"/>
@@ -4272,8 +4272,8 @@ MSOP&lt;br&gt;</description>
 <wire x1="73.25" y1="31.1" x2="74.6" y2="31.1" width="0" layer="48"/>
 <wire x1="74.6" y1="31.1" x2="74.6" y2="32" width="0" layer="48"/>
 <wire x1="74.6" y1="32" x2="74.6" y2="33.1" width="0" layer="48"/>
-<wire x1="86.5" y1="0" x2="0" y2="0" width="0" layer="20"/>
-<wire x1="86.5" y1="33" x2="86.5" y2="0" width="0" layer="20"/>
+<wire x1="86.5" y1="0" x2="0" y2="0" width="0" layer="48"/>
+<wire x1="86.5" y1="33" x2="86.5" y2="0" width="0" layer="48"/>
 <hole x="68.25" y="6" drill="3.2"/>
 <wire x1="86.95" y1="1.4" x2="88.25" y2="1.4" width="0" layer="48"/>
 <wire x1="88.25" y1="1.4" x2="88.25" y2="-1.5" width="0" layer="48"/>
@@ -8386,6 +8386,26 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <wire x1="48.26" y1="20.32" x2="40.64" y2="20.32" width="0.1524" layer="91"/>
 <pinref part="R51" gate="G$1" pin="2"/>
 <wire x1="40.64" y1="22.86" x2="40.64" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="20.32" x2="33.02" y2="20.32" width="0.1524" layer="91"/>
+<label x="33.02" y="20.32" size="1.4224" layer="95" font="vector" ratio="10" rot="R180" xref="yes"/>
+<junction x="40.64" y="20.32"/>
+</segment>
+<segment>
+<wire x1="76.2" y1="93.98" x2="83.82" y2="93.98" width="0.1524" layer="91"/>
+<label x="83.82" y="93.98" size="1.4224" layer="95" font="vector" ratio="10" xref="yes"/>
+<pinref part="ESP1" gate="G$1" pin="GPIO33"/>
+</segment>
+</net>
+<net name="UEXT-RX" class="0">
+<segment>
+<pinref part="UEXT" gate="G$1" pin="4"/>
+<wire x1="63.5" y1="20.32" x2="71.12" y2="20.32" width="0.1524" layer="91"/>
+<label x="71.12" y="20.32" size="1.4224" layer="95" font="vector" ratio="10" xref="yes"/>
+</segment>
+<segment>
+<wire x1="76.2" y1="96.52" x2="83.82" y2="96.52" width="0.1524" layer="91"/>
+<label x="83.82" y="96.52" size="1.4224" layer="95" font="vector" ratio="10" xref="yes"/>
+<pinref part="ESP1" gate="G$1" pin="GPIO32"/>
 </segment>
 </net>
 </nets>
