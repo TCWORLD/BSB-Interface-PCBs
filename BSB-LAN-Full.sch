@@ -6167,12 +6167,7 @@ SMCJxx(C)A Voltage Suppressor - SMC Package (DO-214AB)
 <connect gate="G$1" pin="9" pad="9"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="unknown" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="-3M" package="3M_10">
@@ -6544,10 +6539,7 @@ Source: http://eshop.phoenixcontact.com .. 1729128.pdf</description>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="MKDSN 1,5/2-5.08" constant="no"/>
-<attribute name="OC_FARNELL" value="1792903" constant="no"/>
-<attribute name="OC_NEWARK" value="30M2397" constant="no"/>
+<attribute name="LCSC_PART" value="C5183989" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -6693,17 +6685,23 @@ Source: http://www.fairchildsemi.com/ds/4N/4N35-M.pdf</description>
 <devices>
 <device name="S" package="OSHW-LOGO-S">
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="VALUE" value="DNI"/>
+</technology>
 </technologies>
 </device>
 <device name="M" package="OSHW-LOGO-M">
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="VALUE" value="DNI"/>
+</technology>
 </technologies>
 </device>
 <device name="L" package="OSHW-LOGO-L">
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="VALUE" value="DNI"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -7551,19 +7549,19 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 </part>
 <part name="BSB" library="BSB-LAN" deviceset="MKDSN1,5/2-5,08" device=""/>
 <part name="R1" library="BSB-LAN" deviceset="R-EU_" device="R0603" value="330k">
-<attribute name="LCSC_PART" value=""/>
+<attribute name="LCSC_PART" value="C23137"/>
 </part>
 <part name="R2" library="BSB-LAN" deviceset="R-EU_" device="R0603" value="1.5k">
-<attribute name="LCSC_PART" value=""/>
+<attribute name="LCSC_PART" value="C22843"/>
 </part>
 <part name="R4" library="BSB-LAN" deviceset="R-EU_" device="R0603" value="330k">
-<attribute name="LCSC_PART" value=""/>
+<attribute name="LCSC_PART" value="C23137"/>
 </part>
 <part name="R6" library="BSB-LAN" deviceset="R-EU_" device="R0402" value="4.7k">
-<attribute name="LCSC_PART" value=""/>
+<attribute name="LCSC_PART" value="C25900"/>
 </part>
 <part name="R5" library="BSB-LAN" deviceset="R-EU_" device="R0402" value="4.7k">
-<attribute name="LCSC_PART" value=""/>
+<attribute name="LCSC_PART" value="C25900"/>
 </part>
 <part name="D2" library="BSB-LAN" deviceset="DIODE-" device="SOD123" value="1N4148W">
 <attribute name="LCSC_PART" value="C81598"/>
@@ -7576,24 +7574,24 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 </part>
 <part name="UEXT" library="BSB-LAN" deviceset="ML10" device="" value="DNI"/>
 <part name="ACT" library="BSB-LAN" deviceset="LED" device="CHIPLED_0603" value="red">
-<attribute name="LCSC_PART" value=""/>
+<attribute name="LCSC_PART" value="C2286"/>
 </part>
 <part name="R3" library="BSB-LAN" deviceset="R-EU_" device="R0402" value="220R">
-<attribute name="LCSC_PART" value=""/>
+<attribute name="LCSC_PART" value="C25091"/>
 </part>
 <part name="R7" library="BSB-LAN" deviceset="R-EU_" device="R0603" value="330k">
-<attribute name="LCSC_PART" value=""/>
+<attribute name="LCSC_PART" value="C23137"/>
 </part>
 <part name="D3" library="BSB-LAN" deviceset="TVS-BIDIR" device="SMB" value="24V">
 <attribute name="LCSC_PART" value="C83268"/>
 </part>
 <part name="R10" library="BSB-LAN" deviceset="R-EU_" device="R0603" value="10R">
-<attribute name="LCSC_PART" value=""/>
+<attribute name="LCSC_PART" value="C22859"/>
 </part>
 <part name="R9" library="BSB-LAN" deviceset="R-EU_" device="R0603" value="10R">
-<attribute name="LCSC_PART" value=""/>
+<attribute name="LCSC_PART" value="C22859"/>
 </part>
-<part name="U$3" library="BSB-LAN" deviceset="OSHW-LOGO" device="M"/>
+<part name="U$3" library="BSB-LAN" deviceset="OSHW-LOGO" device="M" value="DNI"/>
 <part name="FRAME2" library="BSB-LAN" deviceset="A4L-LOC" device="" value="DNI">
 <attribute name="DRAWN_BY" value="Thomas Carpenter"/>
 <attribute name="SHEET_NAME" value="POE Ethernet"/>
@@ -7603,51 +7601,119 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <part name="Q3" library="BSB-LAN" deviceset="BC847*" device=""/>
 <part name="Q4" library="BSB-LAN" deviceset="WPM2015" device="" technology="-3/TR"/>
 <part name="U1" library="BSB-LAN" deviceset="ESDS314" device="DBV"/>
-<part name="L1" library="BSB-LAN" deviceset="L-US" device="L0805" value="FB 600R"/>
-<part name="R30" library="BSB-LAN" deviceset="R-EU_" device="R0402" value="220R"/>
-<part name="C2" library="BSB-LAN" deviceset="C-EU" device="C1808" value="1nF 3kV"/>
-<part name="C3" library="BSB-LAN" deviceset="C-EU" device="C0402" value="0.1uF"/>
-<part name="RN1" library="BSB-LAN" deviceset="R-NET-04" device="-R1206" value="2.2k"/>
-<part name="RN2" library="BSB-LAN" deviceset="R-NET-04" device="-R1206" value="2.2k"/>
-<part name="R13" library="BSB-LAN" deviceset="R-EU_" device="R0402" value="10k"/>
-<part name="R14" library="BSB-LAN" deviceset="R-EU_" device="R0402" value="10k"/>
-<part name="R11" library="BSB-LAN" deviceset="R-EU_" device="R0402" value="10k"/>
-<part name="C4" library="BSB-LAN" deviceset="C-EU" device="C0603" value="22uF"/>
-<part name="C5" library="BSB-LAN" deviceset="C-EU" device="C0603" value="22uF"/>
-<part name="C6" library="BSB-LAN" deviceset="C-EU" device="C0603" value="22uF"/>
-<part name="R12" library="BSB-LAN" deviceset="R-EU_" device="R0402" value="1k"/>
-<part name="C10" library="BSB-LAN" deviceset="C-EU" device="C0402" value="0.1uF"/>
-<part name="C8" library="BSB-LAN" deviceset="C-EU" device="C0402" value="0.1uF"/>
-<part name="C9" library="BSB-LAN" deviceset="C-EU" device="C0402" value="0.1uF"/>
-<part name="C7" library="BSB-LAN" deviceset="C-EU" device="C0603" value="2.2uF"/>
-<part name="C11" library="BSB-LAN" deviceset="C-EU" device="C0402" value="0.1uF"/>
-<part name="R16" library="BSB-LAN" deviceset="R-EU_" device="R0402L" value="49.9R"/>
-<part name="R18" library="BSB-LAN" deviceset="R-EU_" device="R0402L" value="49.9R"/>
-<part name="R15" library="BSB-LAN" deviceset="R-EU_" device="R0402L" value="49.9R"/>
-<part name="R17" library="BSB-LAN" deviceset="R-EU_" device="R0402L" value="49.9R"/>
-<part name="R19" library="BSB-LAN" deviceset="R-EU_" device="R0402" value="10k"/>
-<part name="R20" library="BSB-LAN" deviceset="R-EU_" device="R0402" value="12.1k 1%"/>
-<part name="C12" library="BSB-LAN" deviceset="C-EU" device="C0402" value="0.1uF"/>
-<part name="R23" library="BSB-LAN" deviceset="R-EU_" device="R0402" value="12.1k 1%"/>
+<part name="L1" library="BSB-LAN" deviceset="L-US" device="L0805" value="FB 600R">
+<attribute name="LCSC_PART" value="C1017"/>
+</part>
+<part name="R30" library="BSB-LAN" deviceset="R-EU_" device="R0402" value="220R">
+<attribute name="LCSC_PART" value="C25091"/>
+</part>
+<part name="C2" library="BSB-LAN" deviceset="C-EU" device="C1808" value="1nF 3kV">
+<attribute name="LCSC_PART" value="C577300"/>
+</part>
+<part name="C3" library="BSB-LAN" deviceset="C-EU" device="C0402" value="0.1uF">
+<attribute name="LCSC_PART" value="C1525"/>
+</part>
+<part name="RN1" library="BSB-LAN" deviceset="R-NET-04" device="-R1206" value="2.2k">
+<attribute name="LCSC_PART" value="C414564"/>
+</part>
+<part name="RN2" library="BSB-LAN" deviceset="R-NET-04" device="-R1206" value="2.2k">
+<attribute name="LCSC_PART" value="C414564"/>
+</part>
+<part name="R13" library="BSB-LAN" deviceset="R-EU_" device="R0402" value="10k">
+<attribute name="LCSC_PART" value="C25744"/>
+</part>
+<part name="R14" library="BSB-LAN" deviceset="R-EU_" device="R0402" value="10k">
+<attribute name="LCSC_PART" value="C25744"/>
+</part>
+<part name="R11" library="BSB-LAN" deviceset="R-EU_" device="R0402" value="10k">
+<attribute name="LCSC_PART" value="C25744"/>
+</part>
+<part name="C4" library="BSB-LAN" deviceset="C-EU" device="C0603" value="22uF">
+<attribute name="LCSC_PART" value="C59461"/>
+</part>
+<part name="C5" library="BSB-LAN" deviceset="C-EU" device="C0603" value="22uF">
+<attribute name="LCSC_PART" value="C59461"/>
+</part>
+<part name="C6" library="BSB-LAN" deviceset="C-EU" device="C0603" value="22uF">
+<attribute name="LCSC_PART" value="C59461"/>
+</part>
+<part name="R12" library="BSB-LAN" deviceset="R-EU_" device="R0402" value="1k">
+<attribute name="LCSC_PART" value="C11702"/>
+</part>
+<part name="C10" library="BSB-LAN" deviceset="C-EU" device="C0402" value="0.1uF">
+<attribute name="LCSC_PART" value="C1525"/>
+</part>
+<part name="C8" library="BSB-LAN" deviceset="C-EU" device="C0402" value="0.1uF">
+<attribute name="LCSC_PART" value="C1525"/>
+</part>
+<part name="C9" library="BSB-LAN" deviceset="C-EU" device="C0402" value="0.1uF">
+<attribute name="LCSC_PART" value="C1525"/>
+</part>
+<part name="C7" library="BSB-LAN" deviceset="C-EU" device="C0603" value="2.2uF">
+<attribute name="LCSC_PART" value="C23630"/>
+</part>
+<part name="C11" library="BSB-LAN" deviceset="C-EU" device="C0402" value="0.1uF">
+<attribute name="LCSC_PART" value="C1525"/>
+</part>
+<part name="R16" library="BSB-LAN" deviceset="R-EU_" device="R0402L" value="49.9R">
+<attribute name="LCSC_PART" value="C25120"/>
+</part>
+<part name="R18" library="BSB-LAN" deviceset="R-EU_" device="R0402L" value="49.9R">
+<attribute name="LCSC_PART" value="C25120"/>
+</part>
+<part name="R15" library="BSB-LAN" deviceset="R-EU_" device="R0402L" value="49.9R">
+<attribute name="LCSC_PART" value="C25120"/>
+</part>
+<part name="R17" library="BSB-LAN" deviceset="R-EU_" device="R0402L" value="49.9R">
+<attribute name="LCSC_PART" value="C25120"/>
+</part>
+<part name="R19" library="BSB-LAN" deviceset="R-EU_" device="R0402" value="10k">
+<attribute name="LCSC_PART" value="C25744"/>
+</part>
+<part name="R20" library="BSB-LAN" deviceset="R-EU_" device="R0402" value="12.1k 1%">
+<attribute name="LCSC_PART" value="C25852"/>
+</part>
+<part name="C12" library="BSB-LAN" deviceset="C-EU" device="C0402" value="0.1uF">
+<attribute name="LCSC_PART" value="C1525"/>
+</part>
+<part name="R23" library="BSB-LAN" deviceset="R-EU_" device="R0402" value="12.1k 1%">
+<attribute name="LCSC_PART" value="C25852"/>
+</part>
 <part name="C13" library="BSB-LAN" deviceset="C-EU" device="C0603" value="0.1uF 100V">
 <attribute name="LCSC_PART" value="C113803"/>
 </part>
 <part name="IC2" library="BSB-LAN" deviceset="TPS2375" device="D"/>
-<part name="D4" library="BSB-LAN" deviceset="TVS-UNI" device="SMA" value="58V"/>
-<part name="R26" library="BSB-LAN" deviceset="R-EU_" device="R0402" value="180k 1%"/>
-<part name="R27" library="BSB-LAN" deviceset="R-EU_" device="R0402" value="4.42k 1%"/>
-<part name="R24" library="BSB-LAN" deviceset="R-EU_" device="R0402" value="180k 1%"/>
-<part name="R25" library="BSB-LAN" deviceset="R-EU_" device="R0402" value="28.7k 1%"/>
+<part name="D4" library="BSB-LAN" deviceset="TVS-UNI" device="SMA" value="58V">
+<attribute name="LCSC_PART" value="C151246"/>
+</part>
+<part name="R26" library="BSB-LAN" deviceset="R-EU_" device="R0402" value="180k 1%">
+<attribute name="LCSC_PART" value="C25760"/>
+</part>
+<part name="R27" library="BSB-LAN" deviceset="R-EU_" device="R0402" value="4.42k 1%">
+<attribute name="LCSC_PART" value="C52269"/>
+</part>
+<part name="R24" library="BSB-LAN" deviceset="R-EU_" device="R0402" value="180k 1%">
+<attribute name="LCSC_PART" value="C25760"/>
+</part>
+<part name="R25" library="BSB-LAN" deviceset="R-EU_" device="R0402" value="28.7k 1%">
+<attribute name="LCSC_PART" value="C26972"/>
+</part>
 <part name="R22" library="BSB-LAN" deviceset="R-EU_" device="R1206" value="DNI">
 <attribute name="LCSC_PART" value=""/>
 </part>
-<part name="C14" library="BSB-LAN" deviceset="CPOL-EU" device="SMCD" value="15uF 100V"/>
-<part name="R29" library="BSB-LAN" deviceset="R-EU_" device="R0402" value="220R"/>
+<part name="C14" library="BSB-LAN" deviceset="CPOL-EU" device="D" value="22uF 100V">
+<attribute name="LCSC_PART" value="C487431"/>
+</part>
+<part name="R29" library="BSB-LAN" deviceset="R-EU_" device="R0402" value="220R">
+<attribute name="LCSC_PART" value="C25091"/>
+</part>
 <part name="FRAME3" library="BSB-LAN" deviceset="A4L-LOC" device="" value="DNI">
 <attribute name="DRAWN_BY" value="Thomas Carpenter"/>
 <attribute name="SHEET_NAME" value="Power Supply"/>
 </part>
-<part name="IC3" library="BSB-LAN" deviceset="TX4138" device=""/>
+<part name="IC3" library="BSB-LAN" deviceset="TX4138" device="">
+<attribute name="LCSC_PART" value="C329267"/>
+</part>
 <part name="DC1" library="BSB-LAN" deviceset="F*S-2WR2" device="SC" technology="0505"/>
 <part name="FRAME4" library="BSB-LAN" deviceset="A4L-LOC" device="" value="DNI">
 <attribute name="DRAWN_BY" value="Thomas Carpenter"/>
@@ -7656,51 +7722,111 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <part name="IC4" library="BSB-LAN" deviceset="SY8089*?C" device="AA" technology="A"/>
 <part name="ESP1" library="BSB-LAN" deviceset="ESP32-WROOM" device="-32E"/>
 <part name="USD" library="BSB-LAN" deviceset="MICROSD" device="" value="XKTF-001A"/>
-<part name="C1" library="BSB-LAN" deviceset="C-EU" device="C0603" value="2.2uF"/>
-<part name="R28" library="BSB-LAN" deviceset="R-EU_" device="R0402" value="10k"/>
+<part name="C1" library="BSB-LAN" deviceset="C-EU" device="C0603" value="2.2uF">
+<attribute name="LCSC_PART" value="C23630"/>
+</part>
+<part name="R28" library="BSB-LAN" deviceset="R-EU_" device="R0402" value="10k">
+<attribute name="LCSC_PART" value="C25744"/>
+</part>
 <part name="R8" library="BSB-LAN" deviceset="R-EU_" device="R0402" value="4.7k">
-<attribute name="LCSC_PART" value=""/>
+<attribute name="LCSC_PART" value="C25900"/>
 </part>
-<part name="L2" library="BSB-LAN" deviceset="L-US" device="L0805" value="FB 600R"/>
-<part name="C15" library="BSB-LAN" deviceset="C-EU" device="C0603" value="22uF"/>
-<part name="C16" library="BSB-LAN" deviceset="C-EU" device="C0603" value="22uF"/>
-<part name="RN3" library="BSB-LAN" deviceset="R-NET-04" device="-R1206" value="2.2k"/>
-<part name="R31" library="BSB-LAN" deviceset="R-EU_" device="R0402" value="220R"/>
-<part name="R32" library="BSB-LAN" deviceset="R-EU_" device="R0402" value="10k"/>
-<part name="R33" library="BSB-LAN" deviceset="R-EU_" device="R0603L" value="10R"/>
-<part name="R34" library="BSB-LAN" deviceset="R-EU_" device="R0402" value="10k"/>
-<part name="R35" library="BSB-LAN" deviceset="R-EU_" device="R0402" value="220R"/>
-<part name="C17" library="BSB-LAN" deviceset="C-EU" device="C0402" value="0.1uF"/>
+<part name="L2" library="BSB-LAN" deviceset="L-US" device="L0805" value="FB 600R">
+<attribute name="LCSC_PART" value="C1017"/>
+</part>
+<part name="C15" library="BSB-LAN" deviceset="C-EU" device="C0603" value="22uF">
+<attribute name="LCSC_PART" value="C59461"/>
+</part>
+<part name="C16" library="BSB-LAN" deviceset="C-EU" device="C0603" value="22uF">
+<attribute name="LCSC_PART" value="C59461"/>
+</part>
+<part name="RN3" library="BSB-LAN" deviceset="R-NET-04" device="-R1206" value="2.2k">
+<attribute name="LCSC_PART" value="C414564"/>
+</part>
+<part name="R31" library="BSB-LAN" deviceset="R-EU_" device="R0402" value="220R">
+<attribute name="LCSC_PART" value="C25091"/>
+</part>
+<part name="R32" library="BSB-LAN" deviceset="R-EU_" device="R0402" value="10k">
+<attribute name="LCSC_PART" value="C25744"/>
+</part>
+<part name="R33" library="BSB-LAN" deviceset="R-EU_" device="R0603L" value="10R">
+<attribute name="LCSC_PART" value="C22859"/>
+</part>
+<part name="R34" library="BSB-LAN" deviceset="R-EU_" device="R0402" value="10k">
+<attribute name="LCSC_PART" value="C25744"/>
+</part>
+<part name="R35" library="BSB-LAN" deviceset="R-EU_" device="R0402" value="220R">
+<attribute name="LCSC_PART" value="C25091"/>
+</part>
+<part name="C17" library="BSB-LAN" deviceset="C-EU" device="C0402" value="0.1uF">
+<attribute name="LCSC_PART" value="C1525"/>
+</part>
 <part name="R21" library="BSB-LAN" deviceset="R-EU_" device="R1206" value="0.03R 1%">
-<attribute name="LCSC_PART" value=""/>
+<attribute name="LCSC_PART" value="C163046"/>
 </part>
-<part name="C18" library="BSB-LAN" deviceset="CPOL-EU" device="SMCD" value="470uF 10V"/>
+<part name="C18" library="BSB-LAN" deviceset="CPOL-EU" device="SMCD" value="470uF 10V">
+<attribute name="LCSC_PART" value="C4944894"/>
+</part>
 <part name="L3" library="BSB-LAN" deviceset="L-US" device="L6560P" value="33uH 2.5A">
 <attribute name="LCSC_PART" value="C2839927"/>
 </part>
-<part name="C19" library="BSB-LAN" deviceset="C-EU" device="C0402" value="12pF"/>
-<part name="R38" library="BSB-LAN" deviceset="R-EU_" device="R0402" value="12.1k 1%"/>
-<part name="R36" library="BSB-LAN" deviceset="R-EU_" device="R0402" value="12.1k 1%"/>
-<part name="R37" library="BSB-LAN" deviceset="R-EU_" device="R0402" value="4.42k 1%"/>
+<part name="C19" library="BSB-LAN" deviceset="C-EU" device="C0402" value="12pF">
+<attribute name="LCSC_PART" value="C1547"/>
+</part>
+<part name="R38" library="BSB-LAN" deviceset="R-EU_" device="R0402" value="12.1k 1%">
+<attribute name="LCSC_PART" value="C25852"/>
+</part>
+<part name="R36" library="BSB-LAN" deviceset="R-EU_" device="R0402" value="12.1k 1%">
+<attribute name="LCSC_PART" value="C25852"/>
+</part>
+<part name="R37" library="BSB-LAN" deviceset="R-EU_" device="R0402" value="4.42k 1%">
+<attribute name="LCSC_PART" value="C52269"/>
+</part>
 <part name="D1" library="BSB-LAN" deviceset="DIODE-" device="SMB" value="SS510B">
 <attribute name="LCSC_PART" value="C65011"/>
 </part>
-<part name="R39" library="BSB-LAN" deviceset="R-EU_" device="R0402" value="4.7R"/>
-<part name="C20" library="BSB-LAN" deviceset="C-EU" device="C1808" value="1nF 3kV"/>
-<part name="C21" library="BSB-LAN" deviceset="C-EU" device="C1808" value="1nF 3kV"/>
-<part name="C22" library="BSB-LAN" deviceset="C-EU" device="C0603" value="22uF"/>
-<part name="R41" library="BSB-LAN" deviceset="R-EU_" device="R0402" value="12.1k 1%"/>
-<part name="R40" library="BSB-LAN" deviceset="R-EU_" device="R0402" value="180k 1%"/>
-<part name="R42" library="BSB-LAN" deviceset="R-EU_" device="R0402" value="28.7k 1%"/>
+<part name="R39" library="BSB-LAN" deviceset="R-EU_" device="R0603L" value="10R">
+<attribute name="LCSC_PART" value="C22859"/>
+</part>
+<part name="C20" library="BSB-LAN" deviceset="C-EU" device="C1808" value="1nF 3kV">
+<attribute name="LCSC_PART" value="C577300"/>
+</part>
+<part name="C21" library="BSB-LAN" deviceset="C-EU" device="C1808" value="1nF 3kV">
+<attribute name="LCSC_PART" value="C577300"/>
+</part>
+<part name="C22" library="BSB-LAN" deviceset="C-EU" device="C0805" value="22uF">
+<attribute name="LCSC_PART" value="C45783"/>
+</part>
+<part name="R41" library="BSB-LAN" deviceset="R-EU_" device="R0402" value="12.1k 1%">
+<attribute name="LCSC_PART" value="C25852"/>
+</part>
+<part name="R40" library="BSB-LAN" deviceset="R-EU_" device="R0402" value="180k 1%">
+<attribute name="LCSC_PART" value="C25760"/>
+</part>
+<part name="R42" library="BSB-LAN" deviceset="R-EU_" device="R0402" value="28.7k 1%">
+<attribute name="LCSC_PART" value="C26972"/>
+</part>
 <part name="L4" library="BSB-LAN" deviceset="L-US" device="L4040P" value="2.2uH 1.5A">
 <attribute name="LCSC_PART" value="C135262"/>
 </part>
-<part name="C23" library="BSB-LAN" deviceset="C-EU" device="C0603" value="22uF"/>
-<part name="C24" library="BSB-LAN" deviceset="C-EU" device="C0603" value="22uF"/>
-<part name="R43" library="BSB-LAN" deviceset="R-EU_" device="R0402" value="12.1k 1%"/>
-<part name="R44" library="BSB-LAN" deviceset="R-EU_" device="R0402" value="28.7k 1%"/>
-<part name="C25" library="BSB-LAN" deviceset="C-EU" device="C0603" value="22uF"/>
-<part name="D5" library="BSB-LAN" deviceset="TVS-UNI" device="SMA" value="6V"/>
+<part name="C23" library="BSB-LAN" deviceset="C-EU" device="C0603" value="22uF">
+<attribute name="LCSC_PART" value="C59461"/>
+</part>
+<part name="C24" library="BSB-LAN" deviceset="C-EU" device="C0805" value="22uF">
+<attribute name="LCSC_PART" value="C45783"/>
+</part>
+<part name="R43" library="BSB-LAN" deviceset="R-EU_" device="R0402" value="12.1k 1%">
+<attribute name="LCSC_PART" value="C25852"/>
+</part>
+<part name="R44" library="BSB-LAN" deviceset="R-EU_" device="R0402" value="28.7k 1%">
+<attribute name="LCSC_PART" value="C26972"/>
+</part>
+<part name="C25" library="BSB-LAN" deviceset="C-EU" device="C0805" value="22uF">
+<attribute name="LCSC_PART" value="C45783"/>
+</part>
+<part name="D5" library="BSB-LAN" deviceset="TVS-UNI" device="SMA" value="6V">
+<attribute name="LCSC_PART" value="C223993"/>
+</part>
 <part name="RST" library="BSB-LAN" deviceset="SWITCH-MOMENTARY-SHELL" device="" value="Tact-RA">
 <attribute name="LCSC_PART" value="C406156"/>
 </part>
@@ -7708,30 +7834,45 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <part name="Q5" library="BSB-LAN" deviceset="BC847*" device="" value="BC847">
 <attribute name="LCSC_PART" value="C130417"/>
 </part>
-<part name="R45" library="BSB-LAN" deviceset="R-EU_" device="R0402" value="1k"/>
+<part name="R45" library="BSB-LAN" deviceset="R-EU_" device="R0402" value="1k">
+<attribute name="LCSC_PART" value="C11702"/>
+</part>
 <part name="Q6" library="BSB-LAN" deviceset="BC847*" device="" value="BC847"/>
-<part name="R46" library="BSB-LAN" deviceset="R-EU_" device="R0402" value="1k"/>
+<part name="R46" library="BSB-LAN" deviceset="R-EU_" device="R0402" value="1k">
+<attribute name="LCSC_PART" value="C11702"/>
+</part>
 <part name="IC6" library="BSB-LAN" deviceset="CH340X" device=""/>
-<part name="R49" library="BSB-LAN" deviceset="R-EU_" device="R0402" value="220R"/>
+<part name="R49" library="BSB-LAN" deviceset="R-EU_" device="R0402" value="220R">
+<attribute name="LCSC_PART" value="C25091"/>
+</part>
 <part name="Q7" library="BSB-LAN" deviceset="WPM2015" device="" technology="-3/TR"/>
 <part name="D6" library="BSB-LAN" deviceset="DIODE-" device="SMB" value="SS510B">
 <attribute name="LCSC_PART" value="C65011"/>
 </part>
-<part name="R47" library="BSB-LAN" deviceset="R-EU_" device="R0402" value="10k"/>
+<part name="R47" library="BSB-LAN" deviceset="R-EU_" device="R0402" value="10k">
+<attribute name="LCSC_PART" value="C25744"/>
+</part>
 <part name="R48" library="BSB-LAN" deviceset="R-EU_" device="R0603" value="1.5k">
-<attribute name="LCSC_PART" value=""/>
+<attribute name="LCSC_PART" value="C22843"/>
 </part>
 <part name="PGD" library="BSB-LAN" deviceset="LED" device="CHIPLED_0603" value="red">
-<attribute name="LCSC_PART" value=""/>
+<attribute name="LCSC_PART" value="C2286"/>
 </part>
-<part name="C26" library="BSB-LAN" deviceset="C-EU" device="C0402" value="0.1uF"/>
+<part name="C26" library="BSB-LAN" deviceset="C-EU" device="C0402" value="0.1uF">
+<attribute name="LCSC_PART" value="C1525"/>
+</part>
 <part name="R50" library="BSB-LAN" deviceset="R-EU_" device="R0402" value="4.7k">
-<attribute name="LCSC_PART" value=""/>
+<attribute name="LCSC_PART" value="C25900"/>
 </part>
 <part name="USB" library="BSB-LAN" deviceset="USB_MICROB_PLUG" device="" value="ZX62-B-5PA(33)"/>
-<part name="C27" library="BSB-LAN" deviceset="C-EU" device="C0402" value="0.1uF"/>
+<part name="C27" library="BSB-LAN" deviceset="C-EU" device="C0402" value="0.1uF">
+<attribute name="LCSC_PART" value="C1525"/>
+</part>
 <part name="CASE1" library="BSB-LAN" deviceset="CNMB" device="/2" value="DNI"/>
-<part name="R51" library="BSB-LAN" deviceset="R-EU_" device="R0402" value="10k"/>
+<part name="R51" library="BSB-LAN" deviceset="R-EU_" device="R0402" value="10k">
+<attribute name="LCSC_PART" value="C25744"/>
+</part>
+<part name="U2" library="BSB-LAN" deviceset="ESDS314" device="DBV"/>
 </parts>
 <sheets>
 <sheet>
@@ -7742,19 +7883,45 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <instance part="ESP1" gate="G$1" x="60.96" y="121.92"/>
 <instance part="USD" gate="G$1" x="233.68" y="124.46"/>
 <instance part="UEXT" gate="G$1" x="55.88" y="17.78" rot="R180"/>
-<instance part="C1" gate="G$1" x="35.56" y="142.24" rot="MR0"/>
-<instance part="R28" gate="G$1" x="35.56" y="154.94" rot="R90"/>
-<instance part="L2" gate="G$1" x="205.74" y="162.56" rot="R90"/>
-<instance part="C15" gate="G$1" x="215.9" y="154.94"/>
-<instance part="C16" gate="G$1" x="226.06" y="154.94"/>
-<instance part="RN3" gate="G$1" x="193.04" y="149.86" rot="MR90"/>
-<instance part="R31" gate="G$1" x="200.66" y="121.92"/>
-<instance part="R32" gate="G$1" x="177.8" y="149.86" rot="R90"/>
-<instance part="R33" gate="G$1" x="210.82" y="127"/>
-<instance part="R34" gate="G$1" x="38.1" y="63.5" rot="R90"/>
-<instance part="R35" gate="G$1" x="63.5" y="55.88"/>
-<instance part="R43" gate="G$1" x="25.4" y="114.3" rot="MR270"/>
-<instance part="R44" gate="G$1" x="25.4" y="96.52" rot="MR270"/>
+<instance part="C1" gate="G$1" x="35.56" y="142.24" rot="MR0">
+<attribute name="LCSC_PART" x="35.56" y="142.24" size="1.4224" layer="96" font="vector" ratio="10" align="center" display="off"/>
+</instance>
+<instance part="R28" gate="G$1" x="35.56" y="154.94" rot="R90">
+<attribute name="LCSC_PART" x="35.56" y="154.94" size="1.4224" layer="96" font="vector" ratio="10" align="center" display="off"/>
+</instance>
+<instance part="L2" gate="G$1" x="205.74" y="162.56" rot="R90">
+<attribute name="LCSC_PART" x="205.74" y="162.56" size="1.4224" layer="96" font="vector" ratio="10" rot="R90" align="center" display="off"/>
+</instance>
+<instance part="C15" gate="G$1" x="215.9" y="154.94">
+<attribute name="LCSC_PART" x="215.9" y="154.94" size="1.4224" layer="96" font="vector" ratio="10" rot="R90" align="center" display="off"/>
+</instance>
+<instance part="C16" gate="G$1" x="226.06" y="154.94">
+<attribute name="LCSC_PART" x="226.06" y="154.94" size="1.4224" layer="96" font="vector" ratio="10" rot="R90" align="center" display="off"/>
+</instance>
+<instance part="RN3" gate="G$1" x="193.04" y="149.86" rot="MR90">
+<attribute name="LCSC_PART" x="193.04" y="149.86" size="1.4224" layer="96" font="vector" ratio="10" rot="MR90" align="center" display="off"/>
+</instance>
+<instance part="R31" gate="G$1" x="200.66" y="121.92">
+<attribute name="LCSC_PART" x="200.66" y="121.92" size="1.4224" layer="96" font="vector" ratio="10" align="center" display="off"/>
+</instance>
+<instance part="R32" gate="G$1" x="177.8" y="149.86" rot="R90">
+<attribute name="LCSC_PART" x="177.8" y="149.86" size="1.4224" layer="96" font="vector" ratio="10" align="center" display="off"/>
+</instance>
+<instance part="R33" gate="G$1" x="210.82" y="127">
+<attribute name="LCSC_PART" x="210.82" y="127" size="1.4224" layer="96" font="vector" ratio="10" align="center" display="off"/>
+</instance>
+<instance part="R34" gate="G$1" x="38.1" y="63.5" rot="R90">
+<attribute name="LCSC_PART" x="38.1" y="63.5" size="1.4224" layer="96" font="vector" ratio="10" align="center" display="off"/>
+</instance>
+<instance part="R35" gate="G$1" x="63.5" y="55.88">
+<attribute name="LCSC_PART" x="63.5" y="55.88" size="1.4224" layer="96" font="vector" ratio="10" align="center" display="off"/>
+</instance>
+<instance part="R43" gate="G$1" x="25.4" y="114.3" rot="MR270">
+<attribute name="LCSC_PART" x="25.4" y="114.3" size="1.4224" layer="96" font="vector" ratio="10" align="center" display="off"/>
+</instance>
+<instance part="R44" gate="G$1" x="25.4" y="96.52" rot="MR270">
+<attribute name="LCSC_PART" x="25.4" y="96.52" size="1.4224" layer="96" font="vector" ratio="10" align="center" display="off"/>
+</instance>
 <instance part="RST" gate=".SW" x="48.26" y="43.18">
 <attribute name="LCSC_PART" x="48.26" y="43.18" size="1.4224" layer="96" font="vector" ratio="10" align="center-left" display="off"/>
 </instance>
@@ -7763,21 +7930,34 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <instance part="Q5" gate="G$1" x="119.38" y="45.72" rot="MR0">
 <attribute name="LCSC_PART" x="119.38" y="45.72" size="1.4224" layer="96" font="vector" ratio="10" rot="MR0" align="center" display="off"/>
 </instance>
-<instance part="R45" gate="G$1" x="129.54" y="45.72"/>
+<instance part="R45" gate="G$1" x="129.54" y="45.72">
+<attribute name="LCSC_PART" x="129.54" y="45.72" size="1.4224" layer="96" font="vector" ratio="10" align="center" display="off"/>
+</instance>
 <instance part="Q6" gate="G$1" x="119.38" y="27.94" rot="R180">
 <attribute name="LCSC_PART" x="119.38" y="27.94" size="1.4224" layer="96" font="vector" ratio="10" rot="R180" align="center" display="off"/>
 </instance>
-<instance part="R46" gate="G$1" x="129.54" y="27.94"/>
+<instance part="R46" gate="G$1" x="129.54" y="27.94">
+<attribute name="LCSC_PART" x="129.54" y="27.94" size="1.4224" layer="96" font="vector" ratio="10" align="center" display="off"/>
+</instance>
 <instance part="IC6" gate="G$1" x="172.72" y="53.34" rot="MR0"/>
-<instance part="R49" gate="G$1" x="129.54" y="63.5" rot="MR0"/>
-<instance part="C26" gate="G$1" x="195.58" y="63.5"/>
+<instance part="R49" gate="G$1" x="129.54" y="63.5" rot="MR0">
+<attribute name="LCSC_PART" x="129.54" y="63.5" size="1.4224" layer="96" font="vector" ratio="10" align="center" display="off"/>
+</instance>
+<instance part="C26" gate="G$1" x="195.58" y="63.5">
+<attribute name="LCSC_PART" x="195.58" y="63.5" size="1.4224" layer="96" font="vector" ratio="10" align="center" display="off"/>
+</instance>
 <instance part="R50" gate="G$1" x="149.86" y="48.26">
 <attribute name="LCSC_PART" x="149.86" y="48.26" size="2.54" layer="96" font="vector" ratio="10" align="center" display="off"/>
 </instance>
 <instance part="USB" gate="G$1" x="233.68" y="50.8"/>
-<instance part="C27" gate="G$1" x="33.02" y="96.52"/>
+<instance part="C27" gate="G$1" x="33.02" y="96.52">
+<attribute name="LCSC_PART" x="33.02" y="96.52" size="1.4224" layer="96" font="vector" ratio="10" align="center" display="off"/>
+</instance>
 <instance part="CASE1" gate="G$1" x="129.54" y="162.56"/>
-<instance part="R51" gate="G$1" x="40.64" y="27.94" rot="R270"/>
+<instance part="R51" gate="G$1" x="40.64" y="27.94" rot="R270">
+<attribute name="LCSC_PART" x="40.64" y="27.94" size="1.4224" layer="96" font="vector" ratio="10" align="center" display="off"/>
+</instance>
+<instance part="U2" gate="A" x="193.04" y="86.36"/>
 </instances>
 <busses>
 </busses>
@@ -7859,6 +8039,11 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <pinref part="USB" gate="G$1" pin="GND"/>
 <wire x1="226.06" y1="45.72" x2="218.44" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="218.44" y1="45.72" x2="218.44" y2="43.18" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="182.88" y1="86.36" x2="177.8" y2="86.36" width="0.1524" layer="91"/>
+<label x="177.8" y="86.36" size="1.4224" layer="95" font="vector" ratio="10" rot="R180" xref="yes"/>
+<pinref part="U2" gate="A" pin="GND"/>
 </segment>
 </net>
 <net name="EMAC-TXD0" class="4">
@@ -8112,6 +8297,11 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <pinref part="Q6" gate="G$1" pin="C"/>
 <wire x1="116.84" y1="20.32" x2="116.84" y2="22.86" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<wire x1="182.88" y1="88.9" x2="177.8" y2="88.9" width="0.1524" layer="91"/>
+<label x="177.8" y="88.9" size="1.4224" layer="95" font="vector" ratio="10" rot="R180" xref="yes"/>
+<pinref part="U2" gate="A" pin="IO1"/>
+</segment>
 </net>
 <net name="SD-VCC" class="4">
 <segment>
@@ -8211,6 +8401,11 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <label x="83.82" y="91.44" size="1.4224" layer="95" font="vector" ratio="10" xref="yes"/>
 <wire x1="76.2" y1="91.44" x2="83.82" y2="91.44" width="0.1524" layer="91"/>
 <pinref part="ESP1" gate="G$1" pin="GPIO34"/>
+</segment>
+<segment>
+<label x="177.8" y="83.82" size="1.4224" layer="95" font="vector" ratio="10" rot="R180" xref="yes"/>
+<wire x1="182.88" y1="83.82" x2="177.8" y2="83.82" width="0.1524" layer="91"/>
+<pinref part="U2" gate="A" pin="IO2"/>
 </segment>
 </net>
 <net name="ESP-BUTTON-R" class="4">
@@ -8349,19 +8544,39 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <net name="USB-D-" class="4">
 <segment>
 <pinref part="IC6" gate="G$1" pin="D-"/>
-<wire x1="187.96" y1="50.8" x2="218.44" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="50.8" x2="213.36" y2="50.8" width="0.1524" layer="91"/>
 <pinref part="USB" gate="G$1" pin="D-"/>
+<wire x1="213.36" y1="50.8" x2="218.44" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="226.06" y1="53.34" x2="220.98" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="220.98" y1="53.34" x2="218.44" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="50.8" x2="213.36" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="48.26" x2="210.82" y2="48.26" width="0.1524" layer="91"/>
+<label x="210.82" y="48.26" size="1.4224" layer="95" font="vector" ratio="10" rot="R180" xref="yes"/>
+<junction x="213.36" y="50.8"/>
+</segment>
+<segment>
+<wire x1="203.2" y1="83.82" x2="205.74" y2="83.82" width="0.1524" layer="91"/>
+<label x="205.74" y="83.82" size="1.4224" layer="95" font="vector" ratio="10" rot="MR180" xref="yes"/>
+<pinref part="U2" gate="A" pin="IO3"/>
 </segment>
 </net>
 <net name="USB-D+" class="4">
 <segment>
 <pinref part="IC6" gate="G$1" pin="D+"/>
-<wire x1="187.96" y1="53.34" x2="218.44" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="53.34" x2="213.36" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="USB" gate="G$1" pin="D+"/>
+<wire x1="213.36" y1="53.34" x2="218.44" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="226.06" y1="50.8" x2="220.98" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="220.98" y1="50.8" x2="218.44" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="53.34" x2="213.36" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="55.88" x2="210.82" y2="55.88" width="0.1524" layer="91"/>
+<label x="210.82" y="55.88" size="1.4224" layer="95" font="vector" ratio="10" rot="R180" xref="yes"/>
+<junction x="213.36" y="53.34"/>
+</segment>
+<segment>
+<wire x1="203.2" y1="88.9" x2="205.74" y2="88.9" width="0.1524" layer="91"/>
+<label x="205.74" y="88.9" size="1.4224" layer="95" font="vector" ratio="10" rot="MR180" xref="yes"/>
+<pinref part="U2" gate="A" pin="IO4"/>
 </segment>
 </net>
 <net name="CH340-!CTS" class="4">
@@ -8414,8 +8629,8 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <plain>
 <wire x1="193.04" y1="175.26" x2="193.04" y2="144.78" width="0.1524" layer="94" style="shortdash"/>
 <wire x1="193.04" y1="129.54" x2="193.04" y2="96.52" width="0.1524" layer="94" style="shortdash"/>
-<wire x1="193.04" y1="96.52" x2="7.62" y2="96.52" width="0.1524" layer="94" style="shortdash"/>
-<wire x1="7.62" y1="99.06" x2="190.5" y2="99.06" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="193.04" y1="96.52" x2="5.08" y2="96.52" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="5.08" y1="99.06" x2="190.5" y2="99.06" width="0.1524" layer="94" style="shortdash"/>
 <wire x1="190.5" y1="99.06" x2="190.5" y2="129.54" width="0.1524" layer="94" style="shortdash"/>
 <wire x1="190.5" y1="144.78" x2="190.5" y2="175.26" width="0.1524" layer="94" style="shortdash"/>
 <text x="10.16" y="106.68" size="1.4224" layer="97" font="vector" ratio="10" align="center-left">Galvanically
@@ -8426,37 +8641,71 @@ Supply Iface</text>
 </plain>
 <instances>
 <instance part="FRAME3" gate="G$1" x="0" y="0"/>
-<instance part="IC3" gate="G$1" x="58.42" y="154.94"/>
+<instance part="IC3" gate="G$1" x="58.42" y="154.94">
+<attribute name="LCSC_PART" x="58.42" y="154.94" size="1.4224" layer="96" font="vector" ratio="10" align="center" display="off"/>
+</instance>
 <instance part="DC1" gate="G$1" x="193.04" y="139.7"/>
 <instance part="IC4" gate="A" x="129.54" y="73.66"/>
-<instance part="C17" gate="G$1" x="91.44" y="170.18" rot="MR270"/>
+<instance part="C17" gate="G$1" x="91.44" y="170.18" rot="MR270">
+<attribute name="LCSC_PART" x="91.44" y="170.18" size="1.4224" layer="96" font="vector" ratio="10" align="center" display="off"/>
+</instance>
 <instance part="R21" gate="G$1" x="35.56" y="160.02">
 <attribute name="LCSC_PART" x="35.56" y="160.02" size="2.54" layer="96" font="vector" ratio="10" align="center" display="off"/>
 </instance>
-<instance part="C18" gate="G$1" x="137.16" y="147.32"/>
+<instance part="C18" gate="G$1" x="137.16" y="147.32">
+<attribute name="LCSC_PART" x="137.16" y="147.32" size="1.4224" layer="96" font="vector" ratio="10" align="center" display="off"/>
+</instance>
 <instance part="L3" gate="G$1" x="116.84" y="160.02" rot="R90">
 <attribute name="LCSC_PART" x="116.84" y="160.02" size="1.4224" layer="96" font="vector" ratio="10" rot="R90" align="center" display="off"/>
 </instance>
-<instance part="C19" gate="G$1" x="127" y="144.78" rot="MR0"/>
-<instance part="R38" gate="G$1" x="119.38" y="152.4" rot="R180"/>
-<instance part="R36" gate="G$1" x="111.76" y="144.78" rot="MR90"/>
-<instance part="R37" gate="G$1" x="111.76" y="129.54" rot="MR270"/>
+<instance part="C19" gate="G$1" x="127" y="144.78" rot="MR0">
+<attribute name="LCSC_PART" x="127" y="144.78" size="1.4224" layer="96" font="vector" ratio="10" align="center" display="off"/>
+</instance>
+<instance part="R38" gate="G$1" x="119.38" y="152.4" rot="R180">
+<attribute name="LCSC_PART" x="119.38" y="152.4" size="1.4224" layer="96" font="vector" ratio="10" align="center" display="off"/>
+</instance>
+<instance part="R36" gate="G$1" x="111.76" y="144.78" rot="MR90">
+<attribute name="LCSC_PART" x="111.76" y="144.78" size="1.4224" layer="96" font="vector" ratio="10" align="center" display="off"/>
+</instance>
+<instance part="R37" gate="G$1" x="111.76" y="129.54" rot="MR270">
+<attribute name="LCSC_PART" x="111.76" y="129.54" size="1.4224" layer="96" font="vector" ratio="10" align="center" display="off"/>
+</instance>
 <instance part="D1" gate="G$1" x="81.28" y="134.62" rot="R90">
 <attribute name="LCSC_PART" x="81.28" y="134.62" size="1.4224" layer="96" font="vector" ratio="10" rot="R90" align="center" display="off"/>
 </instance>
-<instance part="R39" gate="G$1" x="81.28" y="170.18" rot="MR180"/>
-<instance part="C20" gate="G$1" x="198.12" y="149.86" rot="R90"/>
-<instance part="C21" gate="G$1" x="198.12" y="124.46" rot="MR270"/>
-<instance part="C22" gate="G$1" x="172.72" y="139.7" rot="MR0"/>
-<instance part="R41" gate="G$1" x="157.48" y="63.5" rot="MR0"/>
-<instance part="R40" gate="G$1" x="152.4" y="68.58" rot="MR180"/>
-<instance part="R42" gate="G$1" x="165.1" y="55.88" rot="MR270"/>
+<instance part="R39" gate="G$1" x="81.28" y="170.18" rot="MR180">
+<attribute name="LCSC_PART" x="81.28" y="170.18" size="1.4224" layer="96" font="vector" ratio="10" rot="MR180" align="center" display="off"/>
+</instance>
+<instance part="C20" gate="G$1" x="198.12" y="149.86" rot="R90">
+<attribute name="LCSC_PART" x="198.12" y="149.86" size="1.4224" layer="96" font="vector" ratio="10" rot="R90" align="center" display="off"/>
+</instance>
+<instance part="C21" gate="G$1" x="198.12" y="124.46" rot="MR270">
+<attribute name="LCSC_PART" x="198.12" y="124.46" size="1.4224" layer="96" font="vector" ratio="10" rot="MR270" align="center" display="off"/>
+</instance>
+<instance part="C22" gate="G$1" x="172.72" y="139.7" rot="MR0">
+<attribute name="LCSC_PART" x="172.72" y="139.7" size="1.4224" layer="96" font="vector" ratio="10" align="center" display="off"/>
+</instance>
+<instance part="R41" gate="G$1" x="157.48" y="63.5" rot="MR0">
+<attribute name="LCSC_PART" x="157.48" y="63.5" size="1.4224" layer="96" font="vector" ratio="10" align="center" display="off"/>
+</instance>
+<instance part="R40" gate="G$1" x="152.4" y="68.58" rot="MR180">
+<attribute name="LCSC_PART" x="152.4" y="68.58" size="1.4224" layer="96" font="vector" ratio="10" align="center" display="off"/>
+</instance>
+<instance part="R42" gate="G$1" x="165.1" y="55.88" rot="MR270">
+<attribute name="LCSC_PART" x="165.1" y="55.88" size="1.4224" layer="96" font="vector" ratio="10" align="center" display="off"/>
+</instance>
 <instance part="L4" gate="G$1" x="152.4" y="76.2" rot="R90">
 <attribute name="LCSC_PART" x="152.4" y="76.2" size="1.4224" layer="96" font="vector" ratio="10" rot="R90" align="center-left" display="off"/>
 </instance>
-<instance part="C23" gate="G$1" x="172.72" y="60.96"/>
-<instance part="C24" gate="G$1" x="106.68" y="60.96" rot="MR0"/>
-<instance part="C25" gate="G$1" x="213.36" y="139.7"/>
+<instance part="C23" gate="G$1" x="172.72" y="60.96">
+<attribute name="LCSC_PART" x="172.72" y="60.96" size="1.4224" layer="96" font="vector" ratio="10" rot="R90" align="center" display="off"/>
+</instance>
+<instance part="C24" gate="G$1" x="106.68" y="60.96" rot="MR0">
+<attribute name="LCSC_PART" x="106.68" y="60.96" size="1.4224" layer="96" font="vector" ratio="10" align="center" display="off"/>
+</instance>
+<instance part="C25" gate="G$1" x="213.36" y="139.7">
+<attribute name="LCSC_PART" x="213.36" y="139.7" size="1.4224" layer="96" font="vector" ratio="10" align="center" display="off"/>
+</instance>
 <instance part="D5" gate="G$1" x="226.06" y="137.16"/>
 <instance part="Q7" gate="G$1" x="60.96" y="76.2" smashed="yes" rot="R90">
 <attribute name="NAME" x="60.96" y="83.82" size="1.778" layer="95"/>
@@ -8465,7 +8714,9 @@ Supply Iface</text>
 <instance part="D6" gate="G$1" x="68.58" y="66.04">
 <attribute name="LCSC_PART" x="68.58" y="66.04" size="1.4224" layer="96" font="vector" ratio="10" align="center" display="off"/>
 </instance>
-<instance part="R47" gate="G$1" x="60.96" y="55.88" rot="MR270"/>
+<instance part="R47" gate="G$1" x="60.96" y="55.88" rot="MR270">
+<attribute name="LCSC_PART" x="60.96" y="55.88" size="1.4224" layer="96" font="vector" ratio="10" align="center" display="off"/>
+</instance>
 <instance part="R48" gate="G$1" x="88.9" y="66.04" rot="R90">
 <attribute name="LCSC_PART" x="88.9" y="66.04" size="2.54" layer="96" font="vector" ratio="10" rot="R90" align="center" display="off"/>
 </instance>
@@ -8836,46 +9087,110 @@ Supply Iface</text>
 <attribute name="VALUE" x="48.26" y="165.1" size="1.778" layer="96" rot="MR0"/>
 </instance>
 <instance part="U1" gate="A" x="106.68" y="106.68"/>
-<instance part="L1" gate="G$1" x="71.12" y="154.94" rot="R90"/>
-<instance part="R30" gate="G$1" x="96.52" y="30.48"/>
-<instance part="C2" gate="G$1" x="88.9" y="15.24" rot="MR0"/>
-<instance part="C3" gate="G$1" x="83.82" y="114.3" rot="MR0"/>
-<instance part="RN1" gate="G$1" x="226.06" y="152.4" rot="R90"/>
-<instance part="RN2" gate="G$1" x="208.28" y="152.4" rot="R90"/>
-<instance part="R13" gate="G$1" x="35.56" y="152.4" rot="R90"/>
-<instance part="R14" gate="G$1" x="30.48" y="121.92" rot="MR180"/>
-<instance part="R11" gate="G$1" x="38.1" y="114.3" rot="MR270"/>
-<instance part="C4" gate="G$1" x="27.94" y="152.4" rot="MR0"/>
-<instance part="C5" gate="G$1" x="60.96" y="147.32"/>
-<instance part="C6" gate="G$1" x="81.28" y="147.32"/>
-<instance part="R12" gate="G$1" x="48.26" y="137.16" rot="R90"/>
-<instance part="C10" gate="G$1" x="139.7" y="144.78" rot="MR0"/>
-<instance part="C8" gate="G$1" x="119.38" y="147.32" rot="MR0"/>
-<instance part="C9" gate="G$1" x="109.22" y="149.86" rot="MR0"/>
-<instance part="C7" gate="G$1" x="129.54" y="144.78" rot="MR0"/>
-<instance part="C11" gate="G$1" x="99.06" y="152.4" rot="MR0"/>
-<instance part="R16" gate="G$1" x="96.52" y="83.82" rot="R180"/>
-<instance part="R18" gate="G$1" x="111.76" y="76.2"/>
-<instance part="R15" gate="G$1" x="111.76" y="83.82" rot="R180"/>
-<instance part="R17" gate="G$1" x="96.52" y="76.2"/>
-<instance part="R19" gate="G$1" x="208.28" y="99.06" rot="MR180"/>
-<instance part="R20" gate="G$1" x="187.96" y="86.36" rot="MR0"/>
-<instance part="C12" gate="G$1" x="195.58" y="93.98"/>
-<instance part="R23" gate="G$1" x="175.26" y="40.64" rot="MR270"/>
+<instance part="L1" gate="G$1" x="71.12" y="154.94" rot="R90">
+<attribute name="LCSC_PART" x="71.12" y="154.94" size="1.4224" layer="96" font="vector" ratio="10" rot="R90" align="center" display="off"/>
+</instance>
+<instance part="R30" gate="G$1" x="96.52" y="30.48">
+<attribute name="LCSC_PART" x="96.52" y="30.48" size="1.4224" layer="96" font="vector" ratio="10" align="center" display="off"/>
+</instance>
+<instance part="C2" gate="G$1" x="88.9" y="15.24" rot="MR0">
+<attribute name="LCSC_PART" x="88.9" y="15.24" size="1.4224" layer="96" font="vector" ratio="10" rot="MR0" align="center" display="off"/>
+</instance>
+<instance part="C3" gate="G$1" x="83.82" y="114.3" rot="MR0">
+<attribute name="LCSC_PART" x="83.82" y="114.3" size="1.4224" layer="96" font="vector" ratio="10" align="center" display="off"/>
+</instance>
+<instance part="RN1" gate="G$1" x="226.06" y="152.4" rot="R90">
+<attribute name="LCSC_PART" x="226.06" y="152.4" size="1.4224" layer="96" font="vector" ratio="10" rot="R90" align="center" display="off"/>
+</instance>
+<instance part="RN2" gate="G$1" x="208.28" y="152.4" rot="R90">
+<attribute name="LCSC_PART" x="208.28" y="152.4" size="1.4224" layer="96" font="vector" ratio="10" rot="R90" align="center" display="off"/>
+</instance>
+<instance part="R13" gate="G$1" x="35.56" y="152.4" rot="R90">
+<attribute name="LCSC_PART" x="35.56" y="152.4" size="1.4224" layer="96" font="vector" ratio="10" align="center" display="off"/>
+</instance>
+<instance part="R14" gate="G$1" x="30.48" y="121.92" rot="MR180">
+<attribute name="LCSC_PART" x="30.48" y="121.92" size="1.4224" layer="96" font="vector" ratio="10" align="center" display="off"/>
+</instance>
+<instance part="R11" gate="G$1" x="38.1" y="114.3" rot="MR270">
+<attribute name="LCSC_PART" x="38.1" y="114.3" size="1.4224" layer="96" font="vector" ratio="10" align="center" display="off"/>
+</instance>
+<instance part="C4" gate="G$1" x="27.94" y="152.4" rot="MR0">
+<attribute name="LCSC_PART" x="30.48" y="149.86" size="1.4224" layer="96" font="vector" ratio="10" rot="R90" align="center" display="off"/>
+</instance>
+<instance part="C5" gate="G$1" x="60.96" y="147.32">
+<attribute name="LCSC_PART" x="60.96" y="147.32" size="1.4224" layer="96" font="vector" ratio="10" rot="R90" align="center" display="off"/>
+</instance>
+<instance part="C6" gate="G$1" x="81.28" y="147.32">
+<attribute name="LCSC_PART" x="81.28" y="147.32" size="1.4224" layer="96" font="vector" ratio="10" rot="R90" align="center" display="off"/>
+</instance>
+<instance part="R12" gate="G$1" x="48.26" y="137.16" rot="R90">
+<attribute name="LCSC_PART" x="48.26" y="137.16" size="1.4224" layer="96" font="vector" ratio="10" align="center" display="off"/>
+</instance>
+<instance part="C10" gate="G$1" x="139.7" y="144.78" rot="MR0">
+<attribute name="LCSC_PART" x="139.7" y="144.78" size="1.4224" layer="96" font="vector" ratio="10" align="center" display="off"/>
+</instance>
+<instance part="C8" gate="G$1" x="119.38" y="147.32" rot="MR0">
+<attribute name="LCSC_PART" x="119.38" y="147.32" size="1.4224" layer="96" font="vector" ratio="10" align="center" display="off"/>
+</instance>
+<instance part="C9" gate="G$1" x="109.22" y="149.86" rot="MR0">
+<attribute name="LCSC_PART" x="109.22" y="149.86" size="1.4224" layer="96" font="vector" ratio="10" align="center" display="off"/>
+</instance>
+<instance part="C7" gate="G$1" x="129.54" y="144.78" rot="MR0">
+<attribute name="LCSC_PART" x="129.54" y="144.78" size="1.4224" layer="96" font="vector" ratio="10" align="center" display="off"/>
+</instance>
+<instance part="C11" gate="G$1" x="99.06" y="152.4" rot="MR0">
+<attribute name="LCSC_PART" x="99.06" y="152.4" size="1.4224" layer="96" font="vector" ratio="10" align="center" display="off"/>
+</instance>
+<instance part="R16" gate="G$1" x="96.52" y="83.82" rot="R180">
+<attribute name="LCSC_PART" x="96.52" y="83.82" size="1.4224" layer="96" font="vector" ratio="10" align="center" display="off"/>
+</instance>
+<instance part="R18" gate="G$1" x="111.76" y="76.2">
+<attribute name="LCSC_PART" x="111.76" y="76.2" size="1.4224" layer="96" font="vector" ratio="10" align="center" display="off"/>
+</instance>
+<instance part="R15" gate="G$1" x="111.76" y="83.82" rot="R180">
+<attribute name="LCSC_PART" x="111.76" y="83.82" size="1.4224" layer="96" font="vector" ratio="10" align="center" display="off"/>
+</instance>
+<instance part="R17" gate="G$1" x="96.52" y="76.2">
+<attribute name="LCSC_PART" x="96.52" y="76.2" size="1.4224" layer="96" font="vector" ratio="10" align="center" display="off"/>
+</instance>
+<instance part="R19" gate="G$1" x="208.28" y="99.06" rot="MR180">
+<attribute name="LCSC_PART" x="208.28" y="99.06" size="1.4224" layer="96" font="vector" ratio="10" align="center" display="off"/>
+</instance>
+<instance part="R20" gate="G$1" x="187.96" y="86.36" rot="MR0">
+<attribute name="LCSC_PART" x="187.96" y="86.36" size="1.4224" layer="96" font="vector" ratio="10" align="center" display="off"/>
+</instance>
+<instance part="C12" gate="G$1" x="195.58" y="93.98">
+<attribute name="LCSC_PART" x="195.58" y="93.98" size="1.4224" layer="96" font="vector" ratio="10" align="center" display="off"/>
+</instance>
+<instance part="R23" gate="G$1" x="175.26" y="40.64" rot="MR270">
+<attribute name="LCSC_PART" x="175.26" y="40.64" size="1.4224" layer="96" font="vector" ratio="10" align="center" display="off"/>
+</instance>
 <instance part="C13" gate="G$1" x="160.02" y="50.8" rot="MR0">
 <attribute name="LCSC_PART" x="160.02" y="50.8" size="1.4224" layer="96" font="vector" ratio="10" rot="MR0" align="center-left" display="off"/>
 </instance>
 <instance part="IC2" gate="G$1" x="210.82" y="53.34"/>
 <instance part="D4" gate="G$1" x="170.18" y="53.34" rot="MR0"/>
-<instance part="R26" gate="G$1" x="182.88" y="40.64" rot="MR270"/>
-<instance part="R27" gate="G$1" x="190.5" y="40.64" rot="MR270"/>
-<instance part="R24" gate="G$1" x="175.26" y="66.04" rot="MR270"/>
-<instance part="R25" gate="G$1" x="185.42" y="66.04" rot="MR270"/>
+<instance part="R26" gate="G$1" x="182.88" y="40.64" rot="MR270">
+<attribute name="LCSC_PART" x="182.88" y="40.64" size="1.4224" layer="96" font="vector" ratio="10" align="center" display="off"/>
+</instance>
+<instance part="R27" gate="G$1" x="190.5" y="40.64" rot="MR270">
+<attribute name="LCSC_PART" x="190.5" y="40.64" size="1.4224" layer="96" font="vector" ratio="10" align="center" display="off"/>
+</instance>
+<instance part="R24" gate="G$1" x="175.26" y="66.04" rot="MR270">
+<attribute name="LCSC_PART" x="175.26" y="66.04" size="1.4224" layer="96" font="vector" ratio="10" align="center" display="off"/>
+</instance>
+<instance part="R25" gate="G$1" x="185.42" y="66.04" rot="MR270">
+<attribute name="LCSC_PART" x="185.42" y="66.04" size="1.4224" layer="96" font="vector" ratio="10" align="center" display="off"/>
+</instance>
 <instance part="R22" gate="G$1" x="226.06" y="53.34" rot="R270">
 <attribute name="LCSC_PART" x="226.06" y="53.34" size="2.54" layer="96" font="vector" ratio="10" rot="R270" align="center" display="off"/>
 </instance>
-<instance part="C14" gate="G$1" x="233.68" y="53.34"/>
-<instance part="R29" gate="G$1" x="88.9" y="35.56"/>
+<instance part="C14" gate="G$1" x="233.68" y="53.34">
+<attribute name="LCSC_PART" x="233.68" y="53.34" size="1.4224" layer="96" font="vector" ratio="10" align="center" display="off"/>
+</instance>
+<instance part="R29" gate="G$1" x="88.9" y="35.56">
+<attribute name="LCSC_PART" x="88.9" y="35.56" size="1.4224" layer="96" font="vector" ratio="10" align="center" display="off"/>
+</instance>
 </instances>
 <busses>
 </busses>
