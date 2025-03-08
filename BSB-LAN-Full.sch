@@ -7610,8 +7610,8 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <part name="C2" library="BSB-LAN" deviceset="C-EU" device="C1808" value="1nF 3kV">
 <attribute name="LCSC_PART" value="C577300"/>
 </part>
-<part name="C3" library="BSB-LAN" deviceset="C-EU" device="C0402" value="0.1uF">
-<attribute name="LCSC_PART" value="C1525"/>
+<part name="C3" library="BSB-LAN" deviceset="C-EU" device="C0603" value="0.1uF">
+<attribute name="LCSC_PART" value="C113803"/>
 </part>
 <part name="RN1" library="BSB-LAN" deviceset="R-NET-04" device="-R1206" value="2.2k">
 <attribute name="LCSC_PART" value="C414564"/>
@@ -7628,32 +7628,32 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <part name="R11" library="BSB-LAN" deviceset="R-EU_" device="R0402" value="10k">
 <attribute name="LCSC_PART" value="C25744"/>
 </part>
-<part name="C4" library="BSB-LAN" deviceset="C-EU" device="C0603" value="22uF">
-<attribute name="LCSC_PART" value="C59461"/>
+<part name="C4" library="BSB-LAN" deviceset="C-EU" device="C0805L" value="22uF">
+<attribute name="LCSC_PART" value="C45783"/>
 </part>
-<part name="C5" library="BSB-LAN" deviceset="C-EU" device="C0603" value="22uF">
-<attribute name="LCSC_PART" value="C59461"/>
+<part name="C5" library="BSB-LAN" deviceset="C-EU" device="C0805L" value="22uF">
+<attribute name="LCSC_PART" value="C45783"/>
 </part>
-<part name="C6" library="BSB-LAN" deviceset="C-EU" device="C0603" value="22uF">
-<attribute name="LCSC_PART" value="C59461"/>
+<part name="C6" library="BSB-LAN" deviceset="C-EU" device="C0805L" value="22uF">
+<attribute name="LCSC_PART" value="C45783"/>
 </part>
 <part name="R12" library="BSB-LAN" deviceset="R-EU_" device="R0402" value="1k">
 <attribute name="LCSC_PART" value="C11702"/>
 </part>
-<part name="C10" library="BSB-LAN" deviceset="C-EU" device="C0402" value="0.1uF">
-<attribute name="LCSC_PART" value="C1525"/>
+<part name="C10" library="BSB-LAN" deviceset="C-EU" device="C0603L" value="0.1uF">
+<attribute name="LCSC_PART" value="C113803"/>
 </part>
-<part name="C8" library="BSB-LAN" deviceset="C-EU" device="C0402" value="0.1uF">
-<attribute name="LCSC_PART" value="C1525"/>
+<part name="C8" library="BSB-LAN" deviceset="C-EU" device="C0603L" value="0.1uF">
+<attribute name="LCSC_PART" value="C113803"/>
 </part>
-<part name="C9" library="BSB-LAN" deviceset="C-EU" device="C0402" value="0.1uF">
-<attribute name="LCSC_PART" value="C1525"/>
+<part name="C9" library="BSB-LAN" deviceset="C-EU" device="C0603L" value="0.1uF">
+<attribute name="LCSC_PART" value="C113803"/>
 </part>
 <part name="C7" library="BSB-LAN" deviceset="C-EU" device="C0603" value="2.2uF">
 <attribute name="LCSC_PART" value="C23630"/>
 </part>
-<part name="C11" library="BSB-LAN" deviceset="C-EU" device="C0402" value="0.1uF">
-<attribute name="LCSC_PART" value="C1525"/>
+<part name="C11" library="BSB-LAN" deviceset="C-EU" device="C0603L" value="0.1uF">
+<attribute name="LCSC_PART" value="C113803"/>
 </part>
 <part name="R16" library="BSB-LAN" deviceset="R-EU_" device="R0402L" value="49.9R">
 <attribute name="LCSC_PART" value="C25120"/>
@@ -7673,8 +7673,8 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <part name="R20" library="BSB-LAN" deviceset="R-EU_" device="R0402" value="12.1k 1%">
 <attribute name="LCSC_PART" value="C25852"/>
 </part>
-<part name="C12" library="BSB-LAN" deviceset="C-EU" device="C0402" value="0.1uF">
-<attribute name="LCSC_PART" value="C1525"/>
+<part name="C12" library="BSB-LAN" deviceset="C-EU" device="C0603" value="0.1uF">
+<attribute name="LCSC_PART" value="C113803"/>
 </part>
 <part name="R23" library="BSB-LAN" deviceset="R-EU_" device="R0402" value="12.1k 1%">
 <attribute name="LCSC_PART" value="C25852"/>
@@ -7734,11 +7734,11 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <part name="L2" library="BSB-LAN" deviceset="L-US" device="L0805" value="FB 600R">
 <attribute name="LCSC_PART" value="C1017"/>
 </part>
-<part name="C15" library="BSB-LAN" deviceset="C-EU" device="C0603" value="22uF">
-<attribute name="LCSC_PART" value="C59461"/>
+<part name="C15" library="BSB-LAN" deviceset="C-EU" device="C0805L" value="22uF">
+<attribute name="LCSC_PART" value="C45783"/>
 </part>
-<part name="C16" library="BSB-LAN" deviceset="C-EU" device="C0603" value="22uF">
-<attribute name="LCSC_PART" value="C59461"/>
+<part name="C16" library="BSB-LAN" deviceset="C-EU" device="C0805L" value="22uF">
+<attribute name="LCSC_PART" value="C45783"/>
 </part>
 <part name="RN3" library="BSB-LAN" deviceset="R-NET-04" device="-R1206" value="2.2k">
 <attribute name="LCSC_PART" value="C414564"/>
@@ -7758,8 +7758,8 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <part name="R35" library="BSB-LAN" deviceset="R-EU_" device="R0402" value="220R">
 <attribute name="LCSC_PART" value="C25091"/>
 </part>
-<part name="C17" library="BSB-LAN" deviceset="C-EU" device="C0402" value="0.1uF">
-<attribute name="LCSC_PART" value="C1525"/>
+<part name="C17" library="BSB-LAN" deviceset="C-EU" device="C0603L" value="0.1uF">
+<attribute name="LCSC_PART" value="C113803"/>
 </part>
 <part name="R21" library="BSB-LAN" deviceset="R-EU_" device="R1206" value="0.03R 1%">
 <attribute name="LCSC_PART" value="C163046"/>
@@ -7809,8 +7809,8 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <part name="L4" library="BSB-LAN" deviceset="L-US" device="L4040P" value="2.2uH 1.5A">
 <attribute name="LCSC_PART" value="C135262"/>
 </part>
-<part name="C23" library="BSB-LAN" deviceset="C-EU" device="C0603" value="22uF">
-<attribute name="LCSC_PART" value="C59461"/>
+<part name="C23" library="BSB-LAN" deviceset="C-EU" device="C0805" value="22uF">
+<attribute name="LCSC_PART" value="C45783"/>
 </part>
 <part name="C24" library="BSB-LAN" deviceset="C-EU" device="C0805" value="22uF">
 <attribute name="LCSC_PART" value="C45783"/>
@@ -7858,15 +7858,15 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <part name="PGD" library="BSB-LAN" deviceset="LED" device="CHIPLED_0603" value="red">
 <attribute name="LCSC_PART" value="C2286"/>
 </part>
-<part name="C26" library="BSB-LAN" deviceset="C-EU" device="C0402" value="0.1uF">
-<attribute name="LCSC_PART" value="C1525"/>
+<part name="C26" library="BSB-LAN" deviceset="C-EU" device="C0603L" value="0.1uF">
+<attribute name="LCSC_PART" value="C113803"/>
 </part>
 <part name="R50" library="BSB-LAN" deviceset="R-EU_" device="R0402" value="4.7k">
 <attribute name="LCSC_PART" value="C25900"/>
 </part>
 <part name="USB" library="BSB-LAN" deviceset="USB_MICROB_PLUG" device="" value="ZX62-B-5PA(33)"/>
-<part name="C27" library="BSB-LAN" deviceset="C-EU" device="C0402" value="0.1uF">
-<attribute name="LCSC_PART" value="C1525"/>
+<part name="C27" library="BSB-LAN" deviceset="C-EU" device="C0603L" value="0.1uF">
+<attribute name="LCSC_PART" value="C113803"/>
 </part>
 <part name="CASE1" library="BSB-LAN" deviceset="CNMB" device="/2" value="DNI"/>
 <part name="R51" library="BSB-LAN" deviceset="R-EU_" device="R0402" value="10k">
