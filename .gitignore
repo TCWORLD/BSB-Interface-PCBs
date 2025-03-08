@@ -9,7 +9,9 @@
 *.dri
 *.gpi
 ulp/*.cfg
-*/eagleUp/
+eagleUp/
+*.eup
+*.log
 
 #############
 ## OS detritus
