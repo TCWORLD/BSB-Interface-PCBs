@@ -1,0 +1,269 @@
+/*
+
+Copyright 2019 OXullo Intersecans <x@brainrapers.org>
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+*/
+
+// Note: the following eagle-bundled ULPs have been used as a guidance:
+// * mountsmd.ulp
+// * bom.ulp
+// * cmd-change-swap-layer.ulp
+// * centroid-screamingcircuits-smd.ulp
+
+// jlcpcb_smta_exporter.ulp
+// Modified By: T Carpenter
+// Date: 2025-03-09
+// Tested in Eagle 6.6.0
+// The differences between Eagle 6/7 and 9:
+// Eagle 9: E.footprint.name
+// Eagle 6/7: E.package.name
+// Status: Still not tested in various Eagle versions.
+
+#usage "<b>JLCPCB BOM/CPL files generator</b>\n"
+       "<p>"
+       "Generates BOM and CPL files for JLCPCB SMT assembly service"
+       "https://jlcpcb.com/smt-assembly"
+       "<p>"
+       "Run the ULP from the board editor"
+       "<p>"
+       "<author>Author: OXullo Intersecans x@brainrapers.org</author>"
+       "<author>Modified: Thomas Carpenter https://github.com/TCWORLD</author>"
+
+
+int layer_id_map[]  = { 1,  16 };
+int place_id_map[]  = { 21, 22 };
+int refdes_id_map[] = { 25, 26 };
+UL_ELEMENT selected_elements_t[];
+UL_ELEMENT selected_elements_b[];
+string layer_name_map[] = { "Top", "Bottom", "Both" };
+
+string replace_commas(string s)
+{
+    while (strstr(s, ",") >= 0) {  // convert commas to spaces
+        string substitution_string = " ";
+        sprintf(s, "%s%s%s", strsub(s, 0, strstr(s, ",")), substitution_string, strsub(s, strstr(s, ",")+1));
+    }
+
+    return s;
+}
+
+void export_cpl(int element_count, int bottom) {
+    for (int i = 0 ; i < element_count ; ++i) {
+        // Select top or bottom element
+        UL_ELEMENT E;
+        if (bottom) {
+            E = selected_elements_b[i];
+        } else {
+            E = selected_elements_t[i];
+        }
+        int angle = E.angle;
+        // Manually rotate the part
+        E.attributes(A) {
+            if (A.name == "JLC_ROTATION" || A.name == "JLC_ROT") {
+                angle = angle + strtol(A.value);
+                while(angle>360){
+                    angle = angle - 360;
+                }
+            }
+        }
+        // Account for bottom layer mirrored rotation
+        if (bottom) {
+            angle = (360 - angle);
+            angle = angle + 180;
+            angle = angle % 360;
+        }
+        real ang = angle;
+        // Output element to CPL
+        printf("%s,%5.2f,%5.2f,%s,%.1f\n",
+            E.name, u2mm(E.x), u2mm(E.y),
+            layer_name_map[bottom],
+            ang);
+    }
+}
+
+void export_bom(int element_count, int bottom) {
+    int i;
+    int indexes[];
+    numeric string values[];
+    // Get all values from top or bottom elements
+    for (i=0 ; i < element_count ; ++i) {
+        indexes[i] = i;
+        if (bottom) {
+            values[i] = selected_elements_b[i].value;
+        } else {
+            values[i] = selected_elements_t[i].value;
+        }
+    }
+    // Sort them neatly
+    sort(element_count, indexes, values);
+
+    string current_value = "";
+    string current_footprint = "";
+    string current_lcscpart = "";
+    string designators = "";
+
+    for (i = 0 ; i < element_count ; ++i) {
+        // Select top or bottom element
+        UL_ELEMENT E;
+        if (bottom) {
+            E = selected_elements_b[indexes[i]];
+        } else {
+            E = selected_elements_t[indexes[i]];
+        }
+        // Finish the previous row if new value differs from previous
+        if (current_value != "" && (E.value != current_value || E.package.name != current_footprint)) {
+            printf("%s,%s,%s,%s\n", current_value, designators, current_footprint, current_lcscpart);
+            designators = "";
+        }
+        // Append part number to line
+        if (designators != "") {
+            designators += " ";
+        }
+        designators += E.name;
+        current_value = replace_commas(E.value);
+        current_footprint = replace_commas(E.package.name);
+        current_lcscpart = "";
+
+        E.attributes(A) {
+            // Add the LCSC part number if attribute defines one
+            if (A.name == "LCSC_PART" || A.name == "LCSC") {
+                current_lcscpart = replace_commas(A.value);
+            }
+        }
+    }
+    // Output final line
+    if (current_value != "") {
+        printf("%s,%s,%s,%s\n", current_value, designators, current_footprint, current_lcscpart);
+    }
+}
+
+
+int checkIfSelected(UL_ELEMENT E, int bottom) {
+    E.package.contacts(C) {
+        if (C.smd && C.smd.layer == layer_id_map[bottom]) {
+            // Found one.
+            return 1;
+        }
+    }
+    // If not, then see if it is a PTH on our layer
+    int hasPTH = 0;
+    E.package.contacts(C) {
+        if (C.smd) {
+            // Skip any that have SMD pads as not being PTH
+            return 0;
+        }
+        if (C.pad) {
+            hasPTH = 1;
+        }
+    }
+    // Skip any without PTH
+    if (!hasPTH) {
+        return 0;
+    }
+    // Found a PTH part. We need to confirm its layer
+    E.package.texts(T) {
+        if (T.layer == refdes_id_map[bottom]) {
+            // On our layer if there is text on refdes layer.
+            return 1;
+        }
+    }
+    E.package.wires(W) {
+        if (W.layer == place_id_map[bottom]) {
+            // On our layer if there are wires on place layer.
+        return 1;
+        }
+    }
+    E.package.circles(C) {
+        if (C.layer == place_id_map[bottom]) {
+            // On our layer if there are circles on place layer.
+            return 1;
+        }
+    }
+    E.package.rectangles(R) {
+        if (R.layer == place_id_map[bottom]) {
+            // On our layer if there are rectangles on place layer.
+            return 1;
+        }
+    }
+    E.package.polygons(P) {
+        if (P.layer == place_id_map[bottom]) {
+            // On our layer if there are polygons on place layer.
+            return 1;
+        }
+    }
+    return 0;
+}
+
+
+if (board) board(B) {
+
+    string txt;
+    int layer_choice = 0;
+
+    dlgDialog("Layer selection") {
+        dlgGroup("Export layer") {
+            dlgRadioButton("&Top", layer_choice);
+            dlgRadioButton("&Bottom", layer_choice);
+            dlgRadioButton("&Both", layer_choice);
+        }
+        dlgPushButton("OK") dlgAccept();
+    };
+
+    string output_dir = dlgDirectory("Export files to", filedir(B.name));
+
+    if (output_dir == "") {
+        exit(0);
+    }
+
+    string base_path = (output_dir + "/" +
+        strsub(filename(B.name), 0, strlen(filename(B.name)) - 4) +
+        "_" + strlwr(layer_name_map[layer_choice]));
+
+    string cpl_filename = base_path + "_cpl.csv";
+    string bom_filename = base_path + "_bom.csv";
+
+
+
+    int element_count_t = 0;
+    int element_count_b = 0;
+
+    B.elements(E) if (E.populate) {
+        // Hunt for SMD on each selected layer
+        if ((layer_choice == 0 || layer_choice == 2) && (checkIfSelected(E, 0))) {
+            // Add to list if selected
+            selected_elements_t[element_count_t++] = E;
+        }
+        if ((layer_choice == 1 || layer_choice == 2) && (checkIfSelected(E, 1))) {
+            // Add to list if selected
+            selected_elements_b[element_count_b++] = E;
+        }
+    }
+
+    output(cpl_filename) {
+        printf("Designator,Mid X,Mid Y,Layer,Rotation\n");
+        // Export any top-layer selected parts
+        export_cpl(element_count_t, 0);
+        // Export any bottom-layer selected parts
+        export_cpl(element_count_b, 1);
+    }
+
+    output(bom_filename) {
+        printf("Comment,Designator,Footprint,LCSC Part #\n");
+        // Export any top-layer selected parts
+        export_bom(element_count_t, 0);
+        // Export any bottom-layer selected parts
+        export_bom(element_count_b, 1);
+    }
+
+    dlgMessageBox("BOM and CPL files have been exported to: " + output_dir, "OK");
+
+} else {
+    dlgMessageBox("Run this ULP from a Board", "OK");
+    exit (0);
+}
