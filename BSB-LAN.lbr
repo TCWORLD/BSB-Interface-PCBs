@@ -9612,7 +9612,7 @@ SMCJxx(C)A Voltage Suppressor - SMC Package (DO-214AB)
 </device>
 </devices>
 </deviceset>
-<deviceset name="TPS2375" prefix="IC">
+<deviceset name="TPS237*" prefix="IC">
 <gates>
 <gate name="G$1" symbol="TPS2375" x="0" y="0"/>
 </gates>
@@ -9629,7 +9629,27 @@ SMCJxx(C)A Voltage Suppressor - SMC Package (DO-214AB)
 <connect gate="G$1" pin="VSS" pad="4"/>
 </connects>
 <technologies>
-<technology name="">
+<technology name="5">
+<attribute name="LCSC_PART" value="C2867397"/>
+</technology>
+<technology name="6">
+<attribute name="LCSC_PART" value="C2859892"/>
+</technology>
+</technologies>
+</device>
+<device name="DDA" package="SOIC8-EP">
+<connects>
+<connect gate="G$1" pin="CLASS" pad="2"/>
+<connect gate="G$1" pin="DET" pad="3"/>
+<connect gate="G$1" pin="ILIM" pad="1"/>
+<connect gate="G$1" pin="PG" pad="6"/>
+<connect gate="G$1" pin="RTN" pad="5"/>
+<connect gate="G$1" pin="UVLO" pad="7"/>
+<connect gate="G$1" pin="VDD" pad="8"/>
+<connect gate="G$1" pin="VSS" pad="4 EP"/>
+</connects>
+<technologies>
+<technology name="6">
 <attribute name="LCSC_PART" value="C544899"/>
 </technology>
 </technologies>

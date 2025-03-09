@@ -140,7 +140,7 @@
 <layer number="219" name="219bmp" color="20" fill="1" visible="no" active="no"/>
 <layer number="220" name="220bmp" color="21" fill="1" visible="no" active="no"/>
 <layer number="221" name="221bmp" color="22" fill="1" visible="no" active="no"/>
-<layer number="222" name="222bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="222" name="222bmp" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="223" name="223bmp" color="24" fill="1" visible="no" active="no"/>
 <layer number="224" name="224bmp" color="25" fill="1" visible="no" active="no"/>
 <layer number="225" name="225bmp" color="7" fill="1" visible="no" active="yes"/>
@@ -2431,8 +2431,8 @@ For a 50R Single Ended on the outer layers, use a trace width of 0.15mm (50 Ohm)
 <attribute name="VALUE" x="16.05" y="3.1" size="0.8" layer="28" font="vector" ratio="15" rot="MR270" align="center"/>
 <attribute name="LCSC_PART" value="C113803" x="14.55" y="3.1" size="1.778" layer="28" rot="MR270" display="off"/>
 </element>
-<element name="IC2" library="BSB-LAN" package="SOIC8" value="TPS2375D" x="22.85" y="6.9" smashed="yes" rot="MR0">
-<attribute name="LCSC_PART" value="C544899" x="22.85" y="6.9" size="1" layer="28" font="vector" ratio="15" rot="MR0" display="off"/>
+<element name="IC2" library="BSB-LAN" package="SOIC8" value="TPS2376D" x="22.85" y="6.9" smashed="yes" rot="MR0">
+<attribute name="LCSC_PART" value="C2859892" x="22.85" y="6.9" size="1" layer="28" font="vector" ratio="15" rot="MR0" display="off"/>
 <attribute name="NAME" x="21.2" y="11.1575" size="0.8" layer="26" font="vector" ratio="15" rot="MR180" align="center"/>
 </element>
 <element name="D4" library="BSB-LAN" package="SMA" value="58V" x="17.6" y="4.85" smashed="yes" rot="MR270">
