@@ -8241,24 +8241,31 @@ DIN A4, landscape with location and doc. field</description>
 </connects>
 <technologies>
 <technology name="">
+<attribute name="JLC_ROT" value="270"/>
 <attribute name="LCSC_PART" value="C130417"/>
 </technology>
 <technology name="A">
+<attribute name="JLC_ROT" value="270"/>
 <attribute name="LCSC_PART" value=""/>
 </technology>
 <technology name="ALT1">
+<attribute name="JLC_ROT" value="270"/>
 <attribute name="LCSC_PART" value=""/>
 </technology>
 <technology name="B">
+<attribute name="JLC_ROT" value="270"/>
 <attribute name="LCSC_PART" value=""/>
 </technology>
 <technology name="BLT1">
+<attribute name="JLC_ROT" value="270"/>
 <attribute name="LCSC_PART" value=""/>
 </technology>
 <technology name="C">
+<attribute name="JLC_ROT" value="270"/>
 <attribute name="LCSC_PART" value=""/>
 </technology>
 <technology name="CLT1">
+<attribute name="JLC_ROT" value="270"/>
 <attribute name="LCSC_PART" value=""/>
 </technology>
 </technologies>
@@ -8279,21 +8286,27 @@ DIN A4, landscape with location and doc. field</description>
 </connects>
 <technologies>
 <technology name="">
+<attribute name="JLC_ROT" value="270"/>
 <attribute name="LCSC_PART" value="C426782"/>
 </technology>
 <technology name="A">
+<attribute name="JLC_ROT" value="270"/>
 <attribute name="LCSC_PART" value=""/>
 </technology>
 <technology name="ALT1">
+<attribute name="JLC_ROT" value="270"/>
 <attribute name="LCSC_PART" value=""/>
 </technology>
 <technology name="B">
+<attribute name="JLC_ROT" value="270"/>
 <attribute name="LCSC_PART" value=""/>
 </technology>
 <technology name="BALT1">
+<attribute name="JLC_ROT" value="270"/>
 <attribute name="LCSC_PART" value=""/>
 </technology>
 <technology name="C">
+<attribute name="JLC_ROT" value="270"/>
 <attribute name="LCSC_PART" value=""/>
 </technology>
 </technologies>
@@ -8842,7 +8855,9 @@ Source: www.kingbright.com</description>
 <connect gate="G$1" pin="C" pad="K"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="JLC_ROT" value="270"/>
+</technology>
 </technologies>
 </device>
 <device name="-1206-SIDE" package="SML1206-SIDE">
@@ -8905,7 +8920,9 @@ Source: www.kingbright.com</description>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="JLC_ROT" value="270"/>
+</technology>
 </technologies>
 </device>
 <device name="CHIPLED_0805" package="CHIPLED_0805">
@@ -8914,7 +8931,9 @@ Source: www.kingbright.com</description>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="JLC_ROT" value="270"/>
+</technology>
 </technologies>
 </device>
 <device name="CHIPLED_1206" package="CHIPLED_1206">
@@ -8923,7 +8942,9 @@ Source: www.kingbright.com</description>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="JLC_ROT" value="270"/>
+</technology>
 </technologies>
 </device>
 <device name="CHIPLED_1806" package="CHIPLED_1806">
@@ -8932,7 +8953,9 @@ Source: www.kingbright.com</description>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="JLC_ROT" value="270"/>
+</technology>
 </technologies>
 </device>
 <device name="KA-3528ASYC" package="KA-3528ASYC">
@@ -8986,7 +9009,9 @@ Source: www.kingbright.com</description>
 <connect gate="G$1" pin="C" pad="K"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="JLC_ROT" value="270"/>
+</technology>
 </technologies>
 </device>
 <device name="SMT1206" package="1206">
@@ -9020,7 +9045,9 @@ Source: www.kingbright.com</description>
 <connect gate="G$1" pin="9" pad="9"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="LCSC_PART" value="C5665"/>
+</technology>
 </technologies>
 </device>
 <device name="-3M" package="3M_10">
@@ -9442,6 +9469,7 @@ SMCJxx(C)A Voltage Suppressor - SMC Package (DO-214AB)
 </connects>
 <technologies>
 <technology name="">
+<attribute name="JLC_ROT" value="270"/>
 <attribute name="LCSC_PART" value="C701341"/>
 </technology>
 </technologies>
@@ -9530,6 +9558,7 @@ SMCJxx(C)A Voltage Suppressor - SMC Package (DO-214AB)
 </connects>
 <technologies>
 <technology name="">
+<attribute name="JLC_ROT" value="270"/>
 <attribute name="LCSC_PART" value="C46185"/>
 </technology>
 </technologies>
@@ -9689,6 +9718,7 @@ MFR.Part # &lt;br&gt;
 </connects>
 <technologies>
 <technology name="">
+<attribute name="JLC_ROT" value="270"/>
 <attribute name="LCSC_PART" value="C91754"/>
 </technology>
 </technologies>
@@ -9711,6 +9741,7 @@ MFR.Part # &lt;br&gt;
 </connects>
 <technologies>
 <technology name="">
+<attribute name="JLC_ROT" value="270"/>
 <attribute name="LCSC_PART" value="C91754"/>
 </technology>
 </technologies>
@@ -9791,9 +9822,11 @@ Push-push type uSD socket with card detect switch.</description>
 </connects>
 <technologies>
 <technology name="">
+<attribute name="JLC_ROT" value="270"/>
 <attribute name="LCSC_PART" value="C5187495"/>
 </technology>
 <technology name="A">
+<attribute name="JLC_ROT" value="270"/>
 <attribute name="LCSC_PART" value="C78988"/>
 </technology>
 </technologies>
@@ -9813,9 +9846,11 @@ Push-push type uSD socket with card detect switch.</description>
 </connects>
 <technologies>
 <technology name="">
+<attribute name="JLC_ROT" value="270"/>
 <attribute name="LCSC_PART" value="C5246393"/>
 </technology>
 <technology name="-3/TR">
+<attribute name="JLC_ROT" value="270"/>
 <attribute name="LCSC_PART" value="C7472861"/>
 </technology>
 </technologies>
@@ -10176,7 +10211,9 @@ Source: http://www.ctscorp.com/components/Datasheets/CTSChipArrayDs.pdf</descrip
 <connect gate="G$1" pin="8" pad="8"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="JLC_ROT" value="270"/>
+</technology>
 </technologies>
 </device>
 <device name="-R0804" package="TC124">

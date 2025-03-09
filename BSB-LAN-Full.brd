@@ -2234,19 +2234,23 @@ For a 50R Single Ended on the outer layers, use a trace width of 0.15mm (50 Ohm)
 <element name="Q1" library="BSB-LAN" package="SOT23" value="BC847" x="13.45" y="28.6" smashed="yes" rot="MR0">
 <attribute name="LCSC_PART" value="C130417" x="-28.46" y="-5.69" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="NAME" x="15.65" y="28.6" size="0.8" layer="26" font="vector" ratio="15" rot="MR270" align="center"/>
+<attribute name="JLC_ROT" value="270" x="13.45" y="28.6" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
 <element name="Q2" library="BSB-LAN" package="SOT23-BEC" value="BC857" x="35.15" y="28.5" smashed="yes" rot="R270">
 <attribute name="LCSC_PART" value="C426782" x="-4.22" y="13.26" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="35.2555" y="30.687" size="0.8" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
+<attribute name="JLC_ROT" value="270" x="35.15" y="28.5" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="UEXT" library="BSB-LAN" package="ML10" value="DNI" x="55" y="19" smashed="yes" rot="R270">
+<element name="UEXT" library="BSB-LAN" package="ML10" value="2x5 IDC" x="55" y="19" smashed="yes" rot="R270">
 <attribute name="NAME" x="55" y="31.45" size="1.2" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
 <attribute name="VALUE" x="49.92" y="19" size="1.778" layer="27" font="vector" ratio="15" rot="R270" align="center"/>
+<attribute name="LCSC_PART" value="C5665" x="55" y="19" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="ACT" library="BSB-LAN" package="CHIP-LED0603" value="red" x="4.85" y="19.95" smashed="yes" rot="R90">
 <attribute name="LCSC_PART" value="C2286" x="44.22" y="40.27" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="8.2" y="19.945" size="1.2" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
 <attribute name="VALUE" x="4.85" y="21.855" size="1.27" layer="27" font="vector" ratio="15" rot="R180" align="center"/>
+<attribute name="JLC_ROT" value="270" x="4.85" y="19.95" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="R3" library="BSB-LAN" package="R0402" value="220R" x="35" y="28.8" smashed="yes" rot="MR0">
 <attribute name="NAME" x="35" y="27.8" size="0.8" layer="26" font="vector" ratio="15" rot="MR0" align="center"/>
@@ -2277,19 +2281,23 @@ For a 50R Single Ended on the outer layers, use a trace width of 0.15mm (50 Ohm)
 <attribute name="LCSC_PART" value="C46185" x="40.8" y="26" size="1" layer="27" font="vector" ratio="15" rot="R135" display="off"/>
 <attribute name="NAME" x="45.3292875" y="26.6" size="0.8" layer="25" font="vector" ratio="15" align="center"/>
 <attribute name="VALUE" x="43.274871875" y="28.474875" size="0.8" layer="27" font="vector" ratio="15" rot="R135" align="center"/>
+<attribute name="JLC_ROT" value="270" x="40.8" y="26" size="1.778" layer="27" rot="R135" display="off"/>
 </element>
 <element name="POE-ETH" library="BSB-LAN" package="HY931147C-SLOT" value="HY931147C-SLOT" x="5.8" y="9.95" smashed="yes" rot="R90">
 <attribute name="LCSC_PART" value="C91754" x="5.8" y="9.95" size="1" layer="27" font="vector" ratio="15" rot="R90" display="off"/>
 <attribute name="NAME" x="3.85" y="0.8" size="1" layer="25" font="vector" ratio="15" align="center"/>
 <attribute name="VALUE" x="9.3" y="9.95" size="1" layer="27" font="vector" ratio="15" rot="R270" align="center"/>
+<attribute name="JLC_ROT" value="270" x="5.8" y="9.95" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="Q3" library="BSB-LAN" package="SOT23" value="BC847" x="50.3" y="21.35" smashed="yes" rot="MR180">
 <attribute name="LCSC_PART" value="C130417" x="50.3" y="21.35" size="1" layer="28" font="vector" ratio="15" rot="MR180" display="off"/>
 <attribute name="NAME" x="50.3055" y="23.463" size="0.8" layer="26" font="vector" ratio="15" rot="MR0" align="center"/>
+<attribute name="JLC_ROT" value="270" x="50.3" y="21.35" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
 <element name="Q4" library="BSB-LAN" package="SOT23" value="WPM2015-3/TR" x="47.5" y="18.85" smashed="yes">
 <attribute name="LCSC_PART" value="C7472861" x="47.5" y="18.85" size="1" layer="27" font="vector" ratio="15" display="off"/>
 <attribute name="NAME" x="49.0445" y="20.213" size="0.8" layer="25" font="vector" ratio="15" align="center"/>
+<attribute name="JLC_ROT" value="270" x="47.5" y="18.85" size="1.778" layer="27" display="off"/>
 </element>
 <element name="U1" library="BSB-LAN" package="DBV0005A-SOT23" value="ESDS314DBV" x="19.75" y="19.65" smashed="yes" rot="R270">
 <attribute name="LCSC_PART" value="C1847859" x="19.75" y="19.65" size="1" layer="27" font="vector" ratio="15" rot="R270" display="off"/>
@@ -2320,11 +2328,13 @@ For a 50R Single Ended on the outer layers, use a trace width of 0.15mm (50 Ohm)
 <attribute name="NAME" x="46.4" y="31.4" size="0.8" layer="26" font="vector" ratio="15" rot="MR0" align="center"/>
 <attribute name="VALUE" x="45.8" y="27.645" size="1.016" layer="28" font="vector" ratio="15" rot="MR0" align="center"/>
 <attribute name="LCSC_PART" value="C414564" x="45.8" y="29.55" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="JLC_ROT" value="270" x="45.8" y="29.55" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
 <element name="RN2" library="BSB-LAN" package="CTS742C083" value="2.2k" x="49.8" y="29.55" smashed="yes" rot="MR0">
 <attribute name="NAME" x="49.8" y="31.4" size="0.8" layer="26" font="vector" ratio="15" rot="MR0" align="center"/>
 <attribute name="VALUE" x="49.8" y="27.645" size="1.016" layer="28" font="vector" ratio="15" rot="MR0" align="center"/>
 <attribute name="LCSC_PART" value="C414564" x="49.8" y="29.55" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="JLC_ROT" value="270" x="49.8" y="29.55" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
 <element name="R13" library="BSB-LAN" package="R0402" value="10k" x="49.25" y="16.3" smashed="yes" rot="R180">
 <attribute name="NAME" x="47.25" y="16.3" size="0.8" layer="25" font="vector" ratio="15" align="center"/>
@@ -2488,11 +2498,13 @@ For a 50R Single Ended on the outer layers, use a trace width of 0.15mm (50 Ohm)
 <attribute name="LCSC_PART" value="C78988" x="63.45" y="9.1" size="1" layer="27" font="vector" ratio="15" rot="R180" display="off"/>
 <attribute name="NAME" x="63.45" y="6.525" size="0.8" layer="25" font="vector" ratio="15" align="center"/>
 <attribute name="VALUE" x="63.45" y="12.275" size="1.27" layer="27" font="vector" ratio="15" rot="R180" align="center"/>
+<attribute name="JLC_ROT" value="270" x="63.45" y="9.1" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="ESP1" library="BSB-LAN" package="ESP32-WROOM-32E" value="ESP32-WROOM-32E" x="68.8" y="21.8" smashed="yes" rot="R270">
 <attribute name="LCSC_PART" value="C701341" x="68.8" y="21.8" size="1" layer="27" font="vector" ratio="15" rot="R270" display="off"/>
 <attribute name="VALUE" x="84.8" y="21.8" size="0.8" layer="27" font="vector" ratio="15" rot="R270" align="center"/>
 <attribute name="NAME" x="78.6" y="10.9" size="0.8" layer="25" font="vector" ratio="15" align="center"/>
+<attribute name="JLC_ROT" value="270" x="68.8" y="21.8" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="USD" library="BSB-LAN" package="MICRO-SD" value="XKTF-001A" x="86.2" y="11.85" smashed="yes" rot="MR90">
 <attribute name="LCSC_PART" value="C381079" x="86.2" y="11.85" size="1" layer="28" font="vector" ratio="15" rot="MR90" display="off"/>
@@ -2533,6 +2545,7 @@ For a 50R Single Ended on the outer layers, use a trace width of 0.15mm (50 Ohm)
 <attribute name="NAME" x="66.45" y="17.505" size="0.8" layer="26" font="vector" ratio="15" rot="MR0" align="center"/>
 <attribute name="VALUE" x="66.45" y="17.695" size="1.016" layer="28" font="vector" ratio="15" rot="MR0" align="center"/>
 <attribute name="LCSC_PART" value="C414564" x="66.45" y="19.6" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="JLC_ROT" value="270" x="66.45" y="19.6" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
 <element name="R31" library="BSB-LAN" package="R0402" value="220R" x="76.7" y="27.35" smashed="yes" rot="MR180">
 <attribute name="NAME" x="74.5" y="27.35" size="0.8" layer="26" font="vector" ratio="15" rot="MR180" align="center"/>
@@ -2686,6 +2699,7 @@ For a 50R Single Ended on the outer layers, use a trace width of 0.15mm (50 Ohm)
 <element name="Q5" library="BSB-LAN" package="SOT23" value="BC847" x="77.85" y="7.05" smashed="yes" rot="MR0">
 <attribute name="LCSC_PART" value="C130417" x="82.85" y="11.45" size="1.2" layer="28" font="vector" ratio="15" rot="MR0" display="off"/>
 <attribute name="NAME" x="79.2555" y="8.513" size="0.8" layer="26" font="vector" ratio="15" rot="MR0" align="center"/>
+<attribute name="JLC_ROT" value="270" x="77.85" y="7.05" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
 <element name="R45" library="BSB-LAN" package="R0402" value="1k" x="80.1" y="6.85" smashed="yes" rot="MR90">
 <attribute name="NAME" x="80.05" y="4.8" size="0.8" layer="26" font="vector" ratio="15" rot="MR270" align="center"/>
@@ -2695,6 +2709,7 @@ For a 50R Single Ended on the outer layers, use a trace width of 0.15mm (50 Ohm)
 <element name="Q6" library="BSB-LAN" package="SOT23" value="BC847" x="82.65" y="5.25" smashed="yes" rot="MR90">
 <attribute name="LCSC_PART" value="C130417" x="82.65" y="5.25" size="1.2" layer="28" font="vector" ratio="15" rot="MR90" display="off"/>
 <attribute name="NAME" x="85.15" y="5.25" size="0.8" layer="26" font="vector" ratio="15" rot="MR180" align="center"/>
+<attribute name="JLC_ROT" value="270" x="82.65" y="5.25" size="1.778" layer="28" rot="MR90" display="off"/>
 </element>
 <element name="R46" library="BSB-LAN" package="R0402" value="1k" x="77.25" y="4.5" smashed="yes" rot="MR0">
 <attribute name="NAME" x="77.25" y="3.55" size="0.8" layer="26" font="vector" ratio="15" rot="MR180" align="center"/>
@@ -2714,6 +2729,7 @@ For a 50R Single Ended on the outer layers, use a trace width of 0.15mm (50 Ohm)
 <element name="Q7" library="BSB-LAN" package="SOT23" value="WPM2015-3/TR" x="60.95" y="2.25" smashed="yes" rot="R180">
 <attribute name="LCSC_PART" value="C7472861" x="66.15" y="-2.15" size="1.2" layer="27" font="vector" ratio="15" rot="R180" display="off"/>
 <attribute name="NAME" x="63.3945" y="2.763" size="0.8" layer="25" font="vector" ratio="15" align="center"/>
+<attribute name="JLC_ROT" value="270" x="60.95" y="2.25" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="D6" library="BSB-LAN" package="SMB" value="SS510B" x="59.9" y="5.4" smashed="yes" rot="MR270">
 <attribute name="LCSC_PART" value="C65011" x="59.9" y="5.4" size="1.2" layer="28" font="vector" ratio="15" rot="MR270" display="off"/>
@@ -2734,6 +2750,7 @@ For a 50R Single Ended on the outer layers, use a trace width of 0.15mm (50 Ohm)
 <attribute name="LCSC_PART" value="C2286" x="75.2" y="6.85" size="1.2" layer="27" font="vector" ratio="15" display="off"/>
 <attribute name="NAME" x="81.1" y="6.555" size="1.27" layer="25" font="vector" ratio="15" align="center"/>
 <attribute name="VALUE" x="83.305" y="4.45" size="1.27" layer="27" font="vector" ratio="15" rot="R90" align="center"/>
+<attribute name="JLC_ROT" value="270" x="81.4" y="4.45" size="1.778" layer="27" display="off"/>
 </element>
 <element name="C26" library="BSB-LAN" package="C0603L" value="0.1uF" x="72.55" y="9.7" smashed="yes" rot="MR0">
 <attribute name="NAME" x="71.75" y="8.7" size="0.8" layer="26" font="vector" ratio="15" rot="MR0" align="center"/>

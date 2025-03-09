@@ -8,34 +8,34 @@
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
-<layer number="2" name="Route2" color="1" fill="3" visible="yes" active="no"/>
-<layer number="3" name="Route3" color="4" fill="3" visible="yes" active="no"/>
-<layer number="4" name="Route4" color="1" fill="4" visible="yes" active="no"/>
-<layer number="5" name="Route5" color="4" fill="4" visible="yes" active="no"/>
-<layer number="6" name="Route6" color="1" fill="8" visible="yes" active="no"/>
-<layer number="7" name="Route7" color="4" fill="8" visible="yes" active="no"/>
-<layer number="8" name="Route8" color="1" fill="2" visible="yes" active="no"/>
-<layer number="9" name="Route9" color="4" fill="2" visible="yes" active="no"/>
-<layer number="10" name="Route10" color="1" fill="7" visible="yes" active="no"/>
-<layer number="11" name="Route11" color="4" fill="7" visible="yes" active="no"/>
-<layer number="12" name="Route12" color="1" fill="5" visible="yes" active="no"/>
-<layer number="13" name="Route13" color="4" fill="5" visible="yes" active="no"/>
-<layer number="14" name="Route14" color="1" fill="6" visible="yes" active="no"/>
-<layer number="15" name="Route15" color="4" fill="6" visible="yes" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="no"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="no"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="no"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="no"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="no"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="no"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="no"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="no"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="no"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="no"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="no"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="no"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="no"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="no" active="no"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="no"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="no"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="no"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="no"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="no"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
@@ -44,8 +44,8 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="no"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="no"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="no"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="no"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="no"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="no"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="no"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="no"/>
@@ -53,20 +53,20 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="no"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="no"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="no"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="no"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="no"/>
-<layer number="48" name="Document" color="7" fill="1" visible="yes" active="no"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="no"/>
-<layer number="50" name="dxf" color="7" fill="1" visible="yes" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="no"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="no"/>
-<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="yes" active="no"/>
-<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="yes" active="no"/>
-<layer number="56" name="wert" color="7" fill="1" visible="yes" active="no"/>
-<layer number="57" name="tCAD" color="7" fill="1" visible="yes" active="no"/>
-<layer number="58" name="bCAD" color="7" fill="1" visible="yes" active="no"/>
-<layer number="59" name="tCarbon" color="7" fill="1" visible="yes" active="no"/>
-<layer number="60" name="bCarbon" color="7" fill="1" visible="yes" active="no"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="no"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
+<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="58" name="bCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="88" name="SimResults" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="89" name="SimProbes" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="90" name="Modules" color="7" fill="1" visible="yes" active="yes"/>
@@ -6238,24 +6238,31 @@ SMCJxx(C)A Voltage Suppressor - SMC Package (DO-214AB)
 </connects>
 <technologies>
 <technology name="">
+<attribute name="JLC_ROT" value="270"/>
 <attribute name="LCSC_PART" value="C130417"/>
 </technology>
 <technology name="A">
+<attribute name="JLC_ROT" value="270"/>
 <attribute name="LCSC_PART" value=""/>
 </technology>
 <technology name="ALT1">
+<attribute name="JLC_ROT" value="270"/>
 <attribute name="LCSC_PART" value=""/>
 </technology>
 <technology name="B">
+<attribute name="JLC_ROT" value="270"/>
 <attribute name="LCSC_PART" value=""/>
 </technology>
 <technology name="BLT1">
+<attribute name="JLC_ROT" value="270"/>
 <attribute name="LCSC_PART" value=""/>
 </technology>
 <technology name="C">
+<attribute name="JLC_ROT" value="270"/>
 <attribute name="LCSC_PART" value=""/>
 </technology>
 <technology name="CLT1">
+<attribute name="JLC_ROT" value="270"/>
 <attribute name="LCSC_PART" value=""/>
 </technology>
 </technologies>
@@ -6276,21 +6283,27 @@ SMCJxx(C)A Voltage Suppressor - SMC Package (DO-214AB)
 </connects>
 <technologies>
 <technology name="">
+<attribute name="JLC_ROT" value="270"/>
 <attribute name="LCSC_PART" value="C426782"/>
 </technology>
 <technology name="A">
+<attribute name="JLC_ROT" value="270"/>
 <attribute name="LCSC_PART" value=""/>
 </technology>
 <technology name="ALT1">
+<attribute name="JLC_ROT" value="270"/>
 <attribute name="LCSC_PART" value=""/>
 </technology>
 <technology name="B">
+<attribute name="JLC_ROT" value="270"/>
 <attribute name="LCSC_PART" value=""/>
 </technology>
 <technology name="BALT1">
+<attribute name="JLC_ROT" value="270"/>
 <attribute name="LCSC_PART" value=""/>
 </technology>
 <technology name="C">
+<attribute name="JLC_ROT" value="270"/>
 <attribute name="LCSC_PART" value=""/>
 </technology>
 </technologies>
@@ -6317,7 +6330,9 @@ SMCJxx(C)A Voltage Suppressor - SMC Package (DO-214AB)
 <connect gate="G$1" pin="9" pad="9"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="LCSC_PART" value="C5665"/>
+</technology>
 </technologies>
 </device>
 <device name="-3M" package="3M_10">
@@ -6508,7 +6523,9 @@ Source: www.kingbright.com</description>
 <connect gate="G$1" pin="C" pad="K"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="JLC_ROT" value="270"/>
+</technology>
 </technologies>
 </device>
 <device name="-1206-SIDE" package="SML1206-SIDE">
@@ -6571,7 +6588,9 @@ Source: www.kingbright.com</description>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="JLC_ROT" value="270"/>
+</technology>
 </technologies>
 </device>
 <device name="CHIPLED_0805" package="CHIPLED_0805">
@@ -6580,7 +6599,9 @@ Source: www.kingbright.com</description>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="JLC_ROT" value="270"/>
+</technology>
 </technologies>
 </device>
 <device name="CHIPLED_1206" package="CHIPLED_1206">
@@ -6589,7 +6610,9 @@ Source: www.kingbright.com</description>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="JLC_ROT" value="270"/>
+</technology>
 </technologies>
 </device>
 <device name="CHIPLED_1806" package="CHIPLED_1806">
@@ -6598,7 +6621,9 @@ Source: www.kingbright.com</description>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="JLC_ROT" value="270"/>
+</technology>
 </technologies>
 </device>
 <device name="KA-3528ASYC" package="KA-3528ASYC">
@@ -6652,7 +6677,9 @@ Source: www.kingbright.com</description>
 <connect gate="G$1" pin="C" pad="K"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="JLC_ROT" value="270"/>
+</technology>
 </technologies>
 </device>
 <device name="SMT1206" package="1206">
@@ -6899,6 +6926,7 @@ Source: http://www.fairchildsemi.com/ds/4N/4N35-M.pdf</description>
 </connects>
 <technologies>
 <technology name="">
+<attribute name="JLC_ROT" value="270"/>
 <attribute name="LCSC_PART" value="C46185"/>
 </technology>
 </technologies>
@@ -6938,6 +6966,7 @@ MFR.Part # &lt;br&gt;
 </connects>
 <technologies>
 <technology name="">
+<attribute name="JLC_ROT" value="270"/>
 <attribute name="LCSC_PART" value="C91754"/>
 </technology>
 </technologies>
@@ -6960,6 +6989,7 @@ MFR.Part # &lt;br&gt;
 </connects>
 <technologies>
 <technology name="">
+<attribute name="JLC_ROT" value="270"/>
 <attribute name="LCSC_PART" value="C91754"/>
 </technology>
 </technologies>
@@ -6979,9 +7009,11 @@ MFR.Part # &lt;br&gt;
 </connects>
 <technologies>
 <technology name="">
+<attribute name="JLC_ROT" value="270"/>
 <attribute name="LCSC_PART" value="C5246393"/>
 </technology>
 <technology name="-3/TR">
+<attribute name="JLC_ROT" value="270"/>
 <attribute name="LCSC_PART" value="C7472861"/>
 </technology>
 </technologies>
@@ -7153,7 +7185,9 @@ Source: http://www.ctscorp.com/components/Datasheets/CTSChipArrayDs.pdf</descrip
 <connect gate="G$1" pin="8" pad="8"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="JLC_ROT" value="270"/>
+</technology>
 </technologies>
 </device>
 <device name="-R0804" package="TC124">
@@ -7452,9 +7486,11 @@ Source: http://www.ctscorp.com/components/Datasheets/CTSChipArrayDs.pdf</descrip
 </connects>
 <technologies>
 <technology name="">
+<attribute name="JLC_ROT" value="270"/>
 <attribute name="LCSC_PART" value="C5187495"/>
 </technology>
 <technology name="A">
+<attribute name="JLC_ROT" value="270"/>
 <attribute name="LCSC_PART" value="C78988"/>
 </technology>
 </technologies>
@@ -7501,6 +7537,7 @@ Source: http://www.ctscorp.com/components/Datasheets/CTSChipArrayDs.pdf</descrip
 </connects>
 <technologies>
 <technology name="">
+<attribute name="JLC_ROT" value="270"/>
 <attribute name="LCSC_PART" value="C701341"/>
 </technology>
 </technologies>
@@ -7758,7 +7795,7 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <part name="Q2" library="BSB-LAN" deviceset="BC857*" device="" value="BC857">
 <attribute name="LCSC_PART" value="C426782"/>
 </part>
-<part name="UEXT" library="BSB-LAN" deviceset="ML10" device="" value="DNI"/>
+<part name="UEXT" library="BSB-LAN" deviceset="ML10" device="" value="2x5 IDC"/>
 <part name="ACT" library="BSB-LAN" deviceset="LED" device="CHIPLED_0603" value="red">
 <attribute name="LCSC_PART" value="C2286"/>
 </part>
