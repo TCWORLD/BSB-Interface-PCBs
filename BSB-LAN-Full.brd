@@ -2003,8 +2003,8 @@ MSOP&lt;br&gt;</description>
 <classes>
 <class number="0" name="default" width="0" drill="0">
 </class>
-<class number="1" name="100R" width="0.12" drill="0.25">
-<clearance class="1" value="0.23"/>
+<class number="1" name="100R" width="0.175" drill="0.25">
+<clearance class="1" value="0.15"/>
 </class>
 <class number="2" name="PoE-ISO" width="0" drill="0">
 <clearance class="1" value="2"/>
@@ -2018,24 +2018,27 @@ MSOP&lt;br&gt;</description>
 <clearance class="3" value="2"/>
 </class>
 <class number="5" name="Sheild" width="0" drill="0">
-<clearance class="1" value="2"/>
+<clearance class="1" value="1.5"/>
 <clearance class="2" value="2"/>
 <clearance class="3" value="2"/>
 <clearance class="4" value="1.5"/>
 </class>
 </classes>
-<designrules name="jlc4l-2313">
+<designrules name="jlc4l-7628 *">
 <description language="en">&lt;b&gt;JLC &lt;i&gt;metric&lt;/i&gt; Design Rules&lt;/b&gt;
 &lt;p&gt;
-This provides the JLC 1.6mm 4-Layer stackup using a 2313 prepreg.&lt;p&gt;
+This is for the 4-Layer 1.6mm 7628 Impedance Stackup&lt;p&gt;
 &lt;p&gt;
-For a 100R Differential Pair on the outer layers, use a trace width of 0.12mm and a trace space of 0.23mm.
+For a 100R Differential Pair on the outer layers, use a trace width of 0.175mm and a trace space of 0.15mm.
 &lt;p&gt;
-For a 50R Single Ended on the outer layers, use a trace width of 0.15mm (50 Ohm).
-&lt;p&gt;</description>
+Alternatively a 100R Differential Pair on the outer layers, use a trace width of 0.2mm and a trace space of 0.2mm.
+&lt;p&gt;
+For a 50R Single Ended on the outer layers, use a trace width of 0.3mm (51.43 Ohm) or 12.4mil (50 Ohm).
+&lt;p&gt;
+For a 50R Single Ended on the inner layers, use a trace width of 0.22mm (51.68 Ohm) or 9.25mil (50 Ohm).</description>
 <param name="layerSetup" value="(1+2*15+16)"/>
 <param name="mtCopper" value="0.035mm 0.0175mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.0175mm 0.035mm"/>
-<param name="mtIsolate" value="0.1mm 1.265mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.1mm"/>
+<param name="mtIsolate" value="0.2mm 1.065mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm"/>
 <param name="mdWireWire" value="0.125mm"/>
 <param name="mdWirePad" value="0.125mm"/>
 <param name="mdWireVia" value="0.125mm"/>
@@ -2047,7 +2050,7 @@ For a 50R Single Ended on the outer layers, use a trace width of 0.15mm (50 Ohm)
 <param name="mdSmdSmd" value="0mil"/>
 <param name="mdViaViaSameLayer" value="8mil"/>
 <param name="mnLayersViaInSmd" value="2"/>
-<param name="mdCopperDimension" value="0.25mm"/>
+<param name="mdCopperDimension" value="9mil"/>
 <param name="mdDrill" value="0.2mm"/>
 <param name="mdSmdStop" value="0mil"/>
 <param name="msWidth" value="0.12mm"/>
@@ -2090,7 +2093,7 @@ For a 50R Single Ended on the outer layers, use a trace width of 0.15mm (50 Ohm)
 <param name="srRoundness" value="0"/>
 <param name="srMinRoundness" value="0mil"/>
 <param name="srMaxRoundness" value="0mil"/>
-<param name="slThermalIsolate" value="0.15mm"/>
+<param name="slThermalIsolate" value="6mil"/>
 <param name="slThermalsForVias" value="0"/>
 <param name="dpMaxLengthDifference" value="10mm"/>
 <param name="dpGapFactor" value="2.5"/>
@@ -2314,10 +2317,10 @@ For a 50R Single Ended on the outer layers, use a trace width of 0.15mm (50 Ohm)
 <attribute name="VALUE" x="0.045" y="8.2" size="1.016" layer="28" font="vector" ratio="15" rot="MR90" align="center"/>
 <attribute name="LCSC_PART" value="C25091" x="1.95" y="8.2" size="1.778" layer="28" rot="MR90" display="off"/>
 </element>
-<element name="C2" library="BSB-LAN" package="C1808" value="1nF 3kV" x="7.15" y="7.5" smashed="yes" rot="MR0">
-<attribute name="NAME" x="7.15" y="9.35" size="0.8" layer="26" font="vector" ratio="15" rot="MR0" align="center"/>
-<attribute name="VALUE" x="7.15" y="5.5" size="1" layer="28" font="vector" ratio="15" rot="MR0" align="center"/>
-<attribute name="LCSC_PART" value="C577300" x="7.15" y="7.5" size="1.2" layer="28" font="vector" ratio="15" rot="MR0" align="center" display="off"/>
+<element name="C2" library="BSB-LAN" package="C1808" value="1nF 3kV" x="7.15" y="7.45" smashed="yes" rot="MR0">
+<attribute name="NAME" x="7.15" y="9.3" size="0.8" layer="26" font="vector" ratio="15" rot="MR0" align="center"/>
+<attribute name="VALUE" x="7.15" y="5.45" size="1" layer="28" font="vector" ratio="15" rot="MR0" align="center"/>
+<attribute name="LCSC_PART" value="C577300" x="7.15" y="7.45" size="1.2" layer="28" font="vector" ratio="15" rot="MR0" align="center" display="off"/>
 </element>
 <element name="C3" library="BSB-LAN" package="C0603" value="0.1uF" x="9.2" y="12.3" smashed="yes" rot="MR0">
 <attribute name="NAME" x="9.2" y="13.5" size="0.8" layer="26" font="vector" ratio="15" rot="MR0" align="center"/>
@@ -3006,10 +3009,6 @@ For a 50R Single Ended on the outer layers, use a trace width of 0.15mm (50 Ohm)
 <via x="15.2" y="21.2" extent="1-16" drill="0.3"/>
 <via x="20.15" y="21.4" extent="1-16" drill="0.3"/>
 <via x="9.8" y="14.8" extent="1-16" drill="0.3"/>
-<via x="6.6" y="9.2" extent="1-16" drill="0.3"/>
-<via x="6.2" y="6.8" extent="1-16" drill="0.3"/>
-<via x="4.2" y="5.8" extent="1-16" drill="0.3"/>
-<via x="4" y="2.6" extent="1-16" drill="0.3"/>
 <via x="4" y="17" extent="1-16" drill="0.3"/>
 <via x="4.2" y="14" extent="1-16" drill="0.3"/>
 <via x="6.6" y="13.4" extent="1-16" drill="0.3"/>
@@ -3166,7 +3165,7 @@ For a 50R Single Ended on the outer layers, use a trace width of 0.15mm (50 Ohm)
 <via x="45.3" y="23.25" extent="1-16" drill="0.3"/>
 <via x="45.2" y="24.65" extent="1-16" drill="0.3"/>
 <via x="45.1" y="21.45" extent="1-16" drill="0.3"/>
-<via x="22.5" y="18.5" extent="1-16" drill="0.3"/>
+<via x="22.2" y="18.4" extent="1-16" drill="0.3"/>
 <via x="27.4" y="18.5" extent="1-16" drill="0.3"/>
 <via x="33.4" y="18.5" extent="1-16" drill="0.3"/>
 <via x="25.2" y="21.5" extent="1-16" drill="0.3"/>
@@ -3209,9 +3208,9 @@ For a 50R Single Ended on the outer layers, use a trace width of 0.15mm (50 Ohm)
 <contactref element="U2" pad="2"/>
 <via x="74.95" y="10.8" extent="1-16" drill="0.3"/>
 <via x="71.4" y="10.15" extent="1-16" drill="0.3"/>
-<via x="11.3" y="13.5" extent="1-16" drill="0.3"/>
-<via x="15.65" y="11.45" extent="1-16" drill="0.3"/>
-<via x="11.1" y="9.95" extent="1-16" drill="0.3"/>
+<via x="11.35" y="13.5" extent="1-16" drill="0.3"/>
+<via x="16.05" y="10.85" extent="1-16" drill="0.3"/>
+<via x="11.1" y="9.9" extent="1-16" drill="0.3"/>
 <via x="15.2" y="16.8" extent="1-16" drill="0.3"/>
 <via x="2.75" y="7.15" extent="1-16" drill="0.3"/>
 <via x="4.2" y="9.8" extent="1-16" drill="0.3"/>
@@ -3486,66 +3485,64 @@ For a 50R Single Ended on the outer layers, use a trace width of 0.15mm (50 Ohm)
 <wire x1="73.2" y1="14.2" x2="73.88" y2="13.52" width="0.2" layer="1"/>
 <wire x1="73.88" y1="13.52" x2="73.88" y2="12.8" width="0.2" layer="1"/>
 </signal>
-<signal name="ETH-TD_P">
+<signal name="ETH-TD_P" class="1">
 <contactref element="POE-ETH" pad="5"/>
 <contactref element="U1" pad="1"/>
 <contactref element="IC1" pad="29"/>
 <contactref element="R16" pad="2"/>
-<wire x1="38.92136875" y1="23.948125" x2="38.40074375" y2="23.4275" width="0.12" layer="1"/>
-<wire x1="38.40074375" y1="23.4275" x2="37.550740625" y2="23.4275" width="0.12" layer="1"/>
-<wire x1="37.718196875" y1="22.768196875" x2="37.30481875" y2="23.181578125" width="0.12" layer="1"/>
-<wire x1="37.550740625" y1="23.4275" x2="37.30481875" y2="23.181578125" width="0.12" layer="1"/>
-<wire x1="36.3225" y1="21.34925625" x2="36.3225" y2="22.199259375" width="0.12" layer="1"/>
-<wire x1="36.3225" y1="22.199259375" x2="37.30481875" y2="23.181578125" width="0.12" layer="1"/>
-<wire x1="38.92136875" y1="23.948125" x2="39.101675" y2="23.948125" width="0.12" layer="1"/>
-<wire x1="39.101675" y1="23.948125" x2="39.297396875" y2="24.14384375" width="0.12" layer="1"/>
-<wire x1="19.188378125" y1="20.988378125" x2="20.29925625" y2="19.8775" width="0.12" layer="1"/>
-<wire x1="20.29925625" y1="19.8775" x2="22.40074375" y2="19.8775" width="0.12" layer="1"/>
-<wire x1="18.45" y1="20.6" x2="18.8" y2="20.6" width="0.12" layer="1"/>
-<wire x1="18.8" y1="20.6" x2="19.188378125" y2="20.988378125" width="0.12" layer="1"/>
-<wire x1="19.188378125" y1="20.988378125" x2="18.99925625" y2="21.1775" width="0.12" layer="1"/>
-<wire x1="18.99925625" y1="21.1775" x2="16.75074375" y2="21.1775" width="0.12" layer="1"/>
-<wire x1="22.40074375" y1="19.8775" x2="23.20074375" y2="20.6775" width="0.12" layer="1"/>
-<wire x1="23.20074375" y1="20.6775" x2="35.65074375" y2="20.6775" width="0.12" layer="1"/>
-<wire x1="16.75074375" y1="21.1775" x2="10.7225" y2="15.14925625" width="0.12" layer="1"/>
-<wire x1="10.7225" y1="15.14925625" x2="10.7225" y2="11.45074375" width="0.12" layer="1"/>
-<wire x1="10.7225" y1="11.45074375" x2="11.45074375" y2="10.7225" width="0.12" layer="1"/>
-<wire x1="11.45074375" y1="10.7225" x2="12.90074375" y2="10.7225" width="0.12" layer="1"/>
-<wire x1="13.37324375" y1="10.25" x2="12.90074375" y2="10.7225" width="0.12" layer="1"/>
-<wire x1="14.69" y1="10.585" x2="14.355" y2="10.25" width="0.12" layer="1"/>
-<wire x1="14.355" y1="10.25" x2="13.37324375" y2="10.25" width="0.12" layer="1"/>
-<wire x1="35.65074375" y1="20.6775" x2="36.3225" y2="21.34925625" width="0.12" layer="1"/>
+<wire x1="14.69" y1="10.585" x2="14.355" y2="10.25" width="0.175" layer="1"/>
+<wire x1="14.355" y1="10.25" x2="13.4298125" y2="10.25" width="0.175" layer="1"/>
+<wire x1="13.4298125" y1="10.25" x2="12.9173125" y2="10.7625" width="0.175" layer="1"/>
+<wire x1="12.9173125" y1="10.7625" x2="11.4673125" y2="10.7625" width="0.175" layer="1"/>
+<wire x1="11.4673125" y1="10.7625" x2="10.7625" y2="11.4673125" width="0.175" layer="1"/>
+<wire x1="10.7625" y1="11.4673125" x2="10.7625" y2="15.1326875" width="0.175" layer="1"/>
+<wire x1="10.7625" y1="15.1326875" x2="16.5173125" y2="20.8875" width="0.175" layer="1"/>
+<wire x1="16.5173125" y1="20.8875" x2="18.45" y2="20.8875" width="0.175" layer="1"/>
+<wire x1="18.45" y1="20.8875" x2="19.2326875" y2="20.8875" width="0.175" layer="1"/>
+<wire x1="19.2326875" y1="20.8875" x2="20.1826875" y2="19.9375" width="0.175" layer="1"/>
+<wire x1="20.1826875" y1="19.9375" x2="22.3673125" y2="19.9375" width="0.175" layer="1"/>
+<wire x1="22.3673125" y1="19.9375" x2="23.0673125" y2="20.6375" width="0.175" layer="1"/>
+<wire x1="23.0673125" y1="20.6375" x2="35.6673125" y2="20.6375" width="0.175" layer="1"/>
+<wire x1="35.6673125" y1="20.6375" x2="36.3625" y2="21.3326875" width="0.175" layer="1"/>
+<wire x1="36.3625" y1="21.3326875" x2="36.3625" y2="22.1326875" width="0.175" layer="1"/>
+<wire x1="36.3625" y1="22.1326875" x2="37.358103125" y2="23.128290625" width="0.175" layer="1"/>
+<wire x1="37.358103125" y1="23.128290625" x2="37.718196875" y2="22.768196875" width="0.175" layer="1"/>
+<wire x1="39.297396875" y1="24.14384375" x2="39.088646875" y2="23.93509375" width="0.175" layer="1"/>
+<wire x1="39.088646875" y1="23.93509375" x2="38.96490625" y2="23.93509375" width="0.175" layer="1"/>
+<wire x1="38.96490625" y1="23.93509375" x2="38.4173125" y2="23.3875" width="0.175" layer="1"/>
+<wire x1="38.4173125" y1="23.3875" x2="37.6173125" y2="23.3875" width="0.175" layer="1"/>
+<wire x1="37.6173125" y1="23.3875" x2="37.358103125" y2="23.128290625" width="0.175" layer="1"/>
+<wire x1="18.45" y1="20.6" x2="18.45" y2="20.8875" width="0.175" layer="1"/>
 </signal>
-<signal name="ETH-TD_N">
+<signal name="ETH-TD_N" class="1">
 <contactref element="POE-ETH" pad="6"/>
 <contactref element="U1" pad="5"/>
 <contactref element="IC1" pad="28"/>
 <contactref element="R15" pad="1"/>
-<wire x1="38.768834375" y1="24.142078125" x2="38.29925625" y2="23.6725" width="0.12" layer="1"/>
-<wire x1="38.29925625" y1="23.6725" x2="37.449253125" y2="23.6725" width="0.12" layer="1"/>
-<wire x1="36.718196875" y1="23.768196875" x2="37.131575" y2="23.354821875" width="0.12" layer="1"/>
-<wire x1="37.449253125" y1="23.6725" x2="37.131575" y2="23.354821875" width="0.12" layer="1"/>
-<wire x1="36.0775" y1="21.45074375" x2="36.0775" y2="22.300746875" width="0.12" layer="1"/>
-<wire x1="36.0775" y1="22.300746875" x2="37.131575" y2="23.354821875" width="0.12" layer="1"/>
-<wire x1="38.768834375" y1="24.142078125" x2="38.768834375" y2="24.322390625" width="0.12" layer="1"/>
-<wire x1="38.768834375" y1="24.322390625" x2="38.94384375" y2="24.497396875" width="0.12" layer="1"/>
-<wire x1="19.10074375" y1="21.4225" x2="20.286621875" y2="20.236621875" width="0.12" layer="1"/>
-<wire x1="20.286621875" y1="20.236621875" x2="20.40074375" y2="20.1225" width="0.12" layer="1"/>
-<wire x1="20.40074375" y1="20.1225" x2="22.29925625" y2="20.1225" width="0.12" layer="1"/>
-<wire x1="21.05" y1="20.6" x2="20.65" y2="20.6" width="0.12" layer="1"/>
-<wire x1="20.65" y1="20.6" x2="20.286621875" y2="20.236621875" width="0.12" layer="1"/>
-<wire x1="19.10074375" y1="21.4225" x2="16.64925625" y2="21.4225" width="0.12" layer="1"/>
-<wire x1="22.29925625" y1="20.1225" x2="23.09925625" y2="20.9225" width="0.12" layer="1"/>
-<wire x1="23.09925625" y1="20.9225" x2="35.54925625" y2="20.9225" width="0.12" layer="1"/>
-<wire x1="16.64925625" y1="21.4225" x2="10.4775" y2="15.25074375" width="0.12" layer="1"/>
-<wire x1="10.4775" y1="15.25074375" x2="10.4775" y2="11.34925625" width="0.12" layer="1"/>
-<wire x1="10.4775" y1="11.34925625" x2="11.34925625" y2="10.4775" width="0.12" layer="1"/>
-<wire x1="11.34925625" y1="10.4775" x2="12.79925625" y2="10.4775" width="0.12" layer="1"/>
-<wire x1="13.2275" y1="9.6275" x2="13.2275" y2="10.04925625" width="0.12" layer="1"/>
-<wire x1="13.2275" y1="10.04925625" x2="12.79925625" y2="10.4775" width="0.12" layer="1"/>
-<wire x1="12.15" y1="9.315" x2="12.915" y2="9.315" width="0.12" layer="1"/>
-<wire x1="12.915" y1="9.315" x2="13.2275" y2="9.6275" width="0.12" layer="1"/>
-<wire x1="35.54925625" y1="20.9225" x2="36.0775" y2="21.45074375" width="0.12" layer="1"/>
+<wire x1="12.15" y1="9.315" x2="12.915" y2="9.315" width="0.175" layer="1"/>
+<wire x1="12.915" y1="9.315" x2="13.2275" y2="9.6275" width="0.175" layer="1"/>
+<wire x1="13.2275" y1="9.6275" x2="13.2275" y2="9.9926875" width="0.175" layer="1"/>
+<wire x1="13.2275" y1="9.9926875" x2="12.7826875" y2="10.4375" width="0.175" layer="1"/>
+<wire x1="12.7826875" y1="10.4375" x2="11.3326875" y2="10.4375" width="0.175" layer="1"/>
+<wire x1="11.3326875" y1="10.4375" x2="10.4375" y2="11.3326875" width="0.175" layer="1"/>
+<wire x1="10.4375" y1="11.3326875" x2="10.4375" y2="15.2673125" width="0.175" layer="1"/>
+<wire x1="10.4375" y1="15.2673125" x2="16.3826875" y2="21.2125" width="0.175" layer="1"/>
+<wire x1="16.3826875" y1="21.2125" x2="19.3673125" y2="21.2125" width="0.175" layer="1"/>
+<wire x1="19.3673125" y1="21.2125" x2="20.3173125" y2="20.2625" width="0.175" layer="1"/>
+<wire x1="20.3173125" y1="20.2625" x2="21.05" y2="20.2625" width="0.175" layer="1"/>
+<wire x1="21.05" y1="20.2625" x2="22.2326875" y2="20.2625" width="0.175" layer="1"/>
+<wire x1="22.2326875" y1="20.2625" x2="22.9326875" y2="20.9625" width="0.175" layer="1"/>
+<wire x1="22.9326875" y1="20.9625" x2="35.5326875" y2="20.9625" width="0.175" layer="1"/>
+<wire x1="35.5326875" y1="20.9625" x2="36.0375" y2="21.4673125" width="0.175" layer="1"/>
+<wire x1="36.0375" y1="21.4673125" x2="36.0375" y2="22.2673125" width="0.175" layer="1"/>
+<wire x1="36.0375" y1="22.2673125" x2="37.128290625" y2="23.358103125" width="0.175" layer="1"/>
+<wire x1="37.128290625" y1="23.358103125" x2="36.718196875" y2="23.768196875" width="0.175" layer="1"/>
+<wire x1="38.94384375" y1="24.497396875" x2="38.73509375" y2="24.288646875" width="0.175" layer="1"/>
+<wire x1="38.73509375" y1="24.288646875" x2="38.73509375" y2="24.16490625" width="0.175" layer="1"/>
+<wire x1="38.73509375" y1="24.16490625" x2="38.2826875" y2="23.7125" width="0.175" layer="1"/>
+<wire x1="38.2826875" y1="23.7125" x2="37.4826875" y2="23.7125" width="0.175" layer="1"/>
+<wire x1="37.4826875" y1="23.7125" x2="37.128290625" y2="23.358103125" width="0.175" layer="1"/>
+<wire x1="21.05" y1="20.6" x2="21.05" y2="20.2625" width="0.175" layer="1"/>
 </signal>
 <signal name="ETH-VDDA" class="4">
 <contactref element="IC1" pad="27"/>
@@ -3642,62 +3639,64 @@ For a 50R Single Ended on the outer layers, use a trace width of 0.15mm (50 Ohm)
 <vertex x="43.6" y="16.6"/>
 </polygon>
 </signal>
-<signal name="ETH-RD_P">
+<signal name="ETH-RD_P" class="1">
 <contactref element="POE-ETH" pad="1"/>
 <contactref element="U1" pad="4"/>
 <contactref element="IC1" pad="31"/>
 <contactref element="R18" pad="2"/>
-<wire x1="39.62890625" y1="23.2556625" x2="39.2225" y2="22.84925625" width="0.12" layer="1"/>
-<wire x1="39.318196875" y1="21.168196875" x2="38.90481875" y2="21.581578125" width="0.12" layer="1"/>
-<wire x1="38.90481875" y1="21.581578125" x2="37.850740625" y2="20.5275" width="0.12" layer="1"/>
-<wire x1="37.850740625" y1="20.5275" x2="36.90074375" y2="20.5275" width="0.12" layer="1"/>
-<wire x1="39.62890625" y1="23.2556625" x2="39.823425" y2="23.2556625" width="0.12" layer="1"/>
-<wire x1="39.823425" y1="23.2556625" x2="40.004503125" y2="23.4367375" width="0.12" layer="1"/>
-<wire x1="38.90481875" y1="21.581578125" x2="39.2225" y2="21.899259375" width="0.12" layer="1"/>
-<wire x1="39.2225" y1="21.899259375" x2="39.2225" y2="22.84925625" width="0.12" layer="1"/>
-<wire x1="18.70074375" y1="17.4775" x2="20.286621875" y2="19.063378125" width="0.12" layer="1"/>
-<wire x1="20.286621875" y1="19.063378125" x2="20.40074375" y2="19.1775" width="0.12" layer="1"/>
-<wire x1="20.40074375" y1="19.1775" x2="22.85074375" y2="19.1775" width="0.12" layer="1"/>
-<wire x1="21.05" y1="18.7" x2="20.65" y2="18.7" width="0.12" layer="1"/>
-<wire x1="20.65" y1="18.7" x2="20.286621875" y2="19.063378125" width="0.12" layer="1"/>
-<wire x1="22.85074375" y1="19.1775" x2="23.35074375" y2="19.6775" width="0.12" layer="1"/>
-<wire x1="23.35074375" y1="19.6775" x2="36.05074375" y2="19.6775" width="0.12" layer="1"/>
-<wire x1="14.69" y1="15.665" x2="14.325" y2="15.3" width="0.12" layer="1"/>
-<wire x1="14.325" y1="15.3" x2="13.37324375" y2="15.3" width="0.12" layer="1"/>
-<wire x1="13.37324375" y1="15.3" x2="13.1225" y2="15.55074375" width="0.12" layer="1"/>
-<wire x1="13.1225" y1="15.55074375" x2="13.1225" y2="16.14925625" width="0.12" layer="1"/>
-<wire x1="13.1225" y1="16.14925625" x2="14.45074375" y2="17.4775" width="0.12" layer="1"/>
-<wire x1="14.45074375" y1="17.4775" x2="18.70074375" y2="17.4775" width="0.12" layer="1"/>
-<wire x1="36.05074375" y1="19.6775" x2="36.90074375" y2="20.5275" width="0.12" layer="1"/>
+<wire x1="14.69" y1="15.665" x2="14.325" y2="15.3" width="0.175" layer="1"/>
+<wire x1="14.325" y1="15.3" x2="13.4298125" y2="15.3" width="0.175" layer="1"/>
+<wire x1="13.4298125" y1="15.3" x2="13.1625" y2="15.5673125" width="0.175" layer="1"/>
+<wire x1="13.1625" y1="15.5673125" x2="13.1625" y2="16.1326875" width="0.175" layer="1"/>
+<wire x1="13.1625" y1="16.1326875" x2="14.4673125" y2="17.4375" width="0.175" layer="1"/>
+<wire x1="14.4673125" y1="17.4375" x2="16.8673125" y2="17.4375" width="0.175" layer="1"/>
+<wire x1="16.8673125" y1="17.4375" x2="17.5173125" y2="18.0875" width="0.175" layer="1"/>
+<wire x1="17.5173125" y1="18.0875" x2="19.4173125" y2="18.0875" width="0.175" layer="1"/>
+<wire x1="19.4173125" y1="18.0875" x2="20.3173125" y2="18.9875" width="0.175" layer="1"/>
+<wire x1="20.3173125" y1="18.9875" x2="21.05" y2="18.9875" width="0.175" layer="1"/>
+<wire x1="21.05" y1="18.9875" x2="22.8173125" y2="18.9875" width="0.175" layer="1"/>
+<wire x1="22.8173125" y1="18.9875" x2="23.4673125" y2="19.6375" width="0.175" layer="1"/>
+<wire x1="23.4673125" y1="19.6375" x2="36.0673125" y2="19.6375" width="0.175" layer="1"/>
+<wire x1="36.0673125" y1="19.6375" x2="36.9173125" y2="20.4875" width="0.175" layer="1"/>
+<wire x1="36.9173125" y1="20.4875" x2="37.8673125" y2="20.4875" width="0.175" layer="1"/>
+<wire x1="37.8673125" y1="20.4875" x2="38.933103125" y2="21.553290625" width="0.175" layer="1"/>
+<wire x1="38.933103125" y1="21.553290625" x2="39.318196875" y2="21.168196875" width="0.175" layer="1"/>
+<wire x1="40.004503125" y1="23.4367375" x2="39.802859375" y2="23.23509375" width="0.175" layer="1"/>
+<wire x1="39.802859375" y1="23.23509375" x2="39.66490625" y2="23.23509375" width="0.175" layer="1"/>
+<wire x1="39.66490625" y1="23.23509375" x2="39.2625" y2="22.8326875" width="0.175" layer="1"/>
+<wire x1="39.2625" y1="22.8326875" x2="39.2625" y2="21.8826875" width="0.175" layer="1"/>
+<wire x1="39.2625" y1="21.8826875" x2="38.933103125" y2="21.553290625" width="0.175" layer="1"/>
+<wire x1="21.05" y1="18.7" x2="21.05" y2="18.9875" width="0.175" layer="1"/>
 </signal>
-<signal name="ETH-RD_N">
+<signal name="ETH-RD_N" class="1">
 <contactref element="POE-ETH" pad="2"/>
 <contactref element="U1" pad="3"/>
 <contactref element="IC1" pad="30"/>
 <contactref element="R17" pad="1"/>
-<wire x1="39.440584375" y1="23.413828125" x2="38.9775" y2="22.95074375" width="0.12" layer="1"/>
-<wire x1="38.318196875" y1="22.168196875" x2="38.731575" y2="21.754821875" width="0.12" layer="1"/>
-<wire x1="38.731575" y1="21.754821875" x2="37.749253125" y2="20.7725" width="0.12" layer="1"/>
-<wire x1="37.749253125" y1="20.7725" x2="36.79925625" y2="20.7725" width="0.12" layer="1"/>
-<wire x1="39.440584375" y1="23.413828125" x2="39.440584375" y2="23.579928125" width="0.12" layer="1"/>
-<wire x1="39.440584375" y1="23.579928125" x2="39.65095" y2="23.790290625" width="0.12" layer="1"/>
-<wire x1="38.731575" y1="21.754821875" x2="38.9775" y2="22.000746875" width="0.12" layer="1"/>
-<wire x1="38.9775" y1="22.000746875" x2="38.9775" y2="22.95074375" width="0.12" layer="1"/>
-<wire x1="19.213378125" y1="18.336621875" x2="20.29925625" y2="19.4225" width="0.12" layer="1"/>
-<wire x1="20.29925625" y1="19.4225" x2="22.74925625" y2="19.4225" width="0.12" layer="1"/>
-<wire x1="18.45" y1="18.7" x2="18.85" y2="18.7" width="0.12" layer="1"/>
-<wire x1="18.85" y1="18.7" x2="19.213378125" y2="18.336621875" width="0.12" layer="1"/>
-<wire x1="22.74925625" y1="19.4225" x2="23.24925625" y2="19.9225" width="0.12" layer="1"/>
-<wire x1="23.24925625" y1="19.9225" x2="35.94925625" y2="19.9225" width="0.12" layer="1"/>
-<wire x1="13.2275" y1="14.6775" x2="13.2275" y2="15.09925625" width="0.12" layer="1"/>
-<wire x1="12.15" y1="14.395" x2="12.945" y2="14.395" width="0.12" layer="1"/>
-<wire x1="12.945" y1="14.395" x2="13.2275" y2="14.6775" width="0.12" layer="1"/>
-<wire x1="13.2275" y1="15.09925625" x2="12.8775" y2="15.44925625" width="0.12" layer="1"/>
-<wire x1="12.8775" y1="15.44925625" x2="12.8775" y2="16.25074375" width="0.12" layer="1"/>
-<wire x1="12.8775" y1="16.25074375" x2="14.34925625" y2="17.7225" width="0.12" layer="1"/>
-<wire x1="14.34925625" y1="17.7225" x2="18.59925625" y2="17.7225" width="0.12" layer="1"/>
-<wire x1="18.59925625" y1="17.7225" x2="19.213378125" y2="18.336621875" width="0.12" layer="1"/>
-<wire x1="35.94925625" y1="19.9225" x2="36.79925625" y2="20.7725" width="0.12" layer="1"/>
+<wire x1="12.15" y1="14.395" x2="12.945" y2="14.395" width="0.175" layer="1"/>
+<wire x1="12.945" y1="14.395" x2="13.2275" y2="14.6775" width="0.175" layer="1"/>
+<wire x1="13.2275" y1="14.6775" x2="13.2275" y2="15.0426875" width="0.175" layer="1"/>
+<wire x1="13.2275" y1="15.0426875" x2="12.8375" y2="15.4326875" width="0.175" layer="1"/>
+<wire x1="12.8375" y1="15.4326875" x2="12.8375" y2="16.2673125" width="0.175" layer="1"/>
+<wire x1="12.8375" y1="16.2673125" x2="14.3326875" y2="17.7625" width="0.175" layer="1"/>
+<wire x1="14.3326875" y1="17.7625" x2="16.7326875" y2="17.7625" width="0.175" layer="1"/>
+<wire x1="16.7326875" y1="17.7625" x2="17.3826875" y2="18.4125" width="0.175" layer="1"/>
+<wire x1="17.3826875" y1="18.4125" x2="18.45" y2="18.4125" width="0.175" layer="1"/>
+<wire x1="18.45" y1="18.4125" x2="19.2826875" y2="18.4125" width="0.175" layer="1"/>
+<wire x1="19.2826875" y1="18.4125" x2="20.1826875" y2="19.3125" width="0.175" layer="1"/>
+<wire x1="20.1826875" y1="19.3125" x2="22.6826875" y2="19.3125" width="0.175" layer="1"/>
+<wire x1="22.6826875" y1="19.3125" x2="23.3326875" y2="19.9625" width="0.175" layer="1"/>
+<wire x1="23.3326875" y1="19.9625" x2="35.9326875" y2="19.9625" width="0.175" layer="1"/>
+<wire x1="35.9326875" y1="19.9625" x2="36.7826875" y2="20.8125" width="0.175" layer="1"/>
+<wire x1="36.7826875" y1="20.8125" x2="37.7326875" y2="20.8125" width="0.175" layer="1"/>
+<wire x1="37.7326875" y1="20.8125" x2="38.703290625" y2="21.783103125" width="0.175" layer="1"/>
+<wire x1="38.703290625" y1="21.783103125" x2="38.318196875" y2="22.168196875" width="0.175" layer="1"/>
+<wire x1="39.65095" y1="23.790290625" x2="39.43509375" y2="23.574434375" width="0.175" layer="1"/>
+<wire x1="39.43509375" y1="23.574434375" x2="39.43509375" y2="23.46490625" width="0.175" layer="1"/>
+<wire x1="39.43509375" y1="23.46490625" x2="38.9375" y2="22.9673125" width="0.175" layer="1"/>
+<wire x1="38.9375" y1="22.9673125" x2="38.9375" y2="22.0173125" width="0.175" layer="1"/>
+<wire x1="38.9375" y1="22.0173125" x2="38.703290625" y2="21.783103125" width="0.175" layer="1"/>
+<wire x1="18.45" y1="18.7" x2="18.45" y2="18.4125" width="0.175" layer="1"/>
 </signal>
 <signal name="POE-V-" class="2">
 <contactref element="POE-ETH" pad="10"/>
@@ -3833,7 +3832,7 @@ For a 50R Single Ended on the outer layers, use a trace width of 0.15mm (50 Ohm)
 <wire x1="8.85" y1="2.205" x2="8.6" y2="2.205" width="1.4" layer="16"/>
 <wire x1="8.6" y1="2.205" x2="8.6" y2="5.6" width="1.4" layer="16"/>
 <wire x1="8.6" y1="5.6" x2="9.1" y2="6.1" width="1.4" layer="16"/>
-<wire x1="9.1" y1="6.1" x2="9.1" y2="7.5" width="1.4" layer="16"/>
+<wire x1="9.1" y1="6.1" x2="9.1" y2="7.45" width="1.4" layer="16"/>
 </signal>
 <signal name="+3.3V" class="4">
 <contactref element="Q4" pad="2"/>

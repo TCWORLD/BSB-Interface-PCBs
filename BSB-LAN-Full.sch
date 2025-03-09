@@ -7738,8 +7738,8 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <classes>
 <class number="0" name="default" width="0" drill="0">
 </class>
-<class number="1" name="100R" width="0.12" drill="0.25">
-<clearance class="1" value="0.23"/>
+<class number="1" name="100R" width="0.175" drill="0.25">
+<clearance class="1" value="0.15"/>
 </class>
 <class number="2" name="PoE-ISO" width="0" drill="0">
 <clearance class="1" value="2"/>
@@ -7753,7 +7753,7 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <clearance class="3" value="2"/>
 </class>
 <class number="5" name="Sheild" width="0" drill="0">
-<clearance class="1" value="2"/>
+<clearance class="1" value="1.5"/>
 <clearance class="2" value="2"/>
 <clearance class="3" value="2"/>
 <clearance class="4" value="1.5"/>
@@ -9418,7 +9418,7 @@ Supply Iface</text>
 <busses>
 </busses>
 <nets>
-<net name="ETH-TD_P" class="0">
+<net name="ETH-TD_P" class="1">
 <segment>
 <pinref part="POE-ETH" gate="G$1" pin="TD+"/>
 <wire x1="81.28" y1="99.06" x2="83.82" y2="99.06" width="0.1524" layer="91"/>
@@ -9437,7 +9437,7 @@ Supply Iface</text>
 <wire x1="91.44" y1="83.82" x2="88.9" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="ETH-TD_N" class="0">
+<net name="ETH-TD_N" class="1">
 <segment>
 <pinref part="POE-ETH" gate="G$1" pin="TD-"/>
 <wire x1="81.28" y1="83.82" x2="83.82" y2="83.82" width="0.1524" layer="91"/>
@@ -9518,7 +9518,7 @@ Supply Iface</text>
 <label x="104.14" y="30.48" size="1.4224" layer="95" font="vector" ratio="10" xref="yes"/>
 </segment>
 </net>
-<net name="ETH-RD_P" class="0">
+<net name="ETH-RD_P" class="1">
 <segment>
 <pinref part="POE-ETH" gate="G$1" pin="RD+"/>
 <wire x1="81.28" y1="76.2" x2="83.82" y2="76.2" width="0.1524" layer="91"/>
@@ -9538,7 +9538,7 @@ Supply Iface</text>
 <junction x="121.92" y="76.2"/>
 </segment>
 </net>
-<net name="ETH-RD_N" class="0">
+<net name="ETH-RD_N" class="1">
 <segment>
 <pinref part="POE-ETH" gate="G$1" pin="RD-"/>
 <wire x1="81.28" y1="60.96" x2="83.82" y2="60.96" width="0.1524" layer="91"/>

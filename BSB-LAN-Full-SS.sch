@@ -3790,7 +3790,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <wire x1="10" y1="1.2" x2="-10" y2="1.2" width="0.1" layer="39"/>
 <text x="0" y="2" size="1.016" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 <text x="0" y="-5" size="1.016" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
-<circle x="-8.83" y="1.9" radius="0.5" width="0" layer="21"/>
+<circle x="-9" y="1.6" radius="0.35" width="0" layer="21"/>
 <text x="-7.62" y="-2.54" size="1.016" layer="21" font="vector" ratio="15" rot="R90" align="center">VI+</text>
 <text x="-5.08" y="-2.54" size="1.016" layer="21" font="vector" ratio="15" rot="R90" align="center">VI-</text>
 <text x="7.62" y="-2.54" size="1.016" layer="21" font="vector" ratio="15" rot="R90" align="center">VO+</text>
@@ -7768,8 +7768,8 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <classes>
 <class number="0" name="default" width="0" drill="0">
 </class>
-<class number="1" name="100R" width="0.12" drill="0.25">
-<clearance class="1" value="0.23"/>
+<class number="1" name="100R" width="0.175" drill="0.25">
+<clearance class="1" value="0.15"/>
 </class>
 <class number="2" name="PoE-ISO" width="0" drill="0">
 <clearance class="1" value="2"/>
@@ -7783,7 +7783,7 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <clearance class="3" value="2"/>
 </class>
 <class number="5" name="Sheild" width="0" drill="0">
-<clearance class="1" value="2"/>
+<clearance class="1" value="1.5"/>
 <clearance class="2" value="2"/>
 <clearance class="3" value="2"/>
 <clearance class="4" value="1.5"/>
@@ -9443,7 +9443,7 @@ Supply Iface</text>
 <busses>
 </busses>
 <nets>
-<net name="ETH-TD_P" class="0">
+<net name="ETH-TD_P" class="1">
 <segment>
 <pinref part="POE-ETH" gate="G$1" pin="TD+"/>
 <wire x1="81.28" y1="99.06" x2="83.82" y2="99.06" width="0.1524" layer="91"/>
@@ -9462,7 +9462,7 @@ Supply Iface</text>
 <wire x1="91.44" y1="83.82" x2="88.9" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="ETH-TD_N" class="0">
+<net name="ETH-TD_N" class="1">
 <segment>
 <pinref part="POE-ETH" gate="G$1" pin="TD-"/>
 <wire x1="81.28" y1="83.82" x2="83.82" y2="83.82" width="0.1524" layer="91"/>
@@ -9543,7 +9543,7 @@ Supply Iface</text>
 <pinref part="POE-ETH" gate="G$1" pin="GA"/>
 </segment>
 </net>
-<net name="ETH-RD_P" class="0">
+<net name="ETH-RD_P" class="1">
 <segment>
 <pinref part="POE-ETH" gate="G$1" pin="RD+"/>
 <wire x1="81.28" y1="76.2" x2="83.82" y2="76.2" width="0.1524" layer="91"/>
@@ -9563,7 +9563,7 @@ Supply Iface</text>
 <junction x="121.92" y="76.2"/>
 </segment>
 </net>
-<net name="ETH-RD_N" class="0">
+<net name="ETH-RD_N" class="1">
 <segment>
 <pinref part="POE-ETH" gate="G$1" pin="RD-"/>
 <wire x1="81.28" y1="60.96" x2="83.82" y2="60.96" width="0.1524" layer="91"/>
