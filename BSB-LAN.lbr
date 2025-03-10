@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.5" unitdist="mm" unit="mm" style="dots" multiple="2" display="yes" altdistance="0.05" altunitdist="mm" altunit="mm"/>
+<grid distance="0.05" unitdist="inch" unit="mm" style="dots" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -4585,8 +4585,8 @@ Montage: Löten&lt;br&gt;
 Anschlussrichtung Leiter/Platine: 0 °&lt;br&gt;
 Artikelnummer: 1729128&lt;br&gt;
 Source: http://eshop.phoenixcontact.com .. 1729128.pdf</description>
-<pad name="1" x="-2.5611" y="0.025" drill="1.6"/>
-<pad name="2" x="2.5189" y="0.025" drill="1.6"/>
+<pad name="1" x="-2.54" y="0.025" drill="1.6"/>
+<pad name="2" x="2.54" y="0.025" drill="1.6"/>
 <wire x1="-5.08" y1="-4.075" x2="5.08" y2="-4.075" width="0.2032" layer="21"/>
 <wire x1="-5.08" y1="2.4993" x2="5.08" y2="2.4993" width="0.2032" layer="21"/>
 <wire x1="-5.08" y1="-3.352" x2="-5.2087" y2="-3.352" width="0.2032" layer="21"/>
@@ -6251,7 +6251,6 @@ MSOP&lt;br&gt;</description>
 <wire x1="0" y1="49.8" x2="86.5" y2="49.8" width="0" layer="48"/>
 <wire x1="0" y1="0" x2="0" y2="49.8" width="0" layer="48"/>
 <hole x="18.25" y="41.1" drill="3.2"/>
-<circle x="5.15" y="29.98" radius="1.8" width="0.05" layer="48"/>
 <wire x1="-0.25" y1="48.4" x2="-1.75" y2="48.4" width="0" layer="48"/>
 <wire x1="-1.75" y1="48.4" x2="-1.75" y2="51.6" width="0" layer="48"/>
 <wire x1="-1.75" y1="51.6" x2="88.25" y2="51.6" width="0" layer="48"/>
@@ -6301,29 +6300,14 @@ MSOP&lt;br&gt;</description>
 <wire x1="14.75" y1="47.95" x2="14.5" y2="48" width="0.2" layer="48"/>
 <circle x="18.25" y="41.1" radius="2.95" width="0.1" layer="39"/>
 <circle x="68.25" y="8.7" radius="2.95" width="0.1" layer="39"/>
-<circle x="5.15" y="35.06" radius="1.8" width="0.05" layer="48"/>
-<circle x="5.15" y="24.9" radius="1.8" width="0.05" layer="48"/>
-<circle x="5.15" y="19.82" radius="1.8" width="0.05" layer="48"/>
-<circle x="5.15" y="14.74" radius="1.8" width="0.05" layer="48"/>
-<circle x="5.15" y="9.66" radius="1.8" width="0.05" layer="48"/>
-<circle x="81.35" y="14.74" radius="1.8" width="0.05" layer="48"/>
-<circle x="81.35" y="9.66" radius="1.8" width="0.05" layer="48"/>
-<circle x="81.35" y="19.82" radius="1.8" width="0.05" layer="48"/>
-<circle x="81.35" y="24.9" radius="1.8" width="0.05" layer="48"/>
-<circle x="81.35" y="29.98" radius="1.8" width="0.05" layer="48"/>
-<circle x="81.35" y="35.06" radius="1.8" width="0.05" layer="48"/>
 <circle x="18.25" y="41.1" radius="2.95" width="0.1" layer="40"/>
 <circle x="68.25" y="8.7" radius="2.95" width="0.1" layer="40"/>
 <wire x1="1.55" y1="1.9" x2="84.95" y2="1.9" width="0.15" layer="40"/>
 <wire x1="84.95" y1="1.9" x2="84.95" y2="47.9" width="0.15" layer="40"/>
 <wire x1="84.95" y1="47.9" x2="1.55" y2="47.9" width="0.15" layer="40"/>
 <wire x1="1.55" y1="47.9" x2="1.55" y2="1.9" width="0.15" layer="40"/>
-<circle x="5.15" y="40.14" radius="1.8" width="0.05" layer="48"/>
-<circle x="5.15" y="4.58" radius="1.8" width="0.05" layer="48"/>
-<circle x="81.35" y="4.58" radius="1.8" width="0.05" layer="48"/>
-<circle x="81.35" y="40.14" radius="1.8" width="0.05" layer="48"/>
-<circle x="81.35" y="45.22" radius="1.8" width="0.05" layer="48"/>
-<circle x="5.15" y="45.22" radius="1.8" width="0.05" layer="48"/>
+<circle x="81.35" y="4.75" radius="1.8" width="0.05" layer="48"/>
+<circle x="5.15" y="45.05" radius="1.8" width="0.05" layer="48"/>
 <wire x1="72.55" y1="-0.1" x2="72.55" y2="1.9" width="0" layer="48"/>
 <wire x1="72.55" y1="1.9" x2="72.55" y2="2.4" width="0" layer="48"/>
 <wire x1="72.55" y1="2.4" x2="74.25" y2="2.4" width="0" layer="48"/>
@@ -6349,9 +6333,7 @@ MSOP&lt;br&gt;</description>
 <text x="11.25" y="24.9" size="1" layer="48" font="vector" ratio="15" rot="R90" align="center">h=11.3</text>
 <wire x1="12.25" y1="22.3" x2="12.25" y2="14.8" width="0" layer="48"/>
 <wire x1="74.25" y1="35" x2="75.95" y2="35" width="0" layer="48"/>
-<wire x1="75.95" y1="35" x2="75.95" y2="27.5" width="0" layer="48"/>
-<wire x1="75.95" y1="27.5" x2="75.95" y2="22.3" width="0" layer="48"/>
-<wire x1="75.95" y1="22.3" x2="75.95" y2="14.8" width="0" layer="48"/>
+<wire x1="75.95" y1="35" x2="75.95" y2="14.8" width="0" layer="48"/>
 <wire x1="75.95" y1="14.8" x2="74.25" y2="14.8" width="0" layer="48"/>
 <wire x1="74.25" y1="14.8" x2="74.25" y2="22.3" width="0" layer="48"/>
 <text x="75.25" y="24.9" size="1" layer="48" font="vector" ratio="15" rot="R270" align="center">h=11.3</text>
@@ -6362,6 +6344,22 @@ MSOP&lt;br&gt;</description>
 <wire x1="73.25" y1="22.3" x2="73.25" y2="27.5" width="0" layer="48"/>
 <wire x1="73.25" y1="27.5" x2="74.25" y2="27.5" width="0" layer="48"/>
 <wire x1="74.25" y1="22.3" x2="73.25" y2="22.3" width="0" layer="48"/>
+<circle x="5.15" y="39.97" radius="1.8" width="0.05" layer="48"/>
+<circle x="5.15" y="34.89" radius="1.8" width="0.05" layer="48"/>
+<circle x="5.15" y="29.81" radius="1.8" width="0.05" layer="48"/>
+<circle x="5.15" y="24.73" radius="1.8" width="0.05" layer="48"/>
+<circle x="5.15" y="19.65" radius="1.8" width="0.05" layer="48"/>
+<circle x="5.15" y="14.57" radius="1.8" width="0.05" layer="48"/>
+<circle x="5.15" y="9.49" radius="1.8" width="0.05" layer="48"/>
+<circle x="5.15" y="4.41" radius="1.8" width="0.05" layer="48"/>
+<circle x="81.35" y="9.83" radius="1.8" width="0.05" layer="48"/>
+<circle x="81.35" y="14.91" radius="1.8" width="0.05" layer="48"/>
+<circle x="81.35" y="19.99" radius="1.8" width="0.05" layer="48"/>
+<circle x="81.35" y="25.07" radius="1.8" width="0.05" layer="48"/>
+<circle x="81.35" y="30.15" radius="1.8" width="0.05" layer="48"/>
+<circle x="81.35" y="35.23" radius="1.8" width="0.05" layer="48"/>
+<circle x="81.35" y="40.31" radius="1.8" width="0.05" layer="48"/>
+<circle x="81.35" y="45.39" radius="1.8" width="0.05" layer="48"/>
 </package>
 <package name="TACTILE_SWITCH">
 <description>&lt;b&gt;OMRON SWITCH&lt;/b&gt;</description>
