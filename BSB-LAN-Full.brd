@@ -140,7 +140,7 @@
 <layer number="219" name="219bmp" color="20" fill="1" visible="no" active="no"/>
 <layer number="220" name="220bmp" color="21" fill="1" visible="no" active="no"/>
 <layer number="221" name="221bmp" color="22" fill="1" visible="no" active="no"/>
-<layer number="222" name="222bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="222" name="222bmp" color="7" fill="1" visible="no" active="yes"/>
 <layer number="223" name="223bmp" color="24" fill="1" visible="no" active="no"/>
 <layer number="224" name="224bmp" color="25" fill="1" visible="no" active="no"/>
 <layer number="225" name="225bmp" color="7" fill="1" visible="no" active="yes"/>
@@ -172,10 +172,10 @@ Supply</text>
 <text x="1" y="26" size="1" layer="22" font="vector" ratio="15" rot="MR270" align="center">JLCJLCJLC</text>
 <text x="63" y="26" size="0.8" layer="21" font="vector" ratio="15" align="center">Open
 Hardware</text>
-<text x="57.4" y="10.75" size="1" layer="22" font="vector" ratio="15" rot="MR0" align="center-left">github://TCWORLD/BSB-LAN-CircuitBoard
+<text x="47.6" y="14.55" size="1" layer="22" font="vector" ratio="15" rot="MR0" align="center-left">github://TCWORLD/BSB-LAN-CircuitBoard
 github://fredlcore/BSB-LAN
 github://OLIMEX/ESP32-POE-ISO</text>
-<text x="52.6" y="15.8" size="1" layer="22" font="vector" ratio="15" rot="MR0" align="center-left">Based on:
+<text x="47.4" y="19.8" size="1" layer="22" font="vector" ratio="15" rot="MR0" align="center-left">Based on:
 Olimex ESP32-POE-ISO
 Fredlcore BSB-LAN</text>
 <text x="55" y="30" size="0.8" layer="21" font="vector" ratio="15" align="center">(w/o UART)</text>
@@ -2246,13 +2246,11 @@ For a 50R Single Ended on the inner layers, use a trace width of 0.22mm (51.68 O
 </element>
 <element name="UEXT" library="BSB-LAN" package="ML10" value="2x5 IDC" x="55" y="19" smashed="yes" rot="R270">
 <attribute name="NAME" x="55" y="31.45" size="1.2" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
-<attribute name="VALUE" x="49.92" y="19" size="1.778" layer="27" font="vector" ratio="15" rot="R270" align="center"/>
 <attribute name="LCSC_PART" value="C5665" x="55" y="19" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="ACT" library="BSB-LAN" package="CHIP-LED0603" value="red" x="4.85" y="19.95" smashed="yes" rot="R90">
 <attribute name="LCSC_PART" value="C2286" x="44.22" y="40.27" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="8.2" y="19.945" size="1.2" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
-<attribute name="VALUE" x="4.85" y="21.855" size="1.27" layer="27" font="vector" ratio="15" rot="R180" align="center"/>
 <attribute name="JLC_ROT" value="270" x="4.85" y="19.95" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="R3" library="BSB-LAN" package="R0402" value="220R" x="35" y="28.8" smashed="yes" rot="MR0">
@@ -2283,13 +2281,11 @@ For a 50R Single Ended on the inner layers, use a trace width of 0.22mm (51.68 O
 <element name="IC1" library="BSB-LAN" package="QFN-5X5-32" value="LAN8710A-EZC" x="40.8" y="26" smashed="yes" rot="R135">
 <attribute name="LCSC_PART" value="C46185" x="40.8" y="26" size="1" layer="27" font="vector" ratio="15" rot="R135" display="off"/>
 <attribute name="NAME" x="45.3292875" y="26.6" size="0.8" layer="25" font="vector" ratio="15" align="center"/>
-<attribute name="VALUE" x="43.274871875" y="28.474875" size="0.8" layer="27" font="vector" ratio="15" rot="R135" align="center"/>
 <attribute name="JLC_ROT" value="270" x="40.8" y="26" size="1.778" layer="27" rot="R135" display="off"/>
 </element>
 <element name="POE-ETH" library="BSB-LAN" package="HY931147C-SLOT" value="HY931147C-SLOT" x="5.8" y="9.95" smashed="yes" rot="R90">
 <attribute name="LCSC_PART" value="C91754" x="5.8" y="9.95" size="1" layer="27" font="vector" ratio="15" rot="R90" display="off"/>
 <attribute name="NAME" x="3.85" y="0.8" size="1" layer="25" font="vector" ratio="15" align="center"/>
-<attribute name="VALUE" x="9.3" y="9.95" size="1" layer="27" font="vector" ratio="15" rot="R270" align="center"/>
 <attribute name="JLC_ROT" value="270" x="5.8" y="9.95" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="Q3" library="BSB-LAN" package="SOT23" value="BC847" x="50.3" y="21.35" smashed="yes" rot="MR180">
@@ -2305,143 +2301,115 @@ For a 50R Single Ended on the inner layers, use a trace width of 0.22mm (51.68 O
 <element name="U1" library="BSB-LAN" package="DBV0005A-SOT23" value="ESDS314DBV" x="19.75" y="19.65" smashed="yes" rot="R270">
 <attribute name="LCSC_PART" value="C1847859" x="19.75" y="19.65" size="1" layer="27" font="vector" ratio="15" rot="R270" display="off"/>
 <attribute name="NAME" x="19.75" y="21.875" size="0.8" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
-<attribute name="VALUE" x="16.575" y="19.65" size="1.27" layer="27" font="vector" ratio="15" rot="R270" align="center"/>
 </element>
 <element name="L1" library="BSB-LAN" package="L2010" value="FB 600R" x="44.9" y="18.4" smashed="yes" rot="R270">
 <attribute name="NAME" x="44.95" y="16.15" size="0.8" layer="25" font="vector" ratio="15" align="center"/>
-<attribute name="VALUE" x="42.9" y="18.4" size="1.27" layer="27" font="vector" ratio="15" rot="R270" align="center"/>
 <attribute name="LCSC_PART" value="C1017" x="44.9" y="18.4" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="R30" library="BSB-LAN" package="R0402" value="220R" x="1.95" y="8.2" smashed="yes" rot="MR90">
 <attribute name="NAME" x="3.055" y="8.2" size="0.8" layer="26" font="vector" ratio="15" rot="MR90" align="center"/>
-<attribute name="VALUE" x="0.045" y="8.2" size="1.016" layer="28" font="vector" ratio="15" rot="MR90" align="center"/>
 <attribute name="LCSC_PART" value="C25091" x="1.95" y="8.2" size="1.778" layer="28" rot="MR90" display="off"/>
 </element>
 <element name="C2" library="BSB-LAN" package="C1808" value="1nF 3kV" x="7.15" y="7.45" smashed="yes" rot="MR0">
 <attribute name="NAME" x="7.15" y="9.3" size="0.8" layer="26" font="vector" ratio="15" rot="MR0" align="center"/>
-<attribute name="VALUE" x="7.15" y="5.45" size="1" layer="28" font="vector" ratio="15" rot="MR0" align="center"/>
 <attribute name="LCSC_PART" value="C577300" x="7.15" y="7.45" size="1.2" layer="28" font="vector" ratio="15" rot="MR0" align="center" display="off"/>
 </element>
 <element name="C3" library="BSB-LAN" package="C0603" value="0.1uF" x="9.2" y="12.3" smashed="yes" rot="MR0">
 <attribute name="NAME" x="9.2" y="13.5" size="0.8" layer="26" font="vector" ratio="15" rot="MR0" align="center"/>
-<attribute name="VALUE" x="9.2" y="11.3" size="0.8" layer="28" font="vector" ratio="15" rot="MR0" align="center"/>
 <attribute name="LCSC_PART" value="C113803" x="9.2" y="12.3" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
 <element name="RN1" library="BSB-LAN" package="CTS742C083" value="2.2k" x="45.8" y="29.55" smashed="yes" rot="MR0">
 <attribute name="NAME" x="46.4" y="31.4" size="0.8" layer="26" font="vector" ratio="15" rot="MR0" align="center"/>
-<attribute name="VALUE" x="45.8" y="27.645" size="1.016" layer="28" font="vector" ratio="15" rot="MR0" align="center"/>
 <attribute name="LCSC_PART" value="C414564" x="45.8" y="29.55" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="JLC_ROT" value="270" x="45.8" y="29.55" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
 <element name="RN2" library="BSB-LAN" package="CTS742C083" value="2.2k" x="49.8" y="29.55" smashed="yes" rot="MR0">
 <attribute name="NAME" x="49.8" y="31.4" size="0.8" layer="26" font="vector" ratio="15" rot="MR0" align="center"/>
-<attribute name="VALUE" x="49.8" y="27.645" size="1.016" layer="28" font="vector" ratio="15" rot="MR0" align="center"/>
 <attribute name="LCSC_PART" value="C414564" x="49.8" y="29.55" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="JLC_ROT" value="270" x="49.8" y="29.55" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
 <element name="R13" library="BSB-LAN" package="R0402" value="10k" x="49.25" y="16.3" smashed="yes" rot="R180">
 <attribute name="NAME" x="47.25" y="16.3" size="0.8" layer="25" font="vector" ratio="15" align="center"/>
-<attribute name="VALUE" x="49.25" y="17.3" size="0.8" layer="27" font="vector" ratio="15" rot="R180" align="center"/>
 <attribute name="LCSC_PART" value="C25744" x="49.25" y="16.3" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="R14" library="BSB-LAN" package="R0402" value="10k" x="49.65" y="23.95" smashed="yes" rot="R270">
 <attribute name="NAME" x="49.7" y="26.15" size="0.8" layer="25" font="vector" ratio="15" rot="R270" align="center"/>
-<attribute name="VALUE" x="48.65" y="23.95" size="0.8" layer="27" font="vector" ratio="15" rot="R270" align="center"/>
 <attribute name="LCSC_PART" value="C25744" x="49.65" y="23.95" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="R11" library="BSB-LAN" package="R0402" value="10k" x="49.15" y="22.3" smashed="yes" rot="R180">
 <attribute name="NAME" x="49.35" y="21.35" size="0.8" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
-<attribute name="VALUE" x="49.15" y="23.3" size="0.8" layer="27" font="vector" ratio="15" rot="R180" align="center"/>
 <attribute name="LCSC_PART" value="C25744" x="49.15" y="22.3" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="C4" library="BSB-LAN" package="C0805L" value="22uF" x="48.9" y="14.9" smashed="yes">
 <attribute name="NAME" x="46.9" y="14.85" size="0.8" layer="25" font="vector" ratio="15" align="center"/>
-<attribute name="VALUE" x="48.9" y="13.4" size="0.8" layer="27" font="vector" ratio="15" align="center"/>
 <attribute name="LCSC_PART" value="C45783" x="48.9" y="14.9" size="1.778" layer="27" display="off"/>
 </element>
 <element name="C5" library="BSB-LAN" package="C0805L" value="22uF" x="46.55" y="21.7" smashed="yes" rot="R180">
 <attribute name="NAME" x="46.55" y="22.95" size="0.8" layer="25" font="vector" ratio="15" align="center"/>
-<attribute name="VALUE" x="46.55" y="23.2" size="0.8" layer="27" font="vector" ratio="15" rot="R180" align="center"/>
 <attribute name="LCSC_PART" value="C45783" x="46.55" y="21.7" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="C6" library="BSB-LAN" package="C0805L" value="22uF" x="42.6" y="17.45" smashed="yes" rot="R180">
 <attribute name="NAME" x="42.55" y="16.15" size="0.8" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
-<attribute name="VALUE" x="42.6" y="18.95" size="0.8" layer="27" font="vector" ratio="15" rot="R180" align="center"/>
 <attribute name="LCSC_PART" value="C45783" x="42.6" y="17.45" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="R12" library="BSB-LAN" package="R0402" value="1k" x="49.8" y="18.8" smashed="yes" rot="MR0">
 <attribute name="NAME" x="51.7" y="18.8" size="0.8" layer="26" font="vector" ratio="15" rot="MR0" align="center"/>
-<attribute name="VALUE" x="49.8" y="17.8" size="0.8" layer="28" font="vector" ratio="15" rot="MR0" align="center"/>
 <attribute name="LCSC_PART" value="C11702" x="49.8" y="18.8" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
 <element name="C10" library="BSB-LAN" package="C0603L" value="0.1uF" x="45" y="24" smashed="yes">
 <attribute name="NAME" x="45.3" y="25" size="0.8" layer="25" font="vector" ratio="15" align="center"/>
-<attribute name="VALUE" x="45" y="23" size="0.8" layer="27" font="vector" ratio="15" align="center"/>
 <attribute name="LCSC_PART" value="C113803" x="45" y="24" size="1.778" layer="27" display="off"/>
 </element>
 <element name="C8" library="BSB-LAN" package="C0603L" value="0.1uF" x="41.8" y="20.8" smashed="yes" rot="R270">
 <attribute name="NAME" x="41.8" y="19" size="0.8" layer="25" font="vector" ratio="15" rot="R90" align="center"/>
-<attribute name="VALUE" x="40.8" y="20.8" size="0.8" layer="27" font="vector" ratio="15" rot="R270" align="center"/>
 <attribute name="LCSC_PART" value="C113803" x="41.8" y="20.8" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="C9" library="BSB-LAN" package="C0603L" value="0.1uF" x="35.6" y="25" smashed="yes" rot="R180">
 <attribute name="NAME" x="35.6" y="26" size="0.8" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
-<attribute name="VALUE" x="35.6" y="26" size="0.8" layer="27" font="vector" ratio="15" rot="R180" align="center"/>
 <attribute name="LCSC_PART" value="C113803" x="35.6" y="25" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="C7" library="BSB-LAN" package="C0603" value="2.2uF" x="44.3" y="21.8" smashed="yes" rot="R270">
 <attribute name="NAME" x="43.2" y="21.85" size="0.8" layer="25" font="vector" ratio="15" rot="R90" align="center"/>
-<attribute name="VALUE" x="42.8" y="21.8" size="0.8" layer="27" font="vector" ratio="15" rot="R270" align="center"/>
 <attribute name="LCSC_PART" value="C23630" x="44.3" y="21.8" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="C11" library="BSB-LAN" package="C0603L" value="0.1uF" x="44.4" y="29" smashed="yes">
 <attribute name="NAME" x="44.4" y="30.2" size="0.8" layer="25" font="vector" ratio="15" align="center"/>
-<attribute name="VALUE" x="44.4" y="28" size="0.8" layer="27" font="vector" ratio="15" align="center"/>
 <attribute name="LCSC_PART" value="C113803" x="44.4" y="29" size="1.778" layer="27" display="off"/>
 </element>
 <element name="R16" library="BSB-LAN" package="R0402L" value="49.9R" x="37.4" y="22.45" smashed="yes" rot="R45">
 <attribute name="NAME" x="35.6" y="21.6" size="0.8" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
-<attribute name="VALUE" x="38.10710625" y="21.74289375" size="0.8" layer="27" font="vector" ratio="15" rot="R45" align="center"/>
 <attribute name="LCSC_PART" value="C25120" x="37.4" y="22.45" size="1.778" layer="27" rot="R45" display="off"/>
 </element>
 <element name="R18" library="BSB-LAN" package="R0402L" value="49.9R" x="39" y="20.85" smashed="yes" rot="R45">
 <attribute name="NAME" x="37.4" y="19.6" size="0.8" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
-<attribute name="VALUE" x="39.70710625" y="20.14289375" size="0.8" layer="27" font="vector" ratio="15" rot="R45" align="center"/>
 <attribute name="LCSC_PART" value="C25120" x="39" y="20.85" size="1.778" layer="27" rot="R45" display="off"/>
 </element>
 <element name="R15" library="BSB-LAN" package="R0402L" value="49.9R" x="36.4" y="23.45" smashed="yes" rot="R225">
 <attribute name="NAME" x="34.6" y="22.6" size="0.8" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
-<attribute name="VALUE" x="35.69289375" y="24.15710625" size="0.8" layer="27" font="vector" ratio="15" rot="R225" align="center"/>
 <attribute name="LCSC_PART" value="C25120" x="36.4" y="23.45" size="1.778" layer="27" rot="R225" display="off"/>
 </element>
 <element name="R17" library="BSB-LAN" package="R0402L" value="49.9R" x="38" y="21.85" smashed="yes" rot="R225">
 <attribute name="NAME" x="36.45" y="20.6" size="0.8" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
-<attribute name="VALUE" x="37.29289375" y="22.55710625" size="0.8" layer="27" font="vector" ratio="15" rot="R225" align="center"/>
 <attribute name="LCSC_PART" value="C25120" x="38" y="21.85" size="1.778" layer="27" rot="R225" display="off"/>
 </element>
 <element name="R19" library="BSB-LAN" package="R0402" value="10k" x="38.2" y="30.5" smashed="yes" rot="R225">
 <attribute name="NAME" x="38.319671875" y="31.92175" size="0.8" layer="25" font="vector" ratio="15" align="center"/>
-<attribute name="VALUE" x="37.492890625" y="31.20710625" size="0.8" layer="27" font="vector" ratio="15" rot="R225" align="center"/>
 <attribute name="LCSC_PART" value="C25744" x="38.2" y="30.5" size="1.778" layer="27" rot="R225" display="off"/>
 </element>
 <element name="R20" library="BSB-LAN" package="R0402" value="12.1k 1%" x="40.5" y="20.6" smashed="yes" rot="R90">
 <attribute name="NAME" x="40.5" y="18.6" size="0.8" layer="25" font="vector" ratio="15" rot="R270" align="center"/>
-<attribute name="VALUE" x="41.5" y="20.6" size="0.8" layer="27" font="vector" ratio="15" rot="R90" align="center"/>
 <attribute name="LCSC_PART" value="C25852" x="40.5" y="20.6" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="C12" library="BSB-LAN" package="C0603L" value="0.1uF" x="39.15" y="29.7" smashed="yes" rot="R45">
 <attribute name="NAME" x="41" y="31.2" size="0.8" layer="25" font="vector" ratio="15" align="center"/>
-<attribute name="VALUE" x="39.85710625" y="28.99289375" size="0.8" layer="27" font="vector" ratio="15" rot="R45" align="center"/>
 <attribute name="LCSC_PART" value="C113803" x="39.15" y="29.7" size="1.778" layer="27" rot="R45" display="off"/>
 </element>
 <element name="R23" library="BSB-LAN" package="R0402" value="12.1k 1%" x="27" y="2.95" smashed="yes" rot="MR270">
 <attribute name="NAME" x="28.1" y="2.95" size="0.8" layer="26" font="vector" ratio="15" rot="MR90" align="center"/>
-<attribute name="VALUE" x="28" y="2.95" size="0.8" layer="28" font="vector" ratio="15" rot="MR270" align="center"/>
 <attribute name="LCSC_PART" value="C25852" x="27" y="2.95" size="1.778" layer="28" rot="MR270" display="off"/>
 </element>
 <element name="C13" library="BSB-LAN" package="C0603" value="0.1uF 100V" x="14.55" y="3.1" smashed="yes" rot="MR270">
 <attribute name="NAME" x="13.45" y="3.1" size="0.8" layer="26" font="vector" ratio="15" rot="MR270" align="center"/>
-<attribute name="VALUE" x="16.05" y="3.1" size="0.8" layer="28" font="vector" ratio="15" rot="MR270" align="center"/>
 <attribute name="LCSC_PART" value="C113803" x="14.55" y="3.1" size="1.778" layer="28" rot="MR270" display="off"/>
 </element>
 <element name="IC2" library="BSB-LAN" package="SOIC8" value="TPS2376D" x="22.85" y="6.9" smashed="yes" rot="MR0">
@@ -2451,41 +2419,33 @@ For a 50R Single Ended on the inner layers, use a trace width of 0.22mm (51.68 O
 <element name="D4" library="BSB-LAN" package="SMA" value="58V" x="17.6" y="4.85" smashed="yes" rot="MR270">
 <attribute name="LCSC_PART" value="C151246" x="17.6" y="4.85" size="1" layer="28" font="vector" ratio="15" rot="MR270" display="off"/>
 <attribute name="NAME" x="20.175" y="2.35" size="0.8" layer="26" font="vector" ratio="15" rot="MR90" align="center"/>
-<attribute name="VALUE" x="20.775" y="4.85" size="1.27" layer="28" font="vector" ratio="15" rot="MR270" align="center"/>
 </element>
 <element name="R26" library="BSB-LAN" package="R0402" value="180k 1%" x="25.2" y="2.45" smashed="yes" rot="MR180">
 <attribute name="NAME" x="25.3" y="1.45" size="0.8" layer="26" font="vector" ratio="15" rot="MR180" align="center"/>
-<attribute name="VALUE" x="25.2" y="3.45" size="0.8" layer="28" font="vector" ratio="15" rot="MR180" align="center"/>
 <attribute name="LCSC_PART" value="C25760" x="25.2" y="2.45" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
 <element name="R27" library="BSB-LAN" package="R0402" value="4.42k 1%" x="23.05" y="2.45" smashed="yes" rot="MR0">
 <attribute name="NAME" x="22.9" y="1.45" size="0.8" layer="26" font="vector" ratio="15" rot="MR0" align="center"/>
-<attribute name="VALUE" x="23.05" y="1.45" size="0.8" layer="28" font="vector" ratio="15" rot="MR0" align="center"/>
 <attribute name="LCSC_PART" value="C52269" x="23.05" y="2.45" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
 <element name="R24" library="BSB-LAN" package="R0402" value="180k 1%" x="26.4" y="8.85" smashed="yes" rot="MR270">
 <attribute name="NAME" x="27.6" y="8.85" size="0.8" layer="26" font="vector" ratio="15" rot="MR270" align="center"/>
-<attribute name="VALUE" x="27.4" y="8.85" size="0.8" layer="28" font="vector" ratio="15" rot="MR270" align="center"/>
 <attribute name="LCSC_PART" value="C25760" x="26.4" y="8.85" size="1.778" layer="28" rot="MR270" display="off"/>
 </element>
 <element name="R25" library="BSB-LAN" package="R0402" value="28.7k 1%" x="18.85" y="8.7" smashed="yes" rot="MR180">
 <attribute name="NAME" x="18.65" y="9.8" size="0.8" layer="26" font="vector" ratio="15" rot="MR180" align="center"/>
-<attribute name="VALUE" x="18.85" y="9.7" size="0.8" layer="28" font="vector" ratio="15" rot="MR180" align="center"/>
 <attribute name="LCSC_PART" value="C26972" x="18.85" y="8.7" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
 <element name="R22" library="BSB-LAN" package="R1206" value="DNI" x="25.45" y="3.2" smashed="yes" rot="R90">
 <attribute name="LCSC_PART" value="" x="25.45" y="4.2" size="1" layer="27" font="vector" ratio="15" rot="R90" display="off"/>
 <attribute name="NAME" x="25.5" y="6.045" size="0.8" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
-<attribute name="VALUE" x="27.355" y="3.2" size="1.27" layer="27" font="vector" ratio="15" rot="R90" align="center"/>
 </element>
 <element name="C14" library="BSB-LAN" package="PANASONIC_D" value="22uF 100V" x="20.9" y="4.45" smashed="yes" rot="R270">
 <attribute name="NAME" x="20.9" y="9.09" size="0.8" layer="25" font="vector" ratio="15" align="center"/>
-<attribute name="VALUE" x="17.86" y="4.45" size="1.016" layer="27" font="vector" ratio="15" rot="R270" align="center"/>
 <attribute name="LCSC_PART" value="C487431" x="20.9" y="4.45" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="R29" library="BSB-LAN" package="R0402" value="220R" x="1.95" y="11.8" smashed="yes" rot="MR270">
 <attribute name="NAME" x="3.045" y="11.8" size="0.8" layer="26" font="vector" ratio="15" rot="MR270" align="center"/>
-<attribute name="VALUE" x="3.855" y="11.8" size="1.016" layer="28" font="vector" ratio="15" rot="MR270" align="center"/>
 <attribute name="LCSC_PART" value="C25091" x="1.95" y="11.8" size="1.778" layer="28" rot="MR270" display="off"/>
 </element>
 <element name="IC3" library="BSB-LAN" package="SOIC8-EP" value="TX4138" x="32.8" y="3.3" smashed="yes" rot="R270">
@@ -2495,209 +2455,169 @@ For a 50R Single Ended on the inner layers, use a trace width of 0.22mm (51.68 O
 <element name="DC1" library="BSB-LAN" package="SIP7-N" value="F0505S-2WR2SC" x="49.2" y="6.6" smashed="yes">
 <attribute name="LCSC_PART" value="C909777" x="49.2" y="6.6" size="1" layer="27" font="vector" ratio="15" display="off"/>
 <attribute name="NAME" x="56.4" y="8.2" size="0.8" layer="25" font="vector" ratio="15" align="center"/>
-<attribute name="VALUE" x="49.2" y="1.6" size="1.016" layer="27" font="vector" ratio="15" align="center"/>
 </element>
 <element name="IC4" library="BSB-LAN" package="DBV0005A-SOT23" value="SY8089AAAC" x="63.45" y="9.1" smashed="yes" rot="R180">
 <attribute name="LCSC_PART" value="C78988" x="63.45" y="9.1" size="1" layer="27" font="vector" ratio="15" rot="R180" display="off"/>
 <attribute name="NAME" x="63.45" y="6.525" size="0.8" layer="25" font="vector" ratio="15" align="center"/>
-<attribute name="VALUE" x="63.45" y="12.275" size="1.27" layer="27" font="vector" ratio="15" rot="R180" align="center"/>
 <attribute name="JLC_ROT" value="270" x="63.45" y="9.1" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="ESP1" library="BSB-LAN" package="ESP32-WROOM-32E" value="ESP32-WROOM-32E" x="68.8" y="21.8" smashed="yes" rot="R270">
 <attribute name="LCSC_PART" value="C701341" x="68.8" y="21.8" size="1" layer="27" font="vector" ratio="15" rot="R270" display="off"/>
-<attribute name="VALUE" x="84.8" y="21.8" size="0.8" layer="27" font="vector" ratio="15" rot="R270" align="center"/>
 <attribute name="NAME" x="78.6" y="10.9" size="0.8" layer="25" font="vector" ratio="15" align="center"/>
 <attribute name="JLC_ROT" value="270" x="68.8" y="21.8" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="USD" library="BSB-LAN" package="MICRO-SD" value="XKTF-001A" x="86.2" y="11.85" smashed="yes" rot="MR90">
 <attribute name="LCSC_PART" value="C381079" x="86.2" y="11.85" size="1" layer="28" font="vector" ratio="15" rot="MR90" display="off"/>
 <attribute name="NAME" x="72" y="26.85" size="0.8" layer="26" font="vector" ratio="15" rot="MR0" align="center"/>
-<attribute name="VALUE" value="XKTF-001A" x="76.2" y="18.85" size="0.8" layer="28" font="vector" ratio="15" rot="MR90" align="center"/>
+<attribute name="VALUE" value="XKTF-001A" x="76.2" y="18.85" size="0.8" layer="28" font="vector" ratio="15" rot="MR90" align="center" display="off"/>
 </element>
 <element name="C1" library="BSB-LAN" package="C0603" value="2.2uF" x="83.6" y="30.75" smashed="yes" rot="MR180">
 <attribute name="NAME" x="83.45" y="29.5" size="0.8" layer="26" font="vector" ratio="15" rot="MR180" align="center"/>
-<attribute name="VALUE" x="83.6" y="32.25" size="0.8" layer="28" font="vector" ratio="15" rot="MR180" align="center"/>
 <attribute name="LCSC_PART" value="C23630" x="83.6" y="30.75" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
 <element name="R28" library="BSB-LAN" package="R0402" value="10k" x="83.6" y="10" smashed="yes" rot="MR180">
 <attribute name="NAME" x="83.6" y="11" size="0.8" layer="26" font="vector" ratio="15" rot="MR180" align="center"/>
-<attribute name="VALUE" x="83.6" y="11" size="0.8" layer="28" font="vector" ratio="15" rot="MR180" align="center"/>
 <attribute name="LCSC_PART" value="C25744" x="83.6" y="10" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
 <element name="R8" library="BSB-LAN" package="R0402" value="4.7k" x="42.7" y="30.8" smashed="yes" rot="MR0">
 <attribute name="LCSC_PART" value="C25900" x="42.7" y="30.8" size="1" layer="28" font="vector" ratio="15" rot="MR0" display="off"/>
 <attribute name="NAME" x="42.7" y="29.85" size="0.8" layer="26" font="vector" ratio="15" rot="MR0" align="center"/>
-<attribute name="VALUE" x="42.7" y="29.8" size="0.8" layer="28" font="vector" ratio="15" rot="MR0" align="center"/>
 </element>
 <element name="L2" library="BSB-LAN" package="L2010" value="FB 600R" x="64.85" y="22.35" smashed="yes" rot="MR180">
 <attribute name="NAME" x="62.25" y="22.35" size="0.8" layer="26" font="vector" ratio="15" rot="MR180" align="center"/>
-<attribute name="VALUE" x="64.85" y="24.35" size="1.27" layer="28" font="vector" ratio="15" rot="MR180" align="center"/>
 <attribute name="LCSC_PART" value="C1017" x="64.85" y="22.35" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
 <element name="C15" library="BSB-LAN" package="C0805L" value="22uF" x="67.5" y="22.85" smashed="yes" rot="MR90">
 <attribute name="NAME" x="67.5" y="25.55" size="0.8" layer="26" font="vector" ratio="15" rot="MR90" align="center"/>
-<attribute name="VALUE" x="66" y="22.85" size="0.8" layer="28" font="vector" ratio="15" rot="MR90" align="center"/>
 <attribute name="LCSC_PART" value="C45783" x="67.5" y="22.85" size="1.778" layer="28" rot="MR90" display="off"/>
 </element>
 <element name="C16" library="BSB-LAN" package="C0805L" value="22uF" x="69.2" y="22.85" smashed="yes" rot="MR90">
 <attribute name="NAME" x="69.2" y="25.55" size="0.8" layer="26" font="vector" ratio="15" rot="MR90" align="center"/>
-<attribute name="VALUE" x="67.7" y="22.85" size="0.8" layer="28" font="vector" ratio="15" rot="MR90" align="center"/>
 <attribute name="LCSC_PART" value="C45783" x="69.2" y="22.85" size="1.778" layer="28" rot="MR90" display="off"/>
 </element>
 <element name="RN3" library="BSB-LAN" package="CTS742C083" value="2.2k" x="66.45" y="19.6" smashed="yes" rot="MR0">
 <attribute name="NAME" x="66.45" y="17.505" size="0.8" layer="26" font="vector" ratio="15" rot="MR0" align="center"/>
-<attribute name="VALUE" x="66.45" y="17.695" size="1.016" layer="28" font="vector" ratio="15" rot="MR0" align="center"/>
 <attribute name="LCSC_PART" value="C414564" x="66.45" y="19.6" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="JLC_ROT" value="270" x="66.45" y="19.6" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
 <element name="R31" library="BSB-LAN" package="R0402" value="220R" x="76.7" y="27.35" smashed="yes" rot="MR180">
 <attribute name="NAME" x="74.5" y="27.35" size="0.8" layer="26" font="vector" ratio="15" rot="MR180" align="center"/>
-<attribute name="VALUE" x="76.7" y="28.35" size="0.8" layer="28" font="vector" ratio="15" rot="MR180" align="center"/>
 <attribute name="LCSC_PART" value="C25091" x="76.7" y="27.35" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
 <element name="R32" library="BSB-LAN" package="R0402" value="10k" x="69" y="20.2" smashed="yes" rot="MR90">
 <attribute name="NAME" x="69" y="18.2" size="0.8" layer="26" font="vector" ratio="15" rot="MR90" align="center"/>
-<attribute name="VALUE" x="68" y="20.2" size="0.8" layer="28" font="vector" ratio="15" rot="MR90" align="center"/>
 <attribute name="LCSC_PART" value="C25744" x="69" y="20.2" size="1.778" layer="28" rot="MR90" display="off"/>
 </element>
 <element name="R33" library="BSB-LAN" package="R0603L" value="10R" x="77.4" y="29.45" smashed="yes" rot="MR270">
 <attribute name="NAME" x="76.4" y="29.45" size="0.8" layer="26" font="vector" ratio="15" rot="MR270" align="center"/>
-<attribute name="VALUE" x="78.4" y="29.45" size="0.8" layer="28" font="vector" ratio="15" rot="MR270" align="center"/>
 <attribute name="LCSC_PART" value="C22859" x="77.4" y="29.45" size="1.778" layer="28" rot="MR270" display="off"/>
 </element>
 <element name="R34" library="BSB-LAN" package="R0402" value="10k" x="72.75" y="10.9" smashed="yes" rot="MR180">
 <attribute name="NAME" x="74.75" y="11.05" size="0.8" layer="26" font="vector" ratio="15" rot="MR180" align="center"/>
-<attribute name="VALUE" x="72.75" y="11.9" size="0.8" layer="28" font="vector" ratio="15" rot="MR180" align="center"/>
 <attribute name="LCSC_PART" value="C25744" x="72.75" y="10.9" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
 <element name="R35" library="BSB-LAN" package="R0402" value="220R" x="67.7" y="11.55" smashed="yes" rot="MR0">
 <attribute name="NAME" x="65.7" y="11.55" size="0.8" layer="26" font="vector" ratio="15" rot="MR0" align="center"/>
-<attribute name="VALUE" x="67.7" y="10.55" size="0.8" layer="28" font="vector" ratio="15" rot="MR0" align="center"/>
 <attribute name="LCSC_PART" value="C25091" x="67.7" y="11.55" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
 <element name="C17" library="BSB-LAN" package="C0603L" value="0.1uF" x="33.25" y="6.9" smashed="yes" rot="R180">
 <attribute name="NAME" x="33.4" y="7.9" size="0.8" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
-<attribute name="VALUE" x="33.25" y="7.9" size="0.8" layer="27" font="vector" ratio="15" rot="R180" align="center"/>
 <attribute name="LCSC_PART" value="C113803" x="33.25" y="6.9" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="R21" library="BSB-LAN" package="R1206" value="0.03R 1%" x="27.85" y="3.2" smashed="yes" rot="R90">
 <attribute name="LCSC_PART" value="C163046" x="23.45" y="3" size="0.8" layer="27" font="vector" ratio="15" rot="R90" display="off"/>
 <attribute name="NAME" x="27.9" y="6.045" size="0.8" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
-<attribute name="VALUE" x="29.755" y="3.2" size="1.27" layer="27" font="vector" ratio="15" rot="R90" align="center"/>
 </element>
 <element name="C18" library="BSB-LAN" package="SMC_D" value="470uF 10V" x="26.7" y="13.4" smashed="yes" rot="R180">
 <attribute name="NAME" x="23.35" y="10.655" size="0.8" layer="25" font="vector" ratio="15" align="center"/>
-<attribute name="VALUE" x="26.7" y="15.305" size="1.016" layer="27" font="vector" ratio="15" rot="R180" align="center"/>
 <attribute name="LCSC_PART" value="C4944894" x="26.7" y="13.4" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="L3" library="BSB-LAN" package="L6560P" value="33uH 2.5A" x="35.6" y="12.35" smashed="yes" rot="R90">
 <attribute name="LCSC_PART" value="C2839927" x="35.6" y="12.35" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="39.9" y="15.25" size="0.8" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
-<attribute name="VALUE" x="39.6" y="12.35" size="1.27" layer="27" font="vector" ratio="15" rot="R90" align="center"/>
 </element>
 <element name="C19" library="BSB-LAN" package="C0402" value="12pF" x="39.35" y="4.5" smashed="yes" rot="MR0">
 <attribute name="NAME" x="41.35" y="4.5" size="0.8" layer="26" font="vector" ratio="15" rot="MR0" align="center"/>
-<attribute name="VALUE" x="39.35" y="3.5" size="0.8" layer="28" font="vector" ratio="15" rot="MR0" align="center"/>
 <attribute name="LCSC_PART" value="C1547" x="39.35" y="4.5" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
 <element name="R38" library="BSB-LAN" package="R0402" value="12.1k 1%" x="39.35" y="5.65" smashed="yes" rot="MR0">
 <attribute name="NAME" x="39.25" y="6.55" size="0.8" layer="26" font="vector" ratio="15" rot="MR0" align="center"/>
-<attribute name="VALUE" x="39.35" y="4.65" size="0.8" layer="28" font="vector" ratio="15" rot="MR0" align="center"/>
 <attribute name="LCSC_PART" value="C25852" x="39.35" y="5.65" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
 <element name="R36" library="BSB-LAN" package="R0402" value="12.1k 1%" x="37.7" y="5.05" smashed="yes" rot="MR90">
 <attribute name="NAME" x="36.8" y="5.1" size="0.8" layer="26" font="vector" ratio="15" rot="MR90" align="center"/>
-<attribute name="VALUE" x="36.7" y="5.05" size="0.8" layer="28" font="vector" ratio="15" rot="MR90" align="center"/>
 <attribute name="LCSC_PART" value="C25852" x="37.7" y="5.05" size="1.778" layer="28" rot="MR90" display="off"/>
 </element>
 <element name="R37" library="BSB-LAN" package="R0402" value="4.42k 1%" x="38.2" y="3.35" smashed="yes" rot="MR180">
 <attribute name="NAME" x="38.15" y="2.3" size="0.8" layer="26" font="vector" ratio="15" rot="MR0" align="center"/>
-<attribute name="VALUE" x="38.2" y="4.35" size="0.8" layer="28" font="vector" ratio="15" rot="MR180" align="center"/>
 <attribute name="LCSC_PART" value="C52269" x="38.2" y="3.35" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
 <element name="D1" library="BSB-LAN" package="SMB" value="SS510B" x="28.2" y="8.7" smashed="yes" rot="R180">
 <attribute name="LCSC_PART" value="C65011" x="28.2" y="8.7" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="31.55" y="10.725" size="0.8" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
-<attribute name="VALUE" x="28.2" y="11.875" size="1.27" layer="27" font="vector" ratio="15" rot="R180" align="center"/>
 </element>
 <element name="R39" library="BSB-LAN" package="R0603L" value="10R" x="35.75" y="6.9" smashed="yes" rot="R180">
 <attribute name="NAME" x="35.85" y="7.9" size="0.8" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
-<attribute name="VALUE" x="35.75" y="7.9" size="0.8" layer="27" font="vector" ratio="15" rot="R180" align="center"/>
 <attribute name="LCSC_PART" value="C22859" x="35.75" y="6.9" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="C20" library="BSB-LAN" package="C1808" value="1nF 3kV" x="47.95" y="3.05" smashed="yes" rot="MR180">
 <attribute name="NAME" x="47.95" y="1.35" size="0.8" layer="26" font="vector" ratio="15" rot="MR180" align="center"/>
-<attribute name="VALUE" x="47.95" y="5.55" size="1.016" layer="28" font="vector" ratio="15" rot="MR180" align="center"/>
 <attribute name="LCSC_PART" value="C577300" x="47.95" y="3.05" size="1.2" layer="28" font="vector" ratio="15" rot="MR180" align="center" display="off"/>
 </element>
 <element name="C21" library="BSB-LAN" package="C1808" value="1nF 3kV" x="47.95" y="6.6" smashed="yes" rot="MR180">
 <attribute name="NAME" x="47.95" y="4.7" size="0.8" layer="26" font="vector" ratio="15" rot="MR180" align="center"/>
-<attribute name="VALUE" x="47.95" y="9.1" size="1.016" layer="28" font="vector" ratio="15" rot="MR180" align="center"/>
 <attribute name="LCSC_PART" value="C577300" x="47.95" y="6.6" size="1.2" layer="28" font="vector" ratio="15" rot="MR180" align="center" display="off"/>
 </element>
 <element name="C22" library="BSB-LAN" package="C0805" value="22uF" x="42.8" y="8.8" smashed="yes">
 <attribute name="NAME" x="45.6" y="8.7" size="0.8" layer="25" font="vector" ratio="15" align="center"/>
-<attribute name="VALUE" x="42.8" y="7.3" size="0.8" layer="27" font="vector" ratio="15" align="center"/>
 <attribute name="LCSC_PART" value="C45783" x="42.8" y="8.8" size="1" layer="27" font="vector" ratio="15" align="center" display="off"/>
 </element>
 <element name="R41" library="BSB-LAN" package="R0402" value="12.1k 1%" x="62.95" y="10.95" smashed="yes" rot="MR180">
 <attribute name="NAME" x="60.7" y="10.95" size="0.8" layer="26" font="vector" ratio="15" rot="MR180" align="center"/>
-<attribute name="VALUE" x="62.95" y="11.95" size="0.8" layer="28" font="vector" ratio="15" rot="MR180" align="center"/>
 <attribute name="LCSC_PART" value="C25852" x="62.95" y="10.95" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
 <element name="R40" library="BSB-LAN" package="R0402" value="180k 1%" x="62.95" y="12.1" smashed="yes" rot="MR0">
 <attribute name="NAME" x="60.7" y="12.1" size="0.8" layer="26" font="vector" ratio="15" rot="MR0" align="center"/>
-<attribute name="VALUE" x="62.95" y="11.1" size="0.8" layer="28" font="vector" ratio="15" rot="MR0" align="center"/>
 <attribute name="LCSC_PART" value="C25760" x="62.95" y="12.1" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
 <element name="R42" library="BSB-LAN" package="R0402" value="28.7k 1%" x="62.95" y="9.8" smashed="yes" rot="MR180">
 <attribute name="NAME" x="60.7" y="9.8" size="0.8" layer="26" font="vector" ratio="15" rot="MR180" align="center"/>
-<attribute name="VALUE" x="62.95" y="10.8" size="0.8" layer="28" font="vector" ratio="15" rot="MR180" align="center"/>
 <attribute name="LCSC_PART" value="C26972" x="62.95" y="9.8" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
 <element name="L4" library="BSB-LAN" package="L4040P" value="2.2uH 1.5A" x="62.55" y="13.8" smashed="yes" rot="R180">
 <attribute name="NAME" x="65.325" y="13.8" size="0.8" layer="25" font="vector" ratio="15" rot="R270" align="center"/>
-<attribute name="VALUE" x="62.55" y="16.975" size="1.27" layer="27" font="vector" ratio="15" rot="R180" align="center"/>
 <attribute name="LCSC_PART" value="C135262" x="62.55" y="13.8" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="C23" library="BSB-LAN" package="C0805" value="22uF" x="60.85" y="9.75" smashed="yes" rot="R270">
 <attribute name="NAME" x="60.85" y="7.55" size="0.8" layer="25" font="vector" ratio="15" align="center"/>
-<attribute name="VALUE" x="59.35" y="9.75" size="0.8" layer="27" font="vector" ratio="15" rot="R270" align="center"/>
 <attribute name="LCSC_PART" value="C45783" x="60.85" y="9.75" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="C24" library="BSB-LAN" package="C0805" value="22uF" x="61.05" y="5.15" smashed="yes">
 <attribute name="NAME" x="60.85" y="6.5" size="0.8" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
-<attribute name="VALUE" x="61.05" y="3.65" size="0.8" layer="27" font="vector" ratio="15" align="center"/>
 <attribute name="LCSC_PART" value="C45783" x="61.05" y="5.15" size="1" layer="27" font="vector" ratio="15" align="center" display="off"/>
 </element>
 <element name="R43" library="BSB-LAN" package="R0402" value="12.1k 1%" x="81.35" y="30.25" smashed="yes" rot="MR90">
 <attribute name="NAME" x="81.35" y="28.25" size="0.8" layer="26" font="vector" ratio="15" rot="MR270" align="center"/>
-<attribute name="VALUE" x="80.35" y="30.25" size="0.8" layer="28" font="vector" ratio="15" rot="MR90" align="center"/>
 <attribute name="LCSC_PART" value="C25852" x="81.35" y="30.25" size="1.778" layer="28" rot="MR90" display="off"/>
 </element>
 <element name="R44" library="BSB-LAN" package="R0402" value="28.7k 1%" x="80.2" y="28.8" smashed="yes" rot="MR270">
 <attribute name="NAME" x="79.25" y="28.75" size="0.8" layer="26" font="vector" ratio="15" rot="MR270" align="center"/>
-<attribute name="VALUE" x="81.2" y="28.8" size="0.8" layer="28" font="vector" ratio="15" rot="MR270" align="center"/>
 <attribute name="LCSC_PART" value="C26972" x="80.2" y="28.8" size="1.778" layer="28" rot="MR270" display="off"/>
 </element>
 <element name="C25" library="BSB-LAN" package="C0805" value="22uF" x="54.4" y="7.15" smashed="yes" rot="MR0">
 <attribute name="NAME" x="57.15" y="7.9" size="0.8" layer="26" font="vector" ratio="15" rot="MR0" align="center"/>
-<attribute name="VALUE" x="54.4" y="5.65" size="0.8" layer="28" font="vector" ratio="15" rot="MR0" align="center"/>
 <attribute name="LCSC_PART" value="C45783" x="54.4" y="7.15" size="1" layer="28" font="vector" ratio="15" rot="MR0" align="center" display="off"/>
 </element>
 <element name="D5" library="BSB-LAN" package="SMA" value="6V" x="54.3" y="3.9" smashed="yes" rot="MR0">
 <attribute name="NAME" x="54.3" y="1.475" size="0.8" layer="26" font="vector" ratio="15" rot="MR0" align="center"/>
-<attribute name="VALUE" x="54.3" y="0.725" size="1.27" layer="28" font="vector" ratio="15" rot="MR0" align="center"/>
 <attribute name="LCSC_PART" value="C223993" x="54.3" y="3.9" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
 <element name="RST" library="BSB-LAN" package="TACTILE_SWITCH_RA" value="Tact-RA" x="84" y="5.2" smashed="yes" rot="R90">
 <attribute name="NAME" x="84.6" y="9.8" size="1.2" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
-<attribute name="VALUE" x="86" y="5.2" size="1" layer="27" font="vector" ratio="15" rot="R90" align="center"/>
 <attribute name="LCSC_PART" value="C406156" x="84" y="5.2" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="OPT" library="BSB-LAN" package="1X02-2MM" value="DNI" x="69.2" y="10.1" smashed="yes" rot="R180">
 <attribute name="NAME" x="66.26" y="10.08" size="1.2" layer="25" font="vector" ratio="15" rot="R90" align="center"/>
-<attribute name="VALUE" x="69.2" y="12.64" size="1.27" layer="27" font="vector" ratio="15" rot="R180" align="center"/>
 </element>
 <element name="Q5" library="BSB-LAN" package="SOT23" value="BC847" x="77.85" y="7.05" smashed="yes" rot="MR0">
 <attribute name="LCSC_PART" value="C130417" x="82.85" y="11.45" size="1.2" layer="28" font="vector" ratio="15" rot="MR0" display="off"/>
@@ -2706,7 +2626,6 @@ For a 50R Single Ended on the inner layers, use a trace width of 0.22mm (51.68 O
 </element>
 <element name="R45" library="BSB-LAN" package="R0402" value="1k" x="80.1" y="6.85" smashed="yes" rot="MR90">
 <attribute name="NAME" x="80.05" y="4.8" size="0.8" layer="26" font="vector" ratio="15" rot="MR270" align="center"/>
-<attribute name="VALUE" x="79.1" y="6.85" size="0.8" layer="28" font="vector" ratio="15" rot="MR90" align="center"/>
 <attribute name="LCSC_PART" value="C11702" x="80.1" y="6.85" size="1.778" layer="28" rot="MR90" display="off"/>
 </element>
 <element name="Q6" library="BSB-LAN" package="SOT23" value="BC847" x="82.65" y="5.25" smashed="yes" rot="MR90">
@@ -2716,17 +2635,14 @@ For a 50R Single Ended on the inner layers, use a trace width of 0.22mm (51.68 O
 </element>
 <element name="R46" library="BSB-LAN" package="R0402" value="1k" x="77.25" y="4.5" smashed="yes" rot="MR0">
 <attribute name="NAME" x="77.25" y="3.55" size="0.8" layer="26" font="vector" ratio="15" rot="MR180" align="center"/>
-<attribute name="VALUE" x="77.25" y="3.5" size="0.8" layer="28" font="vector" ratio="15" rot="MR0" align="center"/>
 <attribute name="LCSC_PART" value="C11702" x="77.25" y="4.5" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
 <element name="IC6" library="BSB-LAN" package="MSOP10" value="CH340X" x="74.25" y="5.95" smashed="yes" rot="MR0">
 <attribute name="LCSC_PART" value="C3035748" x="75.45" y="-6.45" size="1.2" layer="28" font="vector" ratio="15" rot="MR0" display="off"/>
 <attribute name="NAME" x="72.15" y="6.75" size="0.8" layer="26" font="vector" ratio="15" rot="MR90" align="center"/>
-<attribute name="VALUE" x="71.75" y="5.95" size="0.8" layer="28" font="vector" ratio="15" rot="MR90" align="center"/>
 </element>
 <element name="R49" library="BSB-LAN" package="R0402" value="220R" x="74.95" y="10" smashed="yes" rot="MR180">
 <attribute name="NAME" x="77" y="10" size="0.8" layer="26" font="vector" ratio="15" rot="MR180" align="center"/>
-<attribute name="VALUE" x="74.95" y="11" size="0.8" layer="28" font="vector" ratio="15" rot="MR180" align="center"/>
 <attribute name="LCSC_PART" value="C25091" x="74.95" y="10" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
 <element name="Q7" library="BSB-LAN" package="SOT23" value="WPM2015-3/TR" x="60.95" y="2.25" smashed="yes" rot="R180">
@@ -2737,54 +2653,45 @@ For a 50R Single Ended on the inner layers, use a trace width of 0.22mm (51.68 O
 <element name="D6" library="BSB-LAN" package="SMB" value="SS510B" x="59.9" y="5.4" smashed="yes" rot="MR270">
 <attribute name="LCSC_PART" value="C65011" x="59.9" y="5.4" size="1.2" layer="28" font="vector" ratio="15" rot="MR270" display="off"/>
 <attribute name="NAME" x="62.675" y="5.4" size="0.8" layer="26" font="vector" ratio="15" rot="MR90" align="center"/>
-<attribute name="VALUE" x="63.075" y="5.4" size="1.27" layer="28" font="vector" ratio="15" rot="MR270" align="center"/>
 </element>
 <element name="R47" library="BSB-LAN" package="R0402" value="10k" x="62.8" y="2.7" smashed="yes" rot="MR270">
 <attribute name="NAME" x="63.85" y="2.7" size="0.8" layer="26" font="vector" ratio="15" rot="MR270" align="center"/>
-<attribute name="VALUE" x="63.8" y="2.7" size="0.8" layer="28" font="vector" ratio="15" rot="MR270" align="center"/>
 <attribute name="LCSC_PART" value="C25744" x="62.8" y="2.7" size="1.778" layer="28" rot="MR270" display="off"/>
 </element>
 <element name="R48" library="BSB-LAN" package="R0603" value="1.5k" x="78.7" y="2.35" smashed="yes" rot="MR0">
 <attribute name="LCSC_PART" value="C22843" x="77.7" y="7.95" size="1.2" layer="28" font="vector" ratio="15" rot="MR0" display="off"/>
 <attribute name="NAME" x="75.9" y="2.25" size="0.8" layer="26" font="vector" ratio="15" rot="MR0" align="center"/>
-<attribute name="VALUE" x="78.7" y="0.85" size="0.8" layer="28" font="vector" ratio="15" rot="MR0" align="center"/>
 </element>
 <element name="PGD" library="BSB-LAN" package="CHIP-LED0603" value="red" x="81.4" y="4.45" smashed="yes">
 <attribute name="LCSC_PART" value="C2286" x="75.2" y="6.85" size="1.2" layer="27" font="vector" ratio="15" display="off"/>
 <attribute name="NAME" x="81.1" y="6.555" size="1.27" layer="25" font="vector" ratio="15" align="center"/>
-<attribute name="VALUE" x="83.305" y="4.45" size="1.27" layer="27" font="vector" ratio="15" rot="R90" align="center"/>
 <attribute name="JLC_ROT" value="270" x="81.4" y="4.45" size="1.778" layer="27" display="off"/>
 </element>
 <element name="C26" library="BSB-LAN" package="C0603L" value="0.1uF" x="72.55" y="9.7" smashed="yes" rot="MR0">
 <attribute name="NAME" x="71.75" y="8.7" size="0.8" layer="26" font="vector" ratio="15" rot="MR0" align="center"/>
-<attribute name="VALUE" x="72.55" y="8.7" size="0.8" layer="28" font="vector" ratio="15" rot="MR0" align="center"/>
 <attribute name="LCSC_PART" value="C113803" x="72.55" y="9.7" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
 <element name="R50" library="BSB-LAN" package="R0402" value="4.7k" x="71.7" y="4" smashed="yes" rot="MR270">
 <attribute name="LCSC_PART" value="C25900" x="71.7" y="3" size="1.2" layer="28" font="vector" ratio="15" rot="MR270" display="off"/>
 <attribute name="NAME" x="70.65" y="4" size="0.8" layer="26" font="vector" ratio="15" rot="MR90" align="center"/>
-<attribute name="VALUE" x="72.7" y="4" size="0.8" layer="28" font="vector" ratio="15" rot="MR270" align="center"/>
 </element>
 <element name="USB" library="BSB-LAN" package="USB-MICROB" value="ZX62-B-5PA(33)" x="74.7" y="2.8" smashed="yes">
 <attribute name="NAME" x="67.9" y="2.3" size="1.2" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
-<attribute name="VALUE" x="74.7" y="0.8" size="0.8" layer="27" font="vector" ratio="15" align="center"/>
 <attribute name="LCSC_PART" value="C132561" x="74.7" y="2.8" size="1.778" layer="27" display="off"/>
 </element>
 <element name="C27" library="BSB-LAN" package="C0603L" value="0.1uF" x="79.5" y="30.75" smashed="yes" rot="MR0">
 <attribute name="NAME" x="79.5" y="31.75" size="0.8" layer="26" font="vector" ratio="15" rot="MR0" align="center"/>
-<attribute name="VALUE" x="79.5" y="29.75" size="0.8" layer="28" font="vector" ratio="15" rot="MR0" align="center"/>
 <attribute name="LCSC_PART" value="C113803" x="79.5" y="30.75" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
 <element name="CASE1" library="BSB-LAN" package="CNMB/2-" value="DNI" x="0" y="0"/>
-<element name="R51" library="BSB-LAN" package="R0402" value="10k" x="52.6" y="22.8" smashed="yes" rot="MR270">
-<attribute name="NAME" x="52.4" y="20.8" size="0.8" layer="26" font="vector" ratio="15" rot="MR270" align="center"/>
-<attribute name="VALUE" x="53.6" y="22.8" size="0.8" layer="28" font="vector" ratio="15" rot="MR270" align="center"/>
-<attribute name="LCSC_PART" value="C25744" x="52.6" y="22.8" size="1.778" layer="28" rot="MR270" display="off"/>
-</element>
 <element name="U2" library="BSB-LAN" package="DBV0005A-SOT23" value="ESDS314DBV" x="74.95" y="8.75" smashed="yes" rot="R180">
 <attribute name="LCSC_PART" value="C1847859" x="85.35" y="-0.05" size="1" layer="27" font="vector" ratio="15" rot="R180" display="off"/>
 <attribute name="NAME" x="72.55" y="8.775" size="0.8" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
-<attribute name="VALUE" x="74.95" y="11.925" size="1.27" layer="27" font="vector" ratio="15" rot="R180" align="center"/>
+</element>
+<element name="RN4" library="BSB-LAN" package="CTS742C083" value="2.2k" x="50.8" y="15.6" smashed="yes" rot="MR270">
+<attribute name="JLC_ROT" value="270" x="50.8" y="14.4" size="1" layer="28" font="vector" ratio="15" rot="MR270" display="off"/>
+<attribute name="LCSC_PART" value="C414564" x="50.8" y="14.4" size="1" layer="28" font="vector" ratio="15" rot="MR270" display="off"/>
+<attribute name="NAME" x="50.8" y="13.295" size="0.8" layer="26" font="vector" ratio="15" rot="MR180" align="center"/>
 </element>
 </elements>
 <signals>
@@ -3139,8 +3046,8 @@ For a 50R Single Ended on the inner layers, use a trace width of 0.22mm (51.68 O
 <via x="58.6" y="16.4" extent="1-16" drill="0.3"/>
 <via x="58" y="12.8" extent="1-16" drill="0.3"/>
 <via x="54.6" y="12.8" extent="1-16" drill="0.3"/>
-<via x="52.4" y="14.6" extent="1-16" drill="0.3"/>
-<via x="51.8" y="18" extent="1-16" drill="0.3"/>
+<via x="52.4" y="13.6" extent="1-16" drill="0.3"/>
+<via x="51.8" y="17.8" extent="1-16" drill="0.3"/>
 <via x="52.8" y="20.6" extent="1-16" drill="0.3"/>
 <via x="55.2" y="20.6" extent="1-16" drill="0.3"/>
 <via x="58.4" y="20.6" extent="1-16" drill="0.3"/>
@@ -3174,7 +3081,7 @@ For a 50R Single Ended on the inner layers, use a trace width of 0.22mm (51.68 O
 <via x="37.65" y="31.35" extent="1-16" drill="0.3"/>
 <via x="44.8" y="15.9" extent="1-16" drill="0.3"/>
 <via x="48.4" y="19.2" extent="1-16" drill="0.3"/>
-<via x="50.4" y="17.7" extent="1-16" drill="0.3"/>
+<via x="50.4" y="17.9" extent="1-16" drill="0.3"/>
 <via x="48.4" y="21.1" extent="1-16" drill="0.3"/>
 <via x="50.5" y="24" extent="1-16" drill="0.3"/>
 <via x="48.6" y="24.3" extent="1-16" drill="0.3"/>
@@ -3183,7 +3090,7 @@ For a 50R Single Ended on the inner layers, use a trace width of 0.22mm (51.68 O
 <via x="46.4" y="15.3" extent="1-16" drill="0.3"/>
 <via x="48" y="13.5" extent="1-16" drill="0.3"/>
 <via x="50.4" y="13.5" extent="1-16" drill="0.3"/>
-<via x="50.6" y="16.1" extent="1-16" drill="0.3"/>
+<via x="65.2" y="12.7" extent="1-16" drill="0.3"/>
 <via x="55.2" y="29.1" extent="1-16" drill="0.3"/>
 <via x="53.9" y="29.1" extent="1-16" drill="0.3"/>
 <via x="57" y="29.1" extent="1-16" drill="0.3"/>
@@ -3242,6 +3149,7 @@ For a 50R Single Ended on the inner layers, use a trace width of 0.22mm (51.68 O
 <vertex x="15.4" y="9"/>
 </polygon>
 <via x="40.5" y="32.45" extent="1-16" drill="0.3"/>
+<via x="67.8" y="14" extent="1-16" drill="0.3"/>
 </signal>
 <signal name="BSB-TXD" class="4">
 <contactref element="R6" pad="2"/>
@@ -3400,6 +3308,12 @@ For a 50R Single Ended on the inner layers, use a trace width of 0.22mm (51.68 O
 <wire x1="65.4" y1="15.4" x2="66" y2="14.8" width="0.2" layer="1"/>
 <wire x1="66" y1="14.8" x2="70.6" y2="14.8" width="0.2" layer="1"/>
 <wire x1="70.6" y1="14.8" x2="71.34" y2="14.06" width="0.2" layer="1"/>
+<contactref element="RN4" pad="2"/>
+<wire x1="51.6" y1="16" x2="52.4" y2="16" width="0.2" layer="16"/>
+<wire x1="52.4" y1="16" x2="52.6" y2="16.2" width="0.2" layer="16"/>
+<wire x1="52.6" y1="16.2" x2="52.6" y2="17" width="0.2" layer="16"/>
+<wire x1="52.6" y1="17" x2="53.73" y2="18.13" width="0.2" layer="16"/>
+<wire x1="53.73" y1="18.13" x2="53.73" y2="19" width="0.2" layer="16"/>
 </signal>
 <signal name="ESP-SDA" class="4">
 <contactref element="UEXT" pad="6"/>
@@ -3410,6 +3324,13 @@ For a 50R Single Ended on the inner layers, use a trace width of 0.22mm (51.68 O
 <wire x1="63.4" y1="21" x2="61.8" y2="19.4" width="0.2" layer="1"/>
 <wire x1="61.8" y1="19.4" x2="56.67" y2="19.4" width="0.2" layer="1"/>
 <wire x1="56.67" y1="19.4" x2="56.27" y2="19" width="0.2" layer="1"/>
+<contactref element="RN4" pad="3"/>
+<wire x1="51.6" y1="15.2" x2="52.2" y2="15.2" width="0.2" layer="16"/>
+<wire x1="52.2" y1="15.2" x2="52.4" y2="15.4" width="0.2" layer="16"/>
+<wire x1="52.4" y1="15.4" x2="54.2" y2="15.4" width="0.2" layer="16"/>
+<wire x1="54.2" y1="15.4" x2="54.8" y2="16" width="0.2" layer="16"/>
+<wire x1="54.8" y1="16" x2="54.8" y2="17.53" width="0.2" layer="16"/>
+<wire x1="54.8" y1="17.53" x2="56.27" y2="19" width="0.2" layer="16"/>
 </signal>
 <signal name="ESP-SD-DATA" class="4">
 <contactref element="UEXT" pad="8"/>
@@ -3484,6 +3405,11 @@ For a 50R Single Ended on the inner layers, use a trace width of 0.22mm (51.68 O
 <wire x1="73.2" y1="14.4" x2="73.2" y2="14.2" width="0.2" layer="1"/>
 <wire x1="73.2" y1="14.2" x2="73.88" y2="13.52" width="0.2" layer="1"/>
 <wire x1="73.88" y1="13.52" x2="73.88" y2="12.8" width="0.2" layer="1"/>
+<contactref element="RN4" pad="4"/>
+<wire x1="51.6" y1="14.4" x2="52" y2="14.4" width="0.2" layer="16"/>
+<wire x1="52" y1="14.4" x2="52.6" y2="15" width="0.2" layer="16"/>
+<wire x1="52.6" y1="15" x2="55.19" y2="15" width="0.2" layer="16"/>
+<wire x1="55.19" y1="15" x2="56.27" y2="13.92" width="0.2" layer="16"/>
 </signal>
 <signal name="ETH-TD_P" class="1">
 <contactref element="POE-ETH" pad="5"/>
@@ -3840,7 +3766,6 @@ For a 50R Single Ended on the inner layers, use a trace width of 0.22mm (51.68 O
 <contactref element="C4" pad="1"/>
 <contactref element="Q2" pad="E"/>
 <contactref element="OK1" pad="5"/>
-<contactref element="UEXT" pad="1"/>
 <contactref element="ESP1" pad="2"/>
 <contactref element="R28" pad="2"/>
 <contactref element="L2" pad="1"/>
@@ -3949,9 +3874,6 @@ For a 50R Single Ended on the inner layers, use a trace width of 0.22mm (51.68 O
 <wire x1="68.5" y1="20.7" x2="69" y2="20.7" width="0.6" layer="16"/>
 <via x="84.1" y="9.45" extent="1-16" drill="0.3"/>
 <wire x1="84.1" y1="10" x2="84.1" y2="9.45" width="0.4" layer="16"/>
-<contactref element="R51" pad="1"/>
-<wire x1="52.6" y1="23.3" x2="53.38" y2="24.08" width="0.2" layer="16"/>
-<wire x1="53.38" y1="24.08" x2="53.73" y2="24.08" width="0.2" layer="16"/>
 <via x="47.95" y="16.15" extent="1-16" drill="0.3"/>
 <via x="47.3" y="16.15" extent="1-16" drill="0.3"/>
 <via x="47.3" y="16.8" extent="1-16" drill="0.3"/>
@@ -3987,8 +3909,17 @@ For a 50R Single Ended on the inner layers, use a trace width of 0.22mm (51.68 O
 <wire x1="44.7" y1="32.1" x2="51.3" y2="32.1" width="0.6" layer="2"/>
 <wire x1="51.3" y1="32.1" x2="52.8" y2="30.6" width="0.6" layer="2"/>
 <wire x1="52.8" y1="30.6" x2="52.8" y2="25.01" width="0.6" layer="2"/>
-<wire x1="52.8" y1="25.01" x2="53.73" y2="24.08" width="0.6" layer="2"/>
 <via x="75.7" y="8.5" extent="1-16" drill="0.3"/>
+<contactref element="RN4" pad="5"/>
+<contactref element="RN4" pad="6"/>
+<contactref element="RN4" pad="7"/>
+<contactref element="RN4" pad="8"/>
+<contactref element="UEXT" pad="1"/>
+<wire x1="47.95" y1="16.15" x2="50" y2="16.15" width="0.4" layer="16"/>
+<wire x1="50" y1="16.15" x2="50" y2="16.8" width="0.4" layer="16"/>
+<wire x1="50" y1="16.15" x2="50" y2="16" width="0.4" layer="16"/>
+<wire x1="50" y1="16" x2="50" y2="15.2" width="0.4" layer="16"/>
+<wire x1="50" y1="15.2" x2="50" y2="14.4" width="0.4" layer="16"/>
 </signal>
 <signal name="ETH-PWR-G" class="4">
 <contactref element="C4" pad="2"/>
@@ -5262,9 +5193,6 @@ For a 50R Single Ended on the inner layers, use a trace width of 0.22mm (51.68 O
 </signal>
 <signal name="UEXT-TX" class="4">
 <contactref element="UEXT" pad="3"/>
-<contactref element="R51" pad="2"/>
-<wire x1="52.6" y1="22.3" x2="53.36" y2="21.54" width="0.2" layer="16"/>
-<wire x1="53.36" y1="21.54" x2="53.73" y2="21.54" width="0.2" layer="16"/>
 <contactref element="ESP1" pad="9"/>
 <wire x1="75.15" y1="30.8" x2="75.15" y2="29.6" width="0.2" layer="1"/>
 <wire x1="75.15" y1="29.6" x2="75.05" y2="29.5" width="0.2" layer="1"/>
@@ -5280,6 +5208,12 @@ For a 50R Single Ended on the inner layers, use a trace width of 0.22mm (51.68 O
 <wire x1="59.6" y1="21.6" x2="60.6" y2="22.6" width="0.2" layer="1"/>
 <wire x1="60.6" y1="22.6" x2="60.6" y2="26.4" width="0.2" layer="1"/>
 <via x="60.6" y="26.4" extent="1-16" drill="0.3"/>
+<contactref element="RN4" pad="1"/>
+<wire x1="51.6" y1="16.8" x2="51.8" y2="16.8" width="0.2" layer="16"/>
+<wire x1="51.8" y1="16.8" x2="52.6" y2="17.6" width="0.2" layer="16"/>
+<wire x1="52.6" y1="17.6" x2="52.6" y2="19.4" width="0.2" layer="16"/>
+<wire x1="52.6" y1="19.4" x2="53.73" y2="20.53" width="0.2" layer="16"/>
+<wire x1="53.73" y1="20.53" x2="53.73" y2="21.54" width="0.2" layer="16"/>
 </signal>
 <signal name="UEXT-RX">
 <contactref element="UEXT" pad="4"/>
@@ -5296,14 +5230,6 @@ For a 50R Single Ended on the inner layers, use a trace width of 0.22mm (51.68 O
 <wire x1="61" y1="25.6" x2="61.2" y2="25.8" width="0.2" layer="1"/>
 <via x="61.2" y="25.8" extent="1-16" drill="0.3"/>
 <wire x1="61.2" y1="25.8" x2="61.4" y2="26" width="0.2" layer="16"/>
-</signal>
-<signal name="N$5">
-</signal>
-<signal name="N$6">
-</signal>
-<signal name="N$1">
-</signal>
-<signal name="N$3">
 </signal>
 </signals>
 <errors>

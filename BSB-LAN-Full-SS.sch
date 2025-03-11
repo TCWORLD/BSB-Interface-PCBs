@@ -8,34 +8,34 @@
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
-<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
-<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
-<layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
-<layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
-<layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
-<layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
-<layer number="8" name="Route8" color="1" fill="2" visible="no" active="no"/>
-<layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
-<layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
-<layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
-<layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
-<layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
-<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
-<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="no"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="no"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="no"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="no"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="no"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="yes" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="yes" active="no"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="yes" active="no"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="yes" active="no"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="yes" active="no"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="yes" active="no"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="yes" active="no"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="yes" active="no"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="yes" active="no"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="yes" active="no"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="yes" active="no"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="yes" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="yes" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="yes" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="no"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="no"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="no"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="no"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="no"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="no"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="no"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="no"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="no"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="no"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="no"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="no"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="no"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="no"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="no"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
@@ -44,8 +44,8 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="no"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="no"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="no"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="no"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="no"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="no"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="no"/>
@@ -53,20 +53,20 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="no"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="no"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="no"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="no" active="no"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
-<layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
-<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
-<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
-<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
-<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
-<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
-<layer number="58" name="bCAD" color="7" fill="1" visible="no" active="no"/>
-<layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
-<layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="no"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="no"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="no"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="no"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="yes" active="no"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="no"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="no"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="yes" active="no"/>
+<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="yes" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="yes" active="no"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="yes" active="no"/>
+<layer number="58" name="bCAD" color="7" fill="1" visible="yes" active="no"/>
+<layer number="59" name="tCarbon" color="7" fill="1" visible="yes" active="no"/>
+<layer number="60" name="bCarbon" color="7" fill="1" visible="yes" active="no"/>
 <layer number="88" name="SimResults" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="89" name="SimProbes" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="90" name="Modules" color="7" fill="1" visible="yes" active="yes"/>
@@ -8120,10 +8120,10 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <attribute name="LCSC_PART" value="C1525"/>
 </part>
 <part name="CASE1" library="BSB-LAN" deviceset="CNMB" device="/3" value="DNI"/>
-<part name="R51" library="BSB-LAN" deviceset="R-EU_" device="R0402" value="10k">
-<attribute name="LCSC_PART" value="C25744"/>
-</part>
 <part name="U2" library="BSB-LAN" deviceset="ESDS314" device="DBV"/>
+<part name="RN4" library="BSB-LAN" deviceset="R-NET-04" device="-R1206" value="2.2k">
+<attribute name="LCSC_PART" value="C414564"/>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -8161,11 +8161,11 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <instance part="R33" gate="G$1" x="210.82" y="127">
 <attribute name="LCSC_PART" x="210.82" y="127" size="1.4224" layer="96" font="vector" ratio="10" align="center" display="off"/>
 </instance>
-<instance part="R34" gate="G$1" x="38.1" y="63.5" rot="R90">
-<attribute name="LCSC_PART" x="38.1" y="63.5" size="1.4224" layer="96" font="vector" ratio="10" align="center" display="off"/>
+<instance part="R34" gate="G$1" x="137.16" y="99.06" rot="R90">
+<attribute name="LCSC_PART" x="137.16" y="99.06" size="1.4224" layer="96" font="vector" ratio="10" align="center" display="off"/>
 </instance>
-<instance part="R35" gate="G$1" x="63.5" y="55.88">
-<attribute name="LCSC_PART" x="63.5" y="55.88" size="1.4224" layer="96" font="vector" ratio="10" align="center" display="off"/>
+<instance part="R35" gate="G$1" x="162.56" y="91.44">
+<attribute name="LCSC_PART" x="162.56" y="91.44" size="1.4224" layer="96" font="vector" ratio="10" align="center" display="off"/>
 </instance>
 <instance part="R43" gate="G$1" x="25.4" y="114.3" rot="MR270">
 <attribute name="LCSC_PART" x="25.4" y="114.3" size="1.4224" layer="96" font="vector" ratio="10" align="center" display="off"/>
@@ -8173,10 +8173,10 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <instance part="R44" gate="G$1" x="25.4" y="96.52" rot="MR270">
 <attribute name="LCSC_PART" x="25.4" y="96.52" size="1.4224" layer="96" font="vector" ratio="10" align="center" display="off"/>
 </instance>
-<instance part="RST" gate="S" x="48.26" y="43.18">
-<attribute name="LCSC_PART" x="48.26" y="43.18" size="1.4224" layer="96" font="vector" ratio="10" align="center-left" display="off"/>
+<instance part="RST" gate="S" x="147.32" y="78.74">
+<attribute name="LCSC_PART" x="147.32" y="78.74" size="1.4224" layer="96" font="vector" ratio="10" align="center-left" display="off"/>
 </instance>
-<instance part="OPT" gate="A" x="48.26" y="60.96"/>
+<instance part="OPT" gate="A" x="147.32" y="96.52"/>
 <instance part="Q5" gate="G$1" x="119.38" y="45.72" rot="MR0">
 <attribute name="LCSC_PART" x="119.38" y="45.72" size="1.4224" layer="96" font="vector" ratio="10" rot="MR0" align="center" display="off"/>
 </instance>
@@ -8204,10 +8204,10 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <attribute name="LCSC_PART" x="33.02" y="96.52" size="1.4224" layer="96" font="vector" ratio="10" align="center" display="off"/>
 </instance>
 <instance part="CASE1" gate="G$1" x="129.54" y="162.56"/>
-<instance part="R51" gate="G$1" x="40.64" y="27.94" rot="R270">
-<attribute name="LCSC_PART" x="40.64" y="27.94" size="1.4224" layer="96" font="vector" ratio="10" align="center" display="off"/>
+<instance part="U2" gate="A" x="223.52" y="86.36"/>
+<instance part="RN4" gate="G$1" x="55.88" y="43.18" rot="MR90">
+<attribute name="LCSC_PART" x="55.88" y="43.18" size="1.4224" layer="96" font="vector" ratio="10" rot="MR90" align="center" display="off"/>
 </instance>
-<instance part="U2" gate="A" x="193.04" y="86.36"/>
 </instances>
 <busses>
 </busses>
@@ -8228,8 +8228,8 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <junction x="35.56" y="134.62"/>
 </segment>
 <segment>
-<wire x1="63.5" y1="22.86" x2="71.12" y2="22.86" width="0.1524" layer="91"/>
-<label x="71.12" y="22.86" size="1.4224" layer="95" font="vector" ratio="10" rot="MR180" xref="yes"/>
+<wire x1="63.5" y1="22.86" x2="73.66" y2="22.86" width="0.1524" layer="91"/>
+<label x="73.66" y="22.86" size="1.4224" layer="95" font="vector" ratio="10" rot="MR180" xref="yes"/>
 <pinref part="UEXT" gate="G$1" pin="2"/>
 </segment>
 <segment>
@@ -8253,19 +8253,19 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <wire x1="223.52" y1="106.68" x2="226.06" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="53.34" y1="43.18" x2="55.88" y2="43.18" width="0.1524" layer="91"/>
-<label x="76.2" y="43.18" size="1.4224" layer="95" font="vector" ratio="10" rot="MR180" xref="yes"/>
+<wire x1="152.4" y1="78.74" x2="154.94" y2="78.74" width="0.1524" layer="91"/>
+<label x="175.26" y="78.74" size="1.4224" layer="95" font="vector" ratio="10" rot="MR180" xref="yes"/>
 <pinref part="R35" gate="G$1" pin="2"/>
-<wire x1="55.88" y1="43.18" x2="71.12" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="71.12" y1="43.18" x2="76.2" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="55.88" x2="71.12" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="71.12" y1="55.88" x2="71.12" y2="43.18" width="0.1524" layer="91"/>
-<junction x="71.12" y="43.18"/>
+<wire x1="154.94" y1="78.74" x2="170.18" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="78.74" x2="175.26" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="91.44" x2="170.18" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="91.44" x2="170.18" y2="78.74" width="0.1524" layer="91"/>
+<junction x="170.18" y="78.74"/>
 <pinref part="RST" gate="S" pin="3"/>
 <pinref part="RST" gate="S" pin="4"/>
-<wire x1="53.34" y1="40.64" x2="55.88" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="55.88" y1="40.64" x2="55.88" y2="43.18" width="0.1524" layer="91"/>
-<junction x="55.88" y="43.18"/>
+<wire x1="152.4" y1="76.2" x2="154.94" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="76.2" x2="154.94" y2="78.74" width="0.1524" layer="91"/>
+<junction x="154.94" y="78.74"/>
 </segment>
 <segment>
 <pinref part="R44" gate="G$1" pin="2"/>
@@ -8292,8 +8292,8 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <wire x1="218.44" y1="45.72" x2="218.44" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="182.88" y1="86.36" x2="177.8" y2="86.36" width="0.1524" layer="91"/>
-<label x="177.8" y="86.36" size="1.4224" layer="95" font="vector" ratio="10" rot="R180" xref="yes"/>
+<wire x1="213.36" y1="86.36" x2="208.28" y2="86.36" width="0.1524" layer="91"/>
+<label x="208.28" y="86.36" size="1.4224" layer="95" font="vector" ratio="10" rot="R180" xref="yes"/>
 <pinref part="U2" gate="A" pin="GND"/>
 </segment>
 </net>
@@ -8359,15 +8359,22 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <junction x="35.56" y="162.56"/>
 </segment>
 <segment>
-<label x="33.02" y="35.56" size="1.4224" layer="95" font="vector" ratio="10" rot="MR0" xref="yes"/>
-<pinref part="UEXT" gate="G$1" pin="1"/>
-<wire x1="48.26" y1="22.86" x2="45.72" y2="22.86" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="22.86" x2="45.72" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="35.56" x2="40.64" y2="35.56" width="0.1524" layer="91"/>
-<pinref part="R51" gate="G$1" pin="1"/>
-<wire x1="40.64" y1="35.56" x2="33.02" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="33.02" x2="40.64" y2="35.56" width="0.1524" layer="91"/>
-<junction x="40.64" y="35.56"/>
+<label x="38.1" y="53.34" size="1.4224" layer="95" font="vector" ratio="10" rot="MR0" xref="yes"/>
+<pinref part="RN4" gate="G$1" pin="5"/>
+<wire x1="50.8" y1="50.8" x2="50.8" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="53.34" x2="38.1" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="53.34" x2="53.34" y2="53.34" width="0.1524" layer="91"/>
+<pinref part="RN4" gate="G$1" pin="6"/>
+<wire x1="53.34" y1="53.34" x2="53.34" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="53.34" x2="55.88" y2="53.34" width="0.1524" layer="91"/>
+<pinref part="RN4" gate="G$1" pin="7"/>
+<wire x1="55.88" y1="53.34" x2="55.88" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="53.34" x2="58.42" y2="53.34" width="0.1524" layer="91"/>
+<pinref part="RN4" gate="G$1" pin="8"/>
+<wire x1="58.42" y1="53.34" x2="58.42" y2="50.8" width="0.1524" layer="91"/>
+<junction x="50.8" y="53.34"/>
+<junction x="53.34" y="53.34"/>
+<junction x="55.88" y="53.34"/>
 </segment>
 <segment>
 <pinref part="L2" gate="G$1" pin="1"/>
@@ -8395,10 +8402,10 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <junction x="195.58" y="162.56"/>
 </segment>
 <segment>
-<wire x1="33.02" y1="71.12" x2="38.1" y2="71.12" width="0.1524" layer="91"/>
-<label x="33.02" y="71.12" size="1.4224" layer="95" font="vector" ratio="10" rot="MR0" xref="yes"/>
+<wire x1="132.08" y1="106.68" x2="137.16" y2="106.68" width="0.1524" layer="91"/>
+<label x="132.08" y="106.68" size="1.4224" layer="95" font="vector" ratio="10" rot="MR0" xref="yes"/>
 <pinref part="R34" gate="G$1" pin="2"/>
-<wire x1="38.1" y1="71.12" x2="38.1" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="106.68" x2="137.16" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="IC6" gate="G$1" pin="V3"/>
@@ -8416,9 +8423,14 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <junction x="190.5" y="60.96"/>
 </segment>
 <segment>
-<wire x1="182.88" y1="83.82" x2="177.8" y2="83.82" width="0.1524" layer="91"/>
-<label x="177.8" y="83.82" size="1.4224" layer="95" font="vector" ratio="10" rot="R180" xref="yes"/>
+<wire x1="213.36" y1="83.82" x2="208.28" y2="83.82" width="0.1524" layer="91"/>
+<label x="208.28" y="83.82" size="1.4224" layer="95" font="vector" ratio="10" rot="R180" xref="yes"/>
 <pinref part="U2" gate="A" pin="IO2"/>
+</segment>
+<segment>
+<pinref part="UEXT" gate="G$1" pin="1"/>
+<wire x1="48.26" y1="22.86" x2="38.1" y2="22.86" width="0.1524" layer="91"/>
+<label x="38.1" y="22.86" size="1.4224" layer="95" font="vector" ratio="10" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="PHY-PWR" class="4">
@@ -8458,9 +8470,15 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 </net>
 <net name="ESP-SCL" class="4">
 <segment>
-<wire x1="48.26" y1="17.78" x2="33.02" y2="17.78" width="0.1524" layer="91"/>
-<label x="33.02" y="17.78" size="1.4224" layer="95" font="vector" ratio="10" rot="MR0" xref="yes"/>
+<wire x1="48.26" y1="17.78" x2="43.18" y2="17.78" width="0.1524" layer="91"/>
+<label x="38.1" y="17.78" size="1.4224" layer="95" font="vector" ratio="10" rot="MR0" xref="yes"/>
 <pinref part="UEXT" gate="G$1" pin="5"/>
+<wire x1="43.18" y1="17.78" x2="38.1" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="17.78" x2="43.18" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="33.02" x2="55.88" y2="33.02" width="0.1524" layer="91"/>
+<pinref part="RN4" gate="G$1" pin="2"/>
+<wire x1="55.88" y1="33.02" x2="55.88" y2="38.1" width="0.1524" layer="91"/>
+<junction x="43.18" y="17.78"/>
 </segment>
 <segment>
 <wire x1="76.2" y1="129.54" x2="83.82" y2="129.54" width="0.1524" layer="91"/>
@@ -8470,9 +8488,15 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 </net>
 <net name="ESP-SDA" class="4">
 <segment>
-<wire x1="63.5" y1="17.78" x2="71.12" y2="17.78" width="0.1524" layer="91"/>
-<label x="71.12" y="17.78" size="1.4224" layer="95" font="vector" ratio="10" rot="MR180" xref="yes"/>
+<wire x1="63.5" y1="17.78" x2="66.04" y2="17.78" width="0.1524" layer="91"/>
+<label x="73.66" y="17.78" size="1.4224" layer="95" font="vector" ratio="10" rot="MR180" xref="yes"/>
 <pinref part="UEXT" gate="G$1" pin="6"/>
+<wire x1="66.04" y1="17.78" x2="73.66" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="17.78" x2="66.04" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="30.48" x2="53.34" y2="30.48" width="0.1524" layer="91"/>
+<pinref part="RN4" gate="G$1" pin="3"/>
+<wire x1="53.34" y1="30.48" x2="53.34" y2="38.1" width="0.1524" layer="91"/>
+<junction x="66.04" y="17.78"/>
 </segment>
 <segment>
 <wire x1="76.2" y1="137.16" x2="83.82" y2="137.16" width="0.1524" layer="91"/>
@@ -8482,8 +8506,8 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 </net>
 <net name="ESP-SD-DATA" class="4">
 <segment>
-<wire x1="63.5" y1="15.24" x2="71.12" y2="15.24" width="0.1524" layer="91"/>
-<label x="71.12" y="15.24" size="1.4224" layer="95" font="vector" ratio="10" rot="MR180" xref="yes"/>
+<wire x1="63.5" y1="15.24" x2="73.66" y2="15.24" width="0.1524" layer="91"/>
+<label x="73.66" y="15.24" size="1.4224" layer="95" font="vector" ratio="10" rot="MR180" xref="yes"/>
 <pinref part="UEXT" gate="G$1" pin="8"/>
 </segment>
 <segment>
@@ -8503,8 +8527,8 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 </net>
 <net name="ESP-SD-CLK" class="4">
 <segment>
-<wire x1="48.26" y1="12.7" x2="33.02" y2="12.7" width="0.1524" layer="91"/>
-<label x="33.02" y="12.7" size="1.4224" layer="95" font="vector" ratio="10" rot="MR0" xref="yes"/>
+<wire x1="48.26" y1="12.7" x2="38.1" y2="12.7" width="0.1524" layer="91"/>
+<label x="38.1" y="12.7" size="1.4224" layer="95" font="vector" ratio="10" rot="MR0" xref="yes"/>
 <pinref part="UEXT" gate="G$1" pin="9"/>
 </segment>
 <segment>
@@ -8520,9 +8544,15 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 </net>
 <net name="ESP-SSEL" class="4">
 <segment>
-<wire x1="63.5" y1="12.7" x2="71.12" y2="12.7" width="0.1524" layer="91"/>
-<label x="71.12" y="12.7" size="1.4224" layer="95" font="vector" ratio="10" rot="MR180" xref="yes"/>
+<wire x1="63.5" y1="12.7" x2="68.58" y2="12.7" width="0.1524" layer="91"/>
+<label x="73.66" y="12.7" size="1.4224" layer="95" font="vector" ratio="10" rot="MR180" xref="yes"/>
 <pinref part="UEXT" gate="G$1" pin="10"/>
+<pinref part="RN4" gate="G$1" pin="1"/>
+<wire x1="68.58" y1="12.7" x2="73.66" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="38.1" x2="58.42" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="33.02" x2="68.58" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="33.02" x2="68.58" y2="12.7" width="0.1524" layer="91"/>
+<junction x="68.58" y="12.7"/>
 </segment>
 <segment>
 <wire x1="76.2" y1="144.78" x2="83.82" y2="144.78" width="0.1524" layer="91"/>
@@ -8543,8 +8573,8 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <label x="27.94" y="147.32" size="1.4224" layer="95" font="vector" ratio="10" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<wire x1="43.18" y1="43.18" x2="33.02" y2="43.18" width="0.1524" layer="91"/>
-<label x="33.02" y="43.18" size="1.4224" layer="95" font="vector" ratio="10" rot="R180" xref="yes"/>
+<wire x1="142.24" y1="78.74" x2="132.08" y2="78.74" width="0.1524" layer="91"/>
+<label x="132.08" y="78.74" size="1.4224" layer="95" font="vector" ratio="10" rot="R180" xref="yes"/>
 <pinref part="RST" gate="S" pin="1"/>
 </segment>
 <segment>
@@ -8586,8 +8616,8 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 </net>
 <net name="ESP-SD-CMD" class="4">
 <segment>
-<wire x1="48.26" y1="15.24" x2="33.02" y2="15.24" width="0.1524" layer="91"/>
-<label x="33.02" y="15.24" size="1.4224" layer="95" font="vector" ratio="10" rot="MR0" xref="yes"/>
+<wire x1="48.26" y1="15.24" x2="38.1" y2="15.24" width="0.1524" layer="91"/>
+<label x="38.1" y="15.24" size="1.4224" layer="95" font="vector" ratio="10" rot="MR0" xref="yes"/>
 <pinref part="UEXT" gate="G$1" pin="7"/>
 </segment>
 <segment>
@@ -8639,14 +8669,14 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 </net>
 <net name="ESP-BUTTON" class="4">
 <segment>
-<wire x1="48.26" y1="55.88" x2="38.1" y2="55.88" width="0.1524" layer="91"/>
-<label x="33.02" y="55.88" size="1.4224" layer="95" font="vector" ratio="10" rot="R180" xref="yes"/>
+<wire x1="147.32" y1="91.44" x2="137.16" y2="91.44" width="0.1524" layer="91"/>
+<label x="132.08" y="91.44" size="1.4224" layer="95" font="vector" ratio="10" rot="R180" xref="yes"/>
 <pinref part="R34" gate="G$1" pin="1"/>
-<wire x1="38.1" y1="55.88" x2="33.02" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="58.42" x2="38.1" y2="55.88" width="0.1524" layer="91"/>
-<junction x="38.1" y="55.88"/>
+<wire x1="137.16" y1="91.44" x2="132.08" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="93.98" x2="137.16" y2="91.44" width="0.1524" layer="91"/>
+<junction x="137.16" y="91.44"/>
 <pinref part="OPT" gate="A" pin="1"/>
-<wire x1="48.26" y1="58.42" x2="48.26" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="93.98" x2="147.32" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <label x="83.82" y="91.44" size="1.4224" layer="95" font="vector" ratio="10" xref="yes"/>
@@ -8657,8 +8687,8 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <net name="ESP-BUTTON-R" class="4">
 <segment>
 <pinref part="R35" gate="G$1" pin="1"/>
-<wire x1="58.42" y1="55.88" x2="50.8" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="55.88" x2="50.8" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="91.44" x2="149.86" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="91.44" x2="149.86" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="OPT" gate="A" pin="2"/>
 </segment>
 </net>
@@ -8801,8 +8831,8 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <junction x="213.36" y="50.8"/>
 </segment>
 <segment>
-<wire x1="182.88" y1="88.9" x2="177.8" y2="88.9" width="0.1524" layer="91"/>
-<label x="177.8" y="88.9" size="1.4224" layer="95" font="vector" ratio="10" rot="MR0" xref="yes"/>
+<wire x1="213.36" y1="88.9" x2="208.28" y2="88.9" width="0.1524" layer="91"/>
+<label x="208.28" y="88.9" size="1.4224" layer="95" font="vector" ratio="10" rot="MR0" xref="yes"/>
 <pinref part="U2" gate="A" pin="IO1"/>
 </segment>
 </net>
@@ -8820,8 +8850,8 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <junction x="213.36" y="53.34"/>
 </segment>
 <segment>
-<wire x1="203.2" y1="88.9" x2="208.28" y2="88.9" width="0.1524" layer="91"/>
-<label x="208.28" y="88.9" size="1.4224" layer="95" font="vector" ratio="10" rot="MR180" xref="yes"/>
+<wire x1="233.68" y1="88.9" x2="238.76" y2="88.9" width="0.1524" layer="91"/>
+<label x="238.76" y="88.9" size="1.4224" layer="95" font="vector" ratio="10" rot="MR180" xref="yes"/>
 <pinref part="U2" gate="A" pin="IO4"/>
 </segment>
 </net>
@@ -8844,12 +8874,14 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <net name="UEXT-TX" class="4">
 <segment>
 <pinref part="UEXT" gate="G$1" pin="3"/>
-<wire x1="48.26" y1="20.32" x2="40.64" y2="20.32" width="0.1524" layer="91"/>
-<pinref part="R51" gate="G$1" pin="2"/>
-<wire x1="40.64" y1="22.86" x2="40.64" y2="20.32" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="20.32" x2="33.02" y2="20.32" width="0.1524" layer="91"/>
-<label x="33.02" y="20.32" size="1.4224" layer="95" font="vector" ratio="10" rot="R180" xref="yes"/>
-<junction x="40.64" y="20.32"/>
+<wire x1="48.26" y1="20.32" x2="45.72" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="20.32" x2="38.1" y2="20.32" width="0.1524" layer="91"/>
+<label x="38.1" y="20.32" size="1.4224" layer="95" font="vector" ratio="10" rot="R180" xref="yes"/>
+<pinref part="RN4" gate="G$1" pin="4"/>
+<wire x1="50.8" y1="38.1" x2="50.8" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="30.48" x2="45.72" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="30.48" x2="45.72" y2="20.32" width="0.1524" layer="91"/>
+<junction x="45.72" y="20.32"/>
 </segment>
 <segment>
 <wire x1="76.2" y1="93.98" x2="83.82" y2="93.98" width="0.1524" layer="91"/>
@@ -8860,8 +8892,8 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <net name="UEXT-RX" class="0">
 <segment>
 <pinref part="UEXT" gate="G$1" pin="4"/>
-<wire x1="63.5" y1="20.32" x2="71.12" y2="20.32" width="0.1524" layer="91"/>
-<label x="71.12" y="20.32" size="1.4224" layer="95" font="vector" ratio="10" xref="yes"/>
+<wire x1="63.5" y1="20.32" x2="73.66" y2="20.32" width="0.1524" layer="91"/>
+<label x="73.66" y="20.32" size="1.4224" layer="95" font="vector" ratio="10" xref="yes"/>
 </segment>
 <segment>
 <wire x1="76.2" y1="96.52" x2="83.82" y2="96.52" width="0.1524" layer="91"/>
