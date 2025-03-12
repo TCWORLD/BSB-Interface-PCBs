@@ -2272,6 +2272,7 @@ For a 50R Single Ended on the inner layers, use a trace width of 0.22mm (51.68 O
 <attribute name="LCSC_PART" value="C91754" x="6.8" y="14.55" size="1" layer="27" font="vector" ratio="15" rot="R90" display="off"/>
 <attribute name="NAME" x="4.85" y="24" size="1" layer="25" font="vector" ratio="15" align="center"/>
 <attribute name="JLC_ROT" value="270" x="6.8" y="14.55" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="JLC_Y" value="-2.42" x="6.8" y="14.55" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="Q3" library="BSB-LAN" package="SOT23" value="BC847" x="47.5" y="26" smashed="yes">
 <attribute name="LCSC_PART" value="C130417" x="47.5" y="26" size="1" layer="27" font="vector" ratio="15" display="off"/>
@@ -2450,11 +2451,14 @@ For a 50R Single Ended on the inner layers, use a trace width of 0.22mm (51.68 O
 <attribute name="LCSC_PART" value="C701341" x="68.8" y="25" size="1" layer="27" font="vector" ratio="15" rot="R270" display="off"/>
 <attribute name="NAME" x="84.8" y="14.1" size="0.8" layer="25" font="vector" ratio="15" align="center"/>
 <attribute name="JLC_ROT" value="270" x="68.8" y="25" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="JLC_Y" value="7.72" x="68.8" y="25" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="USD" library="BSB-LAN" package="MICRO-SD" value="XKTF-001A" x="50.05" y="47.6" smashed="yes">
 <attribute name="LCSC_PART" value="C381079" x="50.05" y="47.6" size="1" layer="27" font="vector" ratio="15" display="off"/>
 <attribute name="NAME" x="65.05" y="33.4" size="0.8" layer="25" font="vector" ratio="15" rot="R270" align="center"/>
 <attribute name="VALUE" value="XKTF-001A" x="57.05" y="37.6" size="0.8" layer="27" font="vector" ratio="15" align="center" display="off"/>
+<attribute name="JLC_X" value="7.28" x="50.05" y="47.6" size="1.778" layer="27" display="off"/>
+<attribute name="JLC_Y" value="-8.1" x="50.05" y="47.6" size="1.778" layer="27" display="off"/>
 </element>
 <element name="C1" library="BSB-LAN" package="C0603" value="2.2uF" x="76.05" y="40.45" smashed="yes" rot="R90">
 <attribute name="NAME" x="76.05" y="38.4" size="0.8" layer="25" font="vector" ratio="15" rot="R270" align="center"/>
@@ -2663,6 +2667,7 @@ For a 50R Single Ended on the inner layers, use a trace width of 0.22mm (51.68 O
 <element name="USB" library="BSB-LAN" package="USB-MICROB" value="ZX62-B-5PA(33)" x="84.1" y="7.1" smashed="yes" rot="R90">
 <attribute name="NAME" x="83.7" y="1.2" size="1.2" layer="25" font="vector" ratio="15" align="center"/>
 <attribute name="LCSC_PART" value="C132561" x="84.1" y="7.1" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="JLC_Y" value="1.2" x="84.1" y="7.1" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="C27" library="BSB-LAN" package="C0402" value="0.1uF" x="74.3" y="38.1" smashed="yes" rot="R180">
 <attribute name="NAME" x="72.3" y="38.1" size="0.8" layer="25" font="vector" ratio="15" rot="R180" align="center"/>

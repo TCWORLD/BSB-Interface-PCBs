@@ -6965,6 +6965,7 @@ MFR.Part # &lt;br&gt;
 <technologies>
 <technology name="">
 <attribute name="JLC_ROT" value="270"/>
+<attribute name="JLC_Y" value="-2.42"/>
 <attribute name="LCSC_PART" value="C91754"/>
 </technology>
 </technologies>
@@ -6988,6 +6989,7 @@ MFR.Part # &lt;br&gt;
 <technologies>
 <technology name="">
 <attribute name="JLC_ROT" value="270"/>
+<attribute name="JLC_Y" value="-2.42"/>
 <attribute name="LCSC_PART" value="C91754"/>
 </technology>
 </technologies>
@@ -7536,6 +7538,7 @@ Source: http://www.ctscorp.com/components/Datasheets/CTSChipArrayDs.pdf</descrip
 <technologies>
 <technology name="">
 <attribute name="JLC_ROT" value="270"/>
+<attribute name="JLC_Y" value="7.72"/>
 <attribute name="LCSC_PART" value="C701341"/>
 </technology>
 </technologies>
@@ -7604,6 +7607,8 @@ Push-push type uSD socket with card detect switch.</description>
 </connects>
 <technologies>
 <technology name="">
+<attribute name="JLC_X" value="7.28"/>
+<attribute name="JLC_Y" value="-8.1"/>
 <attribute name="LCSC_PART" value="C381079"/>
 <attribute name="VALUE" value="XKTF-001A"/>
 </technology>
@@ -7697,6 +7702,7 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 </connects>
 <technologies>
 <technology name="">
+<attribute name="JLC_Y" value="1.2"/>
 <attribute name="LCSC_PART" value="C132561"/>
 <attribute name="VALUE" value="ZX62-B-5PA(33)"/>
 </technology>

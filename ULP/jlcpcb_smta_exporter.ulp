@@ -53,6 +53,32 @@ string replace_commas(string s)
     return s;
 }
 
+real modulo(real val, real div) {
+    int negate = 0;
+    // Can't divide by 0
+    if (div == 0.0) {
+        return val;
+    } else if (div < 0.0) {
+        div = -div;
+        val = -val;
+        negate = 1;
+    }
+    // Check direction
+    if (val < 0.0) {
+        // Make positive
+        while(val < 0.0){
+            val = val + div;
+        }
+    } else {
+        // Make smaller
+        while(val > div){
+            val = val - div;
+        }
+    }
+    // Undo negation if needed
+    return negate ? -val : val;
+}
+
 void export_cpl(int element_count, int bottom) {
     for (int i = 0 ; i < element_count ; ++i) {
         // Select top or bottom element
@@ -62,28 +88,46 @@ void export_cpl(int element_count, int bottom) {
         } else {
             E = selected_elements_t[i];
         }
-        int angle = E.angle;
-        // Manually rotate the part
-        E.attributes(A) {
-            if (A.name == "JLC_ROTATION" || A.name == "JLC_ROT") {
-                angle = angle + strtol(A.value);
-                while(angle>360){
-                    angle = angle - 360;
-                }
-            }
-        }
+        real angle = E.angle;
+        real xPos = u2mm(E.x);
+        real yPos = u2mm(E.y);
         // Account for bottom layer mirrored rotation
         if (bottom) {
-            angle = (360 - angle);
-            angle = angle + 180;
-            angle = angle % 360;
+            angle = (360.0 - angle);
+            angle = modulo(angle + 180.0, 360.0);
         }
-        real ang = angle;
+        // Account for any JLC CPL placement correction attributes
+        real angleCorr = 0.0;
+        real xCorr = 0.0;
+        real yCorr = 0.0;
+        E.attributes(A) {
+            // Part orientation correction if present
+            if (A.name == "JLC_ROTATION" || A.name == "JLC_ROT") {
+                angleCorr = strtol(A.value);
+            }
+            // X-Y corrections if present
+            else if (A.name == "JLC_XOFFSET" || A.name == "JLC_X") {
+                xCorr = strtod(A.value);
+            }
+            else if (A.name == "JLC_YOFFSET" || A.name == "JLC_Y") {
+                yCorr = strtod(A.value);
+            }
+        }
+        // Apply offset correction. This is a bit more tricky as we have to account for rotation.
+        // We account for this by converting the correction amount to polar, adding on our
+        // rotation amount to the angle, then converting back to cartesian.
+        real angleRad = angle * PI / 180.0;
+        real rCorr = sqrt(xCorr*xCorr + yCorr*yCorr);
+        real tCorr = (rCorr == 0.0) ? 0.0 : (acos(xCorr / rCorr) * ((yCorr < 0.0) ? -1.0 : 1.0));
+        xPos = xPos + rCorr * cos(tCorr + angleRad);
+        yPos = yPos + rCorr * sin(tCorr + angleRad);
+        // Apply angle correction
+        angle = modulo(angle + angleCorr, 360.0);
         // Output element to CPL
         printf("%s,%5.2f,%5.2f,%s,%.1f\n",
-            E.name, u2mm(E.x), u2mm(E.y),
+            E.name, xPos, yPos,
             layer_name_map[bottom],
-            ang);
+            angle);
     }
 }
 
