@@ -2583,11 +2583,11 @@ For a 50R Single Ended on the inner layers, use a trace width of 0.22mm (51.68 O
 </element>
 <element name="R43" library="BSB-LAN" package="R0402" value="180k 1%" x="76.4" y="36.9" smashed="yes" rot="R180">
 <attribute name="NAME" x="76.5" y="35.95" size="0.8" layer="25" font="vector" ratio="15" align="center"/>
-<attribute name="LCSC_PART" value="C25852" x="76.4" y="36.9" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="LCSC_PART" value="C25760" x="76.4" y="36.9" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="R44" library="BSB-LAN" package="R0603L" value="330k" x="74.1" y="36.9" smashed="yes" rot="R180">
 <attribute name="NAME" x="71.9" y="36.9" size="0.8" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
-<attribute name="LCSC_PART" value="C26972" x="74.1" y="36.9" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="LCSC_PART" value="C23137" x="74.1" y="36.9" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="C25" library="BSB-LAN" package="C0805" value="22uF" x="54.6" y="8.85" smashed="yes" rot="R180">
 <attribute name="NAME" x="54.6" y="10.15" size="0.8" layer="25" font="vector" ratio="15" align="center"/>
