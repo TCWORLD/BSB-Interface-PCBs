@@ -9812,11 +9812,11 @@ Push-push type uSD socket with card detect switch.</description>
 <devices>
 <device name="AA" package="DBV0005A-SOT23">
 <connects>
-<connect gate="A" pin="EN" pad="4"/>
-<connect gate="A" pin="FB" pad="2"/>
-<connect gate="A" pin="GND" pad="3"/>
-<connect gate="A" pin="IN" pad="5"/>
-<connect gate="A" pin="LX" pad="1"/>
+<connect gate="A" pin="EN" pad="1"/>
+<connect gate="A" pin="FB" pad="5"/>
+<connect gate="A" pin="GND" pad="2"/>
+<connect gate="A" pin="IN" pad="4"/>
+<connect gate="A" pin="LX" pad="3"/>
 </connects>
 <technologies>
 <technology name="">
