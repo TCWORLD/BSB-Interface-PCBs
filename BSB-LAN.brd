@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="dots" multiple="1" display="yes" altdistance="0.05" altunitdist="mm" altunit="mm"/>
+<grid distance="0.2" unitdist="mm" unit="mm" style="dots" multiple="1" display="yes" altdistance="0.05" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -67,8 +67,8 @@
 <layer number="58" name="bCAD" color="7" fill="1" visible="no" active="no"/>
 <layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
-<layer number="88" name="SimResults" color="9" fill="1" visible="yes" active="yes"/>
-<layer number="89" name="SimProbes" color="9" fill="1" visible="yes" active="yes"/>
+<layer number="88" name="SimResults" color="9" fill="1" visible="no" active="yes"/>
+<layer number="89" name="SimProbes" color="9" fill="1" visible="no" active="yes"/>
 <layer number="90" name="Modules" color="7" fill="1" visible="no" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="no" active="no"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="no" active="no"/>
@@ -172,12 +172,13 @@
 <text x="13" y="26" size="1.75" layer="21" font="vector" ratio="15" align="center">BSB-LAN Adapter</text>
 <text x="49" y="14" size="1" layer="21" font="vector" ratio="15" rot="R90" align="center">PCB Layout By:
 T Carpenter   Jan 25</text>
-<text x="10" y="3" size="1" layer="21" font="vector" ratio="15" align="center">Consult
+<text x="8" y="3.8" size="1" layer="21" font="vector" ratio="15" align="center">Consult
 Docs</text>
 <text x="46" y="14" size="1" layer="21" font="vector" ratio="15" rot="R90" align="center">For ESP32-POE-ISO</text>
-<text x="25.1" y="1.3" size="1" layer="21" font="vector" ratio="15" align="center">github/fredlcore/BSB-LAN</text>
+<text x="10.9" y="1.9" size="1" layer="21" font="vector" ratio="15" align="center-left">github://fredlcore/BSB-LAN
+github://TCWORLD/BSB-LAN-CircuitBoard</text>
 <text x="7" y="26" size="1" layer="22" font="vector" ratio="15" rot="MR180" align="center">JLCJLCJLC</text>
-<text x="43.4" y="24.95" size="0.8" layer="21" font="vector" ratio="15" rot="R90" align="center">Open
+<text x="43.4" y="24.75" size="0.8" layer="21" font="vector" ratio="15" rot="R90" align="center">Open
 Hardware</text>
 </plain>
 <libraries>
@@ -473,6 +474,26 @@ Hardware</text>
 </polygon>
 <text x="0" y="-3" size="0.8" layer="21" font="vector" ratio="15" rot="SR0" align="center">ESD
 Sensitive</text>
+</package>
+<package name="R0805L">
+<description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;</description>
+<wire x1="-1.35" y1="0.8" x2="1.35" y2="0.8" width="0.04" layer="39"/>
+<wire x1="1.35" y1="-0.8" x2="-1.35" y2="-0.8" width="0.04" layer="39"/>
+<wire x1="-1.35" y1="-0.8" x2="-1.35" y2="0.8" width="0.04" layer="39"/>
+<wire x1="-0.35" y1="0.55" x2="0.35" y2="0.55" width="0.1016" layer="51"/>
+<wire x1="-0.35" y1="-0.55" x2="0.35" y2="-0.55" width="0.1016" layer="51"/>
+<wire x1="1.35" y1="0.8" x2="1.35" y2="-0.8" width="0.04" layer="39"/>
+<wire x1="0.25" y1="0.65" x2="-0.25" y2="0.65" width="0.1" layer="21"/>
+<wire x1="-0.25" y1="-0.65" x2="0.25" y2="-0.65" width="0.1" layer="21"/>
+<rectangle x1="-1.05" y1="-0.6" x2="-0.35" y2="0.6" layer="51"/>
+<rectangle x1="0.35" y1="-0.6" x2="1.05" y2="0.6" layer="51"/>
+<rectangle x1="-0.1001" y1="-0.4001" x2="0.1001" y2="0.4001" layer="35"/>
+<rectangle x1="-1.325" y1="-0.75" x2="-0.375" y2="0.75" layer="29"/>
+<rectangle x1="0.375" y1="-0.75" x2="1.325" y2="0.75" layer="29" rot="R180"/>
+<smd name="1" x="-0.85" y="0" dx="0.8" dy="1.35" layer="1" stop="no"/>
+<smd name="2" x="0.85" y="0" dx="0.8" dy="1.35" layer="1" stop="no"/>
+<text x="0" y="1.65" size="1.27" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="0" y="-1.65" size="1.27" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
 </package>
 <package name="R0805">
 <description>&lt;b&gt;RESISTOR&lt;/b&gt;&lt;p&gt;</description>
@@ -1017,11 +1038,11 @@ This is for the 2-Layer 1.6mm Stackup&lt;p&gt;</description>
 <elements>
 <element name="OK1" library="BSB-LAN" package="DIL6-SMD" value="4N25SM" x="26" y="9" smashed="yes" rot="R270">
 <attribute name="LCSC_PART" value="C258246" x="19.65" y="-8.78" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="26" y="3.5" size="1" layer="25" font="vector" ratio="15" align="center"/>
+<attribute name="NAME" x="21" y="4.5" size="1" layer="25" font="vector" ratio="15" align="center"/>
 </element>
 <element name="OK2" library="BSB-LAN" package="DIL6-SMD" value="4N25SM" x="26" y="19" smashed="yes" rot="R90">
 <attribute name="LCSC_PART" value="C258246" x="32.35" y="48.21" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="26" y="24.5" size="1" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
+<attribute name="NAME" x="31.2" y="23.7" size="1" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
 </element>
 <element name="BSB" library="BSB-LAN" package="1803426" value="1803426" x="5" y="14" smashed="yes">
 <attribute name="LCSC_PART" value="C480514" x="43.1" y="-3.78" size="1.778" layer="27" display="off"/>
@@ -1039,9 +1060,9 @@ This is for the 2-Layer 1.6mm Stackup&lt;p&gt;</description>
 <attribute name="NAME" x="33" y="8.45" size="1" layer="25" font="vector" ratio="15" align="center"/>
 <attribute name="LCSC_PART" value="C17629" x="32.95" y="5.95" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="R6" library="BSB-LAN" package="R0805" value="4.7k" x="36.25" y="14.45" smashed="yes" rot="R270">
-<attribute name="NAME" x="36.25" y="11.955" size="1" layer="25" font="vector" ratio="15" align="center"/>
-<attribute name="LCSC_PART" value="C17673" x="36.25" y="14.45" size="1.778" layer="27" rot="R270" display="off"/>
+<element name="R6" library="BSB-LAN" package="R0805" value="4.7k" x="36.25" y="15.45" smashed="yes" rot="R270">
+<attribute name="NAME" x="36.2" y="13" size="1" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
+<attribute name="LCSC_PART" value="C17673" x="36.25" y="15.45" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="R5" library="BSB-LAN" package="R0805" value="4.7k" x="35" y="5.95" smashed="yes" rot="R270">
 <attribute name="NAME" x="35.1" y="8.45" size="1" layer="25" font="vector" ratio="15" align="center"/>
@@ -1056,10 +1077,10 @@ This is for the 2-Layer 1.6mm Stackup&lt;p&gt;</description>
 <attribute name="NAME" x="15.4945" y="21.113" size="1" layer="25" font="vector" ratio="15" align="center"/>
 <attribute name="JLC_ROT" value="270" x="18.15" y="20.1" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="Q2" library="BSB-LAN" package="SOT23-BEC" value="BC857" x="34.6" y="18.15" smashed="yes" rot="R90">
-<attribute name="LCSC_PART" value="C426782" x="73.97" y="33.39" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="33.5445" y="20.513" size="1" layer="25" font="vector" ratio="15" align="center"/>
-<attribute name="JLC_ROT" value="270" x="34.6" y="18.15" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="Q2" library="BSB-LAN" package="SOT23-BEC" value="BC857" x="34.65" y="18.95" smashed="yes" rot="R90">
+<attribute name="LCSC_PART" value="C426782" x="74.02" y="34.19" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="33.5945" y="21.313" size="1" layer="25" font="vector" ratio="15" align="center"/>
+<attribute name="JLC_ROT" value="270" x="34.65" y="18.95" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="UEXT" library="BSB-LAN" package="ML10F" value="" x="41" y="14" smashed="yes" rot="MR270">
 <attribute name="NAME" x="34.65" y="14" size="1.778" layer="26" font="vector" ratio="15" rot="MR270" align="center"/>
@@ -1070,17 +1091,17 @@ This is for the 2-Layer 1.6mm Stackup&lt;p&gt;</description>
 <attribute name="NAME" x="18.1" y="7.445" size="1" layer="25" ratio="15" rot="R180" align="center"/>
 <attribute name="JLC_ROT" value="270" x="18.1" y="9" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="R3" library="BSB-LAN" package="R0805" value="330R" x="32.95" y="14.45" smashed="yes" rot="R270">
-<attribute name="NAME" x="33" y="11.9" size="1" layer="25" font="vector" ratio="15" align="center"/>
-<attribute name="LCSC_PART" value="C17630" x="32.95" y="14.45" size="1.778" layer="27" rot="R270" display="off"/>
+<element name="R3" library="BSB-LAN" package="R0805" value="330R" x="32.95" y="15.45" smashed="yes" rot="R270">
+<attribute name="NAME" x="33" y="13" size="1" layer="25" font="vector" ratio="15" align="center"/>
+<attribute name="LCSC_PART" value="C17630" x="32.95" y="15.45" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="R7" library="BSB-LAN" package="R0805" value="330k" x="18.15" y="23.1" smashed="yes">
 <attribute name="NAME" x="15.4" y="23.105" size="1" layer="25" font="vector" ratio="15" align="center"/>
 <attribute name="LCSC_PART" value="C17629" x="18.15" y="23.1" size="1.778" layer="27" display="off"/>
 </element>
-<element name="C1" library="BSB-LAN" package="C0805" value="1uF" x="35.6" y="21.65" smashed="yes" rot="R90">
-<attribute name="NAME" x="35.6" y="24.1" size="1" layer="25" font="vector" ratio="15" align="center"/>
-<attribute name="LCSC_PART" value="C28323" x="35.6" y="21.65" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="C1" library="BSB-LAN" package="C0805" value="1uF" x="35.65" y="22.45" smashed="yes" rot="R90">
+<attribute name="NAME" x="35.65" y="24.9" size="1" layer="25" font="vector" ratio="15" align="center"/>
+<attribute name="LCSC_PART" value="C28323" x="35.65" y="22.45" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="D3" library="BSB-LAN" package="SMBG" value="24V" x="10.75" y="14" smashed="yes" rot="R90">
 <attribute name="LCSC_PART" value="C83268" x="38.69" y="30.51" size="1.778" layer="27" rot="R90" display="off"/>
@@ -1098,10 +1119,15 @@ This is for the 2-Layer 1.6mm Stackup&lt;p&gt;</description>
 <attribute name="NAME" x="14.4" y="17.35" size="1" layer="25" font="vector" ratio="15" align="center"/>
 <attribute name="LCSC_PART" value="C17888" x="14.4" y="19" size="1.778" layer="27" display="off"/>
 </element>
-<element name="U$1" library="BSB-LAN" package="WARN-TINY" value="" x="4" y="3"/>
-<element name="U$2" library="BSB-LAN" package="ESD-TINY" value="" x="40" y="4" rot="R90"/>
-<element name="U$3" library="BSB-LAN" package="OSHW-LOGO-M" value="DNI" x="40" y="25" rot="R90">
-<attribute name="VALUE" value="DNI" x="40" y="25" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="U$1" library="BSB-LAN" package="WARN-TINY" value="" x="3" y="3.4"/>
+<element name="U$2" library="BSB-LAN" package="ESD-TINY" value="" x="40" y="4.8" rot="R90"/>
+<element name="U$3" library="BSB-LAN" package="OSHW-LOGO-M" value="DNI" x="40" y="24.8" rot="R90">
+<attribute name="VALUE" value="DNI" x="40" y="24.8" size="1.778" layer="27" rot="R90" display="off"/>
+</element>
+<element name="R11" library="BSB-LAN" package="R0805L" value="4.7k" x="34.6" y="11.15" smashed="yes" rot="R180">
+<attribute name="LCSC_PART" value="C17673" x="34.6" y="11.15" size="1" layer="27" font="vector" ratio="15" rot="R180" display="off"/>
+<attribute name="NAME" x="34.6" y="9.655" size="1.016" layer="25" font="vector" ratio="15" align="center"/>
+<attribute name="VALUE" x="34.6" y="13.055" size="1.016" layer="27" font="vector" ratio="15" rot="R180" align="center"/>
 </element>
 </elements>
 <signals>
@@ -1151,15 +1177,15 @@ This is for the 2-Layer 1.6mm Stackup&lt;p&gt;</description>
 <signal name="TXD-C">
 <contactref element="R3" pad="1"/>
 <contactref element="Q2" pad="C"/>
-<wire x1="33.5" y1="18.15" x2="32.95" y2="17.6" width="0.6" layer="1"/>
-<wire x1="32.95" y1="17.6" x2="32.95" y2="15.4" width="0.6" layer="1"/>
+<wire x1="33.55" y1="18.95" x2="32.95" y2="18.35" width="0.6" layer="1"/>
+<wire x1="32.95" y1="18.35" x2="32.95" y2="16.4" width="0.6" layer="1"/>
 </signal>
 <signal name="TXD-A">
 <contactref element="R3" pad="2"/>
 <contactref element="OK2" pad="1"/>
-<wire x1="30.5" y1="16.46" x2="30.5" y2="14.5" width="0.6" layer="1"/>
-<wire x1="30.5" y1="14.5" x2="31.5" y2="13.5" width="0.6" layer="1"/>
-<wire x1="31.5" y1="13.5" x2="32.95" y2="13.5" width="0.6" layer="1"/>
+<wire x1="30.5" y1="16.46" x2="30.5" y2="15.3" width="0.6" layer="1"/>
+<wire x1="30.5" y1="15.3" x2="31.3" y2="14.5" width="0.6" layer="1"/>
+<wire x1="31.3" y1="14.5" x2="32.95" y2="14.5" width="0.6" layer="1"/>
 </signal>
 <signal name="GND">
 <contactref element="OK2" pad="2"/>
@@ -1172,33 +1198,38 @@ This is for the 2-Layer 1.6mm Stackup&lt;p&gt;</description>
 <vertex x="51" y="0"/>
 <vertex x="51" y="28"/>
 </polygon>
+<contactref element="R11" pad="2"/>
 </signal>
 <signal name="VCC">
 <contactref element="Q2" pad="E"/>
 <contactref element="OK1" pad="5"/>
 <contactref element="C1" pad="1"/>
 <contactref element="UEXT" pad="1"/>
-<wire x1="35.6" y1="19.1" x2="34.6" y2="18.1" width="0.6" layer="1"/>
-<wire x1="34.6" y1="18.1" x2="34.6" y2="11.2" width="0.6" layer="1"/>
-<wire x1="34.6" y1="11.2" x2="32.4" y2="9" width="0.6" layer="1"/>
-<wire x1="30.5" y1="9" x2="32.4" y2="9" width="0.6" layer="1"/>
-<wire x1="35.6" y1="19.1" x2="35.6" y2="20.7" width="0.6" layer="1"/>
-<wire x1="39.73" y1="19.08" x2="35.6" y2="19.08" width="0.6" layer="1"/>
-<wire x1="35.6" y1="19.08" x2="35.6" y2="19.1" width="0.6" layer="1"/>
+<wire x1="35.65" y1="19.05" x2="34.95" y2="19.05" width="0.6" layer="1"/>
+<wire x1="34.95" y1="19.05" x2="34.6" y2="18.7" width="0.6" layer="1"/>
+<wire x1="34.6" y1="18.7" x2="34.6" y2="12.4" width="0.6" layer="1"/>
+<wire x1="34.6" y1="12.4" x2="34.6" y2="10" width="0.3" layer="1"/>
+<wire x1="34.6" y1="10" x2="33.6" y2="9" width="0.6" layer="1"/>
+<wire x1="30.5" y1="9" x2="33.6" y2="9" width="0.6" layer="1"/>
+<wire x1="35.65" y1="19.9" x2="35.65" y2="21.5" width="0.6" layer="1"/>
+<wire x1="39.73" y1="19.08" x2="39.73" y2="19.05" width="0.6" layer="1"/>
+<wire x1="39.73" y1="19.05" x2="35.65" y2="19.05" width="0.6" layer="1"/>
+<wire x1="35.65" y1="19.05" x2="35.65" y2="19.9" width="0.6" layer="1"/>
 </signal>
 <signal name="TXD">
 <contactref element="R6" pad="2"/>
 <contactref element="UEXT" pad="3"/>
-<wire x1="36.25" y1="13.5" x2="37.5" y2="13.5" width="0.6" layer="1"/>
-<wire x1="37.5" y1="13.5" x2="38" y2="14" width="0.6" layer="1"/>
-<wire x1="38" y1="14" x2="38" y2="14.81" width="0.6" layer="1"/>
-<wire x1="38" y1="14.81" x2="39.73" y2="16.54" width="0.6" layer="1"/>
+<contactref element="R11" pad="1"/>
+<wire x1="36.25" y1="14.5" x2="36.25" y2="11.95" width="0.6" layer="1"/>
+<wire x1="36.25" y1="11.95" x2="35.45" y2="11.15" width="0.6" layer="1"/>
+<wire x1="36.25" y1="14.5" x2="37.69" y2="14.5" width="0.6" layer="1"/>
+<wire x1="37.69" y1="14.5" x2="39.73" y2="16.54" width="0.6" layer="1"/>
 </signal>
 <signal name="TXD-B">
 <contactref element="R6" pad="1"/>
 <contactref element="Q2" pad="B"/>
-<wire x1="35.6" y1="17.2" x2="36.25" y2="16.55" width="0.6" layer="1"/>
-<wire x1="36.25" y1="16.55" x2="36.25" y2="15.4" width="0.6" layer="1"/>
+<wire x1="35.65" y1="18" x2="36.25" y2="17.4" width="0.6" layer="1"/>
+<wire x1="36.25" y1="17.4" x2="36.25" y2="16.4" width="0.6" layer="1"/>
 </signal>
 <signal name="RXD-B">
 <contactref element="OK1" pad="6"/>
