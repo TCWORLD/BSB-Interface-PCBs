@@ -561,10 +561,10 @@ Source: http://www.fairchildsemi.com/pf/4N/4N35-M.html</description>
 <wire x1="4.36" y1="-3.18" x2="-4.385" y2="-3.18" width="0.1524" layer="21"/>
 <wire x1="-4.385" y1="-3.18" x2="-4.385" y2="3.18" width="0.1524" layer="21"/>
 <wire x1="4.36" y1="-2.664" x2="-4.285" y2="-2.664" width="0.1524" layer="21"/>
-<wire x1="-4.8" y1="5.8" x2="4.8" y2="5.8" width="0.2" layer="39"/>
-<wire x1="4.8" y1="5.8" x2="4.8" y2="-5.8" width="0.2" layer="39"/>
-<wire x1="4.8" y1="-5.8" x2="-4.8" y2="-5.8" width="0.2" layer="39"/>
-<wire x1="-4.8" y1="-5.8" x2="-4.8" y2="5.8" width="0.2" layer="39"/>
+<wire x1="-4.7" y1="5.8" x2="4.6" y2="5.8" width="0.2" layer="39"/>
+<wire x1="4.6" y1="5.8" x2="4.6" y2="-5.8" width="0.2" layer="39"/>
+<wire x1="4.6" y1="-5.8" x2="-4.7" y2="-5.8" width="0.2" layer="39"/>
+<wire x1="-4.7" y1="-5.8" x2="-4.7" y2="5.8" width="0.2" layer="39"/>
 <rectangle x1="-3.145" y1="-4.95" x2="-1.92" y2="-3.2" layer="51"/>
 <rectangle x1="-0.605" y1="-4.95" x2="0.62" y2="-3.2" layer="51"/>
 <rectangle x1="1.935" y1="-4.95" x2="3.16" y2="-3.2" layer="51"/>
@@ -634,19 +634,19 @@ Source: http://www.fairchildsemi.com/pf/4N/4N35-M.html</description>
 <wire x1="1.1" y1="0.9" x2="1.1" y2="-0.9" width="0.2" layer="51"/>
 <wire x1="1.1" y1="-0.9" x2="-1.1" y2="-0.9" width="0.2" layer="51"/>
 <wire x1="-1.1" y1="-0.9" x2="-1.1" y2="0.9" width="0.2" layer="51"/>
+<smd name="C" x="-1.55" y="0" dx="1.4" dy="1.4" layer="1"/>
+<smd name="A" x="1.55" y="0" dx="1.4" dy="1.4" layer="1"/>
+<text x="0" y="1.5" size="0.8" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="0" y="-1.5" size="0.8" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
+<rectangle x1="-1.95" y1="-0.45" x2="-1.2" y2="0.4" layer="51"/>
+<rectangle x1="1.2" y1="-0.45" x2="1.95" y2="0.4" layer="51"/>
+<rectangle x1="-0.65" y1="-0.85" x2="-0.05" y2="0.85" layer="21"/>
 <wire x1="-0.35" y1="0.8" x2="0.6" y2="0.8" width="0.1" layer="21"/>
 <wire x1="-0.4" y1="-0.8" x2="0.6" y2="-0.8" width="0.1" layer="21"/>
 <wire x1="-2.5" y1="1" x2="2.5" y2="1" width="0.1" layer="39"/>
 <wire x1="2.5" y1="1" x2="2.5" y2="-1" width="0.1" layer="39"/>
 <wire x1="2.5" y1="-1" x2="-2.5" y2="-1" width="0.1" layer="39"/>
 <wire x1="-2.5" y1="-1" x2="-2.5" y2="1" width="0.1" layer="39"/>
-<rectangle x1="-1.95" y1="-0.45" x2="-1.2" y2="0.4" layer="51"/>
-<rectangle x1="1.2" y1="-0.45" x2="1.95" y2="0.4" layer="51"/>
-<rectangle x1="-0.65" y1="-0.85" x2="-0.05" y2="0.85" layer="21"/>
-<smd name="A" x="1.55" y="0" dx="1.4" dy="1.4" layer="1"/>
-<smd name="C" x="-1.55" y="0" dx="1.4" dy="1.4" layer="1"/>
-<text x="0" y="1.5" size="0.8" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
-<text x="0" y="-1.5" size="0.8" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
 </package>
 <package name="SOT23">
 <description>&lt;b&gt;SMALL OUTLINE TRANSISTOR&lt;/b&gt;&lt;p&gt;
@@ -1054,10 +1054,12 @@ This is for the 2-Layer 1.6mm Stackup&lt;p&gt;</description>
 <element name="Q1" library="BSB-LAN" package="SOT23" value="BC847" x="18.15" y="20.1" smashed="yes" rot="R180">
 <attribute name="LCSC_PART" value="C130417" x="-23.76" y="54.39" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="15.4945" y="21.113" size="1" layer="25" font="vector" ratio="15" align="center"/>
+<attribute name="JLC_ROT" value="270" x="18.15" y="20.1" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="Q2" library="BSB-LAN" package="SOT23-BEC" value="BC857" x="34.6" y="18.15" smashed="yes" rot="R90">
 <attribute name="LCSC_PART" value="C426782" x="73.97" y="33.39" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="33.5445" y="20.513" size="1" layer="25" font="vector" ratio="15" align="center"/>
+<attribute name="JLC_ROT" value="270" x="34.6" y="18.15" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="UEXT" library="BSB-LAN" package="ML10F" value="" x="41" y="14" smashed="yes" rot="MR270">
 <attribute name="NAME" x="34.65" y="14" size="1.778" layer="26" font="vector" ratio="15" rot="MR270" align="center"/>
@@ -1066,6 +1068,7 @@ This is for the 2-Layer 1.6mm Stackup&lt;p&gt;</description>
 <element name="D1" library="BSB-LAN" package="CHIPLED_0805" value="red" x="18.1" y="9" smashed="yes" rot="R90">
 <attribute name="LCSC_PART" value="C84256" x="57.47" y="29.32" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="18.1" y="7.445" size="1" layer="25" ratio="15" rot="R180" align="center"/>
+<attribute name="JLC_ROT" value="270" x="18.1" y="9" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="R3" library="BSB-LAN" package="R0805" value="330R" x="32.95" y="14.45" smashed="yes" rot="R270">
 <attribute name="NAME" x="33" y="11.9" size="1" layer="25" font="vector" ratio="15" align="center"/>
@@ -1097,7 +1100,9 @@ This is for the 2-Layer 1.6mm Stackup&lt;p&gt;</description>
 </element>
 <element name="U$1" library="BSB-LAN" package="WARN-TINY" value="" x="4" y="3"/>
 <element name="U$2" library="BSB-LAN" package="ESD-TINY" value="" x="40" y="4" rot="R90"/>
-<element name="U$3" library="BSB-LAN" package="OSHW-LOGO-M" value="OSHW-LOGOM" x="40" y="25" rot="R90"/>
+<element name="U$3" library="BSB-LAN" package="OSHW-LOGO-M" value="DNI" x="40" y="25" rot="R90">
+<attribute name="VALUE" value="DNI" x="40" y="25" size="1.778" layer="27" rot="R90" display="off"/>
+</element>
 </elements>
 <signals>
 <signal name="BSB+">

@@ -464,10 +464,10 @@ Source: http://www.fairchildsemi.com/pf/4N/4N35-M.html</description>
 <wire x1="4.36" y1="-3.18" x2="-4.385" y2="-3.18" width="0.1524" layer="21"/>
 <wire x1="-4.385" y1="-3.18" x2="-4.385" y2="3.18" width="0.1524" layer="21"/>
 <wire x1="4.36" y1="-2.664" x2="-4.285" y2="-2.664" width="0.1524" layer="21"/>
-<wire x1="-4.8" y1="5.8" x2="4.8" y2="5.8" width="0.2" layer="39"/>
-<wire x1="4.8" y1="5.8" x2="4.8" y2="-5.8" width="0.2" layer="39"/>
-<wire x1="4.8" y1="-5.8" x2="-4.8" y2="-5.8" width="0.2" layer="39"/>
-<wire x1="-4.8" y1="-5.8" x2="-4.8" y2="5.8" width="0.2" layer="39"/>
+<wire x1="-4.7" y1="5.8" x2="4.6" y2="5.8" width="0.2" layer="39"/>
+<wire x1="4.6" y1="5.8" x2="4.6" y2="-5.8" width="0.2" layer="39"/>
+<wire x1="4.6" y1="-5.8" x2="-4.7" y2="-5.8" width="0.2" layer="39"/>
+<wire x1="-4.7" y1="-5.8" x2="-4.7" y2="5.8" width="0.2" layer="39"/>
 <rectangle x1="-3.145" y1="-4.95" x2="-1.92" y2="-3.2" layer="51"/>
 <rectangle x1="-0.605" y1="-4.95" x2="0.62" y2="-3.2" layer="51"/>
 <rectangle x1="1.935" y1="-4.95" x2="3.16" y2="-3.2" layer="51"/>
@@ -1151,18 +1151,6 @@ Source: http://download.siliconexpert.com/pdfs/2005/02/24/Semi_Ap/2/VSH/Resistor
 <text x="-0.635" y="0.635" size="1.27" layer="25">&gt;NAME</text>
 <text x="-0.635" y="-1.905" size="1.27" layer="27">&gt;VALUE</text>
 </package>
-<package name="C1808">
-<description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
-Source: AVX .. aphvc.pdf</description>
-<wire x1="-1.4732" y1="0.9502" x2="1.4732" y2="0.9502" width="0.1016" layer="51"/>
-<wire x1="-1.4478" y1="-0.9502" x2="1.4732" y2="-0.9502" width="0.1016" layer="51"/>
-<rectangle x1="-2.275" y1="-1.015" x2="-1.225" y2="1.015" layer="51"/>
-<rectangle x1="1.225" y1="-1.015" x2="2.275" y2="1.015" layer="51"/>
-<smd name="1" x="-1.95" y="0" dx="1.6" dy="2.2" layer="1"/>
-<smd name="2" x="1.95" y="0" dx="1.6" dy="2.2" layer="1"/>
-<text x="-2.233" y="1.827" size="1.27" layer="25">&gt;NAME</text>
-<text x="-2.233" y="-2.842" size="1.27" layer="27">&gt;VALUE</text>
-</package>
 <package name="C1812">
 <description>&lt;b&gt;CAPACITOR&lt;/b&gt;</description>
 <wire x1="-1.4732" y1="1.6002" x2="1.4732" y2="1.6002" width="0.1016" layer="51"/>
@@ -1367,19 +1355,19 @@ Source: http://www.onsemi.com/pub_link/Collateral/MBRA340T3-D.PDF</description>
 <wire x1="1.1" y1="0.9" x2="1.1" y2="-0.9" width="0.2" layer="51"/>
 <wire x1="1.1" y1="-0.9" x2="-1.1" y2="-0.9" width="0.2" layer="51"/>
 <wire x1="-1.1" y1="-0.9" x2="-1.1" y2="0.9" width="0.2" layer="51"/>
+<smd name="C" x="-1.55" y="0" dx="1.4" dy="1.4" layer="1"/>
+<smd name="A" x="1.55" y="0" dx="1.4" dy="1.4" layer="1"/>
+<text x="0" y="1.5" size="0.8" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="0" y="-1.5" size="0.8" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
+<rectangle x1="-1.95" y1="-0.45" x2="-1.2" y2="0.4" layer="51"/>
+<rectangle x1="1.2" y1="-0.45" x2="1.95" y2="0.4" layer="51"/>
+<rectangle x1="-0.65" y1="-0.85" x2="-0.05" y2="0.85" layer="21"/>
 <wire x1="-0.35" y1="0.8" x2="0.6" y2="0.8" width="0.1" layer="21"/>
 <wire x1="-0.4" y1="-0.8" x2="0.6" y2="-0.8" width="0.1" layer="21"/>
 <wire x1="-2.5" y1="1" x2="2.5" y2="1" width="0.1" layer="39"/>
 <wire x1="2.5" y1="1" x2="2.5" y2="-1" width="0.1" layer="39"/>
 <wire x1="2.5" y1="-1" x2="-2.5" y2="-1" width="0.1" layer="39"/>
 <wire x1="-2.5" y1="-1" x2="-2.5" y2="1" width="0.1" layer="39"/>
-<rectangle x1="-1.95" y1="-0.45" x2="-1.2" y2="0.4" layer="51"/>
-<rectangle x1="1.2" y1="-0.45" x2="1.95" y2="0.4" layer="51"/>
-<rectangle x1="-0.65" y1="-0.85" x2="-0.05" y2="0.85" layer="21"/>
-<smd name="A" x="1.55" y="0" dx="1.4" dy="1.4" layer="1"/>
-<smd name="C" x="-1.55" y="0" dx="1.4" dy="1.4" layer="1"/>
-<text x="0" y="1.5" size="0.8" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
-<text x="0" y="-1.5" size="0.8" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
 </package>
 <package name="D0201">
 <description>&lt;b&gt;RESISTOR&lt;/b&gt; chip&lt;p&gt;
@@ -1429,74 +1417,6 @@ Source: http://www.vishay.com/docs/20008/dcrcw.pdf</description>
 <smd name="K" x="0.25" y="0" dx="0.32" dy="0.32" layer="1" stop="no"/>
 <text x="0" y="0.7" size="0.6" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 <text x="0" y="-0.7" size="0.6" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
-</package>
-<package name="SMA">
-<description>&lt;b&gt;SMA&lt;/b&gt; CASE 403D-02&lt;p&gt;
-Source: http://www.onsemi.com/pub_link/Collateral/MBRA340T3-D.PDF</description>
-<wire x1="-2.25" y1="1.825" x2="2.25" y2="1.825" width="0.254" layer="21"/>
-<wire x1="2.25" y1="-1.825" x2="-2.25" y2="-1.825" width="0.254" layer="21"/>
-<wire x1="-2.25" y1="1.825" x2="-2.25" y2="1.35" width="0.254" layer="21"/>
-<wire x1="2.25" y1="1.25" x2="2.25" y2="-1.25" width="0.254" layer="51"/>
-<wire x1="-2.25" y1="-1.825" x2="-2.25" y2="-1.35" width="0.254" layer="21"/>
-<wire x1="2.25" y1="-1.825" x2="2.25" y2="-1.35" width="0.254" layer="21"/>
-<wire x1="2.25" y1="1.825" x2="2.25" y2="1.35" width="0.254" layer="21"/>
-<wire x1="-2.25" y1="-1.25" x2="-2.25" y2="1.25" width="0.254" layer="51"/>
-<wire x1="-3.175" y1="2.2225" x2="3.175" y2="2.2225" width="0.127" layer="39"/>
-<wire x1="3.175" y1="2.2225" x2="3.175" y2="-2.2225" width="0.127" layer="39"/>
-<wire x1="3.175" y1="-2.2225" x2="-3.175" y2="-2.2225" width="0.127" layer="39"/>
-<wire x1="-3.175" y1="-2.2225" x2="-3.175" y2="2.2225" width="0.127" layer="39"/>
-<rectangle x1="2.38" y1="-0.825" x2="2.8" y2="0.8" layer="51"/>
-<rectangle x1="-2.8" y1="-0.8" x2="-2.38" y2="0.8" layer="51"/>
-<rectangle x1="-1.5" y1="-1.75" x2="-0.75" y2="1.75" layer="51"/>
-<rectangle x1="-1.5" y1="1.25" x2="-0.75" y2="1.75" layer="21"/>
-<rectangle x1="-1.5" y1="-1.75" x2="-0.75" y2="-1.25" layer="21"/>
-<smd name="A" x="2" y="0" dx="2" dy="2" layer="1"/>
-<smd name="C" x="-2" y="0" dx="2" dy="2" layer="1"/>
-<text x="0" y="3.175" size="1.27" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
-<text x="0" y="-3.175" size="1.27" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
-</package>
-<package name="SMB">
-<description>&lt;B&gt;DIODE&lt;/B&gt;</description>
-<wire x1="-2.2606" y1="1.905" x2="2.2606" y2="1.905" width="0.127" layer="21"/>
-<wire x1="-2.2606" y1="-1.905" x2="2.2606" y2="-1.905" width="0.127" layer="21"/>
-<wire x1="-2.2606" y1="-1.905" x2="-2.2606" y2="1.905" width="0.1016" layer="51"/>
-<wire x1="2.2606" y1="-1.905" x2="2.2606" y2="1.905" width="0.1016" layer="51"/>
-<wire x1="0.6335" y1="1" x2="-0.3895" y2="0" width="0.127" layer="21"/>
-<wire x1="-0.3895" y1="0" x2="0.6335" y2="-1" width="0.127" layer="21"/>
-<wire x1="0.6335" y1="-1" x2="0.6335" y2="1" width="0.127" layer="21"/>
-<wire x1="-3.75" y1="2.25" x2="3.75" y2="2.25" width="0.127" layer="39"/>
-<wire x1="3.75" y1="2.25" x2="3.75" y2="-2.25" width="0.127" layer="39"/>
-<wire x1="3.75" y1="-2.25" x2="-3.75" y2="-2.25" width="0.127" layer="39"/>
-<wire x1="-3.75" y1="-2.25" x2="-3.75" y2="2.25" width="0.127" layer="39"/>
-<rectangle x1="-2.794" y1="-1.0922" x2="-2.2606" y2="1.0922" layer="51"/>
-<rectangle x1="2.2606" y1="-1.0922" x2="2.794" y2="1.0922" layer="51"/>
-<rectangle x1="-1.35" y1="-1.9" x2="-0.8" y2="1.9" layer="51"/>
-<rectangle x1="-0.75" y1="-1.5" x2="-0.25" y2="1.5" layer="21"/>
-<smd name="A" x="2.2" y="0" dx="2.4" dy="2.4" layer="1"/>
-<smd name="C" x="-2.2" y="0" dx="2.4" dy="2.4" layer="1"/>
-<text x="0" y="3.175" size="1.27" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
-<text x="0" y="-3.175" size="1.27" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
-</package>
-<package name="SMC">
-<description>&lt;b&gt;DIODE&lt;/b&gt;</description>
-<wire x1="-3.5606" y1="3.105" x2="3.5606" y2="3.105" width="0.1016" layer="21"/>
-<wire x1="-3.5606" y1="-3.105" x2="3.5606" y2="-3.105" width="0.1016" layer="21"/>
-<wire x1="-3.5606" y1="-3.105" x2="-3.5606" y2="3.105" width="0.1016" layer="51"/>
-<wire x1="3.5606" y1="-3.105" x2="3.5606" y2="3.105" width="0.1016" layer="51"/>
-<wire x1="0.543" y1="1" x2="-0.83" y2="0" width="0.2032" layer="21"/>
-<wire x1="-0.83" y1="0" x2="0.543" y2="-1" width="0.2032" layer="21"/>
-<wire x1="0.543" y1="-1" x2="0.543" y2="1" width="0.2032" layer="21"/>
-<wire x1="-5.3975" y1="3.3925" x2="5.3975" y2="3.3925" width="0.127" layer="39"/>
-<wire x1="5.3975" y1="3.3925" x2="5.3975" y2="-3.3925" width="0.127" layer="39"/>
-<wire x1="5.3975" y1="-3.3925" x2="-5.3975" y2="-3.3925" width="0.127" layer="39"/>
-<wire x1="-5.3975" y1="-3.3925" x2="-5.3975" y2="3.3925" width="0.127" layer="39"/>
-<rectangle x1="-4.094" y1="-1.0922" x2="-3.5606" y2="1.0922" layer="51"/>
-<rectangle x1="3.5606" y1="-1.0922" x2="4.094" y2="1.0922" layer="51"/>
-<rectangle x1="-2.1" y1="-3.1" x2="-0.85" y2="3.1" layer="21"/>
-<smd name="A" x="3.7" y="0" dx="2.8" dy="3.8" layer="1"/>
-<smd name="C" x="-3.7" y="0" dx="2.8" dy="3.8" layer="1"/>
-<text x="0" y="4.1275" size="1.27" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
-<text x="0" y="-4.1275" size="1.27" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
 </package>
 <package name="SOD323-R">
 <description>&lt;b&gt;SOD323 Reflow soldering&lt;/b&gt; Philips SC01_Mounting_1996.pdf</description>
@@ -2609,6 +2529,93 @@ Source: http://www.fairchildsemi.com/pf/4N/4N35-M.html</description>
 <vertex x="0.4186" y="-1.0105"/>
 </polygon>
 </package>
+<package name="C1808">
+<description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
+Source: AVX .. aphvc.pdf</description>
+<wire x1="-1.4732" y1="0.9502" x2="1.4732" y2="0.9502" width="0.1016" layer="51"/>
+<wire x1="-1.4478" y1="-0.9502" x2="1.4732" y2="-0.9502" width="0.1016" layer="51"/>
+<rectangle x1="-2.275" y1="-1.015" x2="-1.225" y2="1.015" layer="51"/>
+<rectangle x1="1.225" y1="-1.015" x2="2.275" y2="1.015" layer="51"/>
+<smd name="1" x="-1.95" y="0" dx="1.6" dy="2.2" layer="1"/>
+<smd name="2" x="1.95" y="0" dx="1.6" dy="2.2" layer="1"/>
+<wire x1="-0.7" y1="1.1" x2="0.7" y2="1.1" width="0.127" layer="21"/>
+<wire x1="-0.7" y1="-1.1" x2="0.7" y2="-1.1" width="0.127" layer="21"/>
+<wire x1="-3" y1="1.35" x2="3" y2="1.35" width="0.127" layer="39"/>
+<wire x1="3" y1="1.35" x2="3" y2="-1.35" width="0.127" layer="39"/>
+<wire x1="3" y1="-1.35" x2="-3" y2="-1.35" width="0.127" layer="39"/>
+<wire x1="-3" y1="-1.35" x2="-3" y2="1.35" width="0.127" layer="39"/>
+<rectangle x1="-0.3" y1="-0.4001" x2="0.3" y2="0.4001" layer="35"/>
+<text x="0" y="2" size="1.016" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="0" y="-2" size="1.016" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
+</package>
+<package name="SMA">
+<description>&lt;b&gt;SMA&lt;/b&gt; CASE 403D-02&lt;p&gt;
+Source: http://www.onsemi.com/pub_link/Collateral/MBRA340T3-D.PDF</description>
+<wire x1="-2.25" y1="1.825" x2="2.25" y2="1.825" width="0.254" layer="21"/>
+<wire x1="2.25" y1="-1.825" x2="-2.25" y2="-1.825" width="0.254" layer="21"/>
+<wire x1="-2.25" y1="1.825" x2="-2.25" y2="1.35" width="0.254" layer="21"/>
+<wire x1="2.25" y1="1.25" x2="2.25" y2="-1.25" width="0.254" layer="51"/>
+<wire x1="-2.25" y1="-1.825" x2="-2.25" y2="-1.35" width="0.254" layer="21"/>
+<wire x1="2.25" y1="-1.825" x2="2.25" y2="-1.35" width="0.254" layer="21"/>
+<wire x1="2.25" y1="1.825" x2="2.25" y2="1.35" width="0.254" layer="21"/>
+<wire x1="-2.25" y1="-1.25" x2="-2.25" y2="1.25" width="0.254" layer="51"/>
+<smd name="C" x="-2" y="0" dx="2" dy="2" layer="1"/>
+<smd name="A" x="2" y="0" dx="2" dy="2" layer="1"/>
+<text x="0" y="3.175" size="1.27" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="0" y="-3.175" size="1.27" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
+<rectangle x1="2.38" y1="-0.825" x2="2.8" y2="0.8" layer="51"/>
+<rectangle x1="-2.8" y1="-0.8" x2="-2.38" y2="0.8" layer="51"/>
+<rectangle x1="-1.5" y1="-1.75" x2="-0.75" y2="1.75" layer="51"/>
+<rectangle x1="-1.5" y1="1.25" x2="-0.75" y2="1.75" layer="21"/>
+<rectangle x1="-1.5" y1="-1.75" x2="-0.75" y2="-1.25" layer="21"/>
+<wire x1="-3.175" y1="2.2225" x2="3.175" y2="2.2225" width="0.127" layer="39"/>
+<wire x1="3.175" y1="2.2225" x2="3.175" y2="-2.2225" width="0.127" layer="39"/>
+<wire x1="3.175" y1="-2.2225" x2="-3.175" y2="-2.2225" width="0.127" layer="39"/>
+<wire x1="-3.175" y1="-2.2225" x2="-3.175" y2="2.2225" width="0.127" layer="39"/>
+</package>
+<package name="SMB">
+<description>&lt;B&gt;DIODE&lt;/B&gt;</description>
+<wire x1="-2.2606" y1="1.905" x2="2.2606" y2="1.905" width="0.127" layer="21"/>
+<wire x1="-2.2606" y1="-1.905" x2="2.2606" y2="-1.905" width="0.127" layer="21"/>
+<wire x1="-2.2606" y1="-1.905" x2="-2.2606" y2="1.905" width="0.1016" layer="51"/>
+<wire x1="2.2606" y1="-1.905" x2="2.2606" y2="1.905" width="0.1016" layer="51"/>
+<wire x1="0.6335" y1="1" x2="-0.3895" y2="0" width="0.127" layer="21"/>
+<wire x1="-0.3895" y1="0" x2="0.6335" y2="-1" width="0.127" layer="21"/>
+<wire x1="0.6335" y1="-1" x2="0.6335" y2="1" width="0.127" layer="21"/>
+<smd name="C" x="-2.2" y="0" dx="2.4" dy="2.4" layer="1"/>
+<smd name="A" x="2.2" y="0" dx="2.4" dy="2.4" layer="1"/>
+<text x="0" y="3.175" size="1.27" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="0" y="-3.175" size="1.27" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
+<rectangle x1="-2.794" y1="-1.0922" x2="-2.2606" y2="1.0922" layer="51"/>
+<rectangle x1="2.2606" y1="-1.0922" x2="2.794" y2="1.0922" layer="51"/>
+<rectangle x1="-1.35" y1="-1.9" x2="-0.8" y2="1.9" layer="51"/>
+<wire x1="-3.75" y1="2.25" x2="3.75" y2="2.25" width="0.127" layer="39"/>
+<wire x1="3.75" y1="2.25" x2="3.75" y2="-2.25" width="0.127" layer="39"/>
+<wire x1="3.75" y1="-2.25" x2="-3.75" y2="-2.25" width="0.127" layer="39"/>
+<wire x1="-3.75" y1="-2.25" x2="-3.75" y2="2.25" width="0.127" layer="39"/>
+<rectangle x1="-0.75" y1="-1.5" x2="-0.25" y2="1.5" layer="21"/>
+</package>
+<package name="SMC">
+<description>&lt;b&gt;DIODE&lt;/b&gt;</description>
+<wire x1="-3.5606" y1="3.105" x2="3.5606" y2="3.105" width="0.1016" layer="21"/>
+<wire x1="-3.5606" y1="-3.105" x2="3.5606" y2="-3.105" width="0.1016" layer="21"/>
+<wire x1="-3.5606" y1="-3.105" x2="-3.5606" y2="3.105" width="0.1016" layer="51"/>
+<wire x1="3.5606" y1="-3.105" x2="3.5606" y2="3.105" width="0.1016" layer="51"/>
+<wire x1="0.543" y1="1" x2="-0.83" y2="0" width="0.2032" layer="21"/>
+<wire x1="-0.83" y1="0" x2="0.543" y2="-1" width="0.2032" layer="21"/>
+<wire x1="0.543" y1="-1" x2="0.543" y2="1" width="0.2032" layer="21"/>
+<smd name="C" x="-3.7" y="0" dx="2.8" dy="3.8" layer="1"/>
+<smd name="A" x="3.7" y="0" dx="2.8" dy="3.8" layer="1"/>
+<text x="0" y="4.1275" size="1.27" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="0" y="-4.1275" size="1.27" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
+<rectangle x1="-4.094" y1="-1.0922" x2="-3.5606" y2="1.0922" layer="51"/>
+<rectangle x1="3.5606" y1="-1.0922" x2="4.094" y2="1.0922" layer="51"/>
+<rectangle x1="-2.1" y1="-3.1" x2="-0.85" y2="3.1" layer="21"/>
+<wire x1="-5.3975" y1="3.3925" x2="5.3975" y2="3.3925" width="0.127" layer="39"/>
+<wire x1="5.3975" y1="3.3925" x2="5.3975" y2="-3.3925" width="0.127" layer="39"/>
+<wire x1="5.3975" y1="-3.3925" x2="-5.3975" y2="-3.3925" width="0.127" layer="39"/>
+<wire x1="-5.3975" y1="-3.3925" x2="-5.3975" y2="3.3925" width="0.127" layer="39"/>
+</package>
 </packages>
 <symbols>
 <symbol name="10P">
@@ -3646,7 +3653,9 @@ SMCJxx(C)A Voltage Suppressor - SMC Package (DO-214AB)
 <connect gate="G$2" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="LCSC_PART" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="SMB" package="SMBG">
@@ -3692,24 +3701,31 @@ SMCJxx(C)A Voltage Suppressor - SMC Package (DO-214AB)
 </connects>
 <technologies>
 <technology name="">
+<attribute name="JLC_ROT" value="270"/>
 <attribute name="LCSC_PART" value="C130417"/>
 </technology>
 <technology name="A">
+<attribute name="JLC_ROT" value="270"/>
 <attribute name="LCSC_PART" value=""/>
 </technology>
 <technology name="ALT1">
+<attribute name="JLC_ROT" value="270"/>
 <attribute name="LCSC_PART" value=""/>
 </technology>
 <technology name="B">
+<attribute name="JLC_ROT" value="270"/>
 <attribute name="LCSC_PART" value=""/>
 </technology>
 <technology name="BLT1">
+<attribute name="JLC_ROT" value="270"/>
 <attribute name="LCSC_PART" value=""/>
 </technology>
 <technology name="C">
+<attribute name="JLC_ROT" value="270"/>
 <attribute name="LCSC_PART" value=""/>
 </technology>
 <technology name="CLT1">
+<attribute name="JLC_ROT" value="270"/>
 <attribute name="LCSC_PART" value=""/>
 </technology>
 </technologies>
@@ -3730,21 +3746,27 @@ SMCJxx(C)A Voltage Suppressor - SMC Package (DO-214AB)
 </connects>
 <technologies>
 <technology name="">
+<attribute name="JLC_ROT" value="270"/>
 <attribute name="LCSC_PART" value="C426782"/>
 </technology>
 <technology name="A">
+<attribute name="JLC_ROT" value="270"/>
 <attribute name="LCSC_PART" value=""/>
 </technology>
 <technology name="ALT1">
+<attribute name="JLC_ROT" value="270"/>
 <attribute name="LCSC_PART" value=""/>
 </technology>
 <technology name="B">
+<attribute name="JLC_ROT" value="270"/>
 <attribute name="LCSC_PART" value=""/>
 </technology>
 <technology name="BALT1">
+<attribute name="JLC_ROT" value="270"/>
 <attribute name="LCSC_PART" value=""/>
 </technology>
 <technology name="C">
+<attribute name="JLC_ROT" value="270"/>
 <attribute name="LCSC_PART" value=""/>
 </technology>
 </technologies>
@@ -3772,10 +3794,7 @@ SMCJxx(C)A Voltage Suppressor - SMC Package (DO-214AB)
 </connects>
 <technologies>
 <technology name="">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="unknown" constant="no"/>
+<attribute name="LCSC_PART" value="C5665"/>
 </technology>
 </technologies>
 </device>
@@ -3967,7 +3986,9 @@ Source: www.kingbright.com</description>
 <connect gate="G$1" pin="C" pad="K"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="JLC_ROT" value="270"/>
+</technology>
 </technologies>
 </device>
 <device name="-1206-SIDE" package="SML1206-SIDE">
@@ -4030,7 +4051,9 @@ Source: www.kingbright.com</description>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="JLC_ROT" value="270"/>
+</technology>
 </technologies>
 </device>
 <device name="CHIPLED_0805" package="CHIPLED_0805">
@@ -4039,7 +4062,9 @@ Source: www.kingbright.com</description>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="JLC_ROT" value="270"/>
+</technology>
 </technologies>
 </device>
 <device name="CHIPLED_1206" package="CHIPLED_1206">
@@ -4048,7 +4073,9 @@ Source: www.kingbright.com</description>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="JLC_ROT" value="270"/>
+</technology>
 </technologies>
 </device>
 <device name="CHIPLED_1806" package="CHIPLED_1806">
@@ -4057,7 +4084,9 @@ Source: www.kingbright.com</description>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="JLC_ROT" value="270"/>
+</technology>
 </technologies>
 </device>
 <device name="KA-3528ASYC" package="KA-3528ASYC">
@@ -4111,7 +4140,9 @@ Source: www.kingbright.com</description>
 <connect gate="G$1" pin="C" pad="K"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="JLC_ROT" value="270"/>
+</technology>
 </technologies>
 </device>
 <device name="SMT1206" package="1206">
@@ -4284,17 +4315,23 @@ Source: http://www.fairchildsemi.com/ds/4N/4N35-M.pdf</description>
 <devices>
 <device name="S" package="OSHW-LOGO-S">
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="VALUE" value="DNI"/>
+</technology>
 </technologies>
 </device>
 <device name="M" package="OSHW-LOGO-M">
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="VALUE" value="DNI"/>
+</technology>
 </technologies>
 </device>
 <device name="L" package="OSHW-LOGO-L">
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="VALUE" value="DNI"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -4374,7 +4411,7 @@ Source: http://www.fairchildsemi.com/ds/4N/4N35-M.pdf</description>
 <part name="R10" library="BSB-LAN" deviceset="R-EU_" device="R1206L" value="0R">
 <attribute name="LCSC_PART" value="C17888"/>
 </part>
-<part name="U$3" library="BSB-LAN" deviceset="OSHW-LOGO" device="M"/>
+<part name="U$3" library="BSB-LAN" deviceset="OSHW-LOGO" device="M" value="DNI"/>
 </parts>
 <sheets>
 <sheet>
