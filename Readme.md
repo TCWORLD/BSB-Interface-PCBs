@@ -1,6 +1,9 @@
-# BSB-LAN Circuit Designs
+# Custom BSB-LAN Circuit Design Implementations
 
-This repository contains hardware implementations for the [fredlcore/BSB-LAN](https://github.com/fredlcore/BSB-LAN/) interface.
+This repository contains custom hardware implementations for the [fredlcore/BSB-LAN](https://github.com/fredlcore/BSB-LAN/) interface. This repo is not offiliated with the original project.
+
+Note: the designs are currently **untested**. This will be done in due course.
+
 
 The PCBs have been laid out using Eagle PCB V6.6 and use predominantly surface mount components to make machine assembly easier. Parts used are all available for assembly in JLCPCBs parts catalogue.
 
