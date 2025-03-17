@@ -1921,7 +1921,7 @@ For a 50R Single Ended on the inner layers, use a trace width of 0.22mm (51.68 O
 <attribute name="VALUE" value="DNI" x="26.2" y="29.2" size="1.778" layer="28" rot="MR90" display="off"/>
 </element>
 <element name="DC1" library="BSB-LAN" package="SIP7-N" value="F1205S-2WR2SC" x="29.2" y="6.6" smashed="yes">
-<attribute name="LCSC_PART" value="" x="29.2" y="6.6" size="1" layer="27" font="vector" ratio="15" display="off"/>
+<attribute name="LCSC_PART" value="C5369565" x="29.2" y="6.6" size="1" layer="27" font="vector" ratio="15" display="off"/>
 <attribute name="NAME" x="39.6" y="7.2" size="0.8" layer="25" font="vector" ratio="15" rot="R90" align="center"/>
 </element>
 <element name="IC4" library="BSB-LAN" package="DBV0005A-SOT23" value="SY8089AAAC" x="46.95" y="8.6" smashed="yes" rot="R90">
@@ -2131,7 +2131,7 @@ For a 50R Single Ended on the inner layers, use a trace width of 0.22mm (51.68 O
 <attribute name="VALUE" x="-2.47" y="6.35" size="1.27" layer="27" font="vector" ratio="15" rot="R270" align="center"/>
 </element>
 <element name="D1" library="BSB-LAN" package="SMA" value="12V" x="11.8" y="6.25" smashed="yes" rot="R270">
-<attribute name="LCSC_PART" value="" x="11.8" y="6.25" size="1" layer="27" font="vector" ratio="15" rot="R270" display="off"/>
+<attribute name="LCSC_PART" value="C148213" x="11.8" y="6.25" size="1" layer="27" font="vector" ratio="15" rot="R270" display="off"/>
 <attribute name="NAME" x="13.575" y="3.25" size="0.8" layer="25" font="vector" ratio="15" rot="R270" align="center"/>
 <attribute name="VALUE" x="8.625" y="6.25" size="1.27" layer="27" font="vector" ratio="15" rot="R270" align="center"/>
 </element>
