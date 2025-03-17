@@ -6934,20 +6934,20 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <clearance class="1" value="0.15"/>
 </class>
 <class number="2" name="PoE-ISO" width="0" drill="0">
-<clearance class="1" value="2"/>
+<clearance class="1" value="1.7"/>
 </class>
 <class number="3" name="B2B-ISO" width="0" drill="0">
-<clearance class="1" value="2"/>
-<clearance class="2" value="2"/>
+<clearance class="1" value="1.7"/>
+<clearance class="2" value="1.7"/>
 </class>
 <class number="4" name="ESP32" width="0" drill="0">
-<clearance class="2" value="2"/>
-<clearance class="3" value="2"/>
+<clearance class="2" value="1.7"/>
+<clearance class="3" value="1.7"/>
 </class>
 <class number="5" name="Sheild" width="0" drill="0">
 <clearance class="1" value="1.5"/>
-<clearance class="2" value="2"/>
-<clearance class="3" value="2"/>
+<clearance class="2" value="1.7"/>
+<clearance class="3" value="1.7"/>
 <clearance class="4" value="1.5"/>
 </class>
 </classes>
@@ -7055,26 +7055,26 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <part name="R35" library="BSB-LAN" deviceset="R-EU_" device="R0402" value="220R">
 <attribute name="LCSC_PART" value="C25091"/>
 </part>
-<part name="C18" library="BSB-LAN" deviceset="CPOL-EU" device="SMCD" value="220uF 25V">
-<attribute name="LCSC_PART" value=""/>
+<part name="C18" library="BSB-LAN" deviceset="CPOL-EU" device="SMCD" value="100uF 20V">
+<attribute name="LCSC_PART" value="C7224"/>
 </part>
-<part name="C20" library="BSB-LAN" deviceset="C-EU" device="C1808" value="1nF 3kV">
-<attribute name="LCSC_PART" value="C577300"/>
+<part name="C20" library="BSB-LAN" deviceset="C-EU" device="C1206L" value="1nF 2kV">
+<attribute name="LCSC_PART" value="C9196"/>
 </part>
-<part name="C21" library="BSB-LAN" deviceset="C-EU" device="C1808" value="1nF 3kV">
-<attribute name="LCSC_PART" value="C577300"/>
+<part name="C21" library="BSB-LAN" deviceset="C-EU" device="C1206L" value="1nF 2kV">
+<attribute name="LCSC_PART" value="C9196"/>
 </part>
 <part name="C22" library="BSB-LAN" deviceset="C-EU" device="C0805" value="22uF">
 <attribute name="LCSC_PART" value="C45783"/>
 </part>
-<part name="R41" library="BSB-LAN" deviceset="R-EU_" device="R0402" value="12.1k 1%">
-<attribute name="LCSC_PART" value="C25852"/>
+<part name="R41" library="BSB-LAN" deviceset="R-EU_" device="R0402" value="22k 1%">
+<attribute name="LCSC_PART" value="C25768"/>
 </part>
-<part name="R40" library="BSB-LAN" deviceset="R-EU_" device="R0402" value="180k 1%">
-<attribute name="LCSC_PART" value="C25760"/>
+<part name="R40" library="BSB-LAN" deviceset="R-EU_" device="R0402" value="200k 1%">
+<attribute name="LCSC_PART" value="C25764"/>
 </part>
-<part name="R42" library="BSB-LAN" deviceset="R-EU_" device="R0402" value="28.7k 1%">
-<attribute name="LCSC_PART" value="C26972"/>
+<part name="R42" library="BSB-LAN" deviceset="R-EU_" device="R0402" value="22k 1%">
+<attribute name="LCSC_PART" value="C25768"/>
 </part>
 <part name="L4" library="BSB-LAN" deviceset="L-US" device="L4040P" value="2.2uH 1.5A">
 <attribute name="LCSC_PART" value="C135262"/>
@@ -7085,8 +7085,8 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <part name="C24" library="BSB-LAN" deviceset="C-EU" device="C0805" value="22uF">
 <attribute name="LCSC_PART" value="C45783"/>
 </part>
-<part name="R43" library="BSB-LAN" deviceset="R-EU_" device="R0402" value="180k 1%">
-<attribute name="LCSC_PART" value="C25760"/>
+<part name="R43" library="BSB-LAN" deviceset="R-EU_" device="R0402" value="200k 1%">
+<attribute name="LCSC_PART" value="C25764"/>
 </part>
 <part name="R44" library="BSB-LAN" deviceset="R-EU_" device="R0603L" value="330k">
 <attribute name="LCSC_PART" value="C23137"/>
@@ -7116,8 +7116,8 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <attribute name="LCSC_PART" value="C25091"/>
 </part>
 <part name="Q7" library="BSB-LAN" deviceset="WPM2015" device="" technology="-3/TR"/>
-<part name="D6" library="BSB-LAN" deviceset="DIODE-" device="SMB" value="SS510B">
-<attribute name="LCSC_PART" value="C65011"/>
+<part name="D6" library="BSB-LAN" deviceset="DIODE-" device="SMA" value="SS34">
+<attribute name="LCSC_PART" value="C8678"/>
 </part>
 <part name="R47" library="BSB-LAN" deviceset="R-EU_" device="R0402" value="10k">
 <attribute name="LCSC_PART" value="C25744"/>
@@ -7928,7 +7928,7 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <text x="10.16" y="106.68" size="1.4224" layer="97" font="vector" ratio="10" align="center-left">Galvanically
 Isolated DC
 Supply Iface</text>
-<text x="111.76" y="43.18" size="1.4224" layer="97" font="vector" ratio="10" align="center-left">Vout = 0.6 x (180/40.8 + 1) = 3.25V</text>
+<text x="111.76" y="43.18" size="1.4224" layer="97" font="vector" ratio="10" align="center-left">Vout = 0.6 x (200/44 + 1) = 3.32V</text>
 </plain>
 <instances>
 <instance part="FRAME3" gate="G$1" x="0" y="0"/>

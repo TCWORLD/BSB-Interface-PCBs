@@ -197,6 +197,7 @@ Fredlcore BSB-LAN</text>
 <wire x1="59.6857875" y1="1.2" x2="60.39289375" y2="0.90710625" width="0" layer="20" curve="-45"/>
 <wire x1="60.39289375" y1="0.90710625" x2="60.90710625" y2="0.39289375" width="0" layer="20"/>
 <wire x1="60.90710625" y1="0.39289375" x2="61.6142125" y2="0.1" width="0" layer="20" curve="45"/>
+<text x="28.35" y="13.2" size="1" layer="21" font="vector" ratio="15" align="center">1.5kV Max</text>
 </plain>
 <libraries>
 <library name="BSB-LAN">
@@ -880,24 +881,25 @@ Source: http://focus.ti.com/lit/ds/symlink/tps77001.pdf</description>
 <text x="0" y="2" size="1.27" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 <text x="0" y="-2" size="1.27" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
 </package>
-<package name="C1808">
-<description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
-Source: AVX .. aphvc.pdf</description>
-<wire x1="-1.4732" y1="0.9502" x2="1.4732" y2="0.9502" width="0.1016" layer="51"/>
-<wire x1="-1.4478" y1="-0.9502" x2="1.4732" y2="-0.9502" width="0.1016" layer="51"/>
-<rectangle x1="-2.275" y1="-1.015" x2="-1.225" y2="1.015" layer="51"/>
-<rectangle x1="1.225" y1="-1.015" x2="2.275" y2="1.015" layer="51"/>
-<smd name="1" x="-1.95" y="0" dx="1.6" dy="2.2" layer="1"/>
-<smd name="2" x="1.95" y="0" dx="1.6" dy="2.2" layer="1"/>
-<wire x1="-0.7" y1="1.1" x2="0.7" y2="1.1" width="0.127" layer="21"/>
-<wire x1="-0.7" y1="-1.1" x2="0.7" y2="-1.1" width="0.127" layer="21"/>
-<wire x1="-3" y1="1.35" x2="3" y2="1.35" width="0.127" layer="39"/>
-<wire x1="3" y1="1.35" x2="3" y2="-1.35" width="0.127" layer="39"/>
-<wire x1="3" y1="-1.35" x2="-3" y2="-1.35" width="0.127" layer="39"/>
-<wire x1="-3" y1="-1.35" x2="-3" y2="1.35" width="0.127" layer="39"/>
-<rectangle x1="-0.3" y1="-0.4001" x2="0.3" y2="0.4001" layer="35"/>
-<text x="0" y="2" size="1.016" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
-<text x="0" y="-2" size="1.016" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
+<package name="C1206L">
+<description>&lt;b&gt;CAPACITOR&lt;/b&gt;</description>
+<wire x1="-1.9" y1="0.95" x2="1.9" y2="0.95" width="0.1" layer="39"/>
+<wire x1="1.9" y1="-0.95" x2="-1.9" y2="-0.95" width="0.1" layer="39"/>
+<wire x1="-1.9" y1="-0.95" x2="-1.9" y2="0.95" width="0.1" layer="39"/>
+<wire x1="1.9" y1="0.95" x2="1.9" y2="-0.95" width="0.1" layer="39"/>
+<wire x1="-1" y1="0.75" x2="1" y2="0.75" width="0.1" layer="51"/>
+<wire x1="-1" y1="-0.75" x2="1" y2="-0.75" width="0.1" layer="51"/>
+<wire x1="-0.7" y1="0.8" x2="0.7" y2="0.8" width="0.125" layer="21"/>
+<wire x1="-0.7" y1="-0.8" x2="0.7" y2="-0.8" width="0.125" layer="21"/>
+<rectangle x1="-1.6" y1="-0.8" x2="-0.95" y2="0.8" layer="51"/>
+<rectangle x1="0.95" y1="-0.8" x2="1.6" y2="0.8" layer="51"/>
+<rectangle x1="-0.25" y1="-0.4" x2="0.25" y2="0.4" layer="35"/>
+<rectangle x1="0.825" y1="-0.9" x2="1.875" y2="0.9" layer="29"/>
+<rectangle x1="-1.875" y1="-0.9" x2="-0.825" y2="0.9" layer="29" rot="R180"/>
+<smd name="1" x="-1.35" y="0" dx="0.95" dy="1.7" layer="1" stop="no"/>
+<smd name="2" x="1.35" y="0" dx="0.95" dy="1.7" layer="1" stop="no"/>
+<text x="0" y="2" size="1" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="0" y="-2" size="1" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
 </package>
 <package name="C0402">
 <description>&lt;b&gt;CAPACITOR&lt;/b&gt;</description>
@@ -1339,28 +1341,6 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <wire x1="14.3" y1="5.5" x2="3.3" y2="5.5" width="0.2032" layer="51"/>
 <rectangle x1="2.85" y1="0" x2="14.85" y2="15" layer="39"/>
 </package>
-<package name="SMB">
-<description>&lt;B&gt;DIODE&lt;/B&gt;</description>
-<wire x1="-2.2606" y1="1.905" x2="2.2606" y2="1.905" width="0.127" layer="21"/>
-<wire x1="-2.2606" y1="-1.905" x2="2.2606" y2="-1.905" width="0.127" layer="21"/>
-<wire x1="-2.2606" y1="-1.905" x2="-2.2606" y2="1.905" width="0.1016" layer="51"/>
-<wire x1="2.2606" y1="-1.905" x2="2.2606" y2="1.905" width="0.1016" layer="51"/>
-<wire x1="0.6335" y1="1" x2="-0.3895" y2="0" width="0.127" layer="21"/>
-<wire x1="-0.3895" y1="0" x2="0.6335" y2="-1" width="0.127" layer="21"/>
-<wire x1="0.6335" y1="-1" x2="0.6335" y2="1" width="0.127" layer="21"/>
-<smd name="C" x="-2.2" y="0" dx="2.4" dy="2.4" layer="1"/>
-<smd name="A" x="2.2" y="0" dx="2.4" dy="2.4" layer="1"/>
-<text x="0" y="3.175" size="1.27" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
-<text x="0" y="-3.175" size="1.27" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
-<rectangle x1="-2.794" y1="-1.0922" x2="-2.2606" y2="1.0922" layer="51"/>
-<rectangle x1="2.2606" y1="-1.0922" x2="2.794" y2="1.0922" layer="51"/>
-<rectangle x1="-1.35" y1="-1.9" x2="-0.8" y2="1.9" layer="51"/>
-<wire x1="-3.75" y1="2.25" x2="3.75" y2="2.25" width="0.127" layer="39"/>
-<wire x1="3.75" y1="2.25" x2="3.75" y2="-2.25" width="0.127" layer="39"/>
-<wire x1="3.75" y1="-2.25" x2="-3.75" y2="-2.25" width="0.127" layer="39"/>
-<wire x1="-3.75" y1="-2.25" x2="-3.75" y2="2.25" width="0.127" layer="39"/>
-<rectangle x1="-0.75" y1="-1.5" x2="-0.25" y2="1.5" layer="21"/>
-</package>
 <package name="L4040P">
 <description>&lt;b&gt;INDUCTOR&lt;/b&gt;&lt;p&gt;
 precision wire wound</description>
@@ -1649,20 +1629,20 @@ MSOP&lt;br&gt;</description>
 <clearance class="1" value="0.15"/>
 </class>
 <class number="2" name="PoE-ISO" width="0" drill="0">
-<clearance class="1" value="2"/>
+<clearance class="1" value="1.7"/>
 </class>
 <class number="3" name="B2B-ISO" width="0" drill="0">
-<clearance class="1" value="2"/>
-<clearance class="2" value="2"/>
+<clearance class="1" value="1.7"/>
+<clearance class="2" value="1.7"/>
 </class>
 <class number="4" name="ESP32" width="0" drill="0">
-<clearance class="2" value="2"/>
-<clearance class="3" value="2"/>
+<clearance class="2" value="1.7"/>
+<clearance class="3" value="1.7"/>
 </class>
 <class number="5" name="Sheild" width="0" drill="0">
 <clearance class="1" value="1.5"/>
-<clearance class="2" value="2"/>
-<clearance class="3" value="2"/>
+<clearance class="2" value="1.7"/>
+<clearance class="3" value="1.7"/>
 <clearance class="4" value="1.5"/>
 </class>
 </classes>
@@ -1991,33 +1971,34 @@ For a 50R Single Ended on the inner layers, use a trace width of 0.22mm (51.68 O
 <attribute name="NAME" x="59.25" y="30.55" size="0.8" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
 <attribute name="LCSC_PART" value="C25091" x="59.2" y="31.6" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="C18" library="BSB-LAN" package="SMC_D" value="220uF 25V" x="16.6" y="5.8" smashed="yes" rot="R270">
+<element name="C18" library="BSB-LAN" package="SMC_D" value="100uF 20V" x="16.6" y="5.8" smashed="yes" rot="R270">
 <attribute name="NAME" x="16.6" y="0.755" size="0.8" layer="25" font="vector" ratio="15" align="center"/>
-<attribute name="LCSC_PART" value="" x="16.6" y="5.8" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="LCSC_PART" value="C7224" x="16.6" y="5.8" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="JLC_ROT" value="180" x="16.6" y="5.8" size="1" layer="27" font="vector" ratio="15" rot="R270" align="center" display="off"/>
 </element>
-<element name="C20" library="BSB-LAN" package="C1808" value="1nF 3kV" x="28.35" y="12.35" smashed="yes">
-<attribute name="NAME" x="31.8" y="12.35" size="0.8" layer="25" font="vector" ratio="15" rot="R270" align="center"/>
-<attribute name="LCSC_PART" value="C577300" x="28.35" y="12.35" size="1.2" layer="27" font="vector" ratio="15" align="center" display="off"/>
+<element name="C20" library="BSB-LAN" package="C1206L" value="1nF 2kV" x="28.45" y="11.3" smashed="yes">
+<attribute name="NAME" x="31.9" y="11.3" size="0.8" layer="25" font="vector" ratio="15" rot="R270" align="center"/>
+<attribute name="LCSC_PART" value="C9196" x="28.45" y="11.3" size="1.2" layer="27" font="vector" ratio="15" align="center" display="off"/>
 </element>
-<element name="C21" library="BSB-LAN" package="C1808" value="1nF 3kV" x="28.35" y="9.3" smashed="yes">
-<attribute name="NAME" x="31.8" y="9.3" size="0.8" layer="25" font="vector" ratio="15" rot="R270" align="center"/>
-<attribute name="LCSC_PART" value="C577300" x="28.35" y="9.3" size="1.2" layer="27" font="vector" ratio="15" align="center" display="off"/>
+<element name="C21" library="BSB-LAN" package="C1206L" value="1nF 2kV" x="28.45" y="8.9" smashed="yes">
+<attribute name="NAME" x="30.9" y="8.9" size="0.8" layer="25" font="vector" ratio="15" rot="R270" align="center"/>
+<attribute name="LCSC_PART" value="C9196" x="28.45" y="8.9" size="1.2" layer="27" font="vector" ratio="15" align="center" display="off"/>
 </element>
 <element name="C22" library="BSB-LAN" package="C0805" value="22uF" x="22.95" y="8.8" smashed="yes">
 <attribute name="NAME" x="23.85" y="10.2" size="0.8" layer="25" font="vector" ratio="15" align="center"/>
 <attribute name="LCSC_PART" value="C45783" x="22.95" y="8.8" size="1" layer="27" font="vector" ratio="15" align="center" display="off"/>
 </element>
-<element name="R41" library="BSB-LAN" package="R0402" value="12.1k 1%" x="45" y="5.2" smashed="yes">
+<element name="R41" library="BSB-LAN" package="R0402" value="22k 1%" x="45" y="5.2" smashed="yes">
 <attribute name="NAME" x="43.75" y="7.25" size="0.8" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
-<attribute name="LCSC_PART" value="C25852" x="45" y="5.2" size="1.778" layer="27" display="off"/>
+<attribute name="LCSC_PART" value="C25768" x="45" y="5.2" size="1.778" layer="27" display="off"/>
 </element>
-<element name="R40" library="BSB-LAN" package="R0402" value="180k 1%" x="45" y="6.35" smashed="yes" rot="R180">
+<element name="R40" library="BSB-LAN" package="R0402" value="200k 1%" x="45" y="6.35" smashed="yes" rot="R180">
 <attribute name="NAME" x="43.75" y="8.15" size="0.8" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
-<attribute name="LCSC_PART" value="C25760" x="45" y="6.35" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="LCSC_PART" value="C25764" x="45" y="6.35" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="R42" library="BSB-LAN" package="R0402" value="28.7k 1%" x="45" y="4.05" smashed="yes">
+<element name="R42" library="BSB-LAN" package="R0402" value="22k 1%" x="45" y="4.05" smashed="yes">
 <attribute name="NAME" x="45" y="3.1" size="0.8" layer="25" font="vector" ratio="15" align="center"/>
-<attribute name="LCSC_PART" value="C26972" x="45" y="4.05" size="1.778" layer="27" display="off"/>
+<attribute name="LCSC_PART" value="C25768" x="45" y="4.05" size="1.778" layer="27" display="off"/>
 </element>
 <element name="L4" library="BSB-LAN" package="L4040P" value="2.2uH 1.5A" x="47.15" y="12.9" smashed="yes" rot="R90">
 <attribute name="NAME" x="44.275" y="12.95" size="0.8" layer="25" font="vector" ratio="15" rot="R270" align="center"/>
@@ -2031,9 +2012,9 @@ For a 50R Single Ended on the inner layers, use a trace width of 0.22mm (51.68 O
 <attribute name="NAME" x="50.35" y="4.9" size="0.8" layer="25" font="vector" ratio="15" rot="R270" align="center"/>
 <attribute name="LCSC_PART" value="C45783" x="48.05" y="5.9" size="1" layer="27" font="vector" ratio="15" align="center" display="off"/>
 </element>
-<element name="R43" library="BSB-LAN" package="R0402" value="180k 1%" x="80.95" y="32.25" smashed="yes" rot="R180">
+<element name="R43" library="BSB-LAN" package="R0402" value="200k 1%" x="80.95" y="32.25" smashed="yes" rot="R180">
 <attribute name="NAME" x="76.35" y="32.15" size="0.8" layer="25" font="vector" ratio="15" align="center"/>
-<attribute name="LCSC_PART" value="C25760" x="80.95" y="32.25" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="LCSC_PART" value="C25764" x="80.95" y="32.25" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="R44" library="BSB-LAN" package="R0603L" value="330k" x="78.6" y="32.21" smashed="yes" rot="R180">
 <attribute name="NAME" x="73.9" y="32.21" size="0.8" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
@@ -2085,8 +2066,8 @@ For a 50R Single Ended on the inner layers, use a trace width of 0.22mm (51.68 O
 <attribute name="NAME" x="49.6555" y="1.487" size="0.8" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
 <attribute name="JLC_ROT" value="270" x="48" y="3" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="D6" library="BSB-LAN" package="SMB" value="SS510B" x="39.65" y="10.25" smashed="yes" rot="R180">
-<attribute name="LCSC_PART" value="C65011" x="39.65" y="10.25" size="1.2" layer="27" font="vector" ratio="15" rot="R180" display="off"/>
+<element name="D6" library="BSB-LAN" package="SMA" value="SS34" x="39.65" y="10.25" smashed="yes" rot="R180">
+<attribute name="LCSC_PART" value="C8678" x="39.65" y="10.25" size="1.2" layer="27" font="vector" ratio="15" rot="R180" display="off"/>
 <attribute name="NAME" x="41.65" y="12.825" size="0.8" layer="25" font="vector" ratio="15" align="center"/>
 </element>
 <element name="R47" library="BSB-LAN" package="R0402" value="10k" x="45.75" y="1.2" smashed="yes" rot="R270">
@@ -2288,7 +2269,7 @@ For a 50R Single Ended on the inner layers, use a trace width of 0.22mm (51.68 O
 <vertex x="86.4" y="0"/>
 <vertex x="86.4" y="33"/>
 </polygon>
-<via x="30" y="10.6" extent="1-16" drill="0.3"/>
+<via x="30" y="9.85" extent="1-16" drill="0.3"/>
 <via x="30" y="8" extent="1-16" drill="0.3"/>
 <via x="33.2" y="8" extent="1-16" drill="0.3"/>
 <contactref element="R47" pad="2"/>
@@ -2427,7 +2408,7 @@ For a 50R Single Ended on the inner layers, use a trace width of 0.22mm (51.68 O
 <via x="85.85" y="7.65" extent="1-16" drill="0.3"/>
 <via x="44.4" y="17" extent="1-16" drill="0.3"/>
 <via x="61.7" y="22.55" extent="1-16" drill="0.3"/>
-<via x="31.2" y="10.6" extent="1-16" drill="0.3"/>
+<via x="31.2" y="9.8" extent="1-16" drill="0.3"/>
 <via x="31.2" y="9.2" extent="1-16" drill="0.3"/>
 <via x="31.2" y="8" extent="1-16" drill="0.3"/>
 <via x="29.8" y="5.4" extent="1-16" drill="0.3"/>
@@ -2929,9 +2910,10 @@ For a 50R Single Ended on the inner layers, use a trace width of 0.22mm (51.68 O
 <contactref element="C22" pad="2"/>
 <contactref element="12V" pad="2"/>
 <contactref element="D1" pad="A"/>
-<wire x1="26.4" y1="9.3" x2="25.8" y2="9.3" width="1.2" layer="1"/>
-<wire x1="25.8" y1="9.3" x2="25.1" y2="8.6" width="1.8" layer="1"/>
-<wire x1="25.1" y1="8.6" x2="24.12" y2="8.6" width="1.8" layer="1"/>
+<wire x1="27.1" y1="8.9" x2="27.15" y2="8.85" width="0.8" layer="1"/>
+<wire x1="27.15" y1="8.85" x2="26.65" y2="8.85" width="0.8" layer="1"/>
+<wire x1="26.65" y1="8.85" x2="26.4" y2="8.6" width="1.8" layer="1"/>
+<wire x1="26.4" y1="8.6" x2="24.12" y2="8.6" width="1.8" layer="1"/>
 <wire x1="24.12" y1="8.6" x2="24.12" y2="6.6" width="1.8" layer="1"/>
 <wire x1="23.9" y1="8.8" x2="24.12" y2="8.8" width="1.2" layer="1"/>
 <wire x1="24.12" y1="8.8" x2="24.12" y2="8.6" width="1.2" layer="1"/>
@@ -3128,10 +3110,10 @@ For a 50R Single Ended on the inner layers, use a trace width of 0.22mm (51.68 O
 <contactref element="C18" pad="+"/>
 <contactref element="12V" pad="1"/>
 <contactref element="D1" pad="C"/>
-<wire x1="26.4" y1="12.35" x2="26.25" y2="12.2" width="1" layer="1"/>
-<wire x1="26.25" y1="12.2" x2="25.4" y2="12.2" width="1.8" layer="1"/>
-<wire x1="25.4" y1="12.2" x2="24" y2="10.8" width="1.8" layer="1"/>
-<wire x1="24" y1="10.8" x2="22.6" y2="10.8" width="1.8" layer="1"/>
+<wire x1="27.1" y1="11.3" x2="26.65" y2="11.3" width="0.8" layer="1"/>
+<wire x1="26.65" y1="11.3" x2="26" y2="11.3" width="1.8" layer="1"/>
+<wire x1="26" y1="11.3" x2="25.5" y2="10.8" width="1.8" layer="1"/>
+<wire x1="25.5" y1="10.8" x2="22.6" y2="10.8" width="1.8" layer="1"/>
 <wire x1="22.6" y1="10.8" x2="21.58" y2="9.78" width="1.8" layer="1"/>
 <wire x1="21.58" y1="9.78" x2="21.58" y2="8.8" width="1.8" layer="1"/>
 <wire x1="16.6" y1="8.25" x2="21.58" y2="8.25" width="1.8" layer="1"/>
@@ -3357,11 +3339,11 @@ For a 50R Single Ended on the inner layers, use a trace width of 0.22mm (51.68 O
 <wire x1="34.95" y1="8.85" x2="34.95" y2="8.47" width="1.8" layer="1"/>
 <wire x1="34.95" y1="8.47" x2="36.82" y2="6.6" width="1.8" layer="1"/>
 <wire x1="34.95" y1="10.25" x2="34.95" y2="10.45" width="1.8" layer="1"/>
-<wire x1="34.95" y1="10.45" x2="33.2" y2="12.2" width="1.8" layer="1"/>
-<wire x1="33.2" y1="12.2" x2="30.45" y2="12.2" width="1.8" layer="1"/>
-<wire x1="30.45" y1="12.2" x2="30.3" y2="12.35" width="1.4" layer="1"/>
+<wire x1="34.95" y1="10.45" x2="34.1" y2="11.3" width="1.8" layer="1"/>
+<wire x1="34.1" y1="11.3" x2="30.3" y2="11.3" width="1.8" layer="1"/>
+<wire x1="30.3" y1="11.3" x2="29.8" y2="11.3" width="0.8" layer="1"/>
 <wire x1="37.92" y1="5.5" x2="36.82" y2="6.6" width="1.8" layer="1"/>
-<wire x1="37.45" y1="10.25" x2="34.95" y2="10.25" width="1.8" layer="1"/>
+<wire x1="37.65" y1="10.25" x2="34.95" y2="10.25" width="1.8" layer="1"/>
 <wire x1="34.95" y1="10.25" x2="34.95" y2="8.85" width="1.8" layer="1"/>
 <wire x1="48.95" y1="4" x2="49" y2="4" width="0.2" layer="1"/>
 <wire x1="49" y1="4" x2="49" y2="3.2" width="0.2" layer="1"/>

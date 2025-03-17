@@ -3876,10 +3876,10 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <smd name="EP6" x="-1.5" y="7.39" dx="0.9" dy="0.9" layer="1"/>
 <smd name="EP7" x="-2.9" y="7.39" dx="0.9" dy="0.9" layer="1"/>
 <smd name="EP8" x="-2.9" y="8.79" dx="0.9" dy="0.9" layer="1"/>
-<wire x1="-10.5" y1="24.5" x2="10.5" y2="24.5" width="0.2" layer="39"/>
-<wire x1="10.5" y1="24.5" x2="10.5" y2="-3" width="0.2" layer="39"/>
-<wire x1="10.5" y1="-3" x2="-10.5" y2="-3" width="0.2" layer="39"/>
-<wire x1="-10.5" y1="-3" x2="-10.5" y2="24.5" width="0.2" layer="39"/>
+<wire x1="-10.5" y1="24.5" x2="10.5" y2="24.5" width="0.15" layer="39"/>
+<wire x1="10.5" y1="24.5" x2="10.5" y2="-3" width="0.15" layer="39"/>
+<wire x1="10.5" y1="-3" x2="-10.5" y2="-3" width="0.15" layer="39"/>
+<wire x1="-10.5" y1="-3" x2="-10.5" y2="24.5" width="0.15" layer="39"/>
 <rectangle x1="-9" y1="18" x2="9" y2="24" layer="41"/>
 <rectangle x1="-9" y1="18" x2="9" y2="24" layer="42"/>
 <rectangle x1="-9" y1="18" x2="9" y2="24" layer="43"/>
@@ -7455,7 +7455,7 @@ Source: http://www.ctscorp.com/components/Datasheets/CTSChipArrayDs.pdf</descrip
 <attribute name="LCSC_PART" value="" constant="no"/>
 </technology>
 <technology name="1205">
-<attribute name="LCSC_PART" value="" constant="no"/>
+<attribute name="LCSC_PART" value="C5369565"/>
 </technology>
 <technology name="1212">
 <attribute name="LCSC_PART" value="" constant="no"/>
