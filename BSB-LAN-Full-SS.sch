@@ -8922,6 +8922,9 @@ Isolated POE
 Supply Iface</text>
 <text x="88.9" y="116.84" size="1.4224" layer="97" font="vector" ratio="10" align="center-left">Vout = 0.805 x (24.2/4.42 + 1) = 5.2V</text>
 <text x="111.76" y="43.18" size="1.4224" layer="97" font="vector" ratio="10" align="center-left">Vout = 0.6 x (180/40.8 + 1) = 3.25V</text>
+<text x="119.38" y="55.88" size="1.4224" layer="97" font="vector" ratio="10" align="center-left">Alternate: RT8097CHGB</text>
+<text x="60.96" y="88.9" size="1.4224" layer="97" font="vector" ratio="10" align="center-left">Alternate: DMG2305UX-7</text>
+<text x="88.9" y="121.92" size="1.4224" layer="97" font="vector" ratio="10" rot="R90" align="center-left">Alternate: SL510B</text>
 </plain>
 <instances>
 <instance part="FRAME3" gate="G$1" x="0" y="0"/>
