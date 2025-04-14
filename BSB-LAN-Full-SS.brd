@@ -166,7 +166,7 @@
 <text x="33.6" y="25.6" size="1.5" layer="21" font="vector" ratio="15" rot="R180" align="center">BSB-LAN
 ESP32 PoE
 </text>
-<text x="33.8" y="23.4" size="1" layer="21" font="vector" ratio="15" rot="R180" align="center">T Carpenter  V1.0 Mar25</text>
+<text x="33.8" y="23.4" size="1" layer="21" font="vector" ratio="15" rot="R180" align="center">T Carpenter  V1.1 Apr25</text>
 <text x="9.95" y="2.6" size="1" layer="21" font="vector" ratio="15" align="center">Isolated
 Supply</text>
 <text x="1.6" y="43" size="1" layer="22" font="vector" ratio="15" rot="MR90" align="center">JLCJLCJLC</text>
@@ -1500,10 +1500,10 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <smd name="EP" x="0" y="0" dx="2.2" dy="3.1" layer="1" rot="R270"/>
 </package>
 <package name="SIP7-N">
-<pad name="1" x="-7.62" y="0" drill="0.8" diameter="1.4"/>
-<pad name="2" x="-5.08" y="0" drill="0.8" diameter="1.4"/>
-<pad name="5" x="2.54" y="0" drill="0.8" diameter="1.4"/>
-<pad name="7" x="7.62" y="0" drill="0.8" diameter="1.4"/>
+<pad name="1" x="-7.62" y="-0.5" drill="0.8" diameter="1.4"/>
+<pad name="2" x="-5.08" y="-0.5" drill="0.8" diameter="1.4"/>
+<pad name="5" x="2.54" y="-0.5" drill="0.8" diameter="1.4"/>
+<pad name="7" x="7.62" y="-0.5" drill="0.8" diameter="1.4"/>
 <wire x1="-9.8" y1="-6.2" x2="9.8" y2="-6.2" width="0.1" layer="21"/>
 <wire x1="-9.8" y1="-6.2" x2="-9.8" y2="1" width="0.1" layer="21"/>
 <wire x1="9.8" y1="-6.2" x2="9.8" y2="1" width="0.1" layer="21"/>
@@ -1513,14 +1513,14 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <wire x1="10" y1="-6.44" x2="10" y2="1.2" width="0.1" layer="39"/>
 <wire x1="10" y1="1.2" x2="-10" y2="1.2" width="0.1" layer="39"/>
 <text x="0" y="2" size="1.016" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
-<text x="0" y="-5" size="1.016" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
+<text x="0" y="-5.5" size="1.016" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
 <circle x="-9" y="1.6" radius="0.35" width="0" layer="21"/>
-<text x="-7.62" y="-2.54" size="1.016" layer="21" font="vector" ratio="15" rot="R90" align="center">VI+</text>
-<text x="-5.08" y="-2.54" size="1.016" layer="21" font="vector" ratio="15" rot="R90" align="center">VI-</text>
-<text x="7.62" y="-2.54" size="1.016" layer="21" font="vector" ratio="15" rot="R90" align="center">VO+</text>
-<text x="2.54" y="-2.54" size="1.016" layer="21" font="vector" ratio="15" rot="R90" align="center">VO-</text>
+<text x="-7.62" y="-3.04" size="1.016" layer="21" font="vector" ratio="15" rot="R90" align="center">VI+</text>
+<text x="-5.08" y="-3.04" size="1.016" layer="21" font="vector" ratio="15" rot="R90" align="center">VI-</text>
+<text x="7.62" y="-3.04" size="1.016" layer="21" font="vector" ratio="15" rot="R90" align="center">VO+</text>
+<text x="2.54" y="-3.04" size="1.016" layer="21" font="vector" ratio="15" rot="R90" align="center">VO-</text>
 </package>
-<package name="ESP32-WROOM-32E">
+<package name="ESP32-WROOM-32UE">
 <smd name="14" x="-9" y="0" dx="2" dy="0.9" layer="1"/>
 <smd name="25" x="9" y="0" dx="2" dy="0.9" layer="1"/>
 <smd name="15" x="-5.715" y="-1.5" dx="2" dy="0.9" layer="1" rot="R90"/>
@@ -1565,9 +1565,6 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <wire x1="9" y1="-1.5" x2="9" y2="-0.8" width="0.2" layer="21"/>
 <wire x1="9" y1="-0.8" x2="9" y2="17.25" width="0.2" layer="51"/>
 <wire x1="9" y1="17.25" x2="9" y2="17.8" width="0.2" layer="21"/>
-<wire x1="9" y1="17.8" x2="9" y2="24" width="0.2" layer="21"/>
-<wire x1="9" y1="24" x2="-9" y2="24" width="0.2" layer="21"/>
-<wire x1="-9" y1="24" x2="-9" y2="17.8" width="0.2" layer="21"/>
 <wire x1="-9" y1="17.8" x2="-9" y2="17.25" width="0.2" layer="21"/>
 <wire x1="-9" y1="17.25" x2="-9" y2="-0.8" width="0.2" layer="51"/>
 <wire x1="-9" y1="-0.8" x2="-9" y2="-1.5" width="0.2" layer="21"/>
@@ -1578,19 +1575,6 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <wire x1="-4.05" y1="11.34" x2="-4.05" y2="6.24" width="0.2" layer="51"/>
 <smd name="EP1" x="-1.5" y="8.79" dx="0.9" dy="0.9" layer="1"/>
 <text x="0" y="16" size="0.8" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
-<wire x1="7.5" y1="18.5" x2="7.5" y2="22.5" width="0.5" layer="51"/>
-<wire x1="7.5" y1="22.5" x2="5" y2="22.5" width="0.5" layer="51"/>
-<wire x1="5" y1="22.5" x2="5" y2="18.5" width="0.5" layer="51"/>
-<wire x1="5" y1="22.5" x2="2.5" y2="22.5" width="0.5" layer="51"/>
-<wire x1="2.5" y1="22.5" x2="2.5" y2="20" width="0.5" layer="51"/>
-<wire x1="2.5" y1="20" x2="0" y2="20" width="0.5" layer="51"/>
-<wire x1="0" y1="20" x2="0" y2="22.5" width="0.5" layer="51"/>
-<wire x1="0" y1="22.5" x2="-2.5" y2="22.5" width="0.5" layer="51"/>
-<wire x1="-2.5" y1="22.5" x2="-2.5" y2="20" width="0.5" layer="51"/>
-<wire x1="-2.5" y1="20" x2="-5" y2="20" width="0.5" layer="51"/>
-<wire x1="-5" y1="20" x2="-5" y2="22.5" width="0.5" layer="51"/>
-<wire x1="-5" y1="22.5" x2="-7.5" y2="22.5" width="0.5" layer="51"/>
-<wire x1="-7.5" y1="22.5" x2="-7.5" y2="19.5" width="0.5" layer="51"/>
 <smd name="EP9" x="-2.9" y="10.19" dx="0.9" dy="0.9" layer="1"/>
 <text x="-9" y="-2.5" size="0.8" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 <smd name="EP2" x="-1.5" y="10.19" dx="0.9" dy="0.9" layer="1"/>
@@ -1600,14 +1584,18 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <smd name="EP6" x="-1.5" y="7.39" dx="0.9" dy="0.9" layer="1"/>
 <smd name="EP7" x="-2.9" y="7.39" dx="0.9" dy="0.9" layer="1"/>
 <smd name="EP8" x="-2.9" y="8.79" dx="0.9" dy="0.9" layer="1"/>
-<wire x1="-10.5" y1="24.5" x2="10.5" y2="24.5" width="0.15" layer="39"/>
-<wire x1="10.5" y1="24.5" x2="10.5" y2="-3" width="0.15" layer="39"/>
-<wire x1="10.5" y1="-3" x2="-10.5" y2="-3" width="0.15" layer="39"/>
-<wire x1="-10.5" y1="-3" x2="-10.5" y2="24.5" width="0.15" layer="39"/>
-<rectangle x1="-9" y1="18" x2="9" y2="24" layer="41"/>
-<rectangle x1="-9" y1="18" x2="9" y2="24" layer="42"/>
-<rectangle x1="-9" y1="18" x2="9" y2="24" layer="43"/>
+<wire x1="-10.5" y1="18.5" x2="10.5" y2="18.5" width="0.2" layer="39"/>
+<wire x1="10.5" y1="18.5" x2="10.5" y2="-3" width="0.2" layer="39"/>
+<wire x1="10.5" y1="-3" x2="-10.5" y2="-3" width="0.2" layer="39"/>
+<wire x1="-10.5" y1="-3" x2="-10.5" y2="18.5" width="0.2" layer="39"/>
 <circle x="-9.65" y="17.5" radius="0.291546875" width="0" layer="21"/>
+<circle x="5.63" y="14.73" radius="1" width="0.2" layer="21"/>
+<wire x1="4.33" y1="16.03" x2="4.33" y2="13.43" width="0.2" layer="21"/>
+<wire x1="4.33" y1="13.43" x2="6.93" y2="13.43" width="0.2" layer="21"/>
+<wire x1="6.93" y1="13.43" x2="6.93" y2="16.03" width="0.2" layer="21"/>
+<wire x1="6.93" y1="16.03" x2="4.33" y2="16.03" width="0.2" layer="21"/>
+<wire x1="5.63" y1="16.73" x2="5.63" y2="12.73" width="0.2" layer="49"/>
+<wire x1="3.63" y1="14.73" x2="7.63" y2="14.73" width="0.2" layer="49"/>
 </package>
 <package name="MICRO-SD">
 <wire x1="0.3" y1="-15.5" x2="0.3" y2="-2.3" width="0.2032" layer="21"/>
@@ -1867,7 +1855,7 @@ MSOP&lt;br&gt;</description>
 <package name="CNMB/3-">
 <wire x1="0" y1="49.8" x2="86.5" y2="49.8" width="0" layer="48"/>
 <wire x1="0" y1="0" x2="0" y2="49.8" width="0" layer="48"/>
-<hole x="18.25" y="41.1" drill="3.2"/>
+<hole x="18.25" y="41.1" drill="3.7"/>
 <wire x1="-0.25" y1="48.4" x2="-1.75" y2="48.4" width="0" layer="48"/>
 <wire x1="-1.75" y1="48.4" x2="-1.75" y2="51.6" width="0" layer="48"/>
 <wire x1="-1.75" y1="51.6" x2="88.25" y2="51.6" width="0" layer="48"/>
@@ -1889,7 +1877,7 @@ MSOP&lt;br&gt;</description>
 <text x="-1.1" y="24.95" size="1" layer="48" font="vector" ratio="15" rot="R90" align="center">h=0</text>
 <wire x1="86.5" y1="0" x2="0" y2="0" width="0" layer="48"/>
 <wire x1="86.5" y1="49.8" x2="86.5" y2="0" width="0" layer="48"/>
-<hole x="68.25" y="8.7" drill="3.2"/>
+<hole x="68.25" y="8.7" drill="3.7"/>
 <wire x1="86.75" y1="1.4" x2="88.25" y2="1.4" width="0" layer="48"/>
 <wire x1="88.25" y1="1.4" x2="88.25" y2="-1.8" width="0" layer="48"/>
 <wire x1="88.25" y1="-1.8" x2="-1.75" y2="-1.8" width="0" layer="48"/>
@@ -1915,8 +1903,8 @@ MSOP&lt;br&gt;</description>
 <wire x1="14.5" y1="48" x2="14.7" y2="48.2" width="0.2" layer="48"/>
 <wire x1="14.7" y1="48.2" x2="14.75" y2="47.95" width="0.2" layer="48"/>
 <wire x1="14.75" y1="47.95" x2="14.5" y2="48" width="0.2" layer="48"/>
-<circle x="18.25" y="41.1" radius="2.95" width="0.1" layer="39"/>
-<circle x="68.25" y="8.7" radius="2.95" width="0.1" layer="39"/>
+<circle x="18.25" y="41.1" radius="3.35" width="0.1" layer="39"/>
+<circle x="68.25" y="8.7" radius="3.35" width="0.1" layer="39"/>
 <circle x="18.25" y="41.1" radius="2.95" width="0.1" layer="40"/>
 <circle x="68.25" y="8.7" radius="2.95" width="0.1" layer="40"/>
 <wire x1="1.55" y1="1.9" x2="84.95" y2="1.9" width="0.15" layer="40"/>
@@ -2195,13 +2183,13 @@ For a 50R Single Ended on the inner layers, use a trace width of 0.22mm (51.68 O
 <attribute name="NAME" x="4.74" y="48.51" size="1.2" layer="25" font="vector" ratio="15" align="center"/>
 <attribute name="LCSC_PART" value="C5183989" x="5.15" y="42.5" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="R1" library="BSB-LAN" package="R0603" value="330k" x="19.8" y="44.85" smashed="yes">
-<attribute name="NAME" x="19.8" y="43.65" size="0.8" layer="25" font="vector" ratio="15" align="center"/>
-<attribute name="LCSC_PART" value="C23137" x="19.8" y="44.85" size="1.778" layer="27" display="off"/>
+<element name="R1" library="BSB-LAN" package="R0603" value="330k" x="19.8" y="45.25" smashed="yes">
+<attribute name="NAME" x="19.8" y="44.05" size="0.8" layer="25" font="vector" ratio="15" align="center"/>
+<attribute name="LCSC_PART" value="C23137" x="19.8" y="45.25" size="1.778" layer="27" display="off"/>
 </element>
-<element name="R2" library="BSB-LAN" package="R0603" value="1.5k" x="20.55" y="37.05" smashed="yes" rot="R270">
-<attribute name="NAME" x="19.35" y="37.05" size="0.8" layer="25" font="vector" ratio="15" rot="R270" align="center"/>
-<attribute name="LCSC_PART" value="C22843" x="20.55" y="37.05" size="1.778" layer="27" rot="R270" display="off"/>
+<element name="R2" library="BSB-LAN" package="R0603" value="1.5k" x="20.55" y="36.55" smashed="yes" rot="R270">
+<attribute name="NAME" x="19.35" y="36.55" size="0.8" layer="25" font="vector" ratio="15" rot="R270" align="center"/>
+<attribute name="LCSC_PART" value="C22843" x="20.55" y="36.55" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="R4" library="BSB-LAN" package="R0603" value="330k" x="33.9" y="38.45" smashed="yes" rot="R270">
 <attribute name="NAME" x="35.1" y="38.45" size="0.8" layer="25" font="vector" ratio="15" rot="R270" align="center"/>
@@ -2219,10 +2207,10 @@ For a 50R Single Ended on the inner layers, use a trace width of 0.22mm (51.68 O
 <attribute name="LCSC_PART" value="C81598" x="52.03" y="2.31" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="15.2" y="34.9" size="0.8" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
 </element>
-<element name="Q1" library="BSB-LAN" package="SOT23" value="BC847" x="16.2" y="45.8" smashed="yes" rot="R90">
-<attribute name="LCSC_PART" value="C130417" x="50.49" y="87.71" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="16.2" y="43.6" size="0.8" layer="25" font="vector" ratio="15" align="center"/>
-<attribute name="JLC_ROT" value="270" x="16.2" y="45.8" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="Q1" library="BSB-LAN" package="SOT23" value="BC847" x="16.2" y="46.2" smashed="yes" rot="R90">
+<attribute name="LCSC_PART" value="C130417" x="50.49" y="88.11" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="16.2" y="44" size="0.8" layer="25" font="vector" ratio="15" align="center"/>
+<attribute name="JLC_ROT" value="270" x="16.2" y="46.2" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="Q2" library="BSB-LAN" package="SOT23-BEC" value="BC857" x="34.85" y="42" smashed="yes">
 <attribute name="LCSC_PART" value="C426782" x="50.09" y="2.63" size="1.778" layer="27" display="off"/>
@@ -2242,9 +2230,9 @@ For a 50R Single Ended on the inner layers, use a trace width of 0.22mm (51.68 O
 <attribute name="NAME" x="34.35" y="45.65" size="0.8" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
 <attribute name="LCSC_PART" value="C25091" x="34.35" y="44.6" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="R7" library="BSB-LAN" package="R0603" value="330k" x="19.8" y="46.75" smashed="yes">
-<attribute name="NAME" x="19.8" y="47.95" size="0.8" layer="25" font="vector" ratio="15" align="center"/>
-<attribute name="LCSC_PART" value="C23137" x="19.8" y="46.75" size="1.778" layer="27" display="off"/>
+<element name="R7" library="BSB-LAN" package="R0603" value="330k" x="19.8" y="47.15" smashed="yes">
+<attribute name="NAME" x="19.8" y="48.35" size="0.8" layer="25" font="vector" ratio="15" align="center"/>
+<attribute name="LCSC_PART" value="C23137" x="19.8" y="47.15" size="1.778" layer="27" display="off"/>
 </element>
 <element name="D3" library="BSB-LAN" package="SMBG" value="24V" x="11.8" y="42.7" smashed="yes" rot="R90">
 <attribute name="LCSC_PART" value="C83268" x="39.74" y="59.21" size="1.778" layer="27" rot="R90" display="off"/>
@@ -2442,15 +2430,14 @@ For a 50R Single Ended on the inner layers, use a trace width of 0.22mm (51.68 O
 <attribute name="LCSC_PART" value="C909777" x="49.2" y="6.6" size="1" layer="27" font="vector" ratio="15" display="off"/>
 <attribute name="NAME" x="60.4" y="7.2" size="0.8" layer="25" font="vector" ratio="15" align="center"/>
 </element>
-<element name="IC4" library="BSB-LAN" package="DBV0005A-SOT23" value="SY8089AAAC" x="62.95" y="9.2" smashed="yes" rot="R90">
-<attribute name="LCSC_PART" value="C78988" x="62.95" y="9.2" size="1" layer="27" font="vector" ratio="15" rot="R90" display="off"/>
-<attribute name="NAME" x="63.4" y="7.175" size="0.8" layer="25" font="vector" ratio="15" align="center"/>
-<attribute name="JLC_ROT" value="270" x="62.95" y="9.2" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="IC4" library="BSB-LAN" package="DBV0005A-SOT23" value="SY8089AAAC" x="62.5" y="9.2" smashed="yes" rot="R90">
+<attribute name="LCSC_PART" value="C78988" x="62.5" y="9.2" size="1" layer="27" font="vector" ratio="15" rot="R90" display="off"/>
+<attribute name="NAME" x="62.95" y="7.175" size="0.8" layer="25" font="vector" ratio="15" align="center"/>
+<attribute name="JLC_ROT" value="270" x="62.5" y="9.2" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="ESP1" library="BSB-LAN" package="ESP32-WROOM-32E" value="ESP32-WROOM-32E" x="68.8" y="25" smashed="yes" rot="R270">
-<attribute name="LCSC_PART" value="C701341" x="68.8" y="25" size="1" layer="27" font="vector" ratio="15" rot="R270" display="off"/>
+<element name="ESP1" library="BSB-LAN" package="ESP32-WROOM-32UE" value="ESP32-WROOM-32UE" x="68.8" y="25" smashed="yes" rot="R270">
+<attribute name="LCSC_PART" value="C701344" x="68.8" y="25" size="1" layer="27" font="vector" ratio="15" rot="R270" display="off"/>
 <attribute name="NAME" x="84.8" y="14.1" size="0.8" layer="25" font="vector" ratio="15" align="center"/>
-<attribute name="JLC_ROT" value="270" x="68.8" y="25" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="JLC_Y" value="7.72" x="68.8" y="25" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="USD" library="BSB-LAN" package="MICRO-SD" value="XKTF-001A" x="50.05" y="47.6" smashed="yes">
@@ -2561,17 +2548,17 @@ For a 50R Single Ended on the inner layers, use a trace width of 0.22mm (51.68 O
 <attribute name="NAME" x="43.2" y="10.2" size="0.8" layer="25" font="vector" ratio="15" align="center"/>
 <attribute name="LCSC_PART" value="C45783" x="42.5" y="8.8" size="1" layer="27" font="vector" ratio="15" align="center" display="off"/>
 </element>
-<element name="R41" library="BSB-LAN" package="R0402" value="12.1k 1%" x="59.55" y="9.6" smashed="yes">
-<attribute name="NAME" x="57.6" y="9.6" size="0.8" layer="25" font="vector" ratio="15" align="center"/>
-<attribute name="LCSC_PART" value="C25852" x="59.55" y="9.6" size="1.778" layer="27" display="off"/>
+<element name="R41" library="BSB-LAN" package="R0402" value="12.1k 1%" x="59.15" y="9.6" smashed="yes">
+<attribute name="NAME" x="57.2" y="9.6" size="0.8" layer="25" font="vector" ratio="15" align="center"/>
+<attribute name="LCSC_PART" value="C25852" x="59.15" y="9.6" size="1.778" layer="27" display="off"/>
 </element>
 <element name="R40" library="BSB-LAN" package="R0402" value="180k 1%" x="60.3" y="12" smashed="yes" rot="R90">
 <attribute name="NAME" x="60.3" y="14.25" size="0.8" layer="25" font="vector" ratio="15" rot="R90" align="center"/>
 <attribute name="LCSC_PART" value="C25760" x="60.3" y="12" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="R42" library="BSB-LAN" package="R0402" value="28.7k 1%" x="59.55" y="8.45" smashed="yes">
-<attribute name="NAME" x="57.6" y="8.45" size="0.8" layer="25" font="vector" ratio="15" align="center"/>
-<attribute name="LCSC_PART" value="C26972" x="59.55" y="8.45" size="1.778" layer="27" display="off"/>
+<element name="R42" library="BSB-LAN" package="R0402" value="28.7k 1%" x="59.15" y="8.45" smashed="yes">
+<attribute name="NAME" x="57.2" y="8.45" size="0.8" layer="25" font="vector" ratio="15" align="center"/>
+<attribute name="LCSC_PART" value="C26972" x="59.15" y="8.45" size="1.778" layer="27" display="off"/>
 </element>
 <element name="L4" library="BSB-LAN" package="L4040P" value="2.2uH 1.5A" x="63.15" y="13.5" smashed="yes" rot="R90">
 <attribute name="NAME" x="64.35" y="16.325" size="0.8" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
@@ -2593,9 +2580,9 @@ For a 50R Single Ended on the inner layers, use a trace width of 0.22mm (51.68 O
 <attribute name="NAME" x="71.9" y="36.9" size="0.8" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
 <attribute name="LCSC_PART" value="C23137" x="74.1" y="36.9" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="C25" library="BSB-LAN" package="C0805" value="22uF" x="54.6" y="8.85" smashed="yes" rot="R180">
-<attribute name="NAME" x="54.6" y="10.15" size="0.8" layer="25" font="vector" ratio="15" align="center"/>
-<attribute name="LCSC_PART" value="C45783" x="54.6" y="8.85" size="1" layer="27" font="vector" ratio="15" rot="R180" align="center" display="off"/>
+<element name="C25" library="BSB-LAN" package="C0805" value="22uF" x="54.2" y="8.85" smashed="yes" rot="R180">
+<attribute name="NAME" x="54.2" y="10.15" size="0.8" layer="25" font="vector" ratio="15" align="center"/>
+<attribute name="LCSC_PART" value="C45783" x="54.2" y="8.85" size="1" layer="27" font="vector" ratio="15" rot="R180" align="center" display="off"/>
 </element>
 <element name="D5" library="BSB-LAN" package="SMA" value="6V" x="61.6" y="3.5" smashed="yes" rot="R270">
 <attribute name="NAME" x="64.175" y="5.1" size="0.8" layer="25" font="vector" ratio="15" rot="R270" align="center"/>
@@ -2683,6 +2670,11 @@ For a 50R Single Ended on the inner layers, use a trace width of 0.22mm (51.68 O
 <attribute name="LCSC_PART" value="C414564" x="61.4" y="18.2" size="1" layer="27" font="vector" ratio="15" rot="R270" display="off"/>
 <attribute name="NAME" x="63.305" y="18.2" size="0.8" layer="25" font="vector" ratio="15" rot="R270" align="center"/>
 </element>
+<element name="R51" library="BSB-LAN" package="R0402" value="220R" x="64.35" y="19.35" smashed="yes" rot="R90">
+<attribute name="LCSC_PART" value="C25091" x="64.35" y="19.35" size="1" layer="27" font="vector" ratio="15" rot="R90" display="off"/>
+<attribute name="NAME" x="65.4" y="19.4" size="0.8" layer="25" font="vector" ratio="15" rot="R90" align="center"/>
+<attribute name="VALUE" x="65.35" y="19.35" size="0.8" layer="27" font="vector" ratio="15" rot="R90" align="center"/>
+</element>
 </elements>
 <signals>
 <signal name="BSB+" class="3">
@@ -2695,19 +2687,19 @@ For a 50R Single Ended on the inner layers, use a trace width of 0.22mm (51.68 O
 <wire x1="10.2" y1="46.65" x2="11.8" y2="45.05" width="0.3" layer="1"/>
 <wire x1="11.8" y1="45.05" x2="11.8" y2="45.7" width="0.3" layer="1"/>
 <wire x1="11.8" y1="45.7" x2="15.1" y2="45.7" width="0.3" layer="1"/>
-<wire x1="15.1" y1="45.8" x2="15.1" y2="45.7" width="0.3" layer="1"/>
-<wire x1="15.1" y1="45.8" x2="15.1" y2="46.7" width="0.3" layer="1"/>
-<wire x1="15.1" y1="46.7" x2="16.4" y2="48" width="0.3" layer="1"/>
-<wire x1="16.4" y1="48" x2="20.4" y2="48" width="0.3" layer="1"/>
-<wire x1="20.4" y1="48" x2="21.4" y2="49" width="0.3" layer="1"/>
+<wire x1="15.1" y1="46.2" x2="15.1" y2="45.7" width="0.3" layer="1"/>
+<wire x1="15.1" y1="46.2" x2="15.1" y2="46.7" width="0.3" layer="1"/>
+<wire x1="15.1" y1="46.7" x2="16.6" y2="48.2" width="0.3" layer="1"/>
+<wire x1="16.6" y1="48.2" x2="20.6" y2="48.2" width="0.3" layer="1"/>
+<wire x1="20.6" y1="48.2" x2="21.4" y2="49" width="0.3" layer="1"/>
 <wire x1="21.4" y1="49" x2="24" y2="49" width="0.3" layer="1"/>
 <wire x1="24" y1="49" x2="24.2" y2="48.8" width="0.3" layer="1"/>
 <wire x1="24.2" y1="48.8" x2="24.2" y2="45" width="0.3" layer="1"/>
 <wire x1="24.2" y1="45" x2="24.2" y2="40.8" width="0.3" layer="1"/>
 <wire x1="24.2" y1="40.8" x2="23.6" y2="40.2" width="0.3" layer="1"/>
-<wire x1="23.6" y1="40.2" x2="22" y2="40.2" width="0.3" layer="1"/>
-<wire x1="22" y1="40.2" x2="20.55" y2="38.75" width="0.3" layer="1"/>
-<wire x1="20.55" y1="37.9" x2="20.55" y2="38.75" width="0.3" layer="1"/>
+<wire x1="23.6" y1="40.2" x2="22.4" y2="40.2" width="0.3" layer="1"/>
+<wire x1="22.4" y1="40.2" x2="20.55" y2="38.35" width="0.3" layer="1"/>
+<wire x1="20.55" y1="37.4" x2="20.55" y2="38.35" width="0.3" layer="1"/>
 <wire x1="22.7" y1="45" x2="24.2" y2="45" width="0.3" layer="1"/>
 </signal>
 <signal name="BSB-" class="3">
@@ -2718,18 +2710,18 @@ For a 50R Single Ended on the inner layers, use a trace width of 0.22mm (51.68 O
 <wire x1="5.9" y1="34.9" x2="16.2" y2="34.9" width="0.3" layer="1"/>
 <wire x1="16.2" y1="34.9" x2="16.75" y2="35.45" width="0.3" layer="1"/>
 <wire x1="16.75" y1="35.45" x2="16.75" y2="36.6" width="0.3" layer="1"/>
-<wire x1="17.2" y1="46.75" x2="18.95" y2="46.75" width="0.3" layer="1"/>
-<wire x1="16.75" y1="36.6" x2="16.75" y2="37.85" width="0.3" layer="1"/>
-<wire x1="16.75" y1="37.85" x2="15" y2="39.6" width="0.3" layer="1"/>
-<wire x1="15" y1="39.6" x2="15" y2="43.8" width="0.3" layer="1"/>
-<wire x1="15" y1="43.8" x2="16.15" y2="44.95" width="0.3" layer="1"/>
-<wire x1="16.15" y1="44.95" x2="16.15" y2="45.7" width="0.3" layer="1"/>
-<wire x1="16.15" y1="45.7" x2="17.2" y2="46.75" width="0.3" layer="1"/>
+<wire x1="17.2" y1="47.15" x2="18.95" y2="47.15" width="0.3" layer="1"/>
+<wire x1="16.75" y1="36.6" x2="16.75" y2="37.45" width="0.3" layer="1"/>
+<wire x1="16.75" y1="37.45" x2="14.6" y2="39.6" width="0.3" layer="1"/>
+<wire x1="14.6" y1="39.6" x2="14.6" y2="43" width="0.3" layer="1"/>
+<wire x1="14.6" y1="43" x2="16.15" y2="44.55" width="0.3" layer="1"/>
+<wire x1="16.15" y1="44.55" x2="16.15" y2="46.1" width="0.3" layer="1"/>
+<wire x1="16.15" y1="46.1" x2="17.2" y2="47.15" width="0.3" layer="1"/>
 </signal>
 <signal name="BSB-TX-B" class="3">
 <contactref element="OK2" pad="6"/>
 <contactref element="R1" pad="2"/>
-<wire x1="20.65" y1="44.85" x2="20.65" y2="43.75" width="0.3" layer="1"/>
+<wire x1="20.65" y1="45.25" x2="20.65" y2="43.75" width="0.3" layer="1"/>
 <wire x1="20.65" y1="43.75" x2="21.2" y2="43.2" width="0.3" layer="1"/>
 <wire x1="22.7" y1="42.46" x2="22.7" y2="43.2" width="0.3" layer="1"/>
 <wire x1="22.7" y1="43.2" x2="21.2" y2="43.2" width="0.3" layer="1"/>
@@ -2739,15 +2731,15 @@ For a 50R Single Ended on the inner layers, use a trace width of 0.22mm (51.68 O
 <contactref element="R1" pad="1"/>
 <contactref element="Q1" pad="1"/>
 <contactref element="R7" pad="2"/>
-<wire x1="18.95" y1="44.85" x2="18.95" y2="45.35" width="0.3" layer="1"/>
-<wire x1="18.95" y1="45.35" x2="19.4" y2="45.8" width="0.3" layer="1"/>
-<wire x1="20.65" y1="46.75" x2="20.65" y2="46.25" width="0.3" layer="1"/>
-<wire x1="20.65" y1="46.25" x2="20.2" y2="45.8" width="0.3" layer="1"/>
-<wire x1="20.2" y1="45.8" x2="19.4" y2="45.8" width="0.3" layer="1"/>
+<wire x1="18.95" y1="45.25" x2="18.95" y2="45.75" width="0.3" layer="1"/>
+<wire x1="18.95" y1="45.75" x2="19.4" y2="46.2" width="0.3" layer="1"/>
+<wire x1="20.65" y1="47.15" x2="20.65" y2="46.65" width="0.3" layer="1"/>
+<wire x1="20.65" y1="46.65" x2="20.2" y2="46.2" width="0.3" layer="1"/>
+<wire x1="20.2" y1="46.2" x2="19.4" y2="46.2" width="0.3" layer="1"/>
 <wire x1="22.7" y1="47.54" x2="22.7" y2="47" width="0.3" layer="1"/>
 <wire x1="22.7" y1="47" x2="20.65" y2="47" width="0.3" layer="1"/>
-<wire x1="20.65" y1="46.75" x2="20.65" y2="47" width="0.3" layer="1"/>
-<wire x1="17.2" y1="44.85" x2="18.95" y2="44.85" width="0.3" layer="1"/>
+<wire x1="20.65" y1="47.15" x2="20.65" y2="47" width="0.3" layer="1"/>
+<wire x1="17.2" y1="45.25" x2="18.95" y2="45.25" width="0.3" layer="1"/>
 </signal>
 <signal name="TXD-C" class="4">
 <contactref element="R3" pad="1"/>
@@ -2885,15 +2877,12 @@ For a 50R Single Ended on the inner layers, use a trace width of 0.22mm (51.68 O
 <via x="49" y="10.6" extent="1-16" drill="0.3"/>
 <via x="49" y="8" extent="1-16" drill="0.3"/>
 <via x="49.4" y="5.4" extent="1-16" drill="0.3"/>
-<via x="51.6" y="3.2" extent="1-16" drill="0.3"/>
-<via x="53.8" y="3.2" extent="1-16" drill="0.3"/>
-<via x="53.8" y="4" extent="1-16" drill="0.3"/>
-<via x="53.8" y="4.8" extent="1-16" drill="0.3"/>
-<via x="51.6" y="4.8" extent="1-16" drill="0.3"/>
-<via x="51.6" y="4" extent="1-16" drill="0.3"/>
-<via x="53.8" y="8" extent="1-16" drill="0.3"/>
+<via x="49.2" y="1" extent="1-16" drill="0.3"/>
+<via x="52.2" y="1" extent="1-16" drill="0.3"/>
+<via x="49.4" y="3" extent="1-16" drill="0.3"/>
+<via x="53.4" y="8" extent="1-16" drill="0.3"/>
 <via x="57.6" y="8" extent="1-16" drill="0.3"/>
-<via x="56.2" y="0.8" extent="1-16" drill="0.3"/>
+<via x="56" y="1" extent="1-16" drill="0.3"/>
 <via x="59.2" y="7" extent="1-16" drill="0.3"/>
 <via x="58" y="4.1" extent="1-16" drill="0.3"/>
 <via x="13.15" y="22.65" extent="1-16" drill="0.3"/>
@@ -2955,7 +2944,7 @@ For a 50R Single Ended on the inner layers, use a trace width of 0.22mm (51.68 O
 <via x="58.7" y="20.6" extent="1-16" drill="0.3"/>
 <via x="63" y="27.8" extent="1-16" drill="0.3"/>
 <via x="59.4" y="30.2" extent="1-16" drill="0.3"/>
-<via x="63.35" y="17.15" extent="1-16" drill="0.3"/>
+<via x="66.6" y="17.3" extent="1-16" drill="0.3"/>
 <via x="39.15" y="42.75" extent="1-16" drill="0.3"/>
 <via x="46.55" y="45" extent="1-16" drill="0.3"/>
 <via x="41.2" y="43.4" extent="1-16" drill="0.3"/>
@@ -3130,19 +3119,19 @@ For a 50R Single Ended on the inner layers, use a trace width of 0.22mm (51.68 O
 <via x="76.95" y="4.85" extent="1-16" drill="0.3"/>
 <via x="74.55" y="5.8" extent="1-16" drill="0.3"/>
 <via x="54.85" y="22.1" extent="1-16" drill="0.3"/>
-<via x="60.45" y="8.05" extent="1-16" drill="0.3"/>
+<via x="60.05" y="8.05" extent="1-16" drill="0.3"/>
 <via x="61.3" y="10.95" extent="1-16" drill="0.3"/>
-<via x="65.45" y="10.05" extent="1-16" drill="0.3"/>
-<via x="65.45" y="9.25" extent="1-16" drill="0.3"/>
+<via x="65.05" y="10.05" extent="1-16" drill="0.3"/>
+<via x="65.05" y="9.25" extent="1-16" drill="0.3"/>
 <via x="68.05" y="12.45" extent="1-16" drill="0.3"/>
 <via x="68.85" y="12.45" extent="1-16" drill="0.3"/>
 <via x="69.25" y="13.05" extent="1-16" drill="0.3"/>
 <via x="69.25" y="13.85" extent="1-16" drill="0.3"/>
 <via x="68.05" y="14.45" extent="1-16" drill="0.3"/>
 <via x="68.85" y="14.45" extent="1-16" drill="0.3"/>
-<via x="66.25" y="10.05" extent="1-16" drill="0.3"/>
-<via x="63.15" y="10.95" extent="1-16" drill="0.3"/>
-<via x="65.45" y="10.85" extent="1-16" drill="0.3"/>
+<via x="65.85" y="10.05" extent="1-16" drill="0.3"/>
+<via x="62.75" y="10.95" extent="1-16" drill="0.3"/>
+<via x="65.05" y="10.85" extent="1-16" drill="0.3"/>
 <via x="66.15" y="11.9" extent="1-16" drill="0.3"/>
 <via x="72.85" y="6.05" extent="1-16" drill="0.3"/>
 <via x="73.65" y="6.05" extent="1-16" drill="0.3"/>
@@ -3154,8 +3143,8 @@ For a 50R Single Ended on the inner layers, use a trace width of 0.22mm (51.68 O
 <via x="63" y="0.8" extent="1-16" drill="0.3"/>
 <via x="60.2" y="2.4" extent="1-16" drill="0.3"/>
 <via x="60.2" y="1.6" extent="1-16" drill="0.3"/>
-<via x="53.8" y="9.8" extent="1-16" drill="0.3"/>
-<via x="52.8" y="8.8" extent="1-16" drill="0.3"/>
+<via x="53.4" y="9.8" extent="1-16" drill="0.3"/>
+<via x="52.4" y="8.8" extent="1-16" drill="0.3"/>
 <via x="63.15" y="6.35" extent="1-16" drill="0.3"/>
 <via x="65" y="4.4" extent="1-16" drill="0.3"/>
 <via x="67.4" y="3.8" extent="1-16" drill="0.3"/>
@@ -3195,9 +3184,9 @@ For a 50R Single Ended on the inner layers, use a trace width of 0.22mm (51.68 O
 <via x="77.1" y="30.1" extent="1-16" drill="0.3"/>
 <via x="79.7" y="30.9" extent="1-16" drill="0.3"/>
 <via x="73.7" y="26.7" extent="1-16" drill="0.3"/>
-<via x="68.8" y="23.4" extent="1-16" drill="0.3"/>
-<via x="68.8" y="26" extent="1-16" drill="0.3"/>
-<via x="65.5" y="22.9" extent="1-16" drill="0.3"/>
+<via x="68.8" y="23.8" extent="1-16" drill="0.3"/>
+<via x="68.8" y="26.4" extent="1-16" drill="0.3"/>
+<via x="65.3" y="22.9" extent="1-16" drill="0.3"/>
 <via x="83" y="31.55" extent="1-16" drill="0.3"/>
 <via x="75.8" y="36.05" extent="1-16" drill="0.3"/>
 <via x="71" y="37.45" extent="1-16" drill="0.3"/>
@@ -3321,6 +3310,8 @@ For a 50R Single Ended on the inner layers, use a trace width of 0.22mm (51.68 O
 <via x="52.5" y="29" extent="1-16" drill="0.3"/>
 <via x="50.9" y="26.6" extent="1-16" drill="0.3"/>
 <contactref element="C3" pad="2"/>
+<via x="63.15" y="17" extent="1-16" drill="0.3"/>
+<via x="65.85" y="10.85" extent="1-16" drill="0.3"/>
 </signal>
 <signal name="BSB-TXD" class="4">
 <contactref element="R6" pad="2"/>
@@ -3329,9 +3320,10 @@ For a 50R Single Ended on the inner layers, use a trace width of 0.22mm (51.68 O
 <wire x1="70.07" y1="16" x2="70.07" y2="15.02" width="0.2" layer="1"/>
 <wire x1="70.07" y1="15.02" x2="70" y2="14.95" width="0.2" layer="1"/>
 <via x="70" y="14.95" extent="1-16" drill="0.3"/>
-<wire x1="70" y1="14.95" x2="70" y2="16" width="0.2" layer="16"/>
-<wire x1="70" y1="16" x2="69.6" y2="16.4" width="0.2" layer="16"/>
-<wire x1="69.6" y1="16.4" x2="61.2" y2="16.4" width="0.2" layer="16"/>
+<wire x1="70" y1="14.95" x2="69.85" y2="15.1" width="0.2" layer="16"/>
+<wire x1="69.85" y1="15.1" x2="66.1" y2="15.1" width="0.2" layer="16"/>
+<wire x1="66.1" y1="15.1" x2="64.8" y2="16.4" width="0.2" layer="16"/>
+<wire x1="64.8" y1="16.4" x2="61.2" y2="16.4" width="0.2" layer="16"/>
 <wire x1="61.2" y1="16.4" x2="57.8" y2="19.8" width="0.2" layer="16"/>
 <wire x1="57.8" y1="19.8" x2="57.8" y2="24" width="0.2" layer="16"/>
 <wire x1="57.8" y1="24" x2="56.8" y2="25" width="0.2" layer="16"/>
@@ -3405,16 +3397,15 @@ For a 50R Single Ended on the inner layers, use a trace width of 0.22mm (51.68 O
 <wire x1="4.4" y1="34.4" x2="4.8" y2="34" width="0.3" layer="1"/>
 <wire x1="4.8" y1="34" x2="6.75" y2="34" width="0.3" layer="1"/>
 <wire x1="6.75" y1="34" x2="7.05" y2="34.3" width="0.3" layer="1"/>
-<wire x1="7.05" y1="34.3" x2="16.5" y2="34.3" width="0.3" layer="1"/>
-<wire x1="16.5" y1="34.3" x2="17.4" y2="35.2" width="0.3" layer="1"/>
-<wire x1="17.4" y1="35.2" x2="22.7" y2="35.2" width="0.3" layer="1"/>
+<wire x1="7.05" y1="34.3" x2="21.1" y2="34.3" width="0.3" layer="1"/>
+<wire x1="21.1" y1="34.3" x2="22" y2="35.2" width="0.3" layer="1"/>
+<wire x1="22" y1="35.2" x2="22.7" y2="35.2" width="0.3" layer="1"/>
 </signal>
 <signal name="BSB-RX-A" class="3">
 <contactref element="OK1" pad="1"/>
 <contactref element="R2" pad="2"/>
-<wire x1="20.55" y1="36.2" x2="21.15" y2="36.8" width="0.3" layer="1"/>
-<wire x1="22.7" y1="37.74" x2="21.76" y2="36.8" width="0.3" layer="1"/>
-<wire x1="21.76" y1="36.8" x2="21.15" y2="36.8" width="0.3" layer="1"/>
+<wire x1="22.7" y1="37.74" x2="20.66" y2="35.7" width="0.3" layer="1"/>
+<wire x1="20.66" y1="35.7" x2="20.55" y2="35.7" width="0.3" layer="1"/>
 </signal>
 <signal name="TVS-BSB-" class="3">
 <contactref element="D2" pad="C"/>
@@ -3455,9 +3446,15 @@ For a 50R Single Ended on the inner layers, use a trace width of 0.22mm (51.68 O
 <wire x1="56.8" y1="14.8" x2="57.4" y2="15.4" width="0.2" layer="1"/>
 <wire x1="57.4" y1="15.4" x2="57.4" y2="17.4" width="0.2" layer="1"/>
 <wire x1="61.4" y1="19.8" x2="61.6" y2="20" width="0.2" layer="1"/>
-<wire x1="61.6" y1="20" x2="64" y2="20" width="0.2" layer="1"/>
-<wire x1="64" y1="20" x2="66" y2="18" width="0.2" layer="1"/>
-<wire x1="66" y1="18" x2="70.6" y2="18" width="0.2" layer="1"/>
+<wire x1="61.6" y1="20" x2="63" y2="20" width="0.2" layer="1"/>
+<wire x1="63" y1="20" x2="63.2" y2="19.8" width="0.2" layer="1"/>
+<wire x1="63.2" y1="19.8" x2="63.2" y2="17.8" width="0.2" layer="1"/>
+<wire x1="63.2" y1="17.8" x2="64.4" y2="16.6" width="0.2" layer="1"/>
+<wire x1="64.4" y1="16.6" x2="65.4" y2="16.6" width="0.2" layer="1"/>
+<wire x1="65.4" y1="16.6" x2="65.95" y2="17.15" width="0.2" layer="1"/>
+<wire x1="65.95" y1="17.15" x2="65.95" y2="17.55" width="0.2" layer="1"/>
+<wire x1="65.95" y1="17.55" x2="66.4" y2="18" width="0.2" layer="1"/>
+<wire x1="66.4" y1="18" x2="70.6" y2="18" width="0.2" layer="1"/>
 <wire x1="70.6" y1="18" x2="71.34" y2="17.26" width="0.2" layer="1"/>
 <contactref element="RN4" pad="2"/>
 <wire x1="61.4" y1="19.8" x2="61.4" y2="18.8" width="0.2" layer="1"/>
@@ -3493,10 +3490,9 @@ For a 50R Single Ended on the inner layers, use a trace width of 0.22mm (51.68 O
 <wire x1="57.26" y1="18.46" x2="58.2" y2="19.4" width="0.2" layer="1"/>
 <wire x1="58.2" y1="19.4" x2="59.4" y2="19.4" width="0.2" layer="1"/>
 <wire x1="59.4" y1="19.4" x2="60.8" y2="20.8" width="0.2" layer="1"/>
-<wire x1="60.8" y1="20.8" x2="64.4" y2="20.8" width="0.2" layer="1"/>
-<wire x1="64.4" y1="20.8" x2="64.95" y2="20.25" width="0.2" layer="1"/>
-<wire x1="65.4" y1="20.8" x2="65.4" y2="20.7" width="0.2" layer="1"/>
-<wire x1="65.4" y1="20.7" x2="64.95" y2="20.25" width="0.2" layer="1"/>
+<wire x1="60.8" y1="20.8" x2="63.4" y2="20.8" width="0.2" layer="1"/>
+<wire x1="63.4" y1="20.8" x2="64.35" y2="19.85" width="0.2" layer="1"/>
+<wire x1="64.35" y1="19.85" x2="65.05" y2="19.85" width="0.2" layer="1"/>
 <wire x1="65.9" y1="42.4" x2="65.65" y2="42.4" width="0.2" layer="1"/>
 <wire x1="65.65" y1="42.4" x2="65.65" y2="41" width="0.2" layer="1"/>
 <wire x1="65.65" y1="41" x2="66.2" y2="41" width="0.2" layer="1"/>
@@ -3506,12 +3502,13 @@ For a 50R Single Ended on the inner layers, use a trace width of 0.22mm (51.68 O
 <wire x1="66.8" y1="39.6" x2="67.6" y2="39.6" width="0.2" layer="1"/>
 <wire x1="67.6" y1="39.6" x2="67.8" y2="39.4" width="0.2" layer="1"/>
 <wire x1="67.8" y1="39.4" x2="67.8" y2="38.2" width="0.2" layer="1"/>
-<via x="65.4" y="20.8" extent="1-16" drill="0.3"/>
-<wire x1="65.4" y1="20.8" x2="65.4" y2="21" width="0.2" layer="16"/>
-<wire x1="67.3" y1="19.285" x2="65.915" y2="19.285" width="0.2" layer="1"/>
-<wire x1="65.915" y1="19.285" x2="64.95" y2="20.25" width="0.2" layer="1"/>
-<wire x1="65.4" y1="21" x2="71" y2="26.6" width="0.2" layer="16"/>
-<wire x1="71" y1="26.6" x2="72.6" y2="26.6" width="0.2" layer="16"/>
+<via x="65.05" y="21.2" extent="1-16" drill="0.3"/>
+<wire x1="65.05" y1="21.2" x2="65.2" y2="21.2" width="0.2" layer="16"/>
+<wire x1="67.3" y1="19.285" x2="65.615" y2="19.285" width="0.2" layer="1"/>
+<wire x1="65.615" y1="19.285" x2="65.05" y2="19.85" width="0.2" layer="1"/>
+<wire x1="65.05" y1="19.85" x2="65.05" y2="21.2" width="0.2" layer="1"/>
+<wire x1="65.2" y1="21.2" x2="70.6" y2="26.6" width="0.2" layer="16"/>
+<wire x1="70.6" y1="26.6" x2="72.6" y2="26.6" width="0.2" layer="16"/>
 <wire x1="72.6" y1="26.6" x2="76.8" y2="30.8" width="0.2" layer="16"/>
 <wire x1="76.8" y1="30.8" x2="78.6" y2="30.8" width="0.2" layer="16"/>
 <wire x1="78.6" y1="30.8" x2="79.2" y2="31.4" width="0.2" layer="16"/>
@@ -3523,6 +3520,7 @@ For a 50R Single Ended on the inner layers, use a trace width of 0.22mm (51.68 O
 <wire x1="69.2" y1="36.8" x2="68" y2="38" width="0.2" layer="16"/>
 <via x="68" y="38" extent="1-16" drill="0.3"/>
 <wire x1="68" y1="38" x2="67.8" y2="38.2" width="0.2" layer="1"/>
+<contactref element="R51" pad="2"/>
 </signal>
 <signal name="ESP-SD-CLK" class="4">
 <contactref element="UEXT" pad="9"/>
@@ -3566,8 +3564,14 @@ For a 50R Single Ended on the inner layers, use a trace width of 0.22mm (51.68 O
 <wire x1="60" y1="19.4" x2="60.6" y2="19.4" width="0.2" layer="1"/>
 <wire x1="60.6" y1="19.4" x2="60.6" y2="20" width="0.2" layer="1"/>
 <wire x1="60.6" y1="20" x2="61" y2="20.4" width="0.2" layer="1"/>
-<wire x1="61" y1="20.4" x2="64.2" y2="20.4" width="0.2" layer="1"/>
-<wire x1="64.2" y1="20.4" x2="66.2" y2="18.4" width="0.2" layer="1"/>
+<wire x1="61" y1="20.4" x2="63.2" y2="20.4" width="0.2" layer="1"/>
+<wire x1="63.2" y1="20.4" x2="63.6" y2="20" width="0.2" layer="1"/>
+<wire x1="63.6" y1="20" x2="63.6" y2="18" width="0.2" layer="1"/>
+<wire x1="63.6" y1="18" x2="64.6" y2="17" width="0.2" layer="1"/>
+<wire x1="64.6" y1="17" x2="65.2" y2="17" width="0.2" layer="1"/>
+<wire x1="65.2" y1="17" x2="65.55" y2="17.35" width="0.2" layer="1"/>
+<wire x1="65.55" y1="17.35" x2="65.55" y2="17.75" width="0.2" layer="1"/>
+<wire x1="65.55" y1="17.75" x2="66.2" y2="18.4" width="0.2" layer="1"/>
 <wire x1="66.2" y1="18.4" x2="72.2" y2="18.4" width="0.2" layer="1"/>
 <wire x1="72.2" y1="18.4" x2="73.88" y2="16.72" width="0.2" layer="1"/>
 <wire x1="73.88" y1="16.72" x2="73.88" y2="16" width="0.2" layer="1"/>
@@ -4315,8 +4319,10 @@ For a 50R Single Ended on the inner layers, use a trace width of 0.22mm (51.68 O
 <wire x1="72.61" y1="16.99" x2="72" y2="17.6" width="0.2" layer="1"/>
 <via x="72" y="17.6" extent="1-16" drill="0.3"/>
 <wire x1="72" y1="17.6" x2="71.8" y2="17.8" width="0.2" layer="16"/>
-<wire x1="71.8" y1="17.8" x2="62.6" y2="17.8" width="0.2" layer="16"/>
-<wire x1="62.6" y1="17.8" x2="59" y2="21.4" width="0.2" layer="16"/>
+<wire x1="71.8" y1="17.8" x2="67.2" y2="17.8" width="0.2" layer="16"/>
+<wire x1="67.2" y1="17.8" x2="66.8" y2="18.2" width="0.2" layer="16"/>
+<wire x1="66.8" y1="18.2" x2="62.2" y2="18.2" width="0.2" layer="16"/>
+<wire x1="62.2" y1="18.2" x2="59" y2="21.4" width="0.2" layer="16"/>
 <wire x1="59" y1="21.4" x2="59" y2="25" width="0.2" layer="16"/>
 <wire x1="59" y1="25" x2="56.8" y2="27.2" width="0.2" layer="16"/>
 <wire x1="56.8" y1="27.2" x2="56.8" y2="29.6" width="0.2" layer="16"/>
@@ -4337,8 +4343,10 @@ For a 50R Single Ended on the inner layers, use a trace width of 0.22mm (51.68 O
 <wire x1="75.95" y1="17.45" x2="75.8" y2="17.6" width="0.2" layer="16"/>
 <wire x1="75.8" y1="17.6" x2="75.8" y2="18" width="0.2" layer="16"/>
 <wire x1="75.8" y1="18" x2="75.2" y2="18.6" width="0.2" layer="16"/>
-<wire x1="75.2" y1="18.6" x2="63" y2="18.6" width="0.2" layer="16"/>
-<wire x1="63" y1="18.6" x2="59.8" y2="21.8" width="0.2" layer="16"/>
+<wire x1="75.2" y1="18.6" x2="67.6" y2="18.6" width="0.2" layer="16"/>
+<wire x1="67.6" y1="18.6" x2="67.2" y2="19" width="0.2" layer="16"/>
+<wire x1="67.2" y1="19" x2="62.6" y2="19" width="0.2" layer="16"/>
+<wire x1="62.6" y1="19" x2="59.8" y2="21.8" width="0.2" layer="16"/>
 <wire x1="59.8" y1="21.8" x2="59.8" y2="25.4" width="0.2" layer="16"/>
 <wire x1="59.8" y1="25.4" x2="57.6" y2="27.6" width="0.2" layer="16"/>
 <wire x1="57.6" y1="27.6" x2="57.6" y2="30" width="0.2" layer="16"/>
@@ -4360,8 +4368,10 @@ For a 50R Single Ended on the inner layers, use a trace width of 0.22mm (51.68 O
 <wire x1="82.77" y1="16" x2="82.77" y2="16.73" width="0.2" layer="1"/>
 <wire x1="82.77" y1="16.73" x2="81.9" y2="17.6" width="0.2" layer="1"/>
 <via x="81.9" y="17.6" extent="1-16" drill="0.3"/>
-<wire x1="75" y1="18.2" x2="62.8" y2="18.2" width="0.2" layer="16"/>
-<wire x1="62.8" y1="18.2" x2="59.4" y2="21.6" width="0.2" layer="16"/>
+<wire x1="75" y1="18.2" x2="67.4" y2="18.2" width="0.2" layer="16"/>
+<wire x1="67.4" y1="18.2" x2="67" y2="18.6" width="0.2" layer="16"/>
+<wire x1="67" y1="18.6" x2="62.4" y2="18.6" width="0.2" layer="16"/>
+<wire x1="62.4" y1="18.6" x2="59.4" y2="21.6" width="0.2" layer="16"/>
 <wire x1="59.4" y1="21.6" x2="59.4" y2="25.2" width="0.2" layer="16"/>
 <wire x1="59.4" y1="25.2" x2="57.2" y2="27.4" width="0.2" layer="16"/>
 <wire x1="57.2" y1="27.4" x2="57.2" y2="29.8" width="0.2" layer="16"/>
@@ -4391,8 +4401,10 @@ For a 50R Single Ended on the inner layers, use a trace width of 0.22mm (51.68 O
 <wire x1="78.3" y1="17.5" x2="77.7" y2="18.1" width="0.2" layer="16"/>
 <wire x1="77.7" y1="18.1" x2="76.3" y2="18.1" width="0.2" layer="16"/>
 <wire x1="76.3" y1="18.1" x2="75.4" y2="19" width="0.2" layer="16"/>
-<wire x1="75.4" y1="19" x2="63.2" y2="19" width="0.2" layer="16"/>
-<wire x1="63.2" y1="19" x2="60.2" y2="22" width="0.2" layer="16"/>
+<wire x1="75.4" y1="19" x2="67.8" y2="19" width="0.2" layer="16"/>
+<wire x1="67.8" y1="19" x2="67.4" y2="19.4" width="0.2" layer="16"/>
+<wire x1="67.4" y1="19.4" x2="62.8" y2="19.4" width="0.2" layer="16"/>
+<wire x1="62.8" y1="19.4" x2="60.2" y2="22" width="0.2" layer="16"/>
 <wire x1="60.2" y1="22" x2="60.2" y2="25.6" width="0.2" layer="16"/>
 <wire x1="60.2" y1="25.6" x2="58" y2="27.8" width="0.2" layer="16"/>
 <wire x1="58" y1="27.8" x2="58" y2="30.2" width="0.2" layer="16"/>
@@ -4546,8 +4558,10 @@ For a 50R Single Ended on the inner layers, use a trace width of 0.22mm (51.68 O
 <wire x1="74.75" y1="18.25" x2="73" y2="20" width="0.2" layer="2"/>
 <wire x1="73" y1="20" x2="72.8" y2="19.8" width="0.2" layer="16"/>
 <via x="73" y="20" extent="1-16" drill="0.3"/>
-<wire x1="72.8" y1="19.8" x2="63.6" y2="19.8" width="0.2" layer="16"/>
-<wire x1="63.6" y1="19.8" x2="61" y2="22.4" width="0.2" layer="16"/>
+<wire x1="72.8" y1="19.8" x2="68.2" y2="19.8" width="0.2" layer="16"/>
+<wire x1="68.2" y1="19.8" x2="67.8" y2="20.2" width="0.2" layer="16"/>
+<wire x1="67.8" y1="20.2" x2="63.2" y2="20.2" width="0.2" layer="16"/>
+<wire x1="63.2" y1="20.2" x2="61" y2="22.4" width="0.2" layer="16"/>
 <wire x1="61" y1="22.4" x2="61" y2="26" width="0.2" layer="16"/>
 <wire x1="61" y1="26" x2="58.8" y2="28.2" width="0.2" layer="16"/>
 <wire x1="58.8" y1="28.2" x2="58.8" y2="30.6" width="0.2" layer="16"/>
@@ -4578,8 +4592,10 @@ For a 50R Single Ended on the inner layers, use a trace width of 0.22mm (51.68 O
 <wire x1="78.25" y1="18.15" x2="77.9" y2="18.5" width="0.2" layer="16"/>
 <wire x1="77.9" y1="18.5" x2="76.5" y2="18.5" width="0.2" layer="16"/>
 <wire x1="76.5" y1="18.5" x2="75.6" y2="19.4" width="0.2" layer="16"/>
-<wire x1="75.6" y1="19.4" x2="63.4" y2="19.4" width="0.2" layer="16"/>
-<wire x1="63.4" y1="19.4" x2="60.6" y2="22.2" width="0.2" layer="16"/>
+<wire x1="75.6" y1="19.4" x2="68" y2="19.4" width="0.2" layer="16"/>
+<wire x1="68" y1="19.4" x2="67.6" y2="19.8" width="0.2" layer="16"/>
+<wire x1="67.6" y1="19.8" x2="63" y2="19.8" width="0.2" layer="16"/>
+<wire x1="63" y1="19.8" x2="60.6" y2="22.2" width="0.2" layer="16"/>
 <wire x1="60.6" y1="22.2" x2="60.6" y2="25.8" width="0.2" layer="16"/>
 <wire x1="60.6" y1="25.8" x2="58.4" y2="28" width="0.2" layer="16"/>
 <wire x1="58.4" y1="28" x2="58.4" y2="30.4" width="0.2" layer="16"/>
@@ -4900,15 +4916,16 @@ For a 50R Single Ended on the inner layers, use a trace width of 0.22mm (51.68 O
 <wire x1="64.2" y1="40.6" x2="64.2" y2="38.8" width="0.2" layer="1"/>
 <wire x1="64.2" y1="38.8" x2="65.4" y2="37.6" width="0.2" layer="1"/>
 <wire x1="65.4" y1="37.6" x2="65.6" y2="37.6" width="0.2" layer="1"/>
-<wire x1="67.3" y1="20.555" x2="66.445" y2="20.555" width="0.2" layer="1"/>
-<wire x1="66.445" y1="20.555" x2="65.6" y2="21.4" width="0.2" layer="1"/>
-<wire x1="65.6" y1="21.4" x2="65" y2="21.4" width="0.2" layer="1"/>
-<wire x1="65" y1="21.4" x2="64.8" y2="21.2" width="0.2" layer="1"/>
-<via x="64.8" y="21.2" extent="1-16" drill="0.3"/>
-<wire x1="64.8" y1="21.2" x2="65" y2="21.2" width="0.2" layer="16"/>
-<wire x1="64.8" y1="21.2" x2="60.6" y2="21.2" width="0.2" layer="1"/>
-<wire x1="65" y1="21.2" x2="70.8" y2="27" width="0.2" layer="16"/>
-<wire x1="70.8" y1="27" x2="72.4" y2="27" width="0.2" layer="16"/>
+<wire x1="67.3" y1="20.555" x2="66.545" y2="20.555" width="0.2" layer="1"/>
+<wire x1="66.545" y1="20.555" x2="65.3" y2="21.8" width="0.2" layer="1"/>
+<wire x1="65.3" y1="21.8" x2="64.8" y2="21.8" width="0.2" layer="1"/>
+<wire x1="64.8" y1="21.8" x2="64.2" y2="21.2" width="0.2" layer="1"/>
+<via x="64.2" y="21.2" extent="1-16" drill="0.3"/>
+<wire x1="64.2" y1="21.2" x2="65" y2="22" width="0.2" layer="16"/>
+<wire x1="65" y1="22" x2="65.4" y2="22" width="0.2" layer="16"/>
+<wire x1="64.2" y1="21.2" x2="60.6" y2="21.2" width="0.2" layer="1"/>
+<wire x1="65.4" y1="22" x2="70.4" y2="27" width="0.2" layer="16"/>
+<wire x1="70.4" y1="27" x2="72.4" y2="27" width="0.2" layer="16"/>
 <wire x1="72.4" y1="27" x2="76.6" y2="31.2" width="0.2" layer="16"/>
 <wire x1="76.6" y1="31.2" x2="78.4" y2="31.2" width="0.2" layer="16"/>
 <wire x1="78.4" y1="31.2" x2="78.8" y2="31.6" width="0.2" layer="16"/>
@@ -5004,9 +5021,9 @@ For a 50R Single Ended on the inner layers, use a trace width of 0.22mm (51.68 O
 <vertex x="46.2" y="11.4"/>
 <vertex x="43.2" y="11.4"/>
 <vertex x="42.3" y="10.6"/>
-<vertex x="42.3" y="6.2"/>
-<vertex x="41.75" y="5.65"/>
-<vertex x="40.75" y="5.65"/>
+<vertex x="42.3" y="6"/>
+<vertex x="41.75" y="5.45"/>
+<vertex x="40.95" y="5.45"/>
 <vertex x="40.2" y="6.2"/>
 <vertex x="40.2" y="12.6"/>
 <vertex x="39.95" y="12.6"/>
@@ -5146,11 +5163,11 @@ For a 50R Single Ended on the inner layers, use a trace width of 0.22mm (51.68 O
 <vertex x="71.4" y="4.2"/>
 <vertex x="71.4" y="5"/>
 <vertex x="67.6" y="8.6"/>
-<vertex x="63.6" y="8.6"/>
-<vertex x="63.4" y="8.8"/>
-<vertex x="63.4" y="10.35"/>
-<vertex x="61" y="10.35"/>
-<vertex x="61" y="9.4"/>
+<vertex x="63.1" y="8.6"/>
+<vertex x="62.9" y="8.8"/>
+<vertex x="62.9" y="10.35"/>
+<vertex x="60.6" y="10.35"/>
+<vertex x="60.6" y="9.8"/>
 <vertex x="65.8" y="4.6"/>
 <vertex x="67.6" y="4.6"/>
 <vertex x="68.6" y="3.6"/>
@@ -5187,25 +5204,27 @@ For a 50R Single Ended on the inner layers, use a trace width of 0.22mm (51.68 O
 <signal name="3V3-FB-RB" class="4">
 <contactref element="R41" pad="1"/>
 <contactref element="R42" pad="1"/>
-<wire x1="59.05" y1="9.6" x2="59.05" y2="8.45" width="0.3" layer="1"/>
+<wire x1="58.65" y1="9.6" x2="58.65" y2="8.45" width="0.3" layer="1"/>
 </signal>
 <signal name="3V3-FB" class="4">
 <contactref element="IC4" pad="5"/>
 <contactref element="R41" pad="2"/>
 <contactref element="R40" pad="1"/>
-<wire x1="60.3" y1="11.5" x2="60.3" y2="9.6" width="0.3" layer="1"/>
-<wire x1="60.3" y1="9.6" x2="60.05" y2="9.6" width="0.3" layer="1"/>
-<wire x1="61.65" y1="8.25" x2="61.5" y2="8.25" width="0.3" layer="1"/>
-<wire x1="61.5" y1="8.25" x2="60.3" y2="9.45" width="0.3" layer="1"/>
-<wire x1="60.3" y1="9.45" x2="60.3" y2="9.6" width="0.3" layer="1"/>
+<wire x1="60.3" y1="11.5" x2="60.1" y2="11.3" width="0.3" layer="1"/>
+<wire x1="60.1" y1="11.3" x2="60.1" y2="9.8" width="0.3" layer="1"/>
+<wire x1="60.1" y1="9.8" x2="59.9" y2="9.6" width="0.3" layer="1"/>
+<wire x1="59.9" y1="9.6" x2="59.65" y2="9.6" width="0.3" layer="1"/>
+<wire x1="61.2" y1="8.25" x2="61.1" y2="8.25" width="0.3" layer="1"/>
+<wire x1="61.1" y1="8.25" x2="59.9" y2="9.45" width="0.3" layer="1"/>
+<wire x1="59.9" y1="9.45" x2="59.9" y2="9.6" width="0.3" layer="1"/>
 </signal>
 <signal name="3V3-LX" class="4">
 <contactref element="IC4" pad="3"/>
 <contactref element="L4" pad="1"/>
-<wire x1="64.25" y1="10.15" x2="64.3" y2="10.15" width="0.55" layer="1"/>
-<wire x1="64.3" y1="10.15" x2="64.3" y2="10.4" width="0.55" layer="1"/>
-<wire x1="64.3" y1="10.4" x2="64.3" y2="12" width="1" layer="1"/>
-<wire x1="64.3" y1="12" x2="63.15" y2="12" width="1" layer="1"/>
+<wire x1="63.8" y1="10.15" x2="63.9" y2="10.15" width="0.55" layer="1"/>
+<wire x1="63.9" y1="10.15" x2="63.9" y2="10.4" width="0.55" layer="1"/>
+<wire x1="63.9" y1="10.4" x2="63.9" y2="12" width="1" layer="1"/>
+<wire x1="63.9" y1="12" x2="63.15" y2="12" width="1" layer="1"/>
 </signal>
 <signal name="PWR-SNS" class="4">
 <contactref element="R43" pad="2"/>
@@ -5240,6 +5259,17 @@ For a 50R Single Ended on the inner layers, use a trace width of 0.22mm (51.68 O
 <wire x1="68.8" y1="16" x2="68.8" y2="15.35" width="0.2" layer="1"/>
 <wire x1="68.8" y1="15.35" x2="70.45" y2="13.7" width="0.2" layer="1"/>
 <wire x1="70.45" y1="13.7" x2="70.45" y2="12.55" width="0.2" layer="1"/>
+<contactref element="R51" pad="1"/>
+<wire x1="64.35" y1="18.85" x2="64.3" y2="18.85" width="0.2" layer="1"/>
+<wire x1="64.3" y1="18.85" x2="64.3" y2="18.2" width="0.2" layer="1"/>
+<wire x1="64.3" y1="18.2" x2="64.9" y2="17.6" width="0.2" layer="1"/>
+<via x="64.9" y="17.6" extent="1-16" drill="0.3"/>
+<wire x1="64.9" y1="17.6" x2="65.9" y2="16.6" width="0.2" layer="16"/>
+<wire x1="65.9" y1="16.6" x2="67.05" y2="16.6" width="0.2" layer="16"/>
+<via x="67.05" y="16.6" extent="1-16" drill="0.3"/>
+<wire x1="67.05" y1="16.6" x2="67.25" y2="16.4" width="0.2" layer="1"/>
+<wire x1="67.25" y1="16.4" x2="68.8" y2="16.4" width="0.2" layer="1"/>
+<wire x1="68.8" y1="16.4" x2="68.8" y2="16" width="0.2" layer="1"/>
 </signal>
 <signal name="ESP-TXD" class="4">
 <contactref element="ESP1" pad="35"/>
@@ -5345,15 +5375,15 @@ For a 50R Single Ended on the inner layers, use a trace width of 0.22mm (51.68 O
 <wire x1="65.6" y1="2.6" x2="64.8" y2="2.6" width="1.8" layer="1"/>
 <wire x1="64.8" y1="2.6" x2="61.9" y2="5.5" width="1.8" layer="1"/>
 <wire x1="61.9" y1="5.5" x2="61.6" y2="5.5" width="1.8" layer="1"/>
-<wire x1="61.6" y1="5.5" x2="57.92" y2="5.5" width="1.8" layer="1"/>
-<wire x1="57.92" y1="5.5" x2="56.82" y2="6.6" width="1.8" layer="1"/>
-<wire x1="55.55" y1="8.85" x2="55.55" y2="7.87" width="1.4" layer="1"/>
-<wire x1="55.55" y1="7.87" x2="56.82" y2="6.6" width="1.4" layer="1"/>
+<wire x1="61.6" y1="5.5" x2="57.42" y2="5.5" width="1.8" layer="1"/>
+<wire x1="57.42" y1="5.5" x2="56.82" y2="6.1" width="1.8" layer="1"/>
+<wire x1="55.15" y1="8.85" x2="55.15" y2="7.77" width="1.4" layer="1"/>
+<wire x1="55.15" y1="7.77" x2="56.82" y2="6.1" width="1.4" layer="1"/>
 <via x="64.8" y="2.6" extent="1-16" drill="0.3"/>
 <wire x1="64.8" y1="2.6" x2="75.75" y2="2.6" width="0.3" layer="16"/>
 <wire x1="75.75" y1="2.6" x2="76.5" y2="3.35" width="0.3" layer="16"/>
-<wire x1="55.55" y1="8.85" x2="55.55" y2="10.45" width="1.4" layer="1"/>
-<wire x1="55.55" y1="10.45" x2="53.8" y2="12.2" width="1.4" layer="1"/>
+<wire x1="55.15" y1="8.85" x2="55.15" y2="10.85" width="1.4" layer="1"/>
+<wire x1="55.15" y1="10.85" x2="53.8" y2="12.2" width="1.4" layer="1"/>
 <wire x1="53.8" y1="12.2" x2="49.3" y2="12.2" width="1.4" layer="1"/>
 <wire x1="49.3" y1="12.2" x2="49.3" y2="12.55" width="1.4" layer="1"/>
 </signal>
@@ -5553,8 +5583,14 @@ For a 50R Single Ended on the inner layers, use a trace width of 0.22mm (51.68 O
 <approved hash="5,1,6933adff4e56749c"/>
 <approved hash="5,1,690fab2e48a37484"/>
 <approved hash="18,29,bc3a929792cebc6b"/>
-<approved hash="7,39,0e7df3c675ac0eff"/>
 <approved hash="7,39,c1bee3fec7801ba5"/>
+<approved hash="7,39,0e7df3c675ac0eff"/>
+<approved hash="7,39,89fec8578e41ce6f"/>
+<approved hash="7,39,2be1b9624084cba1"/>
+<approved hash="7,39,a18f9ba438dcfbb7"/>
+<approved hash="7,39,ad6dbe3caf349803"/>
+<approved hash="7,39,fc0000a70f5f1797"/>
+<approved hash="7,39,57255cc4b26ae555"/>
 </errors>
 </board>
 </drawing>
