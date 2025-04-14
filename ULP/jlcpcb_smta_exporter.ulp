@@ -71,7 +71,7 @@ real modulo(real val, real div) {
         }
     } else {
         // Make smaller
-        while(val > div){
+        while(val >= div){
             val = val - div;
         }
     }
@@ -91,11 +91,6 @@ void export_cpl(int element_count, int bottom) {
         real angle = E.angle;
         real xPos = u2mm(E.x);
         real yPos = u2mm(E.y);
-        // Account for bottom layer mirrored rotation
-        if (bottom) {
-            angle = (360.0 - angle);
-            angle = modulo(angle + 180.0, 360.0);
-        }
         // Account for any JLC CPL placement correction attributes
         real angleCorr = 0.0;
         real xCorr = 0.0;
@@ -116,11 +111,17 @@ void export_cpl(int element_count, int bottom) {
         // Apply offset correction. This is a bit more tricky as we have to account for rotation.
         // We account for this by converting the correction amount to polar, adding on our
         // rotation amount to the angle, then converting back to cartesian.
-        real angleRad = angle * PI / 180.0;
         real rCorr = sqrt(xCorr*xCorr + yCorr*yCorr);
         real tCorr = (rCorr == 0.0) ? 0.0 : (acos(xCorr / rCorr) * ((yCorr < 0.0) ? -1.0 : 1.0));
-        xPos = xPos + rCorr * cos(tCorr + angleRad);
-        yPos = yPos + rCorr * sin(tCorr + angleRad);
+        real angleRad = tCorr + (angle * PI / 180.0);
+        // Account for bottom layer mirrored rotation
+        if (bottom) {
+            angleRad = modulo(PI - angleRad, 2.0*PI);
+            angle = modulo(180.0 - angle, 360.0);
+        }
+        // Apply offset correction
+        xPos = xPos + rCorr * cos(angleRad);
+        yPos = yPos + rCorr * sin(angleRad);
         // Apply angle correction
         angle = modulo(angle + angleCorr, 360.0);
         // Output element to CPL
