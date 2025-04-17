@@ -4367,6 +4367,41 @@ MSOP&lt;br&gt;</description>
 <rectangle x1="-9" y1="18" x2="9" y2="24" layer="43"/>
 <circle x="-9.65" y="17.5" radius="0.291546875" width="0" layer="21"/>
 </package>
+<package name="TACTILE_SWITCH_SMD_SIDE_SHL">
+<wire x1="0" y1="1.27" x2="0" y2="0.635" width="0.127" layer="51"/>
+<wire x1="0" y1="0.635" x2="0.635" y2="-0.635" width="0.127" layer="51"/>
+<wire x1="0" y1="-0.635" x2="0" y2="-1.27" width="0.127" layer="51"/>
+<wire x1="2.35" y1="-1.75" x2="2.35" y2="1.75" width="0.127" layer="51"/>
+<wire x1="2.35" y1="1.75" x2="0.5" y2="1.75" width="0.127" layer="21"/>
+<wire x1="0.5" y1="1.75" x2="-0.5" y2="1.75" width="0.127" layer="51"/>
+<wire x1="-0.5" y1="1.75" x2="-2.35" y2="1.75" width="0.127" layer="21"/>
+<wire x1="-2.35" y1="1.75" x2="-2.35" y2="-1.75" width="0.127" layer="51"/>
+<wire x1="-2.35" y1="-1.75" x2="-1.45" y2="-1.75" width="0.127" layer="21"/>
+<wire x1="-1.45" y1="-1.75" x2="-0.5" y2="-1.75" width="0.127" layer="21"/>
+<wire x1="-0.5" y1="-1.75" x2="0.5" y2="-1.75" width="0.127" layer="51"/>
+<wire x1="0.5" y1="-1.75" x2="1.45" y2="-1.75" width="0.127" layer="21"/>
+<wire x1="1.45" y1="-1.75" x2="1.65" y2="-1.75" width="0.127" layer="21"/>
+<wire x1="1.65" y1="-1.75" x2="2.35" y2="-1.75" width="0.127" layer="51"/>
+<wire x1="1.45" y1="-1.75" x2="1.45" y2="-2.75" width="0.127" layer="21"/>
+<wire x1="1.45" y1="-2.75" x2="-1.45" y2="-2.75" width="0.127" layer="21"/>
+<wire x1="-1.45" y1="-2.75" x2="-1.45" y2="-1.75" width="0.127" layer="21"/>
+<smd name="1" x="-2.6" y="0.85" dx="1" dy="1.5" layer="1" rot="R90"/>
+<wire x1="1.27" y1="-1.27" x2="0" y2="-1.27" width="0.127" layer="51"/>
+<wire x1="0" y1="-1.27" x2="-1.27" y2="-1.27" width="0.127" layer="51"/>
+<wire x1="1.27" y1="1.27" x2="0" y2="1.27" width="0.127" layer="51"/>
+<wire x1="0" y1="1.27" x2="-1.27" y2="1.27" width="0.127" layer="51"/>
+<text x="0" y="2.54" size="0.8" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<hole x="0" y="-1.375" drill="0.8"/>
+<hole x="0" y="1.375" drill="0.8"/>
+<wire x1="-3.6" y1="2" x2="3.6" y2="2" width="0.15" layer="39"/>
+<wire x1="3.6" y1="2" x2="3.6" y2="-2" width="0.15" layer="39"/>
+<wire x1="3.6" y1="-2" x2="-3.6" y2="-2" width="0.15" layer="39"/>
+<wire x1="-3.6" y1="-2" x2="-3.6" y2="2" width="0.15" layer="39"/>
+<smd name="SH" x="2.2" y="-2.1" dx="0.75" dy="0.7" layer="1" rot="R270"/>
+<smd name="2" x="2.6" y="0.85" dx="1" dy="1.5" layer="1" rot="R90"/>
+<smd name="3" x="-2.6" y="-0.85" dx="1" dy="1.5" layer="1" rot="R270"/>
+<smd name="4" x="2.6" y="-0.85" dx="1" dy="1.5" layer="1" rot="R270"/>
+</package>
 <package name="CNMB/3-">
 <wire x1="0" y1="49.8" x2="86.5" y2="49.8" width="0" layer="48"/>
 <wire x1="0" y1="0" x2="0" y2="49.8" width="0" layer="48"/>
@@ -7623,7 +7658,7 @@ Push-push type uSD socket with card detect switch.</description>
 <gate name=".MECH" symbol="MECH" x="-2.54" y="-5.08"/>
 </gates>
 <devices>
-<device name="" package="TACTILE_SWITCH_RA">
+<device name="-RA" package="TACTILE_SWITCH_RA">
 <connects>
 <connect gate=".MECH" pin="M" pad="M1 M2" route="any"/>
 <connect gate=".SW" pin="1" pad="1"/>
@@ -7632,6 +7667,18 @@ Push-push type uSD socket with card detect switch.</description>
 <technologies>
 <technology name="">
 <attribute name="JLC_Y" value="1.2"/>
+</technology>
+</technologies>
+</device>
+<device name="-SMD-RA" package="TACTILE_SWITCH_SMD_SIDE_SHL">
+<connects>
+<connect gate=".MECH" pin="M" pad="SH"/>
+<connect gate=".SW" pin="1" pad="1 2" route="any"/>
+<connect gate=".SW" pin="2" pad="3 4" route="any"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="LCSC_PART" value="C495926"/>
 </technology>
 </technologies>
 </device>
@@ -8057,9 +8104,7 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <part name="D5" library="BSB-LAN" deviceset="TVS-UNI" device="SMA" value="6V">
 <attribute name="LCSC_PART" value="C223993"/>
 </part>
-<part name="RST" library="BSB-LAN" deviceset="SWITCH-MOMENTARY-SHELL" device="" value="Tact-RA">
-<attribute name="LCSC_PART" value="C406156"/>
-</part>
+<part name="RST" library="BSB-LAN" deviceset="SWITCH-MOMENTARY-SHELL" device="-SMD-RA" value="Tact-RA"/>
 <part name="OPT" library="BSB-LAN" deviceset="JUMPER-2" device="-2MM" value="DNI"/>
 <part name="Q5" library="BSB-LAN" deviceset="BC847*" device="" value="BC847">
 <attribute name="LCSC_PART" value="C130417"/>
