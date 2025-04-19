@@ -5,4 +5,4 @@ Globals="Globals"
 
 [Globals]
 AutoSaveProject=1
-UsedLibrary="BSB-LAN.lbr"
+UsedLibrary="BSBInterface.lbr"
