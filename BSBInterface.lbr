@@ -160,7 +160,7 @@
 <layer number="255" name="PART" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <library>
-<description>BSB-LAN Board Component Library</description>
+<description>BSB interface board component library</description>
 <packages>
 <package name="3M_10">
 <description>&lt;b&gt;3M&lt;/b&gt;</description>
