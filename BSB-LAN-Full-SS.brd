@@ -163,19 +163,17 @@
 <plain>
 <text x="13" y="47.5" size="2" layer="21" font="vector" ratio="15" align="center">B+</text>
 <text x="13" y="38.05" size="2" layer="21" font="vector" ratio="15" rot="R180" align="center">B-</text>
-<text x="33.6" y="25.6" size="1.5" layer="21" font="vector" ratio="15" rot="R180" align="center">BSB-LAN
-ESP32 PoE
+<text x="35.4" y="23.8" size="1.5" layer="21" font="vector" ratio="15" rot="R180" align="center">BSB to PoE-LAN
+ESP32 Based
 </text>
-<text x="33.8" y="23.4" size="1" layer="21" font="vector" ratio="15" rot="R180" align="center">T Carpenter  V1.1 Apr25</text>
+<text x="9.2" y="30" size="1" layer="21" font="vector" ratio="15" align="center-left">T Carpenter  V1.1 Apr25</text>
 <text x="10.5" y="2.6" size="1" layer="21" font="vector" ratio="15" align="center">Isolated
 Supply</text>
 <text x="1.6" y="43" size="1" layer="22" font="vector" ratio="15" rot="MR90" align="center">JLCJLCJLC</text>
 <text x="5.2" y="27.6" size="0.8" layer="21" font="vector" ratio="15" align="center">Open
 Hardware</text>
-<text x="57.4" y="10.75" size="1" layer="22" font="vector" ratio="15" rot="MR0" align="center-left">github://TCWORLD/BSB-LAN-CircuitBoard
-github://fredlcore/BSB-LAN
-github://OLIMEX/ESP32-POE-ISO</text>
-<text x="52.6" y="17.8" size="1" layer="22" font="vector" ratio="15" rot="MR0" align="center-left">Based on:
+<text x="9.2" y="28.55" size="1" layer="21" font="vector" ratio="15" align="center-left">github://TCWORLD/BSB-Interface-PCBs</text>
+<text x="27.8" y="47" size="1" layer="22" font="vector" ratio="15" rot="MR0" align="center-left">Based on designs from:
 Olimex ESP32-POE-ISO
 Fredlcore BSB-LAN</text>
 <text x="49.6" y="17.8" size="0.8" layer="21" font="vector" ratio="15" rot="R90" align="center">(w/o UART)</text>
@@ -2173,7 +2171,7 @@ For a 50R Single Ended on the inner layers, use a trace width of 0.22mm (51.68 O
 <elements>
 <element name="OK1" library="BSB-LAN" package="DIL6-SMD" value="4N25SM" x="27.2" y="35.2" smashed="yes" rot="R270">
 <attribute name="LCSC_PART" value="C258246" x="20.85" y="17.42" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="23" y="31" size="0.8" layer="25" font="vector" ratio="15" align="center"/>
+<attribute name="NAME" x="31.8" y="31" size="0.8" layer="25" font="vector" ratio="15" align="center"/>
 </element>
 <element name="OK2" library="BSB-LAN" package="DIL6-SMD" value="4N25SM" x="27.2" y="45" smashed="yes" rot="R90">
 <attribute name="LCSC_PART" value="C258246" x="33.55" y="74.21" size="1.778" layer="27" rot="R90" display="off"/>
@@ -2274,7 +2272,7 @@ For a 50R Single Ended on the inner layers, use a trace width of 0.22mm (51.68 O
 </element>
 <element name="U1" library="BSB-LAN" package="DBV0005A-SOT23" value="ESDS314DBV" x="23.1" y="26.05" smashed="yes" rot="R270">
 <attribute name="LCSC_PART" value="C1847859" x="23.1" y="26.05" size="1" layer="27" font="vector" ratio="15" rot="R270" display="off"/>
-<attribute name="NAME" x="23.1" y="28.275" size="0.8" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
+<attribute name="NAME" x="23.1" y="23.875" size="0.8" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
 </element>
 <element name="L1" library="BSB-LAN" package="L2010" value="FB 600R" x="44" y="30.45" smashed="yes" rot="R180">
 <attribute name="NAME" x="44.1" y="29.1" size="0.8" layer="25" font="vector" ratio="15" align="center"/>

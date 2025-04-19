@@ -169,14 +169,13 @@
 <text x="3" y="8" size="2" layer="21" font="vector" ratio="15" rot="R180" align="center">B-</text>
 <hole x="47.858" y="25.43" drill="2.2"/>
 <hole x="47.858" y="2.57" drill="2.2"/>
-<text x="13" y="26" size="1.75" layer="21" font="vector" ratio="15" align="center">BSB-LAN Adapter</text>
+<text x="16" y="26" size="1.75" layer="21" font="vector" ratio="15" align="center">BSB to UEXT Adapter</text>
 <text x="49" y="14" size="1" layer="21" font="vector" ratio="15" rot="R90" align="center">PCB Layout By:
 T Carpenter   Jan 25</text>
 <text x="8" y="3.8" size="1" layer="21" font="vector" ratio="15" align="center">Consult
 Docs</text>
 <text x="46" y="14" size="1" layer="21" font="vector" ratio="15" rot="R90" align="center">For ESP32-POE-ISO</text>
-<text x="10.9" y="1.9" size="1" layer="21" font="vector" ratio="15" align="center-left">github://fredlcore/BSB-LAN
-github://TCWORLD/BSB-LAN-CircuitBoard</text>
+<text x="10.9" y="1.9" size="1" layer="21" font="vector" ratio="15" align="center-left">github://TCWORLD/BSB-Interface-PCBs</text>
 <text x="7" y="26" size="1" layer="22" font="vector" ratio="15" rot="MR180" align="center">JLCJLCJLC</text>
 <text x="43.4" y="24.75" size="0.8" layer="21" font="vector" ratio="15" rot="R90" align="center">Open
 Hardware</text>

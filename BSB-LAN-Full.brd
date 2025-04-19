@@ -161,21 +161,21 @@
 </layers>
 <board>
 <plain>
-<text x="11.4" y="29.2" size="2" layer="21" font="vector" ratio="15" align="center">B+</text>
-<text x="11.4" y="24.2" size="2" layer="21" font="vector" ratio="15" rot="R180" align="center">B-</text>
-<text x="28.6" y="19" size="1.5" layer="21" font="vector" ratio="15" rot="R180" align="center">BSB-LAN
-ESP32 PoE
+<text x="11.6" y="29.2" size="2" layer="21" font="vector" ratio="15" align="center">B+</text>
+<text x="11.6" y="24" size="2" layer="21" font="vector" ratio="15" rot="R180" align="center">B-</text>
+<text x="28.2" y="18.2" size="1.5" layer="21" font="vector" ratio="15" rot="R180" align="center">BSB to
+PoE LAN
+w/ ESP32
 </text>
-<text x="28.6" y="17.2" size="1" layer="21" font="vector" ratio="15" rot="R180" align="center">T Carpenter  V1.1 Apr25</text>
+<text x="19.2" y="13.2" size="1" layer="21" font="vector" ratio="15" rot="R270" align="center">T Carpenter
+V1.1 Apr25</text>
 <text x="47" y="12" size="1" layer="21" font="vector" ratio="15" align="center">Isolated
 Supply</text>
 <text x="1" y="26" size="1" layer="22" font="vector" ratio="15" rot="MR270" align="center">JLCJLCJLC</text>
 <text x="63" y="26" size="0.8" layer="21" font="vector" ratio="15" align="center">Open
 Hardware</text>
-<text x="47.6" y="14.55" size="1" layer="22" font="vector" ratio="15" rot="MR0" align="center-left">github://TCWORLD/BSB-LAN-CircuitBoard
-github://fredlcore/BSB-LAN
-github://OLIMEX/ESP32-POE-ISO</text>
-<text x="47.4" y="19.8" size="1" layer="22" font="vector" ratio="15" rot="MR0" align="center-left">Based on:
+<text x="58.4" y="10.95" size="1" layer="22" font="vector" ratio="15" rot="MR0" align="center-left">github://TCWORLD/BSB-Interface-PCBs</text>
+<text x="30.4" y="19.2" size="1" layer="22" font="vector" ratio="15" rot="MR0" align="center-left">Based on:
 Olimex ESP32-POE-ISO
 Fredlcore BSB-LAN</text>
 <text x="55" y="30" size="0.8" layer="21" font="vector" ratio="15" align="center">(w/o UART)</text>
@@ -2182,7 +2182,7 @@ For a 50R Single Ended on the inner layers, use a trace width of 0.22mm (51.68 O
 <attribute name="NAME" x="27.2" y="31.6" size="0.8" layer="26" font="vector" ratio="15" rot="MR0" align="center"/>
 </element>
 <element name="BSB" library="BSB-LAN" package="MKDSN1_5-2-5_08" value="MKDSN1,5/2-5,08" x="5.16" y="26.66" smashed="yes" rot="R270">
-<attribute name="NAME" x="11.35" y="31.47" size="1.2" layer="25" font="vector" ratio="15" align="center"/>
+<attribute name="NAME" x="11.55" y="31.67" size="1.2" layer="25" font="vector" ratio="15" align="center"/>
 <attribute name="LCSC_PART" value="C5183989" x="5.16" y="26.66" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="R1" library="BSB-LAN" package="R0603" value="330k" x="16.6" y="30.7" smashed="yes" rot="MR180">
@@ -2417,7 +2417,7 @@ For a 50R Single Ended on the inner layers, use a trace width of 0.22mm (51.68 O
 <attribute name="NAME" x="25.5" y="6.045" size="0.8" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
 </element>
 <element name="C14" library="BSB-LAN" package="PANASONIC_D" value="22uF 100V" x="20.9" y="4.45" smashed="yes" rot="R270">
-<attribute name="NAME" x="20.9" y="9.09" size="0.8" layer="25" font="vector" ratio="15" align="center"/>
+<attribute name="NAME" x="23.1" y="8.29" size="0.8" layer="25" font="vector" ratio="15" align="center"/>
 <attribute name="LCSC_PART" value="C487431" x="20.9" y="4.45" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="R29" library="BSB-LAN" package="R0402" value="220R" x="1.95" y="11.8" smashed="yes" rot="MR270">
@@ -5270,8 +5270,8 @@ For a 50R Single Ended on the inner layers, use a trace width of 0.22mm (51.68 O
 <approved hash="7,39,9f693d333d339f69"/>
 <approved hash="7,40,997bdd78dd479944"/>
 <approved hash="7,40,a342e77fe740a37d"/>
-<approved hash="18,30,7dd43333b7f8d0be"/>
 <approved hash="18,30,091ee46cacafb6c0"/>
+<approved hash="18,30,7dd43333b7f8d0be"/>
 <approved hash="18,30,ddf5f4872bd54db9"/>
 <approved hash="18,30,963e97794070ab3a"/>
 </errors>
