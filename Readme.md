@@ -26,7 +26,7 @@ The `LCSC_PART` and `JLC_X/Y/ROTATION` attributes have been added for each compo
 
 Designed to work with the ESP32-POE-ISO controller from Olimex, connecting vial the UEXT headers.
 
-The PCB schematic is simply based on the design found at in the GitHub repository [fredlcore/BSB-LAN](https://github.com/fredlcore/BSB-LAN/).
+The PCB schematic is simply based on the design found at in the GitHub repository [fredlcore/BSB-LAN](https://github.com/fredlcore/BSB-LAN/tree/master/BSB_LAN/schematics).
 
 There are some slight adaptions to provide ESD protection for the isolated B2B interface and designed to be surface-mount machine for machine assembly. 
 
