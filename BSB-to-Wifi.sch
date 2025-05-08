@@ -7148,6 +7148,9 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <part name="R51" library="BSB-LAN" deviceset="R-EU_" device="R0402" value="220R">
 <attribute name="LCSC_PART" value="C25091"/>
 </part>
+<part name="R11" library="BSB-LAN" deviceset="R-EU_" device="R0402" value="4.7k">
+<attribute name="LCSC_PART" value="C25900"/>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -7927,6 +7930,13 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <junction x="66.04" y="20.32"/>
 </segment>
 <segment>
+<pinref part="ESP1" gate="G$1" pin="GPIO35"/>
+<wire x1="76.2" y1="88.9" x2="83.82" y2="88.9" width="0.1524" layer="91"/>
+<label x="83.82" y="88.9" size="1.4224" layer="95" font="vector" ratio="10" xref="yes"/>
+</segment>
+</net>
+<net name="BSB-ENB" class="0">
+<segment>
 <wire x1="76.2" y1="96.52" x2="83.82" y2="96.52" width="0.1524" layer="91"/>
 <label x="83.82" y="96.52" size="1.4224" layer="95" font="vector" ratio="10" xref="yes"/>
 <pinref part="ESP1" gate="G$1" pin="GPIO32"/>
@@ -8306,6 +8316,9 @@ https://github.com/fredlcore/BSB-LAN</text>
 <instance part="R8" gate="G$1" x="187.96" y="137.16" rot="R90">
 <attribute name="LCSC_PART" x="187.96" y="137.16" size="2.54" layer="96" font="vector" ratio="10" rot="R90" align="center" display="off"/>
 </instance>
+<instance part="R11" gate="G$1" x="195.58" y="137.16" rot="R90">
+<attribute name="LCSC_PART" x="195.58" y="137.16" size="2.54" layer="96" font="vector" ratio="10" rot="R90" align="center" display="off"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -8395,11 +8408,15 @@ https://github.com/fredlcore/BSB-LAN</text>
 <segment>
 <pinref part="OK2" gate="G$1" pin="C"/>
 <wire x1="152.4" y1="129.54" x2="187.96" y2="129.54" width="0.1524" layer="91"/>
-<label x="190.5" y="129.54" size="1.4224" layer="95" font="vector" ratio="10" xref="yes"/>
+<label x="200.66" y="129.54" size="1.4224" layer="95" font="vector" ratio="10" xref="yes"/>
 <pinref part="R8" gate="G$1" pin="1"/>
-<wire x1="187.96" y1="129.54" x2="190.5" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="129.54" x2="195.58" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="129.54" x2="200.66" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="187.96" y1="132.08" x2="187.96" y2="129.54" width="0.1524" layer="91"/>
 <junction x="187.96" y="129.54"/>
+<junction x="195.58" y="129.54"/>
+<pinref part="R11" gate="G$1" pin="1"/>
+<wire x1="195.58" y1="132.08" x2="195.58" y2="129.54" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R5" gate="G$1" pin="2"/>
@@ -8410,12 +8427,6 @@ https://github.com/fredlcore/BSB-LAN</text>
 </net>
 <net name="+3.3V" class="4">
 <segment>
-<pinref part="Q2" gate="G$1" pin="E"/>
-<wire x1="167.64" y1="149.86" x2="167.64" y2="157.48" width="0.1524" layer="91"/>
-<wire x1="167.64" y1="157.48" x2="190.5" y2="157.48" width="0.1524" layer="91"/>
-<label x="190.5" y="157.48" size="1.4224" layer="95" font="vector" ratio="10" xref="yes"/>
-</segment>
-<segment>
 <pinref part="OK1" gate="G$1" pin="COL"/>
 <wire x1="152.4" y1="104.14" x2="157.48" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="157.48" y1="104.14" x2="157.48" y2="111.76" width="0.1524" layer="91"/>
@@ -8425,11 +8436,11 @@ https://github.com/fredlcore/BSB-LAN</text>
 </net>
 <net name="BSB-TXD" class="4">
 <segment>
-<label x="190.5" y="144.78" size="1.4224" layer="95" font="vector" ratio="10" xref="yes"/>
+<label x="200.66" y="144.78" size="1.4224" layer="95" font="vector" ratio="10" xref="yes"/>
 <pinref part="R6" gate="G$1" pin="2"/>
 <wire x1="185.42" y1="144.78" x2="187.96" y2="144.78" width="0.1524" layer="91"/>
 <pinref part="R8" gate="G$1" pin="2"/>
-<wire x1="187.96" y1="144.78" x2="190.5" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="144.78" x2="200.66" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="187.96" y1="142.24" x2="187.96" y2="144.78" width="0.1524" layer="91"/>
 <junction x="187.96" y="144.78"/>
 </segment>
@@ -8499,6 +8510,18 @@ https://github.com/fredlcore/BSB-LAN</text>
 <pinref part="R10" gate="G$1" pin="1"/>
 <pinref part="BSB" gate="-1" pin="1"/>
 <wire x1="38.1" y1="116.84" x2="43.18" y2="116.84" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="BSB-ENB" class="0">
+<segment>
+<pinref part="Q2" gate="G$1" pin="E"/>
+<wire x1="167.64" y1="149.86" x2="167.64" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="157.48" x2="195.58" y2="157.48" width="0.1524" layer="91"/>
+<label x="200.66" y="157.48" size="1.4224" layer="95" font="vector" ratio="10" xref="yes"/>
+<junction x="195.58" y="157.48"/>
+<wire x1="195.58" y1="157.48" x2="200.66" y2="157.48" width="0.1524" layer="91"/>
+<pinref part="R11" gate="G$1" pin="2"/>
+<wire x1="195.58" y1="157.48" x2="195.58" y2="142.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
